@@ -19,6 +19,8 @@ export class SolarSystem {
   readonly bodies: Map<string, CelestialBody> = new Map();
   private _orderedBodies: CelestialBody[] = [];
   readonly sunOrbiters: CelestialBody[] = [];
+  private _prevSimDays: number = 0;
+  private _orbitLines: THREE.Object3D[] = [];
 
   constructor(timeManager: TimeManager) {
     this.scene = new THREE.Scene();
@@ -82,6 +84,14 @@ export class SolarSystem {
     rotGroup.add(line);
 
     this.scene.add(rotGroup);
+    this._orbitLines.push(rotGroup);
+  }
+
+  /** Muestra u oculta todas las líneas orbitales */
+  setOrbitLinesVisible(visible: boolean): void {
+    for (const line of this._orbitLines) {
+      line.visible = visible;
+    }
   }
 
   private setupLighting(): void {
@@ -101,8 +111,11 @@ export class SolarSystem {
 
   update(): void {
     const daysSinceEpoch = this.timeManager.simDays;
-    const prevDays = daysSinceEpoch - this.timeManager.speed / 60;
-    const deltaDays = daysSinceEpoch - prevDays;
+    // Delta real de días simulados desde el frame anterior.
+    // Es 0 cuando la simulación está pausada (simDays no avanza),
+    // de modo que la rotación se detiene junto con la traslación.
+    const deltaDays = Math.max(0, daysSinceEpoch - this._prevSimDays);
+    this._prevSimDays = daysSinceEpoch;
 
     for (const body of this._orderedBodies) {
       const data = body.data;

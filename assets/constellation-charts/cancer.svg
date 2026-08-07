@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="460" height="460" fill="#05060c"/>
+<polyline points="67.1,111.6 174.2,216.3 185.1,271.5 158.8,392.9" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<polyline points="174.2,216.3 392.9,67.1" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<circle class="star" cx="392.9" cy="67.1" r="2.3" fill="#ffd699" data-name="HIP 40526" data-meta="mag 3.53"/>
+<circle class="star" cx="174.2" cy="216.3" r="2.0" fill="#ffd699" data-name="HIP 42911" data-meta="mag 3.94"/>
+<circle class="star" cx="158.6" cy="392.8" r="2.0" fill="#ffd699" data-name="HIP 43103" data-meta="mag 4.03"/>
+<circle class="star" cx="67.1" cy="111.6" r="1.9" fill="#ffffff" data-name="HIP 44066" data-meta="mag 4.26"/>
+<circle class="star" cx="185.1" cy="271.5" r="1.6" fill="#ffffff" data-name="HIP 42806" data-meta="mag 4.66"/>
+<circle class="star" cx="426.3" cy="207.9" r="1.6" fill="#fff2cc" data-name="HIP 40167" data-meta="mag 4.67"/>
+<circle class="star" cx="209.8" cy="246.8" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M44" data-meta="oc"/>
+<circle cx="209.8" cy="246.8" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
+<circle class="star" cx="129.9" cy="110.9" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M67" data-meta="oc"/>
+<circle cx="129.9" cy="110.9" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
+</svg>

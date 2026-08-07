@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="460" height="460" fill="#05060c"/>
+<polyline points="67.1,67.1 127.1,97.5 155.7,191.4 218.6,257.7 323.3,189.7 155.7,191.4" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<polyline points="220.9,263.1 287.4,308.6 333.6,346.8 392.9,392.9" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<circle class="star" cx="1089.8" cy="1775.9" r="2.5" fill="#ffd699" data-name="Alnair" data-meta="mag 3.05"/>
+<text x="1095.3" y="1778.9" fill="#aebfe0" font-size="9">Alnair</text>
+<circle class="star" cx="323.3" cy="189.7" r="3.2" fill="#cfe0ff" data-name="HIP 109268" data-meta="mag 1.73"/>
+<circle class="star" cx="155.7" cy="191.4" r="3.1" fill="#ffb366" data-name="HIP 112122" data-meta="mag 2.07"/>
+<circle class="star" cx="392.9" cy="392.9" r="2.5" fill="#cfe0ff" data-name="HIP 108085" data-meta="mag 3.0"/>
+<circle class="star" cx="127.1" cy="97.5" r="2.3" fill="#ffffff" data-name="HIP 112623" data-meta="mag 3.49"/>
+<circle class="star" cx="220.9" cy="263.1" r="2.0" fill="#ffd699" data-name="HIP 110997" data-meta="mag 3.97"/>
+<circle class="star" cx="67.1" cy="67.1" r="1.9" fill="#fff2cc" data-name="HIP 113638" data-meta="mag 4.11"/>
+<circle class="star" cx="218.5" cy="257.7" r="1.9" fill="#ffb366" data-name="HIP 111043" data-meta="mag 4.12"/>
+<circle class="star" cx="37.9" cy="262.6" r="1.8" fill="#ffffff" data-name="HIP 114131" data-meta="mag 4.28"/>
+<circle class="star" cx="333.6" cy="346.8" r="1.7" fill="#ffd699" data-name="HIP 109111" data-meta="mag 4.47"/>
+<circle class="star" cx="287.4" cy="308.6" r="1.6" fill="#fff2cc" data-name="HIP 109908" data-meta="mag 4.79"/>
+<circle class="star" cx="151.7" cy="307.2" r="1.5" fill="#ffd699" data-name="HIP 112203" data-meta="mag 4.84"/>
+<circle class="star" cx="141.3" cy="51.3" r="1.5" fill="#ffd699" data-name="HIP 112374" data-meta="mag 4.84"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="460" height="460" fill="#05060c"/>
+<polyline points="333.4,67.1 336.1,178.4 302.7,249.8 159.5,265.7 67.1,127.5 159.2,147.5 333.4,67.1" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<polyline points="302.7,249.8 311.4,332.8 374.6,392.9 392.9,341.1" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<circle class="star" cx="333.4" cy="67.1" r="3.5" fill="#cfe0ff" data-name="Regulus" data-meta="mag 1.36"/>
+<text x="339.8" y="70.1" fill="#aebfe0" font-size="9">Regulus</text>
+<circle class="star" cx="67.1" cy="127.5" r="3.0" fill="#ffffff" data-name="Zosma" data-meta="mag 2.14"/>
+<text x="73.1" y="130.5" fill="#aebfe0" font-size="9">Zosma</text>
+<circle class="star" cx="192.0" cy="1097.8" r="2.9" fill="#ffffff" data-name="Coxa" data-meta="mag 2.34"/>
+<text x="197.9" y="1100.8" fill="#aebfe0" font-size="9">Coxa</text>
+<circle class="star" cx="159.2" cy="147.4" r="2.4" fill="#cfe0ff" data-name="Denebola" data-meta="mag 3.33"/>
+<text x="164.5" y="150.4" fill="#aebfe0" font-size="9">Denebola</text>
+<circle class="star" cx="3797.3" cy="-1695.8" r="2.0" fill="#cfe0ff" data-name="Chertan" data-meta="mag 4.06"/>
+<text x="3802.3" y="-1692.8" fill="#aebfe0" font-size="9">Chertan</text>
+<circle class="star" cx="302.7" cy="249.8" r="3.1" fill="#ffd699" data-name="HIP 50583" data-meta="mag 2.01"/>
+<circle class="star" cx="159.5" cy="265.7" r="2.8" fill="#ffffff" data-name="HIP 54872" data-meta="mag 2.56"/>
+<circle class="star" cx="392.9" cy="341.1" r="2.6" fill="#fff2cc" data-name="HIP 47908" data-meta="mag 2.97"/>
+<circle class="star" cx="311.4" cy="332.8" r="2.3" fill="#ffffff" data-name="HIP 50335" data-meta="mag 3.43"/>
+<circle class="star" cx="336.1" cy="178.4" r="2.3" fill="#cfe0ff" data-name="HIP 49583" data-meta="mag 3.48"/>
+<circle class="star" cx="374.6" cy="392.9" r="2.1" fill="#ffd699" data-name="HIP 48455" data-meta="mag 3.88"/>
+<circle class="star" cx="133.6" cy="33.7" r="2.0" fill="#ffffff" data-name="HIP 55642" data-meta="mag 4.0"/>
+<circle class="star" cx="208.4" cy="363.7" r="1.8" fill="#ffffff" data-name="HIP 53417" data-meta="mag 4.3"/>
+<circle class="star" cx="430.3" cy="322.4" r="1.8" fill="#ffb366" data-name="HIP 46750" data-meta="mag 4.32"/>
+<circle class="star" cx="190.7" cy="257.7" r="1.8" fill="#ffffff" data-name="HIP 53954" data-meta="mag 4.42"/>
+<circle class="star" cx="69.9" cy="258.6" r="1.7" fill="#fff2cc" data-name="HIP 57565" data-meta="mag 4.5"/>
+<circle class="star" cx="156.6" cy="325.3" r="1.7" fill="#ffb366" data-name="HIP 54951" data-meta="mag 4.56"/>
+<circle class="star" cx="303.3" cy="241.2" r="1.6" fill="#ffffff" data-name="HIP 50564" data-meta="mag 4.78"/>
+<circle class="star" cx="429.7" cy="51.6" r="1.5" fill="#ffd699" data-name="HIP 46771" data-meta="mag 4.99"/>
+<circle class="star" cx="229.1" cy="81.4" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M105" data-meta="e"/>
+<circle cx="229.1" cy="81.4" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
+<circle class="star" cx="146.9" cy="93.0" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M65" data-meta="s"/>
+<circle cx="146.9" cy="93.0" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
+<circle class="star" cx="143.4" cy="90.7" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M66" data-meta="s"/>
+<circle cx="143.4" cy="90.7" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
+<circle class="star" cx="239.1" cy="60.9" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M95" data-meta="s"/>
+<circle cx="239.1" cy="60.9" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
+<circle class="star" cx="231.7" cy="63.6" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M96" data-meta="s"/>
+<circle cx="231.7" cy="63.6" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
+</svg>

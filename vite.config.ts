@@ -6,6 +6,13 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true,
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        planetario: 'planetario.html',
+        constelaciones: 'constelaciones.html',
+      },
+    },
   },
   server: {
     host: '127.0.0.1',

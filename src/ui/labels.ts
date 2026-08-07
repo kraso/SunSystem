@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import type { CelestialBody } from '../scene/celestial-body';
 
+type LabelMode = 'all' | 'planets' | 'moons' | 'none';
+
 /**
  * Etiquetas flotantes CSS que siguen a los cuerpos celestes en pantalla.
  *
@@ -9,9 +11,9 @@ import type { CelestialBody } from '../scene/celestial-body';
  */
 export class Labels {
   private container: HTMLElement;
-  private labels: Map<string, HTMLElement> = new Map();
+  private labels: Map<string, { el: HTMLElement; type: string }> = new Map();
   private camera: THREE.PerspectiveCamera;
-  private visible: boolean = true;
+  private mode: LabelMode = 'all';
 
   constructor(camera: THREE.PerspectiveCamera) {
     this.camera = camera;
@@ -24,14 +26,28 @@ export class Labels {
     `;
     document.body.appendChild(this.container);
 
-    // Vincular checkbox
-    const checkbox = document.getElementById('show-labels') as HTMLInputElement;
-    if (checkbox) {
-      checkbox.addEventListener('change', () => {
-        this.visible = checkbox.checked;
-        this.container.style.display = this.visible ? 'block' : 'none';
+    // Vincular selector de modo
+    const select = document.getElementById('label-mode') as HTMLSelectElement;
+    if (select) {
+      select.addEventListener('change', () => {
+        this.mode = select.value as LabelMode;
+        this.applyMode();
       });
     }
+  }
+
+  /** Aplica el modo actual: oculta/muestra según tipo de cuerpo */
+  private applyMode(): void {
+    for (const { el, type } of this.labels.values()) {
+      const isPlanet = type !== 'moon' && type !== 'star';
+      const show =
+        this.mode === 'all' ||
+        (this.mode === 'planets' && isPlanet) ||
+        (this.mode === 'moons' && type === 'moon');
+      el.dataset.modeVisible = show ? '1' : '0';
+    }
+    // Forzar re-evaluación de posición/visibilidad en el próximo frame
+    this.container.style.display = this.mode === 'none' ? 'none' : 'block';
   }
 
   /** Crea etiquetas para una lista de cuerpos */
@@ -49,7 +65,7 @@ export class Labels {
         left: 0; top: 0;
         color: rgba(255,255,255,0.85);
         font-size: 11px;
-        font-family: 'Segoe UI', system-ui, sans-serif;
+        font-family: 'Audiowide', 'Segoe UI', system-ui, sans-serif;
         text-shadow: 0 0 6px rgba(0,0,0,0.8);
         white-space: nowrap;
         will-change: transform;
@@ -57,20 +73,32 @@ export class Labels {
         pointer-events: none;
       `;
       this.container.appendChild(el);
-      this.labels.set(body.data.name, el);
+      this.labels.set(body.data.name, { el, type: body.data.type });
     }
+    this.applyMode();
   }
 
   /** Actualiza posiciones de todas las etiquetas (llamar cada frame) */
   update(bodies: CelestialBody[]): void {
-    if (!this.visible) return;
+    if (this.mode === 'none') {
+      this.container.style.display = 'none';
+      return;
+    }
+    this.container.style.display = 'block';
 
     const halfW = window.innerWidth / 2;
     const halfH = window.innerHeight / 2;
 
     for (const body of bodies) {
-      const el = this.labels.get(body.data.name);
-      if (!el) continue;
+      const entry = this.labels.get(body.data.name);
+      if (!entry) continue;
+      const el = entry.el;
+
+      // Oculto por modo
+      if (el.dataset.modeVisible === '0') {
+        el.style.display = 'none';
+        continue;
+      }
 
       const worldPos = body.getWorldPosition();
 

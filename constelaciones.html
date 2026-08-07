@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SunSystem — Constelaciones</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" />
+  <link rel="stylesheet" href="/src/ui/styles.css" />
+</head>
+<body>
+  <!-- HUD -->
+  <div id="top-bar">
+    <span id="logo">✦ Constelaciones</span>
+    <a id="back-link" class="btn-hud" href="/index.html" title="Volver a SunSystem">← SunSystem</a>
+  </div>
+
+  <div id="const-layout">
+    <!-- Izquierda: constelaciones -->
+    <aside id="const-col-left" class="const-col">
+      <div class="col-head">
+        <span>Constelaciones</span>
+        <button class="col-sort" data-col="const" title="Ordenar">⇅</button>
+      </div>
+      <div id="const-list" class="col-list"></div>
+    </aside>
+
+    <!-- Centro: buscador + card -->
+    <main id="const-col-center">
+      <div id="const-search-panel">
+        <input type="text" id="const-search" placeholder="Buscar constelación u objeto (M44, Orión…)" autocomplete="off" />
+        <div id="const-suggest"></div>
+        <div id="const-color-legend">
+          <span class="lg-title">Objetos de cielo profundo:</span>
+          <span class="lg-item"><i class="lg-dot" style="background:#9fc4ff"></i> Galaxia</span>
+          <span class="lg-item"><i class="lg-dot" style="background:#ff9b7a"></i> Nebulosa</span>
+          <span class="lg-item"><i class="lg-dot" style="background:#88ffcc"></i> Cúmulo globular</span>
+          <span class="lg-item"><i class="lg-dot" style="background:#d6ff8c"></i> Cúmulo abierto</span>
+          <span class="lg-item"><i class="lg-dot" style="background:#ff8ce0"></i> Neb. planetaria</span>
+        </div>
+      </div>
+      <div id="const-card">
+        <div id="const-card-empty">
+          <p>Busca o selecciona una constelación u objeto astronómico para ver su ficha completa.</p>
+          <p class="hint">Usa las listas laterales o el buscador central.</p>
+        </div>
+        <div id="const-card-content" style="display:none;"></div>
+      </div>
+    </main>
+
+    <!-- Derecha: objetos astronómicos -->
+    <aside id="const-col-right" class="const-col">
+      <div class="col-head">
+        <span>Objetos y estrellas</span>
+        <button class="col-sort" data-col="obj" title="Ordenar">⇅</button>
+      </div>
+      <div id="obj-list" class="col-list"></div>
+    </aside>
+  </div>
+
+  <div id="const-tooltip"></div>
+
+  <script type="module" src="/src/constelaciones-app.ts"></script>
+</body>
+</html>

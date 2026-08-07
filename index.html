@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SunSystem — Simulación 3D del Sistema Solar</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☀️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" />
   <link rel="stylesheet" href="/src/ui/styles.css" />
 </head>
 <body>
@@ -13,10 +16,15 @@
   <!-- HUD: barra superior -->
   <div id="top-bar">
     <span id="logo">☀️ SunSystem</span>
+    <select id="focus-planet" class="btn-hud" title="Saltar a un planeta">
+      <option value="">→ Enfocar</option>
+    </select>
     <div style="display:flex;gap:8px;">
       <button id="toggle-info-panel" class="btn-hud" title="Panel de información"><span class="ico">◈</span> Datos</button>
       <button id="btn-luna" class="btn-hud" title="Fases de la Luna"><span class="ico">🌙</span> Luna</button>
       <button id="btn-stats" class="btn-hud" title="Estadísticas"><span class="ico">◫</span> Estadísticas</button>
+      <a id="btn-planetario" class="btn-hud" href="/planetario.html" title="Planetario (cúpula celeste)"><span class="ico">🌌</span> Planetario</a>
+      <a id="btn-constelaciones" class="btn-hud" href="/constelaciones.html" title="Cartas de constelaciones"><span class="ico">✦</span> Constelaciones</a>
     </div>
   </div>
 
@@ -36,10 +44,13 @@
     <input type="range" id="speed-slider" min="0" max="100" value="10" title="Velocidad de simulación" />
     <button id="btn-faster" class="btn-hud-sm" title="Más rápido (+)"><span class="ico">▶▶</span></button>
     <span id="speed-label">1 mes/s</span>
-    <label id="labels-toggle">
-      <input type="checkbox" id="show-labels" checked />
-      Etiquetas
-    </label>
+    <select id="label-mode" class="btn-hud" title="Mostrar etiquetas">
+      <option value="all">Etiquetas: Todas</option>
+      <option value="planets">Solo planetas</option>
+      <option value="moons">Solo satélites</option>
+      <option value="none">Ninguna</option>
+    </select>
+    <button id="btn-orbits" class="btn-hud" title="Mostrar/ocultar líneas orbitales"><span class="ico">🪐</span> Órbitas</button>
   </div>
 
   <script type="module" src="/src/main.ts"></script>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="460" height="460" fill="#05060c"/>
+<polyline points="284.0,276.9 67.1,392.9 156.0,250.0 392.9,67.1 284.0,276.9" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<circle class="star" cx="284.0" cy="276.9" r="2.1" fill="#ffd699" data-name="HIP 91117" data-meta="mag 3.85"/>
+<circle class="star" cx="67.1" cy="392.9" r="1.9" fill="#ffd699" data-name="HIP 92175" data-meta="mag 4.22"/>
+<circle class="star" cx="392.9" cy="67.1" r="1.6" fill="#ffffff" data-name="HIP 90595" data-meta="mag 4.67"/>
+<circle class="star" cx="155.9" cy="250.1" r="1.6" fill="#ffffff" data-name="HIP 91726" data-meta="mag 4.7"/>
+<circle class="star" cx="133.3" cy="275.9" r="1.5" fill="#ffd699" data-name="HIP 91845" data-meta="mag 4.88"/>
+<circle class="star" cx="102.9" cy="238.5" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M26" data-meta="oc"/>
+<circle cx="102.9" cy="238.5" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
+</svg>

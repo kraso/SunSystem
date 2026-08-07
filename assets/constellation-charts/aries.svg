@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="460" height="460" fill="#05060c"/>
+<polyline points="67.1,392.9 314.2,237.5 386.5,129.0 392.9,67.1" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<circle class="star" cx="645.7" cy="734.8" r="3.1" fill="#ffb366" data-name="Hamal" data-meta="mag 2.07"/>
+<text x="651.8" y="737.8" fill="#aebfe0" font-size="9">Hamal</text>
+<circle class="star" cx="386.5" cy="129.0" r="2.7" fill="#ffffff" data-name="Mesarthim" data-meta="mag 2.64"/>
+<text x="392.3" y="132.0" fill="#aebfe0" font-size="9">Mesarthim</text>
+<circle class="star" cx="314.2" cy="237.6" r="3.1" fill="#ffd699" data-name="Menkar" data-meta="mag 2.01"/>
+<text x="320.3" y="240.6" fill="#aebfe0" font-size="9">Menkar</text>
+<circle class="star" cx="67.1" cy="392.9" r="2.2" fill="#cfe0ff" data-name="HIP 13209" data-meta="mag 3.61"/>
+<circle class="star" cx="392.9" cy="67.1" r="2.1" fill="#cfe0ff" data-name="HIP 8832" data-meta="mag 3.88"/>
+<circle class="star" cx="104.8" cy="411.1" r="1.6" fill="#cfe0ff" data-name="HIP 12719" data-meta="mag 4.65"/>
+<circle class="star" cx="367.5" cy="243.0" r="1.6" fill="#ffffff" data-name="HIP 9153" data-meta="mag 4.79"/>
+<circle class="star" cx="301.2" cy="338.9" r="1.5" fill="#ffffff" data-name="HIP 10053" data-meta="mag 4.98"/>
+</svg>

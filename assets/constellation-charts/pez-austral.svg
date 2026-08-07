@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="460" height="460" fill="#05060c"/>
+<polyline points="143.3,392.9 67.1,252.5 74.7,93.6 90.1,75.3 184.3,104.1 287.9,69.1 392.9,67.1 380.4,183.0 287.9,69.1 143.3,392.9" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<circle class="star" cx="1124.5" cy="1553.3" r="2.0" fill="#ffd699" data-name="Fomalhaut" data-meta="mag 4.02"/>
+<text x="1129.5" y="1556.3" fill="#aebfe0" font-size="9">Fomalhaut</text>
+<circle class="star" cx="67.1" cy="252.5" r="3.6" fill="#ffffff" data-name="HIP 113368" data-meta="mag 1.17"/>
+<circle class="star" cx="143.3" cy="392.9" r="1.9" fill="#cfe0ff" data-name="HIP 111954" data-meta="mag 4.18"/>
+<circle class="star" cx="74.7" cy="93.6" r="1.9" fill="#fff2cc" data-name="HIP 113246" data-meta="mag 4.2"/>
+<circle class="star" cx="184.3" cy="104.1" r="1.8" fill="#ffffff" data-name="HIP 111188" data-meta="mag 4.29"/>
+<circle class="star" cx="392.9" cy="67.1" r="1.8" fill="#cfe0ff" data-name="HIP 107380" data-meta="mag 4.35"/>
+<circle class="star" cx="90.1" cy="75.3" r="1.7" fill="#cfe0ff" data-name="HIP 112948" data-meta="mag 4.46"/>
+<circle class="star" cx="287.9" cy="69.1" r="1.7" fill="#ffffff" data-name="HIP 109285" data-meta="mag 4.5"/>
+<circle class="star" cx="280.0" cy="93.1" r="1.5" fill="#ffffff" data-name="HIP 109422" data-meta="mag 4.94"/>
+</svg>

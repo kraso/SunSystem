@@ -8,7 +8,7 @@ export class StatsPanel {
   private overlay: HTMLElement;
   private grid: HTMLElement;
   private visible: boolean = false;
-  private cache: Map<string, string> = new Map();
+  private cache: Map<string, string[]> = new Map();
 
   constructor(private bodies: CelestialBodyData[]) {
     // Overlay
@@ -46,7 +46,7 @@ export class StatsPanel {
   show(): void {
     this.visible = true;
     this.overlay.className = 'stats-visible';
-    this.buildCards();
+    this.buildList();
   }
 
   hide(): void {
@@ -58,74 +58,176 @@ export class StatsPanel {
     this.visible ? this.hide() : this.show();
   }
 
-  private buildCards(): void {
+  private buildList(): void {
     this.grid.innerHTML = '';
 
+    // Agrupar cuerpos por tipo (excluir estrella)
+    const groupDefs: { type: string; label: string; bodies: CelestialBodyData[] }[] = [
+      { type: 'terrestrial', label: '🪨 Planetas rocosos', bodies: [] },
+      { type: 'gas_giant',   label: '🌀 Gigantes gaseosos', bodies: [] },
+      { type: 'ice_giant',   label: '❄️ Gigantes de hielo', bodies: [] },
+      { type: 'moon',        label: '🌙 Satélites', bodies: [] },
+    ];
+
     for (const body of this.bodies) {
-      if (body.type === 'star') continue; // El Sol ya ocupa mucho
+      if (body.type === 'star') continue;
+      const group = groupDefs.find(g => g.type === body.type);
+      if (group) group.bodies.push(body);
+    }
 
-      const card = document.createElement('div');
-      card.className = `stats-card type-${body.type}`;
-      card.innerHTML = `
-        <div class="stats-img-container">
-          <img class="stats-img" src="" alt="${body.label}" loading="lazy" />
-          <div class="stats-img-placeholder">🔭</div>
-        </div>
-        <div class="stats-info">
-          <h3>${body.label}</h3>
-          <span class="stats-type">${this.typeLabel(body.type)}${body.parent ? ` · ${body.parent}` : ''}</span>
-          <table>
-            <tr><td>Radio</td><td>${this.fmt(body.radiusKm)} km</td></tr>
-            <tr><td>Masa</td><td>${this.fmtMass(body.massKg)} kg</td></tr>
-            ${body.semiMajorAxisAu > 0 ? `<tr><td>Distancia orbital</td><td>${body.semiMajorAxisAu.toFixed(4)} UA</td></tr>` : ''}
-            ${body.orbitalPeriodDays > 0 ? `<tr><td>Período orbital</td><td>${this.fmt(body.orbitalPeriodDays)} días</td></tr>` : ''}
-            <tr><td>Excentricidad</td><td>${body.eccentricity.toFixed(4)}</td></tr>
-            <tr><td>Inclinación</td><td>${body.inclinationDeg.toFixed(2)}°</td></tr>
-          </table>
-          <p class="stats-desc">${body.description}</p>
-        </div>
-      `;
-      this.grid.appendChild(card);
+    // Ordenar dentro de cada grupo: planetas por distancia orbital,
+    // lunas por radio descendente (más grande primero)
+    for (const group of groupDefs) {
+      if (group.type === 'moon') {
+        group.bodies.sort((a, b) => b.radiusKm - a.radiusKm);
+      } else {
+        group.bodies.sort((a, b) => a.semiMajorAxisAu - b.semiMajorAxisAu);
+      }
+    }
 
-      // Cargar imagen de la NASA
-      this.loadNasaImage(body.name, card.querySelector('.stats-img') as HTMLImageElement);
+    for (const group of groupDefs) {
+      if (group.bodies.length === 0) continue;
+
+      const section = document.createElement('div');
+      section.className = 'stats-section';
+      section.innerHTML = `<h2 class="stats-section-title">${group.label}</h2>`;
+
+      const list = document.createElement('div');
+      list.className = 'stats-list';
+
+      for (const body of group.bodies) {
+        const item = document.createElement('button');
+        item.className = 'stats-list-item';
+        item.type = 'button';
+        item.dataset.name = body.name;
+        item.innerHTML = `<span class="stats-list-dot type-${body.type}"></span>${body.label}`;
+
+        const slot = document.createElement('div');
+        slot.className = 'stats-card-slot';
+        slot.dataset.name = body.name;
+
+        item.addEventListener('click', () => {
+          if (slot.childElementCount === 0) {
+            slot.appendChild(this.createCard(body));
+          }
+          const open = slot.classList.toggle('open');
+          item.classList.toggle('active', open);
+        });
+
+        list.appendChild(item);
+        list.appendChild(slot);
+      }
+
+      section.appendChild(list);
+      this.grid.appendChild(section);
     }
   }
 
-  /** Busca imagen en la API pública de NASA Images */
-  private async loadNasaImage(query: string, imgEl: HTMLImageElement): Promise<void> {
-    // Usar caché
-    if (this.cache.has(query)) {
-      imgEl.src = this.cache.get(query)!;
-      imgEl.style.display = 'block';
+  private createCard(body: CelestialBodyData): HTMLElement {
+    const card = document.createElement('div');
+    card.className = `stats-card type-${body.type}`;
+    card.innerHTML = `
+      <div class="stats-gallery">
+        <div class="stats-img-container">
+          <div class="stats-img-placeholder">🔭</div>
+        </div>
+      </div>
+      <div class="stats-info">
+        <h3>${body.label}</h3>
+        <span class="stats-type">${this.typeLabel(body.type)}${body.parent ? ` · ${body.parent}` : ''}</span>
+        <table>
+          <tr><td>Radio</td><td>${this.fmt(body.radiusKm)} km</td></tr>
+          <tr><td>Masa</td><td>${this.fmtMass(body.massKg)} kg</td></tr>
+          ${body.semiMajorAxisAu > 0 ? `<tr><td>Distancia orbital</td><td>${body.semiMajorAxisAu.toFixed(4)} UA</td></tr>` : ''}
+          ${body.orbitalPeriodDays > 0 ? `<tr><td>Período orbital</td><td>${this.fmt(body.orbitalPeriodDays)} días</td></tr>` : ''}
+          <tr><td>Excentricidad</td><td>${body.eccentricity.toFixed(4)}</td></tr>
+          <tr><td>Inclinación</td><td>${body.inclinationDeg.toFixed(2)}°</td></tr>
+        </table>
+        <p class="stats-desc">${body.description}</p>
+      </div>
+    `;
+
+    // Cargar fotos reales locales (assets/photos) en carrusel rotativo
+    this.loadPhotos(body, card.querySelector('.stats-gallery') as HTMLElement);
+    return card;
+  }
+
+  /** Carga las fotos reales de assets/photos/ en un carrusel rotativo. */
+  private async loadPhotos(body: CelestialBodyData, gallery: HTMLElement): Promise<void> {
+    const cacheKey = body.name;
+    if (this.cache.has(cacheKey)) {
+      this.renderGallery(gallery, this.cache.get(cacheKey)!);
       return;
     }
 
-    try {
-      const url = `https://images-api.nasa.gov/search?q=${encodeURIComponent(query + ' planet')}&media_type=image`;
-      const resp = await fetch(url);
-      const data = await resp.json();
-
-      const items = data?.collection?.items;
-      if (items && items.length > 0) {
-        // Tomar la primera imagen con thumbnail
-        for (const item of items) {
-          const href = item?.links?.[0]?.href;
-          if (href) {
-            this.cache.set(query, href);
-            imgEl.src = href;
-            imgEl.style.display = 'block';
-            imgEl.onerror = () => { imgEl.style.display = 'none'; };
-            return;
-          }
-        }
-      }
-    } catch {
-      // fallback silencioso
+    const photos: string[] = [];
+    for (let i = 1; i <= 4; i++) {
+      photos.push(`/photos/${body.name}-${i}.jpg`);
     }
 
-    // Si no hay imagen, mostrar placeholder
-    imgEl.style.display = 'none';
+    // Fallback: si no hay fotos locales, usar la textura del cuerpo
+    const hasLocal = body.textures?.diffuse;
+    if (!hasLocal && photos.length === 0) {
+      this.renderGallery(gallery, []);
+      return;
+    }
+
+    this.cache.set(cacheKey, photos);
+    this.renderGallery(gallery, photos);
+  }
+
+  private renderGallery(gallery: HTMLElement, photos: string[]): void {
+    gallery.innerHTML = '';
+
+    // Fallback a textura local si no hay fotos
+    if (photos.length === 0) {
+      const ph = document.createElement('div');
+      ph.className = 'stats-img-container';
+      ph.innerHTML = '<div class="stats-img-placeholder">🔭</div>';
+      gallery.appendChild(ph);
+      return;
+    }
+
+    const track = document.createElement('div');
+    track.className = 'stats-gallery-track';
+
+    let active = 0;
+    const slides: { wrap: HTMLElement; img: HTMLImageElement }[] = [];
+
+    for (const src of photos) {
+      const wrap = document.createElement('div');
+      wrap.className = 'stats-img-container';
+      const img = document.createElement('img');
+      img.className = 'stats-img';
+      img.alt = '';
+      img.loading = 'lazy';
+      img.src = src;
+      img.onerror = () => { wrap.style.display = 'none'; };
+      wrap.appendChild(img);
+      track.appendChild(wrap);
+      slides.push({ wrap, img });
+    }
+
+    gallery.appendChild(track);
+
+    // Rotación automática cada 3.5s (solo si hay >1 foto)
+    if (slides.length > 1) {
+      const timer = window.setInterval(() => {
+        slides[active].wrap.classList.remove('active');
+        active = (active + 1) % slides.length;
+        slides[active].wrap.classList.add('active');
+      }, 3500);
+      // Limpiar timer si la card se elimina del DOM
+      const observer = new MutationObserver(() => {
+        if (!gallery.isConnected) {
+          window.clearInterval(timer);
+          observer.disconnect();
+        }
+      });
+      observer.observe(gallery, { childList: true, subtree: true });
+    }
+
+    slides[0].wrap.classList.add('active');
   }
 
   private fmt(n: number): string {

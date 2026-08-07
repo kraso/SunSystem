@@ -10,6 +10,7 @@ import { TimeControls } from './ui/time-controls';
 import { Labels } from './ui/labels';
 import { StatsPanel } from './ui/stats-panel';
 import { MoonPanel } from './ui/moon-panel';
+import { ControlsLegend } from './ui/controls-legend';
 import celestialBodiesData from './data/celestial-bodies.json';
 import type { CelestialBodyData } from './core/types';
 
@@ -26,6 +27,7 @@ const timeControls = new TimeControls(timeManager);
 const labels = new Labels(camera.camera);
 const statsPanel = new StatsPanel(celestialBodiesData as CelestialBodyData[]);
 const moonPanel = new MoonPanel();
+new ControlsLegend();
 
 const simScene = solarSystem.scene;
 solarSystem.load(celestialBodiesData as CelestialBodyData[]);
@@ -34,7 +36,9 @@ solarSystem.load(celestialBodiesData as CelestialBodyData[]);
 labels.createForBodies(solarSystem.getAllBodies());
 
 // ─── Cámara inicial ──────────────────────────────────────────────────
-camera.lookAt(new THREE.Vector3(0, 0, 0), 50);
+// Distancia suficiente para ver todo el sistema solar (incluido Neptuno,
+// ~30 UA · AU_SCALE = 450 unidades de escena) al arrancar.
+camera.lookAt(new THREE.Vector3(0, 0, 0), 470);
 
 // ─── Interactividad ──────────────────────────────────────────────────
 
@@ -63,6 +67,16 @@ document.getElementById('btn-luna')?.addEventListener('click', () => {
   moonPanel.toggle();
 });
 
+// ─── Toggle de líneas orbitales ────────────────────────────────────
+let orbitsVisible = true;
+const btnOrbits = document.getElementById('btn-orbits');
+btnOrbits?.addEventListener('click', () => {
+  orbitsVisible = !orbitsVisible;
+  solarSystem.setOrbitLinesVisible(orbitsVisible);
+  btnOrbits.classList.toggle('active', orbitsVisible);
+});
+btnOrbits?.classList.add('active');
+
 bindKeyboard({
   onPauseToggle: () => {
     timeManager.togglePause();
@@ -78,6 +92,31 @@ bindKeyboard({
     timeControls.updateUI();
   },
 });
+
+// ─── Selector de planeta (top-bar) ─────────────────────────────────
+const focusSelect = document.getElementById('focus-planet') as HTMLSelectElement;
+if (focusSelect) {
+  // Poblar opciones desde celestial-bodies.json
+  const sorted = [...celestialBodiesData]
+    .sort((a, b) => (b.displayRadius ?? 0) - (a.displayRadius ?? 0));
+  for (const body of sorted) {
+    const opt = document.createElement('option');
+    opt.value = body.name;
+    opt.textContent = body.label;
+    focusSelect.appendChild(opt);
+  }
+
+  focusSelect.addEventListener('change', () => {
+    const name = focusSelect.value;
+    if (!name) return;
+    const body = solarSystem.getAllBodies().find(b => b.data.name === name);
+    if (!body) return;
+    const pos = body.getWorldPosition();
+    const dist = Math.max(body.visualRadius * 6, 3);
+    camera.lookAt(pos, dist);
+    focusSelect.value = ''; // reset a placeholder
+  });
+}
 
 // ─── Loop de renderizado ─────────────────────────────────────────────
 

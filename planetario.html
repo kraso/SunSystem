@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SunSystem — Planetario</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" />
+  <link rel="stylesheet" href="/src/ui/styles.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <div id="pl-labels"></div>
+
+  <!-- HUD planetario -->
+  <div id="top-bar">
+    <span id="logo">🌌 Planetario</span>
+    <a id="back-link" class="btn-hud" href="/index.html" title="Volver a SunSystem">← SunSystem</a>
+    <select id="province-select" class="btn-hud" title="Provincia (cielo observable)">
+      <option value="">→ Provincia</option>
+    </select>
+  </div>
+
+  <div id="planetario-controls">
+    <div class="pl-row">
+      <label>Hora local</label>
+      <input type="datetime-local" id="pl-datetime" />
+    </div>
+    <div class="pl-row">
+      <label><input type="checkbox" id="pl-lines" checked /> Constelaciones</label>
+      <label><input type="checkbox" id="pl-deepsky" checked /> Cielo profundo</label>
+    </div>
+    <div class="pl-row">
+      <label><input type="checkbox" id="pl-const-labels" checked /> Nombres constelaciones</label>
+      <label><input type="checkbox" id="pl-obj-labels" checked /> Nombres objetos</label>
+    </div>
+    <div class="pl-hint">Arrastra para mirar el cielo · rueda para zoom · pasa el ratón sobre una estrella para ver su nombre</div>
+  </div>
+
+  <div id="pl-tooltip"></div>
+
+  <!-- Leyenda de objetos astronómicos -->
+  <div id="pl-legend">
+    <div id="pl-legend-head">
+      <span>Objetos astronómicos</span>
+      <button id="pl-legend-toggle" title="Colapsar/expandir">–</button>
+    </div>
+    <input type="text" id="pl-search" placeholder="Buscar objeto…" autocomplete="off" />
+    <details id="pl-coord-help">
+      <summary>Coordenadas ecuatoriales</summary>
+      <p>Utilizan la <strong>Declinación</strong> (análogo a la latitud, medida desde el ecuador celeste) y la <strong>Ascensión Recta</strong> (análogo a la longitud, medida desde el punto vernal). Este sistema es fijo respecto a las estrellas y no varía con la rotación terrestre, siendo el estándar para mapas estelares y catálogos.</p>
+    </details>
+    <div id="pl-legend-list"></div>
+  </div>
+
+  <script type="module" src="/src/planetario-app.ts"></script>
+</body>
+</html>

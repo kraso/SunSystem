@@ -3,5 +3,10 @@ dist/
 *.tsbuildinfo
 .DS_Store
 Thumbs.db
-PLAN.md 
-
+PLAN.md
+nul
+.hermes
+.playwright-cli
+.hermes-tmp*
+*.log
+verify-*.png

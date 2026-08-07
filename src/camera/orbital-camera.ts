@@ -52,7 +52,7 @@ export class OrbitalCamera {
 
     // Límites
     this.minDistance = 1;
-    this.maxDistance = 200;
+    this.maxDistance = 700;
     this.minPhi = 0.1;
     this.maxPhi = Math.PI - 0.1;
 

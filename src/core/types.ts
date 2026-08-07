@@ -90,3 +90,43 @@ export interface EclipseEvent {
   /** Nota breve. */
   note: string;
 }
+
+// ─── Planetario (cúpula celeste) ────────────────────────────────────────
+
+/** Estrella del catálogo Hipparcos (mag <= 5). */
+export interface StarData {
+  hip: number;
+  ra: number; // grados
+  dec: number; // grados
+  mag: number;
+  bv: string | null;
+  name: string | null;
+  con: string | null;
+}
+
+/** Líneas de una constelación (coordenadas [ra, dec] en grados). */
+export interface ConstellationData {
+  id: string;
+  name: string;
+  lines: [number, number][][];
+}
+
+/** Objeto de cielo profundo (Messier/NGC). */
+export interface DeepSkyData {
+  id: string;
+  name: string | null;
+  desig: string | null;
+  alt: string | null;
+  type: string | null;
+  typeName: string | null;
+  mag: number | null;
+  ra: number; // grados
+  dec: number; // grados
+}
+
+/** Provincia española con su latitud/longitud. */
+export interface ProvinceData {
+  name: string;
+  lat: number;
+  lon: number;
+}

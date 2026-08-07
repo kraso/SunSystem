@@ -1,0 +1,262 @@
+[
+{
+"name": "Álava",
+"lat": 42.8467,
+"lon": -2.6746
+},
+{
+"name": "Albacete",
+"lat": 38.9943,
+"lon": -1.856
+},
+{
+"name": "Alicante",
+"lat": 38.3453,
+"lon": -0.4818
+},
+{
+"name": "Almería",
+"lat": 36.8402,
+"lon": -2.4584
+},
+{
+"name": "Asturias",
+"lat": 43.3614,
+"lon": -5.8593
+},
+{
+"name": "Ávila",
+"lat": 40.6564,
+"lon": -4.6866
+},
+{
+"name": "Badajoz",
+"lat": 38.8783,
+"lon": -6.9706
+},
+{
+"name": "Barcelona",
+"lat": 41.3851,
+"lon": 2.1734
+},
+{
+"name": "Burgos",
+"lat": 42.3439,
+"lon": -3.6969
+},
+{
+"name": "Cáceres",
+"lat": 39.4703,
+"lon": -6.372
+},
+{
+"name": "Cádiz",
+"lat": 36.5298,
+"lon": -6.2926
+},
+{
+"name": "Cantabria",
+"lat": 43.2046,
+"lon": -3.7916
+},
+{
+"name": "Castellón",
+"lat": 39.9868,
+"lon": -0.0491
+},
+{
+"name": "Ceuta",
+"lat": 35.8894,
+"lon": -5.315
+},
+{
+"name": "Ciudad Real",
+"lat": 38.9849,
+"lon": -3.9274
+},
+{
+"name": "Córdoba",
+"lat": 37.8882,
+"lon": -4.7794
+},
+{
+"name": "La Coruña",
+"lat": 43.263,
+"lon": -8.4155
+},
+{
+"name": "Cuenca",
+"lat": 40.0706,
+"lon": -2.1374
+},
+{
+"name": "Gerona",
+"lat": 41.9793,
+"lon": 2.8214
+},
+{
+"name": "Granada",
+"lat": 37.1773,
+"lon": -3.5986
+},
+{
+"name": "Guadalajara",
+"lat": 40.6333,
+"lon": -3.1667
+},
+{
+"name": "Guipúzcoa",
+"lat": 43.3183,
+"lon": -1.981
+},
+{
+"name": "Huelva",
+"lat": 37.2614,
+"lon": -6.9447
+},
+{
+"name": "Huesca",
+"lat": 42.1408,
+"lon": -0.4089
+},
+{
+"name": "Islas Baleares",
+"lat": 39.6953,
+"lon": 2.6489
+},
+{
+"name": "Jaén",
+"lat": 37.7692,
+"lon": -3.7907
+},
+{
+"name": "León",
+"lat": 42.5987,
+"lon": -5.5671
+},
+{
+"name": "Lérida",
+"lat": 41.6176,
+"lon": 0.6201
+},
+{
+"name": "Lugo",
+"lat": 43.0099,
+"lon": -7.5566
+},
+{
+"name": "Madrid",
+"lat": 40.4168,
+"lon": -3.7038
+},
+{
+"name": "Málaga",
+"lat": 36.7213,
+"lon": -4.4214
+},
+{
+"name": "Melilla",
+"lat": 35.2923,
+"lon": -2.9381
+},
+{
+"name": "Murcia",
+"lat": 37.9922,
+"lon": -1.1307
+},
+{
+"name": "Navarra",
+"lat": 42.6954,
+"lon": -1.6761
+},
+{
+"name": "Orense",
+"lat": 42.3359,
+"lon": -7.8639
+},
+{
+"name": "Palencia",
+"lat": 42.0098,
+"lon": -4.5261
+},
+{
+"name": "Las Palmas",
+"lat": 28.1235,
+"lon": -15.4363
+},
+{
+"name": "Pontevedra",
+"lat": 42.4326,
+"lon": -8.6434
+},
+{
+"name": "La Rioja",
+"lat": 42.2871,
+"lon": -2.5396
+},
+{
+"name": "Salamanca",
+"lat": 40.9701,
+"lon": -5.6635
+},
+{
+"name": "Segovia",
+"lat": 40.9429,
+"lon": -4.1088
+},
+{
+"name": "Sevilla",
+"lat": 37.3891,
+"lon": -5.9845
+},
+{
+"name": "Soria",
+"lat": 41.7648,
+"lon": -2.4683
+},
+{
+"name": "Tarragona",
+"lat": 41.1189,
+"lon": 1.2445
+},
+{
+"name": "Santa Cruz de Tenerife",
+"lat": 28.4636,
+"lon": -16.2518
+},
+{
+"name": "Teruel",
+"lat": 40.344,
+"lon": -1.1069
+},
+{
+"name": "Toledo",
+"lat": 39.8628,
+"lon": -4.0273
+},
+{
+"name": "Valencia",
+"lat": 39.4699,
+"lon": -0.3763
+},
+{
+"name": "Valladolid",
+"lat": 41.6523,
+"lon": -4.7245
+},
+{
+"name": "Vizcaya",
+"lat": 43.263,
+"lon": -2.935
+},
+{
+"name": "Zamora",
+"lat": 41.5034,
+"lon": -5.7447
+},
+{
+"name": "Zaragoza",
+"lat": 41.6488,
+"lon": -0.8891
+}
+]
