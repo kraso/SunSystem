@@ -46,12 +46,14 @@ export class Labels {
       el.textContent = body.data.label;
       el.style.cssText = `
         position: absolute;
+        left: 0; top: 0;
         color: rgba(255,255,255,0.85);
         font-size: 11px;
         font-family: 'Segoe UI', system-ui, sans-serif;
         text-shadow: 0 0 6px rgba(0,0,0,0.8);
         white-space: nowrap;
-        transform: translate(-50%, -50%);
+        will-change: transform;
+        transform: translate3d(-50%, -50%, 0);
         pointer-events: none;
       `;
       this.container.appendChild(el);
@@ -91,8 +93,11 @@ export class Labels {
       }
 
       el.style.display = 'block';
-      el.style.left = `${x}px`;
-      el.style.top = `${y + body.visualRadius * 30}px`; // offset debajo del planeta
+      // Posicionado por GPU (translate3d) en vez de left/top para evitar
+      // el temblor de 1px al mover la cámara: las coordenadas sub-píxel se
+      // interpolan suavemente en la capa compuesta.
+      const offsetY = body.visualRadius * 30;
+      el.style.transform = `translate3d(${x}px, ${y + offsetY}px, 0) translate(-50%, -50%)`;
     }
   }
 }

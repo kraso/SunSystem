@@ -1,20 +1,21 @@
 import * as THREE from 'three';
 import type { CelestialBodyData } from '../core/types';
 import { createMaterial, loadTexture } from '../rendering/materials';
+import { createSunTexture } from '../rendering/tex-sun';
 import {
-  createSunTexture,
   createJupiterTexture,
   createSaturnTexture,
   createUranusTexture,
   createNeptuneTexture,
+} from '../rendering/tex-gas-giants';
+import {
   createEarthTexture,
   createMercuryTexture,
   createVenusTexture,
   createMarsTexture,
   createMoonTexture,
-  createIoTexture,
-  createEuropaTexture,
-} from '../rendering/procedural-textures';
+} from '../rendering/tex-terrestrial';
+import { createIoTexture, createEuropaTexture } from '../rendering/tex-moons';
 
 /**
  * Representa un cuerpo celeste en la escena 3D.
@@ -47,12 +48,15 @@ export class CelestialBody {
     const geometry = new THREE.SphereGeometry(this.visualRadius, 64, 64);
     const material = createMaterial(data);
 
-    const proceduralTex = this.getProceduralTexture(data.name);
-    if (proceduralTex) {
-      (material as THREE.MeshBasicMaterial | THREE.MeshStandardMaterial).map = proceduralTex;
+    // Prioriza la foto REAL del archivo; solo cae a procedural si falta.
+    const fileTex = loadTexture(textureLoader, data.textures.diffuse);
+    if (fileTex) {
+      (material as THREE.MeshStandardMaterial).map = fileTex;
     } else {
-      const fileTex = loadTexture(textureLoader, data.textures.diffuse);
-      if (fileTex) (material as THREE.MeshStandardMaterial).map = fileTex;
+      const proceduralTex = this.getProceduralTexture(data.name);
+      if (proceduralTex) {
+        (material as THREE.MeshBasicMaterial | THREE.MeshStandardMaterial).map = proceduralTex;
+      }
     }
 
     this.mesh = new THREE.Mesh(geometry, material);
@@ -183,10 +187,28 @@ export class CelestialBody {
     const innerR = (data.rings.innerRadiusKm / data.radiusKm) * this.visualRadius;
     const outerR = (data.rings.outerRadiusKm / data.radiusKm) * this.visualRadius;
 
-    const ringGeometry = new THREE.RingGeometry(innerR, outerR, 128);
+    const ringGeometry = new THREE.RingGeometry(innerR, outerR, 128, 1);
+
+    // UVs radiales: u = distancia normalizada al centro, v = ángulo.
+    // Así la textura de anillos (bandas concéntricas) se aplica correctamente.
+    const pos = ringGeometry.attributes.position;
+    const uv = ringGeometry.attributes.uv;
+    const v3 = new THREE.Vector3();
+    for (let i = 0; i < pos.count; i++) {
+      v3.fromBufferAttribute(pos, i);
+      const radius = v3.length();
+      const u = (radius - innerR) / (outerR - innerR);
+      const v = (Math.atan2(v3.z, v3.x) + Math.PI) / (2 * Math.PI);
+      uv.setXY(i, u, v);
+    }
+    uv.needsUpdate = true;
 
     // Dejar el anillo plano en XZ (el tiltGroup ya aplica la inclinación axial)
     ringGeometry.rotateX(-Math.PI / 2);
+
+    const ringTex = data.rings.texture
+      ? loadTexture(this.textureLoader, data.rings.texture)
+      : null;
 
     const ringMaterial = new THREE.MeshBasicMaterial({
       color: new THREE.Color(
@@ -194,6 +216,7 @@ export class CelestialBody {
         data.rings.color[1] / 255,
         data.rings.color[2] / 255,
       ),
+      map: ringTex || undefined,
       side: THREE.DoubleSide,
       transparent: true,
       opacity: data.rings.opacity,

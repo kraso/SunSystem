@@ -111,7 +111,9 @@ export class OrbitalCamera {
     // Rueda del ratón → zoom
     canvas.addEventListener('wheel', (e: WheelEvent) => {
       e.preventDefault();
-      this.zoom(e.deltaY * 0.01);
+      // Ctrl + scroll → zoom acelerado (más rápido)
+      const factor = e.ctrlKey ? 5 : 1;
+      this.zoom(e.deltaY * 0.01 * factor);
     }, { passive: false });
 
     // Mouse down → iniciar arrastre

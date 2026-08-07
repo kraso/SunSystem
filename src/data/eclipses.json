@@ -1,0 +1,92 @@
+[
+  {
+    "date": "2026-02-17",
+    "kind": "solar",
+    "subtype": "Anular",
+    "magnitude": "0,963",
+    "duration": "02m20s",
+    "visibility": "S Argentina/Chile, S África, Antártida (anular: Antártida)",
+    "bodies": "Sol–Luna",
+    "note": "Eclipse solar anular"
+  },
+  {
+    "date": "2026-08-12",
+    "kind": "solar",
+    "subtype": "Total",
+    "magnitude": "1,039",
+    "duration": "02m18s",
+    "visibility": "N Norteamérica, W África, Europa — total: Ártico, Groenlandia, Islandia, ESPAÑA",
+    "bodies": "Sol–Luna",
+    "note": "Eclipse solar total (visible en España)"
+  },
+  {
+    "date": "2027-02-06",
+    "kind": "solar",
+    "subtype": "Anular",
+    "magnitude": "0,928",
+    "duration": "07m51s",
+    "visibility": "Sudamérica, Antártida, W/S África (anular: Chile, Argentina, Atlántico)",
+    "bodies": "Sol–Luna",
+    "note": "Eclipse solar anular"
+  },
+  {
+    "date": "2027-08-02",
+    "kind": "solar",
+    "subtype": "Total",
+    "magnitude": "1,079",
+    "duration": "06m23s",
+    "visibility": "África, Europa, Oriente Medio, W/S Asia — total: Marruecos, ESPAÑA, Argelia, Libia, Egipto, Arabia Saudí, Yemen, Somalia",
+    "bodies": "Sol–Luna",
+    "note": "Eclipse solar total (visible en España)"
+  },
+  {
+    "date": "2026-03-03",
+    "kind": "lunar",
+    "subtype": "Total",
+    "magnitude": "1,151",
+    "duration": "03h27m (total 00h58m)",
+    "visibility": "E Asia, Australia, Pacífico, Américas",
+    "bodies": "Sol–Tierra–Luna",
+    "note": "Eclipse lunar total"
+  },
+  {
+    "date": "2026-08-28",
+    "kind": "lunar",
+    "subtype": "Parcial",
+    "magnitude": "0,930",
+    "duration": "03h18m",
+    "visibility": "E Pacífico, Américas, Europa, África",
+    "bodies": "Sol–Tierra–Luna",
+    "note": "Eclipse lunar parcial (visible en Europa)"
+  },
+  {
+    "date": "2027-02-20",
+    "kind": "lunar",
+    "subtype": "Penumbral",
+    "magnitude": "-0,057",
+    "duration": "—",
+    "visibility": "Américas, Europa, África, Asia",
+    "bodies": "Sol–Tierra–Luna",
+    "note": "Eclipse lunar penumbral"
+  },
+  {
+    "date": "2027-07-18",
+    "kind": "lunar",
+    "subtype": "Penumbral",
+    "magnitude": "-1,068",
+    "duration": "—",
+    "visibility": "E África, Asia, Australia, Pacífico",
+    "bodies": "Sol–Tierra–Luna",
+    "note": "Eclipse lunar penumbral"
+  },
+  {
+    "date": "2027-08-17",
+    "kind": "lunar",
+    "subtype": "Penumbral",
+    "magnitude": "-0,525",
+    "duration": "—",
+    "visibility": "Pacífico, Américas",
+    "bodies": "Sol–Tierra–Luna",
+    "note": "Eclipse lunar penumbral"
+  }
+]

@@ -75,7 +75,7 @@ Scene
 - Plano XZ = eclíptica (plano orbital de referencia)
 - Y positivo = norte celeste (arriba)
 - Origen (0, 0, 0) = Sol
-- 1 UA = 10 unidades de escena (AU_SCALE = 10)
+- 1 UA = 15 unidades de escena (AU_SCALE = 15, ver `src/core/constants.ts`)
 
 ## Datos Astronómicos
 

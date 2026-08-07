@@ -9,6 +9,7 @@ import { InfoPanel } from './ui/info-panel';
 import { TimeControls } from './ui/time-controls';
 import { Labels } from './ui/labels';
 import { StatsPanel } from './ui/stats-panel';
+import { MoonPanel } from './ui/moon-panel';
 import celestialBodiesData from './data/celestial-bodies.json';
 import type { CelestialBodyData } from './core/types';
 
@@ -16,7 +17,7 @@ import type { CelestialBodyData } from './core/types';
 
 const app = document.getElementById('app')!;
 const renderer = createRenderer(app);
-const timeManager = new TimeManager(30);
+const timeManager = new TimeManager(5);
 const solarSystem = new SolarSystem(timeManager);
 const camera = new OrbitalCamera();
 const raycaster = new CelestialRaycaster(camera.camera);
@@ -24,6 +25,7 @@ const infoPanel = new InfoPanel();
 const timeControls = new TimeControls(timeManager);
 const labels = new Labels(camera.camera);
 const statsPanel = new StatsPanel(celestialBodiesData as CelestialBodyData[]);
+const moonPanel = new MoonPanel();
 
 const simScene = solarSystem.scene;
 solarSystem.load(celestialBodiesData as CelestialBodyData[]);
@@ -57,6 +59,10 @@ document.getElementById('btn-stats')?.addEventListener('click', () => {
   statsPanel.toggle();
 });
 
+document.getElementById('btn-luna')?.addEventListener('click', () => {
+  moonPanel.toggle();
+});
+
 bindKeyboard({
   onPauseToggle: () => {
     timeManager.togglePause();
@@ -84,10 +90,13 @@ function animate(): void {
   timeManager.update(deltaSeconds);
   solarSystem.update();
 
-  // Actualizar posiciones de etiquetas
-  labels.update(solarSystem.getAllBodies());
-
   renderer.render(simScene, camera.camera);
+
+  // Actualizar etiquetas DESPUÉS del render: así camera.matrixWorldInverse
+  // ya está sincronizada con el frame y la proyección no va un frame atrasada
+  // (lo que causaba el temblor al mover la cámara).
+  camera.camera.updateMatrixWorld();
+  labels.update(solarSystem.getAllBodies());
 }
 
 animate();

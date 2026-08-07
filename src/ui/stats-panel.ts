@@ -20,6 +20,14 @@ export class StatsPanel {
         <h1>📊 Estadísticas del Sistema Solar</h1>
         <button id="stats-close">✕ Cerrar</button>
       </div>
+      <div id="stats-legend">
+        <span class="legend-title">Leyenda (color del borde = tipo):</span>
+        <span class="legend-item"><i class="swatch sw-terrestrial"></i>Rocoso</span>
+        <span class="legend-item"><i class="swatch sw-gas_giant"></i>Gigante gaseoso</span>
+        <span class="legend-item"><i class="swatch sw-ice_giant"></i>Gigante de hielo</span>
+        <span class="legend-item"><i class="swatch sw-moon"></i>Luna</span>
+        <span class="legend-item"><i class="swatch sw-dwarf_planet"></i>Planeta enano</span>
+      </div>
       <div id="stats-grid"></div>
     `;
     document.body.appendChild(this.overlay);

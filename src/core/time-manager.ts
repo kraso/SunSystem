@@ -17,7 +17,7 @@ export class TimeManager {
   /** Si la simulación está pausada */
   private _paused: boolean;
 
-  constructor(initialSpeed: number = 30) {
+  constructor(initialSpeed: number = 5) {
     this._simDays = 0;
     this._speed = initialSpeed;
     this._paused = false;

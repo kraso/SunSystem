@@ -77,13 +77,14 @@ SunSystem/
 │   │   └── types.ts           # Interfaces: CelestialBody, OrbitalElements, etc.
 │   │
 │   ├── rendering/             # Capa de renderizado Three.js
-│   │   ├── renderer.ts        # WebGLRenderer setup + post-procesado
+│   │   ├── renderer.ts        # WebGLRenderer setup (LinearToneMapping, exposure 3.0)
 │   │   ├── materials.ts       # Fábrica de materiales PBR por tipo de cuerpo
-│   │   ├── shaders/           # GLSL shaders
-│   │   │   ├── sun-glow.ts    # Shader de corona/glow solar
-│   │   │   ├── ring.ts        # Shader de anillos de Saturno
-│   │   │   └── starfield.ts   # Shader de fondo estelar procedural
-│   │   └── post-processing.ts # Bloom, tonemapping ACES
+│   │   ├── tex-utils.ts       # Helpers compartidos (canvas → CanvasTexture, color utils)
+│   │   ├── tex-sun.ts         # Textura procedural del Sol
+│   │   ├── tex-gas-giants.ts  # Júpiter, Saturno, Urano, Neptuno
+│   │   ├── tex-terrestrial.ts # Tierra, Mercurio, Venus, Marte, Luna
+│   │   ├── tex-moons.ts       # Ío, Europa
+│   │   └── starfield.ts       # Fondo estelar procedural
 │   │
 │   ├── scene/                 # Objetos de escena
 │   │   ├── solar-system.ts    # Orquestador: crea todos los cuerpos
@@ -232,7 +233,7 @@ Para cada cuerpo en cada frame:
    ```
 
 ### Escala en la escena
-- **1 UA = 10 unidades de escena** (ajustable con constante)
+- **1 UA = 15 unidades de escena** (`AU_SCALE = 15`, ver `src/core/constants.ts`)
 - **Radio solar:** escala logarítmica para visibilidad sin perder proporción
 - **Radios planetarios:** multiplicados por factor 1000 respecto a la escala de distancias (escala artística)
 - **Toggle "escala realista":** usar factores 1:1 (planetas diminutos, distancias enormes)
@@ -268,10 +269,10 @@ class TimeManager {
 - **AmbientLight** tenue (intensidad 0.05) para que el lado oscuro no sea negro puro
 - **No directional light adicional** — solo el Sol ilumina
 
-### Post-procesado (Three.js EffectComposer)
-1. **BloomPass** (UnrealBloomPass): glow solar y destellos
-2. **ToneMapping** (ACESFilmicToneMapping): rango dinámico cinematográfico
-3. **FXAA** o **SMAA**: anti-aliasing
+### Post-procesado y tone mapping
+- **Tone mapping:** `LinearToneMapping` con `toneMappingExposure = 3.0` (`src/rendering/renderer.ts`). Se eligió lineal en lugar de ACES Filmic porque realza la viveza de los colores de los cuerpos.
+- **Bloom/glow solar:** el Sol usa `MeshBasicMaterial` (brillo propio, sin depender de luces) + una `glowMesh` adicional; no se usa `EffectComposer`/`UnrealBloomPass` para mantener el bundle ligero y evitar dependencias extra de post-procesado.
+- **Anti-aliasing:** `antialias: true` en el `WebGLRenderer` (MSAA nativo).
 
 ### Fondo estelar
 - Shader procedural (no skybox de 6 texturas)

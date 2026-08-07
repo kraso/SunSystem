@@ -11,6 +11,7 @@ export interface RingConfig {
   outerRadiusKm: number;
   color: [number, number, number];
   opacity: number;
+  texture?: string;
 }
 
 /** Mapas de texturas */
@@ -68,4 +69,24 @@ export interface OrbitalElements {
   argumentOfPeriapsisRad: number;
   meanAnomalyAtEpochRad: number;
   orbitalPeriodDays: number;
+}
+
+/** Evento astronómico (eclipse) curado desde fuentes verificadas. */
+export interface EclipseEvent {
+  /** Fecha ISO (YYYY-MM-DD). */
+  date: string;
+  /** Tipo de eclipse. */
+  kind: 'solar' | 'lunar';
+  /** Subtipo: Total, Parcial, Anular, Penumbral. */
+  subtype: string;
+  /** Magnitud (texto, conserva formato original). */
+  magnitude: string;
+  /** Duración del evento. */
+  duration: string;
+  /** Región de visibilidad. */
+  visibility: string;
+  /** Cuerpos implicados. */
+  bodies: string;
+  /** Nota breve. */
+  note: string;
 }
