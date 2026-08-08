@@ -2,6 +2,9 @@
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="438.6,73.6 455.0,432.9 65.0,446.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <circle class="star" cx="438.6" cy="73.6" r="3.2" fill="#ffffff" data-name="HIP 64241" data-meta="mag 4.32"/>
+<circle class="star" cx="455.0" cy="432.9" r="3.3" fill="#fff2cc" data-name="HIP 64394" data-meta="mag 4.23"/>
+<circle class="star" cx="65.0" cy="446.4" r="3.2" fill="#ffd699" data-name="Zubenelgenubi" data-meta="mag 4.35"/>
+<text x="72.2" y="450.4" fill="#cfe0ff" font-size="12" font-weight="bold">Zubenelgenubi</text>
 <circle class="star" cx="133.7" cy="250.7" r="3.0" fill="#ffffff" data-name="HIP 61394" data-meta="mag 4.8"/>
 <circle class="star" cx="293.8" cy="202.6" r="3.0" fill="#fff2cc" data-name="HIP 62886" data-meta="mag 4.89"/>
 <circle class="star" cx="323.3" cy="217.8" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M64" data-meta="s"/>

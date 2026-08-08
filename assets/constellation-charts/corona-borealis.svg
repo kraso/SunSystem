@@ -1,4 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="124.2,382.8 65.0,278.2 144.6,167.3 238.0,147.8 317.5,137.2 410.3,174.8 455.0,312.8" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="124.2" cy="382.8" r="3.3" fill="#cfe0ff" data-name="HIP 76127" data-meta="mag 4.14"/>
+<circle class="star" cx="65.0" cy="278.2" r="3.6" fill="#ffffff" data-name="HIP 75695" data-meta="mag 3.66"/>
+<circle class="star" cx="144.6" cy="167.2" r="4.3" fill="#ffffff" data-name="Unukalhai" data-meta="mag 2.22"/>
+<text x="152.9" y="171.2" fill="#cfe0ff" font-size="12" font-weight="bold">Unukalhai</text>
+<circle class="star" cx="238.0" cy="147.8" r="3.5" fill="#ffffff" data-name="HIP 76952" data-meta="mag 3.81"/>
+<circle class="star" cx="317.5" cy="137.3" r="3.1" fill="#fff2cc" data-name="HIP 77512" data-meta="mag 4.59"/>
+<circle class="star" cx="410.3" cy="174.8" r="3.3" fill="#ffd699" data-name="HIP 78159" data-meta="mag 4.14"/>
+<circle class="star" cx="455.0" cy="312.8" r="2.9" fill="#cfe0ff" data-name="HIP 78493" data-meta="mag 4.98"/>
 </svg>

@@ -1,9 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="378.4,313.2 215.7,329.1 177.1,256.8 140.9,134.2 252.2,65.0 379.1,195.7 378.4,313.2 378.4,455.0 215.7,329.1 159.8,296.1 161.7,254.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="378.4" cy="313.2" r="4.5" fill="#ffffff" data-name="Hassaleh" data-meta="mag 1.9"/>
+<text x="386.8" y="317.2" fill="#cfe0ff" font-size="12" font-weight="bold">Hassaleh</text>
+<circle class="star" cx="215.7" cy="329.1" r="5.4" fill="#fff2cc" data-name="Elnath" data-meta="mag 0.08"/>
+<text x="225.1" y="333.1" fill="#cfe0ff" font-size="12" font-weight="bold">Elnath</text>
+<circle class="star" cx="177.1" cy="256.8" r="3.8" fill="#cfe0ff" data-name="HIP 23767" data-meta="mag 3.18"/>
+<circle class="star" cx="140.9" cy="134.2" r="4.1" fill="#ffd699" data-name="HIP 23015" data-meta="mag 2.69"/>
+<circle class="star" cx="252.2" cy="65.0" r="4.6" fill="#cfe0ff" data-name="Rigel" data-meta="mag 1.65"/>
+<text x="260.7" y="69.0" fill="#cfe0ff" font-size="12" font-weight="bold">Rigel</text>
+<circle class="star" cx="379.1" cy="195.7" r="4.1" fill="#cfe0ff" data-name="HIP 28380" data-meta="mag 2.65"/>
+<circle class="star" cx="378.4" cy="455.0" r="3.5" fill="#ffd699" data-name="HIP 28358" data-meta="mag 3.72"/>
+<circle class="star" cx="159.8" cy="296.1" r="3.9" fill="#fff2cc" data-name="HIP 23416" data-meta="mag 3.03"/>
+<circle class="star" cx="161.7" cy="254.4" r="3.6" fill="#ffd699" data-name="HIP 23453" data-meta="mag 3.69"/>
 <circle class="star" cx="247.8" cy="-273.1" r="4.6" fill="#cfe0ff" data-name="Capella" data-meta="mag 1.64"/>
 <text x="256.3" y="-269.1" fill="#cfe0ff" font-size="12" font-weight="bold">Capella</text>
-<circle class="star" cx="378.4" cy="455.0" r="3.5" fill="#ffd699" data-name="HIP 28358" data-meta="mag 3.72"/>
 <circle class="star" cx="142.0" cy="446.9" r="3.2" fill="#cfe0ff" data-name="HIP 23040" data-meta="mag 4.43"/>
 <circle class="star" cx="177.7" cy="414.2" r="2.9" fill="#ffffff" data-name="HIP 23783" data-meta="mag 4.98"/>
 </svg>

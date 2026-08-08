@@ -4,14 +4,16 @@
 <polyline points="173.0,270.8 162.6,316.1 86.9,348.9 65.0,320.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <circle class="star" cx="136.3" cy="171.1" r="4.7" fill="#cfe0ff" data-name="Regulus" data-meta="mag 1.36"/>
 <text x="145.0" y="175.1" fill="#cfe0ff" font-size="12" font-weight="bold">Regulus</text>
+<circle class="star" cx="133.0" cy="231.8" r="3.7" fill="#cfe0ff" data-name="HIP 49583" data-meta="mag 3.48"/>
 <circle class="star" cx="173.0" cy="270.8" r="4.4" fill="#ffd699" data-name="HIP 50583" data-meta="mag 2.01"/>
+<circle class="star" cx="344.4" cy="279.5" r="4.1" fill="#ffffff" data-name="HIP 54872" data-meta="mag 2.56"/>
 <circle class="star" cx="455.0" cy="204.1" r="4.3" fill="#ffffff" data-name="Zosma" data-meta="mag 2.14"/>
 <text x="463.3" y="208.1" fill="#cfe0ff" font-size="12" font-weight="bold">Zosma</text>
-<circle class="star" cx="344.4" cy="279.5" r="4.1" fill="#ffffff" data-name="HIP 54872" data-meta="mag 2.56"/>
 <circle class="star" cx="344.8" cy="215.0" r="3.7" fill="#cfe0ff" data-name="Denebola" data-meta="mag 3.33"/>
 <text x="352.5" y="219.0" fill="#cfe0ff" font-size="12" font-weight="bold">Denebola</text>
 <circle class="star" cx="162.6" cy="316.1" r="3.7" fill="#ffffff" data-name="HIP 50335" data-meta="mag 3.43"/>
-<circle class="star" cx="133.0" cy="231.8" r="3.7" fill="#cfe0ff" data-name="HIP 49583" data-meta="mag 3.48"/>
+<circle class="star" cx="86.9" cy="348.9" r="3.5" fill="#ffd699" data-name="HIP 48455" data-meta="mag 3.88"/>
+<circle class="star" cx="65.0" cy="320.6" r="3.9" fill="#fff2cc" data-name="HIP 47908" data-meta="mag 2.97"/>
 <circle class="star" cx="548.0" cy="-790.8" r="3.4" fill="#cfe0ff" data-name="Chertan" data-meta="mag 4.06"/>
 <text x="555.4" y="-786.8" fill="#cfe0ff" font-size="12" font-weight="bold">Chertan</text>
 <circle class="star" cx="307.1" cy="275.1" r="3.2" fill="#ffffff" data-name="HIP 53954" data-meta="mag 4.42"/>

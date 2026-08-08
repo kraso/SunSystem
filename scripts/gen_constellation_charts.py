@@ -196,8 +196,37 @@ for c in conss:
             pts.append(f"{x:.1f},{y:.1f}")
         parts.append(f'<polyline points="{" ".join(pts)}" fill="none" '
                      f'stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>')
-    # estrellas (solo las que pertenecen a esta constelación)
-    for s in cstars:
+    # estrellas del asterismo (vértices de las líneas dibujadas) siempre visibles,
+    # resueltas a estrellas reales de stars.json por cercanía. Así el asterismo
+    # principal se dibuja completo aunque el catálogo asigne esas estrellas a
+    # otra constelación por solapamiento de recuadros (p.ej. Dragón envuelve al Carro).
+    def nearest_star(ra, dec):
+        rra = ra + 360.0 if ra < 0 else ra
+        best = None
+        best_d = 1.2  # grados
+        for s in stars:
+            sra = s["ra"] + 360.0 if s["ra"] < 0 else s["ra"]
+            d = ((sra - rra) ** 2 + (s["dec"] - dec) ** 2) ** 0.5
+            if d < best_d:
+                best_d = d
+                best = s
+        return best
+
+    asterism = []
+    seen_hip = set()
+    for ln in draw_lines:
+        for ra, dec in ln:
+            s = nearest_star(ra, dec)
+            if s and s.get("hip") not in seen_hip:
+                seen_hip.add(s.get("hip"))
+                asterism.append(s)
+
+    # estrellas (las del asterismo siempre + las que pertenecen a la constelación)
+    drawn_hip = set()
+    for s in asterism + cstars:
+        if s.get("hip") in drawn_hip:
+            continue
+        drawn_hip.add(s.get("hip"))
         x = ra_to_x(s["ra"], ra_min, ra_max, dec_min, dec_max, W, pad)
         y = dec_to_y(s["dec"], dec_min, dec_max, ra_min, ra_max, H, pad)
         r = star_radius(s["mag"])
@@ -238,9 +267,13 @@ for c in conss:
     with open(os.path.join(OUT_DIR, f"{slu}.svg"), "w", encoding="utf-8") as f:
         f.write(svg)
 
-    # --- Info JSON ---
+    # --- Info JSON (estrellas del asterismo + las de la constelación) ---
     star_info = []
-    for s in cstars:
+    info_hip = set()
+    for s in asterism + cstars:
+        if s.get("hip") in info_hip:
+            continue
+        info_hip.add(s.get("hip"))
         star_info.append({
             "name": s.get("name") or f"HIP {s['hip']}",
             "mag": round(s["mag"], 2),

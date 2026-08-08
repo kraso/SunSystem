@@ -3,9 +3,11 @@
 <polyline points="208.9,151.0 145.8,327.7 270.7,455.0 359.2,351.6 366.4,96.4 374.2,65.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="145.8,327.7 359.2,351.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <circle class="star" cx="208.9" cy="151.0" r="3.8" fill="#ffb366" data-name="HIP 73714" data-meta="mag 3.25"/>
+<circle class="star" cx="145.8" cy="327.7" r="4.0" fill="#ffffff" data-name="HIP 72622" data-meta="mag 2.75"/>
+<circle class="star" cx="270.7" cy="455.0" r="4.1" fill="#cfe0ff" data-name="HIP 74785" data-meta="mag 2.61"/>
+<circle class="star" cx="359.2" cy="351.6" r="3.4" fill="#ffd699" data-name="HIP 76333" data-meta="mag 3.91"/>
 <circle class="star" cx="366.4" cy="96.4" r="3.6" fill="#ffd699" data-name="HIP 76470" data-meta="mag 3.6"/>
 <circle class="star" cx="374.2" cy="65.0" r="3.6" fill="#cfe0ff" data-name="HIP 76600" data-meta="mag 3.66"/>
-<circle class="star" cx="359.2" cy="351.6" r="3.4" fill="#ffd699" data-name="HIP 76333" data-meta="mag 3.91"/>
 <circle class="star" cx="-542.3" cy="1175.0" r="3.2" fill="#ffd699" data-name="Zubenelgenubi" data-meta="mag 4.35"/>
 <text x="-535.1" y="1179.0" fill="#cfe0ff" font-size="12" font-weight="bold">Zubenelgenubi</text>
 <circle class="star" cx="247.8" cy="256.0" r="3.1" fill="#cfe0ff" data-name="HIP 74392" data-meta="mag 4.54"/>

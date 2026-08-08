@@ -2,9 +2,18 @@
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="455.0,119.4 365.0,169.8 284.3,254.5 158.8,320.2 107.4,409.0 65.0,431.1" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="348.9,322.2 284.3,254.5 197.0,184.8 110.8,88.9" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="455.0" cy="119.4" r="3.8" fill="#fff2cc" data-name="HIP 104732" data-meta="mag 3.21"/>
+<circle class="star" cx="365.0" cy="169.9" r="4.2" fill="#ffd699" data-name="HIP 102488" data-meta="mag 2.48"/>
+<circle class="star" cx="284.3" cy="254.5" r="4.3" fill="#fff2cc" data-name="HIP 100453" data-meta="mag 2.23"/>
+<circle class="star" cx="158.8" cy="320.2" r="4.0" fill="#cfe0ff" data-name="HIP 97165" data-meta="mag 2.86"/>
+<circle class="star" cx="107.4" cy="409.0" r="3.5" fill="#ffffff" data-name="HIP 95853" data-meta="mag 3.76"/>
+<circle class="star" cx="65.0" cy="431.1" r="3.5" fill="#fff2cc" data-name="HIP 94779" data-meta="mag 3.8"/>
+<circle class="star" cx="348.9" cy="322.2" r="4.8" fill="#ffffff" data-name="HIP 102098" data-meta="mag 1.25"/>
+<circle class="star" cx="197.0" cy="184.8" r="3.5" fill="#ffd699" data-name="HIP 98110" data-meta="mag 3.89"/>
+<circle class="star" cx="110.8" cy="88.9" r="3.9" fill="#ffd699" data-name="Alnair" data-meta="mag 3.05"/>
+<text x="118.7" y="92.9" fill="#cfe0ff" font-size="12" font-weight="bold">Alnair</text>
 <circle class="star" cx="-70.2" cy="234.7" r="5.4" fill="#cfe0ff" data-name="Deneb" data-meta="mag 0.03"/>
 <text x="-60.8" y="238.7" fill="#cfe0ff" font-size="12" font-weight="bold">Deneb</text>
-<circle class="star" cx="107.4" cy="409.0" r="3.5" fill="#ffffff" data-name="HIP 95853" data-meta="mag 3.76"/>
 <circle class="star" cx="130.1" cy="388.7" r="3.2" fill="#ffffff" data-name="HIP 96441" data-meta="mag 4.49"/>
 <circle class="star" cx="194.7" cy="418.6" r="2.9" fill="#ffffff" data-name="HIP 98055" data-meta="mag 4.91"/>
 <circle class="star" cx="310.6" cy="371.6" r="2.9" fill="#cfe0ff" data-name="HIP 101138" data-meta="mag 4.94"/>

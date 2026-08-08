@@ -3,8 +3,20 @@
 <polyline points="455.0,337.9 273.8,283.5 252.5,276.0 226.4,273.2 235.7,295.7 252.3,314.9 421.7,425.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="226.4,273.2 170.3,236.3 71.9,204.0 177.6,160.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="71.9,204.0 65.0,195.7 100.4,94.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="393.5" cy="629.9" r="5.4" fill="#fff2cc" data-name="Elnath" data-meta="mag 0.08"/>
-<text x="402.8" y="633.9" fill="#cfe0ff" font-size="12" font-weight="bold">Elnath</text>
+<circle class="star" cx="455.0" cy="338.0" r="3.9" fill="#cfe0ff" data-name="HIP 26451" data-meta="mag 2.97"/>
 <circle class="star" cx="273.8" cy="283.5" r="5.0" fill="#ffb366" data-name="Aldebaran" data-meta="mag 0.87"/>
 <text x="282.7" y="287.5" fill="#cfe0ff" font-size="12" font-weight="bold">Aldebaran</text>
+<circle class="star" cx="252.5" cy="276.0" r="3.7" fill="#ffffff" data-name="HIP 20894" data-meta="mag 3.4"/>
+<circle class="star" cx="226.4" cy="273.2" r="3.6" fill="#fff2cc" data-name="HIP 20205" data-meta="mag 3.65"/>
+<circle class="star" cx="235.7" cy="295.7" r="3.5" fill="#fff2cc" data-name="HIP 20455" data-meta="mag 3.77"/>
+<circle class="star" cx="252.3" cy="314.9" r="3.6" fill="#ffd699" data-name="HIP 20889" data-meta="mag 3.53"/>
+<circle class="star" cx="421.7" cy="425.6" r="4.6" fill="#cfe0ff" data-name="Rigel" data-meta="mag 1.65"/>
+<text x="430.2" y="429.6" fill="#cfe0ff" font-size="12" font-weight="bold">Rigel</text>
+<circle class="star" cx="170.3" cy="236.3" r="3.7" fill="#cfe0ff" data-name="HIP 18724" data-meta="mag 3.41"/>
+<circle class="star" cx="71.9" cy="204.0" r="3.5" fill="#cfe0ff" data-name="HIP 16083" data-meta="mag 3.73"/>
+<circle class="star" cx="177.6" cy="160.0" r="3.4" fill="#ffffff" data-name="HIP 18907" data-meta="mag 3.91"/>
+<circle class="star" cx="65.0" cy="195.7" r="3.6" fill="#fff2cc" data-name="HIP 15900" data-meta="mag 3.61"/>
+<circle class="star" cx="100.4" cy="94.4" r="3.3" fill="#fff2cc" data-name="HIP 16852" data-meta="mag 4.29"/>
+<circle class="star" cx="393.5" cy="629.9" r="5.4" fill="#fff2cc" data-name="Elnath" data-meta="mag 0.08"/>
+<text x="402.8" y="633.9" fill="#cfe0ff" font-size="12" font-weight="bold">Elnath</text>
 </svg>

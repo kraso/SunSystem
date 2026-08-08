@@ -2,5 +2,7 @@
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="399.1,377.8 65.0,142.2 455.0,358.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <circle class="star" cx="399.1" cy="377.8" r="3.4" fill="#ffffff" data-name="HIP 74824" data-meta="mag 4.07"/>
+<circle class="star" cx="65.0" cy="142.2" r="3.8" fill="#ffffff" data-name="HIP 71908" data-meta="mag 3.18"/>
+<circle class="star" cx="455.0" cy="358.0" r="3.2" fill="#ffffff" data-name="HIP 75323" data-meta="mag 4.48"/>
 <circle class="star" cx="400.3" cy="194.2" r="3.0" fill="#ffd699" data-name="HIP 74837" data-meta="mag 4.85"/>
 </svg>

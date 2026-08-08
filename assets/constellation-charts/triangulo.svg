@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="65.0,86.0 329.9,434.0 455.0,360.7 65.0,86.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="65.0" cy="85.9" r="3.7" fill="#ffffff" data-name="HIP 8796" data-meta="mag 3.42"/>
+<circle class="star" cx="329.9" cy="434.1" r="3.9" fill="#ffffff" data-name="HIP 10064" data-meta="mag 3.0"/>
+<circle class="star" cx="455.0" cy="360.7" r="3.4" fill="#ffffff" data-name="HIP 10670" data-meta="mag 4.03"/>
 </svg>

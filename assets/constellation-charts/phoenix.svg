@@ -1,11 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="145.4,383.3 335.1,299.2 441.2,364.0 455.0,254.3 346.0,136.7 335.1,299.2 65.0,317.7 145.4,383.3" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="145.4" cy="383.3" r="4.2" fill="#ffd699" data-name="Mirach" data-meta="mag 2.4"/>
+<text x="153.6" y="387.3" fill="#cfe0ff" font-size="12" font-weight="bold">Mirach</text>
 <circle class="star" cx="335.1" cy="299.2" r="3.7" fill="#fff2cc" data-name="HIP 5165" data-meta="mag 3.32"/>
 <circle class="star" cx="441.2" cy="364.0" r="3.7" fill="#ffb366" data-name="HIP 6867" data-meta="mag 3.41"/>
-<circle class="star" cx="145.0" cy="357.1" r="3.4" fill="#ffffff" data-name="HIP 2072" data-meta="mag 3.93"/>
 <circle class="star" cx="455.0" cy="254.3" r="3.4" fill="#fff2cc" data-name="HIP 7083" data-meta="mag 3.93"/>
 <circle class="star" cx="346.0" cy="136.7" r="3.4" fill="#cfe0ff" data-name="HIP 5348" data-meta="mag 3.94"/>
+<circle class="star" cx="65.0" cy="317.7" r="3.5" fill="#ffd699" data-name="HIP 765" data-meta="mag 3.88"/>
+<circle class="star" cx="145.0" cy="357.1" r="3.4" fill="#ffffff" data-name="HIP 2072" data-meta="mag 3.93"/>
 <circle class="star" cx="217.1" cy="311.3" r="3.1" fill="#fff2cc" data-name="HIP 3245" data-meta="mag 4.59"/>
 <circle class="star" cx="169.9" cy="259.5" r="3.0" fill="#ffffff" data-name="HIP 2472" data-meta="mag 4.76"/>
 <circle class="star" cx="378.4" cy="321.8" r="2.9" fill="#fff2cc" data-name="HIP 5862" data-meta="mag 4.97"/>

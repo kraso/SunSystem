@@ -5,9 +5,24 @@
 <polyline points="210.2,359.1 303.2,334.7" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="422.3,339.8 328.2,338.6 303.2,334.7 260.5,266.6 303.2,196.2 394.0,229.6 426.7,247.2 455.0,241.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="302.0,75.4 173.6,157.5" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="173.6" cy="157.5" r="4.0" fill="#fff2cc" data-name="HIP 80816" data-meta="mag 2.78"/>
-<circle class="star" cx="302.0" cy="75.4" r="4.0" fill="#ffd699" data-name="HIP 84345" data-meta="mag 2.78"/>
 <circle class="star" cx="149.6" cy="130.5" r="3.5" fill="#ffffff" data-name="HIP 80170" data-meta="mag 3.74"/>
+<circle class="star" cx="173.6" cy="157.5" r="4.0" fill="#fff2cc" data-name="HIP 80816" data-meta="mag 2.78"/>
+<circle class="star" cx="205.6" cy="274.5" r="4.0" fill="#fff2cc" data-name="Altair" data-meta="mag 2.81"/>
+<text x="213.6" y="278.5" fill="#cfe0ff" font-size="12" font-weight="bold">Altair</text>
+<circle class="star" cx="210.2" cy="359.1" r="3.7" fill="#fff2cc" data-name="HIP 81833" data-meta="mag 3.48"/>
+<circle class="star" cx="184.8" cy="399.8" r="3.3" fill="#cfe0ff" data-name="HIP 81126" data-meta="mag 4.2"/>
+<circle class="star" cx="143.3" cy="444.6" r="3.4" fill="#cfe0ff" data-name="HIP 79992" data-meta="mag 3.91"/>
+<circle class="star" cx="111.5" cy="428.7" r="3.3" fill="#cfe0ff" data-name="HIP 79101" data-meta="mag 4.23"/>
+<circle class="star" cx="65.0" cy="400.0" r="3.1" fill="#fff2cc" data-name="HIP 77760" data-meta="mag 4.6"/>
+<circle class="star" cx="260.5" cy="266.6" r="3.4" fill="#cfe0ff" data-name="HIP 83207" data-meta="mag 3.92"/>
+<circle class="star" cx="303.2" cy="334.7" r="3.8" fill="#ffd699" data-name="HIP 84380" data-meta="mag 3.16"/>
+<circle class="star" cx="422.4" cy="339.8" r="3.5" fill="#ffd699" data-name="HIP 87808" data-meta="mag 3.86"/>
+<circle class="star" cx="328.2" cy="338.6" r="3.3" fill="#cfe0ff" data-name="HIP 85112" data-meta="mag 4.15"/>
+<circle class="star" cx="303.2" cy="196.2" r="3.8" fill="#ffffff" data-name="HIP 84379" data-meta="mag 3.12"/>
+<circle class="star" cx="394.0" cy="229.6" r="3.7" fill="#fff2cc" data-name="HIP 86974" data-meta="mag 3.42"/>
+<circle class="star" cx="426.7" cy="247.2" r="3.6" fill="#fff2cc" data-name="HIP 87933" data-meta="mag 3.7"/>
+<circle class="star" cx="455.0" cy="241.6" r="3.5" fill="#cfe0ff" data-name="HIP 88794" data-meta="mag 3.84"/>
+<circle class="star" cx="302.0" cy="75.4" r="4.0" fill="#ffd699" data-name="HIP 84345" data-meta="mag 2.78"/>
 <circle class="star" cx="75.9" cy="90.1" r="3.5" fill="#ffffff" data-name="HIP 78072" data-meta="mag 3.85"/>
 <circle class="star" cx="437.5" cy="158.7" r="3.3" fill="#ffffff" data-name="HIP 88267" data-meta="mag 4.26"/>
 <circle class="star" cx="433.3" cy="102.7" r="3.1" fill="#ffd699" data-name="HIP 88128" data-meta="mag 4.67"/>

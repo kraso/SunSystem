@@ -2,16 +2,26 @@
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="147.2,103.1 166.1,112.8 219.8,120.8 261.1,235.3 261.8,316.5 338.2,337.8 372.8,265.4 294.8,201.5 219.8,120.8 285.0,65.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="261.8,316.5 221.6,396.0 214.2,454.4 244.2,455.0 221.6,396.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="147.2" cy="103.1" r="3.2" fill="#fff2cc" data-name="HIP 67275" data-meta="mag 4.5"/>
+<circle class="star" cx="166.1" cy="112.8" r="4.1" fill="#fff2cc" data-name="HIP 67927" data-meta="mag 2.68"/>
+<circle class="star" cx="219.8" cy="120.8" r="5.4" fill="#ffd699" data-name="Arich" data-meta="mag -0.05"/>
+<text x="229.2" y="124.8" fill="#cfe0ff" font-size="12" font-weight="bold">Arich</text>
+<circle class="star" cx="261.1" cy="235.3" r="3.6" fill="#ffd699" data-name="HIP 71053" data-meta="mag 3.57"/>
+<circle class="star" cx="261.8" cy="316.5" r="3.9" fill="#ffffff" data-name="HIP 71075" data-meta="mag 3.04"/>
+<circle class="star" cx="338.2" cy="337.8" r="3.7" fill="#fff2cc" data-name="HIP 73555" data-meta="mag 3.49"/>
+<circle class="star" cx="372.8" cy="265.4" r="3.7" fill="#fff2cc" data-name="HIP 74666" data-meta="mag 3.46"/>
+<circle class="star" cx="294.8" cy="201.5" r="4.2" fill="#fff2cc" data-name="Vindemiatrix" data-meta="mag 2.35"/>
+<text x="303.0" y="205.5" fill="#cfe0ff" font-size="12" font-weight="bold">Vindemiatrix</text>
+<circle class="star" cx="285.0" cy="65.0" r="3.5" fill="#ffffff" data-name="HIP 71795" data-meta="mag 3.78"/>
+<circle class="star" cx="221.6" cy="396.0" r="3.3" fill="#ffffff" data-name="HIP 69732" data-meta="mag 4.18"/>
+<circle class="star" cx="214.2" cy="454.4" r="3.1" fill="#ffffff" data-name="HIP 69483" data-meta="mag 4.53"/>
+<circle class="star" cx="244.2" cy="455.0" r="3.4" fill="#ffffff" data-name="HIP 70497" data-meta="mag 4.04"/>
 <circle class="star" cx="90.7" cy="-189.6" r="4.9" fill="#cfe0ff" data-name="Arcturus" data-meta="mag 0.98"/>
 <text x="99.6" y="-185.6" fill="#cfe0ff" font-size="12" font-weight="bold">Arcturus</text>
-<circle class="star" cx="166.1" cy="112.8" r="4.1" fill="#fff2cc" data-name="HIP 67927" data-meta="mag 2.68"/>
 <circle class="star" cx="115.0" cy="-81.5" r="3.7" fill="#ffffff" data-name="Izar" data-meta="mag 3.38"/>
 <text x="122.7" y="-77.5" fill="#cfe0ff" font-size="12" font-weight="bold">Izar</text>
-<circle class="star" cx="285.0" cy="65.0" r="3.5" fill="#ffffff" data-name="HIP 71795" data-meta="mag 3.78"/>
-<circle class="star" cx="244.2" cy="455.0" r="3.4" fill="#ffffff" data-name="HIP 70497" data-meta="mag 4.04"/>
 <circle class="star" cx="152.8" cy="86.2" r="3.4" fill="#ffb366" data-name="HIP 67459" data-meta="mag 4.05"/>
 <circle class="star" cx="283.9" cy="92.5" r="3.2" fill="#cfe0ff" data-name="HIP 71762" data-meta="mag 4.49"/>
-<circle class="star" cx="214.2" cy="454.4" r="3.1" fill="#ffffff" data-name="HIP 69483" data-meta="mag 4.53"/>
 <circle class="star" cx="311.2" cy="120.0" r="3.1" fill="#fff2cc" data-name="HIP 72659" data-meta="mag 4.54"/>
 <circle class="star" cx="295.4" cy="98.1" r="3.1" fill="#fff2cc" data-name="HIP 72125" data-meta="mag 4.6"/>
 <circle class="star" cx="221.1" cy="450.1" r="3.0" fill="#ffffff" data-name="HIP 69713" data-meta="mag 4.75"/>

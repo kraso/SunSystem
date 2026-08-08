@@ -1,6 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="215.4,341.9 209.8,455.0 105.1,408.3 215.4,341.9 352.4,302.1 414.9,65.0 290.1,102.9 215.4,341.9" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="215.4" cy="341.9" r="3.2" fill="#ffffff" data-name="HIP 91971" data-meta="mag 4.34"/>
+<circle class="star" cx="209.8" cy="455.0" r="3.1" fill="#ffffff" data-name="HIP 91926" data-meta="mag 4.59"/>
+<circle class="star" cx="105.0" cy="408.3" r="5.4" fill="#cfe0ff" data-name="Deneb" data-meta="mag 0.03"/>
+<text x="114.4" y="412.3" fill="#cfe0ff" font-size="12" font-weight="bold">Deneb</text>
+<circle class="star" cx="352.4" cy="302.1" r="3.3" fill="#ffb366" data-name="HIP 92791" data-meta="mag 4.22"/>
+<circle class="star" cx="414.9" cy="65.0" r="3.8" fill="#cfe0ff" data-name="HIP 93194" data-meta="mag 3.25"/>
+<circle class="star" cx="290.1" cy="102.9" r="3.6" fill="#ffffff" data-name="HIP 92420" data-meta="mag 3.52"/>
 <circle class="star" cx="-786.9" cy="-3866.8" r="4.6" fill="#cfe0ff" data-name="Vega" data-meta="mag 1.62"/>
 <text x="-778.3" y="-3862.8" fill="#cfe0ff" font-size="12" font-weight="bold">Vega</text>
 </svg>

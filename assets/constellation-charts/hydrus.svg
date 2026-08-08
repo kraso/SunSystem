@@ -1,14 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="65.0,199.3 455.0,222.6 324.1,268.9 289.5,265.8 237.6,273.7 245.0,320.7" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="65.0" cy="199.3" r="4.0" fill="#fff2cc" data-name="HIP 2021" data-meta="mag 2.82"/>
 <circle class="star" cx="455.0" cy="222.6" r="3.8" fill="#ffb366" data-name="HIP 17678" data-meta="mag 3.26"/>
-<circle class="star" cx="449.1" cy="295.7" r="3.5" fill="#ffd699" data-name="HIP 17440" data-meta="mag 3.84"/>
-<circle class="star" cx="289.5" cy="265.8" r="3.4" fill="#ffffff" data-name="HIP 11001" data-meta="mag 4.08"/>
 <circle class="star" cx="324.1" cy="268.9" r="3.3" fill="#cfe0ff" data-name="HIP 12394" data-meta="mag 4.12"/>
+<circle class="star" cx="289.5" cy="265.8" r="3.4" fill="#ffffff" data-name="HIP 11001" data-meta="mag 4.08"/>
+<circle class="star" cx="237.6" cy="273.7" r="3.1" fill="#fff2cc" data-name="HIP 8928" data-meta="mag 4.68"/>
+<circle class="star" cx="245.0" cy="320.7" r="4.0" fill="#ffffff" data-name="HIP 9236" data-meta="mag 2.86"/>
+<circle class="star" cx="449.1" cy="295.7" r="3.5" fill="#ffd699" data-name="HIP 17440" data-meta="mag 3.84"/>
 <circle class="star" cx="161.8" cy="264.2" r="3.3" fill="#ffffff" data-name="HIP 5896" data-meta="mag 4.25"/>
 <circle class="star" cx="76.2" cy="310.0" r="3.2" fill="#cfe0ff" data-name="HIP 2484" data-meta="mag 4.36"/>
 <circle class="star" cx="76.2" cy="309.9" r="3.1" fill="#ffffff" data-name="HIP 2487" data-meta="mag 4.53"/>
-<circle class="star" cx="237.6" cy="273.7" r="3.1" fill="#fff2cc" data-name="HIP 8928" data-meta="mag 4.68"/>
 <circle class="star" cx="345.1" cy="216.2" r="3.0" fill="#ffd699" data-name="HIP 13244" data-meta="mag 4.76"/>
 <circle class="star" cx="335.6" cy="273.9" r="3.0" fill="#ffffff" data-name="HIP 12876" data-meta="mag 4.83"/>
 <circle class="star" cx="361.2" cy="301.3" r="2.9" fill="#ffffff" data-name="HIP 13884" data-meta="mag 4.98"/>

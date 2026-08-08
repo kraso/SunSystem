@@ -1,14 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="520" height="520" fill="#05060c"/>
-<polyline points="238.2,274.1 69.4,318.5 65.0,268.0 187.4,242.7 238.2,274.1 329.1,264.0 399.4,254.3 455.0,201.5" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="69.4" cy="318.5" r="4.5" fill="#ffd699" data-name="Dubhe" data-meta="mag 1.81"/>
-<text x="77.9" y="322.5" fill="#cfe0ff" font-size="12" font-weight="bold">Dubhe</text>
+<polyline points="455.0,201.5 399.4,254.3 329.1,264.0 238.2,274.1 187.4,242.7 65.0,268.0 69.4,318.5 238.2,274.1" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <circle class="star" cx="455.0" cy="201.5" r="4.5" fill="#cfe0ff" data-name="Alkaid" data-meta="mag 1.85"/>
 <text x="463.5" y="205.5" fill="#cfe0ff" font-size="12" font-weight="bold">Alkaid</text>
 <circle class="star" cx="399.4" cy="254.3" r="4.3" fill="#ffffff" data-name="Mizar" data-meta="mag 2.23"/>
 <text x="407.7" y="258.3" fill="#cfe0ff" font-size="12" font-weight="bold">Mizar</text>
+<circle class="star" cx="329.1" cy="264.0" r="4.5" fill="#cfe0ff" data-name="Alioth" data-meta="mag 1.76"/>
+<text x="337.6" y="268.0" fill="#cfe0ff" font-size="12" font-weight="bold">Alioth</text>
+<circle class="star" cx="238.2" cy="274.1" r="3.7" fill="#ffffff" data-name="Megrez" data-meta="mag 3.32"/>
+<text x="245.9" y="278.1" fill="#cfe0ff" font-size="12" font-weight="bold">Megrez</text>
+<circle class="star" cx="187.4" cy="242.7" r="4.2" fill="#ffffff" data-name="Phecda" data-meta="mag 2.41"/>
+<text x="195.6" y="246.7" fill="#cfe0ff" font-size="12" font-weight="bold">Phecda</text>
 <circle class="star" cx="65.0" cy="268.0" r="4.2" fill="#ffffff" data-name="Merak" data-meta="mag 2.34"/>
 <text x="73.2" y="272.0" fill="#cfe0ff" font-size="12" font-weight="bold">Merak</text>
+<circle class="star" cx="69.4" cy="318.5" r="4.5" fill="#ffd699" data-name="Dubhe" data-meta="mag 1.81"/>
+<text x="77.9" y="322.5" fill="#cfe0ff" font-size="12" font-weight="bold">Dubhe</text>
 <circle class="star" cx="-144.4" cy="223.7" r="3.8" fill="#ffffff" data-name="HIP 46853" data-meta="mag 3.17"/>
 <circle class="star" cx="-147.6" cy="330.9" r="3.6" fill="#ffffff" data-name="HIP 46733" data-meta="mag 3.65"/>
 <circle class="star" cx="-101.8" cy="293.0" r="3.5" fill="#ffffff" data-name="HIP 48319" data-meta="mag 3.78"/>
