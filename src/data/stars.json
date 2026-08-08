@@ -5,8 +5,8 @@
 "dec": -16.7161,
 "mag": -1.44,
 "bv": "0.009",
-"name": "Alkaid",
-"con": "Osa Mayor"
+"name": "Sirio",
+"con": "Can Mayor"
 },
 {
 "hip": 30438,
@@ -113,8 +113,8 @@
 "dec": -63.0991,
 "mag": 0.77,
 "bv": "-0.243",
-"name": "Dschubba",
-"con": "Escorpio"
+"name": null,
+"con": null
 },
 {
 "hip": 21421,
@@ -302,8 +302,8 @@
 "dec": 55.9598,
 "mag": 1.76,
 "bv": "-0.022",
-"name": "Polaris",
-"con": "Osa Menor"
+"name": "Alioth",
+"con": null
 },
 {
 "hip": 15863,
@@ -329,7 +329,7 @@
 "dec": 61.751,
 "mag": 1.81,
 "bv": "1.061",
-"name": null,
+"name": "Dubhe",
 "con": null
 },
 {
@@ -347,8 +347,8 @@
 "dec": 49.3133,
 "mag": 1.85,
 "bv": "-0.099",
-"name": "Muphrid",
-"con": "Bootes"
+"name": "Alkaid",
+"con": "Osa Mayor"
 },
 {
 "hip": 41037,
@@ -626,8 +626,8 @@
 "dec": 54.9254,
 "mag": 2.23,
 "bv": "0.057",
-"name": null,
-"con": null
+"name": "Mizar",
+"con": "Osa Mayor"
 },
 {
 "hip": 100453,
@@ -725,8 +725,8 @@
 "dec": 56.3824,
 "mag": 2.34,
 "bv": "0.033",
-"name": "Coxa",
-"con": "Leo"
+"name": "Merak",
+"con": null
 },
 {
 "hip": 72105,
@@ -770,7 +770,7 @@
 "dec": 53.6948,
 "mag": 2.41,
 "bv": "0.044",
-"name": null,
+"name": "Phecda",
 "con": null
 },
 {
@@ -1877,8 +1877,8 @@
 "dec": 6.9613,
 "mag": 3.19,
 "bv": "0.484",
-"name": "Mizar",
-"con": "Osa Mayor"
+"name": null,
+"con": null
 },
 {
 "hip": 23685,
@@ -2138,8 +2138,8 @@
 "dec": 57.0326,
 "mag": 3.32,
 "bv": "0.077",
-"name": "Acrab",
-"con": "Escorpio"
+"name": "Megrez",
+"con": null
 },
 {
 "hip": 84143,

@@ -3,6 +3,8 @@
 <polyline points="100.4,327.0 221.8,353.8 318.5,199.8 347.6,144.4 311.5,111.0 294.7,88.6 87.5,65.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="432.5,81.4 347.6,144.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 <polyline points="221.8,353.8 281.3,346.5 322.5,377.2 270.7,455.0 281.3,346.5" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="221.8" cy="353.8" r="6.1" fill="#ffffff" data-name="Sirio" data-meta="mag -1.44"/>
+<text x="232.0" y="357.8" fill="#cfe0ff" font-size="12" font-weight="bold">Sirio</text>
 <circle class="star" cx="294.7" cy="88.6" r="4.7" fill="#cfe0ff" data-name="HIP 33579" data-meta="mag 1.5"/>
 <circle class="star" cx="678.3" cy="-308.8" r="4.5" fill="#cfe0ff" data-name="Sirio" data-meta="mag 1.75"/>
 <text x="686.8" y="-304.8" fill="#cfe0ff" font-size="12" font-weight="bold">Sirio</text>

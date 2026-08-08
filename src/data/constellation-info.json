@@ -2664,6 +2664,13 @@
   "slug": "can-mayor",
   "stars": [
    {
+    "name": "Sirio",
+    "mag": -1.44,
+    "bv": 0.009,
+    "ra": 101.287,
+    "dec": -16.716
+   },
+   {
     "name": "HIP 33579",
     "mag": 1.5,
     "bv": -0.211,
@@ -10901,13 +10908,6 @@
  "Osa Mayor": {
   "slug": "osa-mayor",
   "stars": [
-   {
-    "name": "Alkaid",
-    "mag": -1.44,
-    "bv": 0.009,
-    "ra": 101.287,
-    "dec": -16.716
-   },
    {
     "name": "Dubhe",
     "mag": 1.81,

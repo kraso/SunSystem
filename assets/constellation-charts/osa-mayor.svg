@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="520" height="520" fill="#05060c"/>
 <polyline points="238.2,274.1 69.4,318.5 65.0,268.0 187.4,242.7 238.2,274.1 329.1,264.0 399.4,254.3 455.0,201.5" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="-539.2" cy="-420.2" r="6.1" fill="#ffffff" data-name="Alkaid" data-meta="mag -1.44"/>
-<text x="-529.0" y="-416.2" fill="#cfe0ff" font-size="12" font-weight="bold">Alkaid</text>
 <circle class="star" cx="69.4" cy="318.5" r="4.5" fill="#ffd699" data-name="Dubhe" data-meta="mag 1.81"/>
 <text x="77.9" y="322.5" fill="#cfe0ff" font-size="12" font-weight="bold">Dubhe</text>
 <circle class="star" cx="455.0" cy="201.5" r="4.5" fill="#cfe0ff" data-name="Alkaid" data-meta="mag 1.85"/>
