@@ -1,27 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="460" height="460" fill="#05060c"/>
-<polyline points="190.9,336.4 168.6,306.1 146.2,263.3 67.1,137.7 160.2,169.4 293.6,206.1 392.9,392.9 168.6,306.1 293.6,206.1 388.8,67.1" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<circle class="star" cx="1164.3" cy="-307.4" r="3.6" fill="#ffb366" data-name="Tarazed" data-meta="mag 1.06"/>
-<text x="1170.9" y="-304.4" fill="#aebfe0" font-size="9">Tarazed</text>
-<circle class="star" cx="1105.5" cy="701.2" r="2.7" fill="#fff2cc" data-name="Altair" data-meta="mag 2.81"/>
-<text x="1111.2" y="704.2" fill="#aebfe0" font-size="9">Altair</text>
-<circle class="star" cx="168.6" cy="306.1" r="3.8" fill="#ffffff" data-name="Markab" data-meta="mag 0.76"/>
-<text x="175.3" y="309.1" fill="#aebfe0" font-size="9">Markab</text>
-<circle class="star" cx="190.9" cy="336.4" r="2.7" fill="#ffb366" data-name="HIP 97278" data-meta="mag 2.72"/>
-<circle class="star" cx="392.9" cy="392.9" r="2.6" fill="#ffffff" data-name="HIP 93747" data-meta="mag 2.99"/>
-<circle class="star" cx="67.1" cy="137.7" r="2.4" fill="#cfe0ff" data-name="HIP 99473" data-meta="mag 3.24"/>
-<circle class="star" cx="293.6" cy="206.1" r="2.4" fill="#ffffff" data-name="HIP 95501" data-meta="mag 3.36"/>
-<circle class="star" cx="388.8" cy="67.1" r="2.3" fill="#cfe0ff" data-name="HIP 93805" data-meta="mag 3.43"/>
-<circle class="star" cx="146.2" cy="263.3" r="2.2" fill="#fff2cc" data-name="HIP 98036" data-meta="mag 3.71"/>
-<circle class="star" cx="160.2" cy="169.4" r="2.1" fill="#fff2cc" data-name="HIP 97804" data-meta="mag 3.87"/>
-<circle class="star" cx="421.5" cy="413.8" r="2.0" fill="#ffd699" data-name="HIP 93244" data-meta="mag 4.02"/>
-<circle class="star" cx="411.4" cy="52.2" r="2.0" fill="#ffd699" data-name="Fomalhaut" data-meta="mag 4.02"/>
-<text x="416.3" y="55.2" fill="#aebfe0" font-size="9">Fomalhaut</text>
-<circle class="star" cx="238.1" cy="129.6" r="1.8" fill="#cfe0ff" data-name="HIP 96468" data-meta="mag 4.36"/>
-<circle class="star" cx="251.1" cy="280.2" r="1.8" fill="#ffd699" data-name="HIP 96229" data-meta="mag 4.45"/>
-<circle class="star" cx="288.5" cy="157.8" r="1.6" fill="#fff2cc" data-name="HIP 95585" data-meta="mag 4.64"/>
-<circle class="star" cx="151.4" cy="299.0" r="1.6" fill="#ffd699" data-name="HIP 97938" data-meta="mag 4.71"/>
-<circle class="star" cx="237.3" cy="29.8" r="1.5" fill="#cfe0ff" data-name="HIP 96483" data-meta="mag 4.93"/>
-<circle class="star" cx="52.4" cy="416.1" r="1.5" fill="#ffffff" data-name="HIP 99742" data-meta="mag 4.94"/>
-<circle class="star" cx="318.1" cy="57.8" r="1.5" fill="#fff2cc" data-name="HIP 95066" data-meta="mag 4.98"/>
+<polyline points="107.8,270.0 101.4,260.6 94.9,247.4 72.2,208.7 99.0,218.5 137.3,229.8 165.9,287.4 101.4,260.6 137.3,229.8 164.7,186.9" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
+<circle class="star" cx="387.8" cy="71.5" r="3.6" fill="#ffb366" data-name="Tarazed" data-meta="mag 1.06"/>
+<text x="394.4" y="74.5" fill="#aebfe0" font-size="9">Tarazed</text>
+<circle class="star" cx="107.8" cy="270.0" r="2.7" fill="#ffb366" data-name="HIP 97278" data-meta="mag 2.72"/>
+<circle class="star" cx="370.9" cy="382.4" r="2.7" fill="#fff2cc" data-name="Altair" data-meta="mag 2.81"/>
+<text x="376.6" y="385.4" fill="#aebfe0" font-size="9">Altair</text>
+<circle class="star" cx="137.3" cy="229.8" r="2.4" fill="#ffffff" data-name="HIP 95501" data-meta="mag 3.36"/>
+<circle class="star" cx="164.7" cy="187.0" r="2.3" fill="#cfe0ff" data-name="HIP 93805" data-meta="mag 3.43"/>
+<circle class="star" cx="94.9" cy="247.4" r="2.2" fill="#fff2cc" data-name="HIP 98036" data-meta="mag 3.71"/>
+<circle class="star" cx="99.0" cy="218.5" r="2.1" fill="#fff2cc" data-name="HIP 97804" data-meta="mag 3.87"/>
+<circle class="star" cx="121.4" cy="206.2" r="1.8" fill="#cfe0ff" data-name="HIP 96468" data-meta="mag 4.36"/>
+<circle class="star" cx="125.1" cy="252.6" r="1.8" fill="#ffd699" data-name="HIP 96229" data-meta="mag 4.45"/>
+<circle class="star" cx="135.9" cy="214.9" r="1.6" fill="#fff2cc" data-name="HIP 95585" data-meta="mag 4.64"/>
+<circle class="star" cx="96.4" cy="258.4" r="1.6" fill="#ffd699" data-name="HIP 97938" data-meta="mag 4.71"/>
 </svg>

@@ -2,17 +2,17 @@
 
 Lee:
   src/data/constellations.json  (líneas RA/Dec de la figura)
-  src/data/stars.json           (catálogo Hipparcos, con 'con' = constelación)
+  src/data/stars.json           (catálogo Hipparcos)
   src/data/deep-sky.json        (objetos Messier)
 
 Produce:
   assets/constellation-charts/<slug>.svg   carta vectorial de cada constelación
   src/data/constellation-info.json         { nombre: {slug, stars[], objects[]} }
 """
+
 import json
 import os
 import re
-import math
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, ".."))
@@ -34,7 +34,11 @@ def slug(name: str) -> str:
 
 
 def ra_to_x(ra, ra_min, ra_max, w, pad):
-    # RA crece hacia la IZQUIERDA (este a la izquierda, como en mapas celestes)
+    # RA crece hacia la IZQUIERDA (este a la izquierda, como en mapas celestes).
+    # Normaliza la RA al mismo sistema que el recuadro (enrollado a [0,360)) para
+    # que los puntos con RA negativa no se dibujen fuera del canvas.
+    if ra < 0:
+        ra += 360.0
     if ra_max == ra_min:
         return w / 2
     return pad + (ra_max - ra) / (ra_max - ra_min) * (w - 2 * pad)
@@ -67,61 +71,103 @@ def type_color(t: str) -> str:
     return "#88ffcc"
 
 
+def fig_bbox(lines):
+    """Devuelve (ra_min, ra_max, dec_min, dec_max) de la figura, con RA enrollada
+    a [0,360) para que constelaciones que cruzan el meridiano 180° (p.ej. Osa
+    Mayor, RA -176..+178) no produzcan un recuadro de 354° de ancho."""
+    ras, decs = [], []
+    for ln in lines:
+        for ra, dec in ln:
+            if ra < 0:
+                ra += 360.0
+            ras.append(ra)
+            decs.append(dec)
+    if not ras:
+        return None
+    return min(ras), max(ras), min(decs), max(decs)
+
+
+def constellation_of(s, conss):
+    """Devuelve la constelación real de una estrella: usa el campo 'con' si
+    existe, si no lo deduce por el recuadro de la figura (RA enrollada)."""
+    con = s.get("con")
+    if con:
+        return con
+    ra = s["ra"]
+    if ra < 0:
+        ra += 360.0
+    for c in conss:
+        bb = fig_bbox(c["lines"])
+        if not bb:
+            continue
+        rmin, rmax, dmin, dmax = bb
+        if rmin <= ra <= rmax and dmin <= s["dec"] <= dmax:
+            return c["name"]
+    return None
+
+
+def obj_constellation(o, conss):
+    """Constelación real de un objeto Messier: la primera cuya figura (recuadro
+    RA enrollada) lo contiene. Devuelve None si no cae en ninguna."""
+    ra = o.get("ra")
+    dec = o.get("dec")
+    if ra is None or dec is None:
+        return None
+    if ra < 0:
+        ra += 360.0
+    for c in conss:
+        bb = fig_bbox(c["lines"])
+        if not bb:
+            continue
+        rmin, rmax, dmin, dmax = bb
+        if rmin <= ra <= rmax and dmin <= dec <= dmax:
+            return c["name"]
+    return None
+
+
 info = {}
+
+# Mapa objeto Messier -> constelación real (para filtrar las cartas).
+obj_const = {}
+for _o in deep:
+    _id = _o.get("name") or _o.get("desig") or _o.get("id")
+    obj_const[_id] = obj_constellation(_o, conss)
 
 for c in conss:
     name = c["name"]
     lines = c["lines"]
-    # Bounding box de todas las líneas
+
+    # Solo las estrellas que realmente pertenecen a esta constelación.
+    cstars = [s for s in stars if constellation_of(s, conss) == name and s["mag"] <= 5.5]
+
+    # Recuadro del SVG: figura + estrellas reales de la constelación (RA enrollada).
     ras, decs = [], []
     for ln in lines:
         for ra, dec in ln:
-            ras.append(ra)
+            ras.append(ra + 360.0 if ra < 0 else ra)
             decs.append(dec)
+    for s in cstars:
+        ras.append(s["ra"] + 360.0 if s["ra"] < 0 else s["ra"])
+        decs.append(s["dec"])
     if not ras:
         continue
-    ra_min, ra_max = min(ras), max(ras)
-    dec_min, dec_max = min(decs), max(decs)
-    # margen del 12%
+    ra_min, ra_max, dec_min, dec_max = min(ras), max(ras), min(decs), max(decs)
+    # margen del 14%
     ra_span = max(ra_max - ra_min, 1e-3)
-    dec_span = max(dec_max - dec_min, 1e-3)
-    ra_min -= ra_span * 0.12
-    ra_max += ra_span * 0.12
-    dec_min -= dec_span * 0.12
-    dec_max += dec_span * 0.12
+    ra_min -= ra_span * 0.14
+    ra_max += ra_span * 0.14
+    dec_min -= (dec_max - dec_min) * 0.14 if (dec_max - dec_min) > 0 else 1.0
+    dec_max += (dec_max - dec_min) * 0.14 if (dec_max - dec_min) > 0 else 1.0
     ra_span = ra_max - ra_min
     dec_span = dec_max - dec_min
 
     W, H = 460, 460
     pad = 28
 
-    # Estrellas de esta constelación (las que ya traen 'con' asignado)
-    cstars = [s for s in stars if s.get("con") == name]
-    # También las que caen dentro del bbox aunque no traigan con
-    for s in stars:
-        if s.get("con") == name:
-            continue
-        ra, dec = s["ra"], s["dec"]
-        if ra_min <= ra <= ra_max and dec_min <= dec <= dec_max:
-            cstars.append(s)
-    # Dedupe por hip
-    seen = set()
-    uniq = []
-    for s in cstars:
-        if s["hip"] in seen:
-            continue
-        seen.add(s["hip"])
-        uniq.append(s)
-    cstars = uniq
-
-    # Objetos Messier en el área
-    cobjs = []
-    for o in deep:
-        ra, dec = o.get("ra"), o.get("dec")
-        if ra is None or dec is None:
-            continue
-        if ra_min <= ra <= ra_max and dec_min <= dec <= dec_max:
-            cobjs.append(o)
+    # Objetos Messier que realmente pertenecen a esta constelación.
+    cobjs = [o for o in deep
+             if (o.get("name") or o.get("desig") or o.get("id")) in obj_const
+             and obj_const.get(o.get("name") or o.get("desig") or o.get("id")) == name]
 
     # --- Construir SVG ---
     parts = []
@@ -139,13 +185,12 @@ for c in conss:
             pts.append(f"{x:.1f},{y:.1f}")
         parts.append(f'<polyline points="{" ".join(pts)}" fill="none" '
                      f'stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>')
-    # estrellas
+    # estrellas (solo las que pertenecen a esta constelación)
     for s in cstars:
         x = ra_to_x(s["ra"], ra_min, ra_max, W, pad)
         y = dec_to_y(s["dec"], dec_min, dec_max, H, pad)
         r = star_radius(s["mag"])
         bv = float(s["bv"]) if s.get("bv") else 0.0
-        # color por temperatura (bv)
         if bv < 0:
             col = "#cfe0ff"
         elif bv < 0.5:
@@ -163,14 +208,13 @@ for c in conss:
             parts.append(f'<text x="{x + r + 3:.1f}" y="{y + 3:.1f}" '
                          f'fill="#aebfe0" font-size="9">{s["name"]}</text>')
 
-# objetos Messier
+    # objetos Messier (mancha difusa por tipo)
     for o in cobjs:
         x = ra_to_x(o["ra"], ra_min, ra_max, W, pad)
         y = dec_to_y(o["dec"], dec_min, dec_max, H, pad)
         label = o.get("name") or o.get("desig") or o.get("id")
         tname = o.get("typeName") or o.get("type") or ""
         col = type_color(o.get("type"))
-        # mancha difusa (representa el objeto de cielo profundo)
         parts.append(f'<circle class="star" cx="{x:.1f}" cy="{y:.1f}" r="9" '
                      f'fill="{col}" fill-opacity="0.15" data-name="{label}" '
                      f'data-meta="{tname}"/>')
@@ -185,7 +229,7 @@ for c in conss:
 
     # --- Info JSON ---
     star_info = []
-    for s in sorted(cstars, key=lambda x: x["mag"])[:14]:
+    for s in cstars:
         star_info.append({
             "name": s.get("name") or f"HIP {s['hip']}",
             "mag": round(s["mag"], 2),
@@ -206,30 +250,24 @@ for c in conss:
         "objects": obj_info,
     }
 
-# Lista global de objetos astronómicos (no constelaciones): los Messier.
-# Se les asigna la constelación padre según el bounding box de la figura.
-def constellation_of(ra, dec):
-    for c in conss:
-        ras, decs = [], []
-        for ln in c["lines"]:
-            for r, d in ln:
-                ras.append(r)
-                decs.append(d)
-        if not ras:
-            continue
-        rmin, rmax = min(ras), max(ras)
-        dmin, dmax = min(decs), max(decs)
-        # tolerancia de 3 grados
-        if (rmin - 3) <= ra <= (rmax + 3) and (dmin - 3) <= dec <= (dmax + 3):
-            return c["name"]
-    return None
-
+# Lista global de objetos astronómicos (no constelaciones): los Messier,
+# con la constelación padre según el recuadro de la figura (RA enrollada).
 objects_list = []
 for o in deep:
     ra = o.get("ra")
     dec = o.get("dec")
     if ra is None or dec is None:
         continue
+    constellation = None
+    ora = ra + 360.0 if ra < 0 else ra
+    for c in conss:
+        bb = fig_bbox(c["lines"])
+        if not bb:
+            continue
+        rmin, rmax, dmin, dmax = bb
+        if rmin <= ora <= rmax and dmin <= dec <= dmax:
+            constellation = c["name"]
+            break
     objects_list.append({
         "id": o.get("name") or o.get("desig") or o.get("id"),
         "ngc": o.get("desig") or "",
@@ -239,7 +277,7 @@ for o in deep:
         "mag": o.get("mag"),
         "ra": round(ra, 3),
         "dec": round(dec, 3),
-        "constellation": constellation_of(ra, dec),
+        "constellation": constellation,
     })
 info["__objects__"] = objects_list
 
