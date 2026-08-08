@@ -83,6 +83,8 @@ export interface EclipseEvent {
   magnitude: string;
   /** Duración del evento. */
   duration: string;
+  /** Hora de máximo en UTC (HH:MM). */
+  timeUtc?: string;
   /** Región de visibilidad. */
   visibility: string;
   /** Cuerpos implicados. */

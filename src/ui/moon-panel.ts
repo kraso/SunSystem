@@ -246,14 +246,30 @@ export class MoonPanel {
   /** HTML con la información detallada de un eclipse. */
   private eclipseInfoHtml(e: EclipseEvent): string {
     const icon = e.kind === 'solar' ? '☀️ Eclipse solar' : '🌑 Eclipse lunar';
+    const timeMadrid = this.eclipseTimeMadrid(e);
     return `
       <div class="moon-eclipse-info">
         <h3>${icon} — ${e.subtype}</h3>
         <div class="stat"><span class="stat-label">Magnitud</span><span class="stat-value">${e.magnitude}</span></div>
         <div class="stat"><span class="stat-label">Duración</span><span class="stat-value">${e.duration}</span></div>
+        <div class="stat"><span class="stat-label">Hora (Madrid)</span><span class="stat-value">${timeMadrid}</span></div>
         <div class="stat"><span class="stat-label">Cuerpos</span><span class="stat-value">${e.bodies}</span></div>
         <p class="moon-eclipse-vis">👁 Visibilidad: ${e.visibility}</p>
       </div>`;
+  }
+
+  /** Convierte la hora UTC del eclipse a hora local de Madrid (CET/CEST). */
+  private eclipseTimeMadrid(e: EclipseEvent): string {
+    if (!e.timeUtc) return '—';
+    const iso = `${e.date}T${e.timeUtc}:00Z`;
+    const dt = new Date(iso);
+    if (isNaN(dt.getTime())) return '—';
+    return dt.toLocaleTimeString('es-ES', {
+      timeZone: 'Europe/Madrid',
+      hour: '2-digit',
+      minute: '2-digit',
+      timeZoneName: 'short',
+    });
   }
 
   /** Carga fotos reales de la NASA para la fase (reusa images-api.nasa.gov). */
