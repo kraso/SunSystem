@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="460" height="460" fill="#05060c"/>
-<polyline points="141.0,358.9 194.6,377.3 196.0,356.4 157.2,345.9 141.0,358.9 112.2,354.7 89.8,350.7 72.2,328.8" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<polyline points="157.2,345.9 163.0,322.8 183.6,265.6 183.8,259.5" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<polyline points="163.0,322.8 190.2,310.0 225.5,298.4" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<polyline points="190.2,310.0 229.4,303.9" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<polyline points="194.6,377.3 263.5,382.4 309.3,373.3 248.9,366.7 196.0,356.4" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<polyline points="196.0,356.4 248.1,347.3 262.5,338.0 287.6,323.9" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<polyline points="284.3,320.4 262.5,338.0" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<circle class="star" cx="387.8" cy="71.5" r="5.0" fill="#ffffff" data-name="Alkaid" data-meta="mag -1.44"/>
-<text x="395.8" y="74.5" fill="#aebfe0" font-size="9">Alkaid</text>
-<circle class="star" cx="194.6" cy="377.3" r="3.2" fill="#ffd699" data-name="Dubhe" data-meta="mag 1.81"/>
-<text x="200.8" y="380.3" fill="#aebfe0" font-size="9">Dubhe</text>
-<circle class="star" cx="72.2" cy="328.8" r="3.2" fill="#cfe0ff" data-name="Alkaid" data-meta="mag 1.85"/>
-<text x="78.4" y="331.8" fill="#aebfe0" font-size="9">Alkaid</text>
-<circle class="star" cx="89.8" cy="350.7" r="3.0" fill="#ffffff" data-name="Mizar" data-meta="mag 2.23"/>
-<text x="95.8" y="353.7" fill="#aebfe0" font-size="9">Mizar</text>
-<circle class="star" cx="196.0" cy="356.4" r="2.9" fill="#ffffff" data-name="Merak" data-meta="mag 2.34"/>
-<text x="201.9" y="359.4" fill="#aebfe0" font-size="9">Merak</text>
-<circle class="star" cx="262.5" cy="338.0" r="2.5" fill="#ffffff" data-name="HIP 46853" data-meta="mag 3.17"/>
-<circle class="star" cx="263.5" cy="382.4" r="2.2" fill="#ffffff" data-name="HIP 46733" data-meta="mag 3.65"/>
-<circle class="star" cx="248.9" cy="366.7" r="2.1" fill="#ffffff" data-name="HIP 48319" data-meta="mag 3.78"/>
-<circle class="star" cx="261.0" cy="339.5" r="1.7" fill="#ffffff" data-name="HIP 47006" data-meta="mag 4.47"/>
-<circle class="star" cx="248.1" cy="347.3" r="1.7" fill="#ffffff" data-name="HIP 48402" data-meta="mag 4.55"/>
-<circle class="star" cx="82.0" cy="327.7" r="1.6" fill="#ffffff" data-name="HIP 66234" data-meta="mag 4.68"/>
-<circle class="star" cx="219.3" cy="354.8" r="1.5" fill="#fff2cc" data-name="HIP 51459" data-meta="mag 4.82"/>
-<circle class="star" cx="188.8" cy="353.6" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M108" data-meta="s"/>
-<circle cx="188.8" cy="353.6" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
-<circle class="star" cx="186.3" cy="351.0" r="9" fill="#ff8ce0" fill-opacity="0.15" data-name="M97" data-meta="pn"/>
-<circle cx="186.3" cy="351.0" r="3.5" fill="#ff8ce0" fill-opacity="0.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 206" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="206" fill="#05060c"/>
+<polyline points="178.2,142.6 266.4,161.8 268.7,140.0 204.8,129.0 178.2,142.6 130.8,138.3 94.0,134.0 65.0,111.2" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="204.8,129.0 214.3,105.0 248.2,45.2 248.6,38.8" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="214.3,105.0 259.1,91.6 317.2,79.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="259.1,91.6 323.7,85.2" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="266.4,161.8 379.7,167.2 455.0,157.6 355.8,150.8 268.7,140.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="268.7,140.0 354.4,130.5 378.1,120.8 419.4,106.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="414.0,102.4 378.1,120.8" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="584.2" cy="-157.5" r="6.1" fill="#ffffff" data-name="Alkaid" data-meta="mag -1.44"/>
+<text x="594.3" y="-153.5" fill="#cfe0ff" font-size="12" font-weight="bold">Alkaid</text>
+<circle class="star" cx="266.4" cy="161.8" r="4.5" fill="#ffd699" data-name="Dubhe" data-meta="mag 1.81"/>
+<text x="274.9" y="165.8" fill="#cfe0ff" font-size="12" font-weight="bold">Dubhe</text>
+<circle class="star" cx="65.0" cy="111.2" r="4.5" fill="#cfe0ff" data-name="Alkaid" data-meta="mag 1.85"/>
+<text x="73.5" y="115.2" fill="#cfe0ff" font-size="12" font-weight="bold">Alkaid</text>
+<circle class="star" cx="94.0" cy="134.1" r="4.3" fill="#ffffff" data-name="Mizar" data-meta="mag 2.23"/>
+<text x="102.3" y="138.1" fill="#cfe0ff" font-size="12" font-weight="bold">Mizar</text>
+<circle class="star" cx="268.7" cy="140.0" r="4.2" fill="#ffffff" data-name="Merak" data-meta="mag 2.34"/>
+<text x="276.9" y="144.0" fill="#cfe0ff" font-size="12" font-weight="bold">Merak</text>
+<circle class="star" cx="378.1" cy="120.8" r="3.8" fill="#ffffff" data-name="HIP 46853" data-meta="mag 3.17"/>
+<circle class="star" cx="379.7" cy="167.2" r="3.6" fill="#ffffff" data-name="HIP 46733" data-meta="mag 3.65"/>
+<circle class="star" cx="355.8" cy="150.8" r="3.5" fill="#ffffff" data-name="HIP 48319" data-meta="mag 3.78"/>
+<circle class="star" cx="375.6" cy="122.4" r="3.2" fill="#ffffff" data-name="HIP 47006" data-meta="mag 4.47"/>
+<circle class="star" cx="354.4" cy="130.5" r="3.1" fill="#ffffff" data-name="HIP 48402" data-meta="mag 4.55"/>
+<circle class="star" cx="81.1" cy="110.0" r="3.1" fill="#ffffff" data-name="HIP 66234" data-meta="mag 4.68"/>
+<circle class="star" cx="307.0" cy="138.3" r="3.0" fill="#fff2cc" data-name="HIP 51459" data-meta="mag 4.82"/>
+<circle class="star" cx="256.8" cy="137.1" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M108" data-meta="s"/>
+<circle cx="256.8" cy="137.1" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
+<circle class="star" cx="252.7" cy="134.4" r="9" fill="#ff8ce0" fill-opacity="0.15" data-name="M97" data-meta="pn"/>
+<circle cx="252.7" cy="134.4" r="3.5" fill="#ff8ce0" fill-opacity="0.5"/>
 </svg>

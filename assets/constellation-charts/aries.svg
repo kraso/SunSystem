@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="460" height="460" fill="#05060c"/>
-<polyline points="72.2,223.2 207.0,150.9 246.4,100.3 249.9,71.5" fill="none" stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>
-<circle class="star" cx="387.8" cy="382.4" r="3.1" fill="#ffb366" data-name="Hamal" data-meta="mag 2.07"/>
-<text x="393.9" y="385.4" fill="#aebfe0" font-size="9">Hamal</text>
-<circle class="star" cx="246.4" cy="100.3" r="2.7" fill="#ffffff" data-name="Mesarthim" data-meta="mag 2.64"/>
-<text x="252.2" y="103.3" fill="#aebfe0" font-size="9">Mesarthim</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 293" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="293" fill="#05060c"/>
+<polyline points="65.0,246.9 360.8,151.2 447.3,84.2 455.0,46.1" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="757.6" cy="457.6" r="4.4" fill="#ffb366" data-name="Hamal" data-meta="mag 2.07"/>
+<text x="766.0" y="461.6" fill="#cfe0ff" font-size="12" font-weight="bold">Hamal</text>
+<circle class="star" cx="447.3" cy="84.2" r="4.1" fill="#ffffff" data-name="Mesarthim" data-meta="mag 2.64"/>
+<text x="455.4" y="88.2" fill="#cfe0ff" font-size="12" font-weight="bold">Mesarthim</text>
 </svg>

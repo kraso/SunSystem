@@ -1423,7 +1423,8 @@ html, body {
 .const-svg-inline {
   display: block;
   width: 100%;
-  max-width: 460px;
+  max-width: 720px;
+  height: auto;
   margin: 0 auto 18px;
   border-radius: 10px;
   border: 1px solid rgba(120, 150, 220, 0.2);

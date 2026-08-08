@@ -52,8 +52,8 @@ def dec_to_y(dec, dec_min, dec_max, h, pad):
 
 def star_radius(mag):
     # estrellas más brillantes (mag menor) -> radio mayor
-    r = 4.2 - mag * 0.55
-    return max(1.0, min(6.5, r))
+    r = 5.4 - mag * 0.5
+    return max(1.6, min(8.5, r))
 
 
 def type_color(t: str) -> str:
@@ -140,29 +140,31 @@ for c in conss:
     # Solo las estrellas que realmente pertenecen a esta constelación.
     cstars = [s for s in stars if constellation_of(s, conss) == name and s["mag"] <= 5.5]
 
-    # Recuadro del SVG: figura + estrellas reales de la constelación (RA enrollada).
-    ras, decs = [], []
-    for ln in lines:
-        for ra, dec in ln:
-            ras.append(ra + 360.0 if ra < 0 else ra)
-            decs.append(dec)
-    for s in cstars:
-        ras.append(s["ra"] + 360.0 if s["ra"] < 0 else s["ra"])
-        decs.append(s["dec"])
-    if not ras:
+    # Recuadro del SVG: la FIGURA (líneas) de la constelación, para que el
+    # asterismo principal ocupe casi todo el lienzo y quede centrado.
+    bb = fig_bbox(lines)
+    if not bb:
         continue
-    ra_min, ra_max, dec_min, dec_max = min(ras), max(ras), min(decs), max(decs)
-    # margen del 14%
+    ra_min, ra_max, dec_min, dec_max = bb
+    # margen del 10%
     ra_span = max(ra_max - ra_min, 1e-3)
-    ra_min -= ra_span * 0.14
-    ra_max += ra_span * 0.14
-    dec_min -= (dec_max - dec_min) * 0.14 if (dec_max - dec_min) > 0 else 1.0
-    dec_max += (dec_max - dec_min) * 0.14 if (dec_max - dec_min) > 0 else 1.0
+    dec_span = max(dec_max - dec_min, 1e-3)
+    ra_min -= ra_span * 0.10
+    ra_max += ra_span * 0.10
+    dec_min -= dec_span * 0.10
+    dec_max += dec_span * 0.10
     ra_span = ra_max - ra_min
     dec_span = dec_max - dec_min
 
-    W, H = 460, 460
-    pad = 28
+    W, H = 520, 520
+    height = max(dec_span, 1e-3)
+    # relación de aspecto: ajusta H para no deformar
+    aspect = ra_span / height if height > 0 else 1.0
+    if aspect > 1:
+        H = int(W / aspect)
+    else:
+        W = int(H * aspect)
+    pad = 26
 
     # Objetos Messier que realmente pertenecen a esta constelación.
     cobjs = [o for o in deep
@@ -184,7 +186,7 @@ for c in conss:
             y = dec_to_y(dec, dec_min, dec_max, H, pad)
             pts.append(f"{x:.1f},{y:.1f}")
         parts.append(f'<polyline points="{" ".join(pts)}" fill="none" '
-                     f'stroke="#7fb0ff" stroke-width="1.3" stroke-opacity="0.85"/>')
+                     f'stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>')
     # estrellas (solo las que pertenecen a esta constelación)
     for s in cstars:
         x = ra_to_x(s["ra"], ra_min, ra_max, W, pad)
@@ -205,8 +207,8 @@ for c in conss:
                      f'fill="{col}" data-name="{s.get("name") or "HIP " + str(s["hip"])}" '
                      f'data-meta="mag {s["mag"]}"/>')
         if s.get("name"):
-            parts.append(f'<text x="{x + r + 3:.1f}" y="{y + 3:.1f}" '
-                         f'fill="#aebfe0" font-size="9">{s["name"]}</text>')
+            parts.append(f'<text x="{x + r + 4:.1f}" y="{y + 4:.1f}" '
+                         f'fill="#cfe0ff" font-size="12" font-weight="bold">{s["name"]}</text>')
 
     # objetos Messier (mancha difusa por tipo)
     for o in cobjs:
