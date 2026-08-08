@@ -33,21 +33,25 @@ def slug(name: str) -> str:
     return s
 
 
-def ra_to_x(ra, ra_min, ra_max, w, pad):
+def ra_to_x(ra, ra_min, ra_max, dec_min, dec_max, w, pad):
     # RA crece hacia la IZQUIERDA (este a la izquierda, como en mapas celestes).
     # Normaliza la RA al mismo sistema que el recuadro (enrollado a [0,360)) para
     # que los puntos con RA negativa no se dibujen fuera del canvas.
+    # Usa el MISMO span que dec_to_y (el mayor) para no deformar la figura.
     if ra < 0:
         ra += 360.0
-    if ra_max == ra_min:
-        return w / 2
-    return pad + (ra_max - ra) / (ra_max - ra_min) * (w - 2 * pad)
+    span = max(ra_max - ra_min, dec_max - dec_min, 1e-3)
+    inner = w - 2 * pad
+    # centro el rango real dentro del lienzo cuadrado
+    cx = (ra_min + ra_max) / 2
+    return w / 2 - (cx - ra) / span * inner
 
 
-def dec_to_y(dec, dec_min, dec_max, h, pad):
-    if dec_max == dec_min:
-        return h / 2
-    return pad + (dec - dec_min) / (dec_max - dec_min) * (h - 2 * pad)
+def dec_to_y(dec, dec_min, dec_max, ra_min, ra_max, h, pad):
+    span = max(ra_max - ra_min, dec_max - dec_min, 1e-3)
+    inner = h - 2 * pad
+    cy = (dec_min + dec_max) / 2
+    return h / 2 - (cy - dec) / span * inner
 
 
 def star_radius(mag):
@@ -133,16 +137,27 @@ for _o in deep:
     _id = _o.get("name") or _o.get("desig") or _o.get("id")
     obj_const[_id] = obj_constellation(_o, conss)
 
+# Para algunas constelaciones el catálogo dibuja la figura completa (incluidas
+# patas muy largas) y el asterismo principal es más reconocible. En esos casos
+# dibujamos solo las líneas indicadas (índices sobre c["lines"]).
+ASTERISM_LINES = {
+    "Osa Mayor": [0],  # el Carro (Big Dipper), línea 0 = las 7 estrellas del cazo
+}
+
 for c in conss:
     name = c["name"]
     lines = c["lines"]
 
+    # Líneas a dibujar: todas salvo override de asterismo principal.
+    draw_idx = ASTERISM_LINES.get(name)
+    draw_lines = [lines[i] for i in draw_idx] if draw_idx else lines
+
     # Solo las estrellas que realmente pertenecen a esta constelación.
     cstars = [s for s in stars if constellation_of(s, conss) == name and s["mag"] <= 5.5]
 
-    # Recuadro del SVG: la FIGURA (líneas) de la constelación, para que el
-    # asterismo principal ocupe casi todo el lienzo y quede centrado.
-    bb = fig_bbox(lines)
+    # Recuadro del SVG: las líneas que se dibujan (el asterismo principal),
+    # para que ocupe casi todo el lienzo y quede centrado.
+    bb = fig_bbox(draw_lines)
     if not bb:
         continue
     ra_min, ra_max, dec_min, dec_max = bb
@@ -156,14 +171,8 @@ for c in conss:
     ra_span = ra_max - ra_min
     dec_span = dec_max - dec_min
 
-    W, H = 520, 520
-    height = max(dec_span, 1e-3)
-    # relación de aspecto: ajusta H para no deformar
-    aspect = ra_span / height if height > 0 else 1.0
-    if aspect > 1:
-        H = int(W / aspect)
-    else:
-        W = int(H * aspect)
+    # Lienzo CUADRADO: misma escala en ambos ejes para no deformar.
+    W = H = 520
     pad = 26
 
     # Objetos Messier que realmente pertenecen a esta constelación.
@@ -178,19 +187,19 @@ for c in conss:
         f'font-family="Audiowide, Segoe UI, sans-serif">'
     )
     parts.append(f'<rect width="{W}" height="{H}" fill="#05060c"/>')
-    # líneas de la figura
-    for ln in lines:
+    # líneas de la figura (asterismo seleccionado)
+    for ln in draw_lines:
         pts = []
         for ra, dec in ln:
-            x = ra_to_x(ra, ra_min, ra_max, W, pad)
-            y = dec_to_y(dec, dec_min, dec_max, H, pad)
+            x = ra_to_x(ra, ra_min, ra_max, dec_min, dec_max, W, pad)
+            y = dec_to_y(dec, dec_min, dec_max, ra_min, ra_max, H, pad)
             pts.append(f"{x:.1f},{y:.1f}")
         parts.append(f'<polyline points="{" ".join(pts)}" fill="none" '
                      f'stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>')
     # estrellas (solo las que pertenecen a esta constelación)
     for s in cstars:
-        x = ra_to_x(s["ra"], ra_min, ra_max, W, pad)
-        y = dec_to_y(s["dec"], dec_min, dec_max, H, pad)
+        x = ra_to_x(s["ra"], ra_min, ra_max, dec_min, dec_max, W, pad)
+        y = dec_to_y(s["dec"], dec_min, dec_max, ra_min, ra_max, H, pad)
         r = star_radius(s["mag"])
         bv = float(s["bv"]) if s.get("bv") else 0.0
         if bv < 0:
@@ -212,8 +221,8 @@ for c in conss:
 
     # objetos Messier (mancha difusa por tipo)
     for o in cobjs:
-        x = ra_to_x(o["ra"], ra_min, ra_max, W, pad)
-        y = dec_to_y(o["dec"], dec_min, dec_max, H, pad)
+        x = ra_to_x(o["ra"], ra_min, ra_max, dec_min, dec_max, W, pad)
+        y = dec_to_y(o["dec"], dec_min, dec_max, ra_min, ra_max, H, pad)
         label = o.get("name") or o.get("desig") or o.get("id")
         tname = o.get("typeName") or o.get("type") or ""
         col = type_color(o.get("type"))

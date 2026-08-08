@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 520" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="515" height="520" fill="#05060c"/>
-<polyline points="64.6,65.0 450.4,455.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="547.5" cy="-4329.9" r="4.2" fill="#cfe0ff" data-name="Procyon" data-meta="mag 2.45"/>
-<text x="555.6" y="-4325.9" fill="#cfe0ff" font-size="12" font-weight="bold">Procyon</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="453.3,65.0 66.7,455.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="-30.6" cy="-4329.9" r="4.2" fill="#cfe0ff" data-name="Procyon" data-meta="mag 2.45"/>
+<text x="-22.4" y="-4325.9" fill="#cfe0ff" font-size="12" font-weight="bold">Procyon</text>
 </svg>

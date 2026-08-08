@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 224" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="224" fill="#05060c"/>
-<polyline points="455.0,78.6 302.6,115.6 65.0,183.7" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="435.1,40.3 302.6,115.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="65.0,220.7 217.4,264.2 455.0,344.3" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="84.9,175.7 217.4,264.2" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
 </svg>

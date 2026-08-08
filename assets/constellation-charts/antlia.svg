@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 144" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="144" fill="#05060c"/>
-<polyline points="455.0,48.7 196.8,110.3 65.0,33.7" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="455.0" cy="48.7" r="3.1" fill="#ffd699" data-name="HIP 46515" data-meta="mag 4.51"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="65.0,227.0 323.2,314.1 455.0,205.9" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="65.0" cy="227.0" r="3.1" fill="#ffd699" data-name="HIP 46515" data-meta="mag 4.51"/>
 </svg>

@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 282" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="282" fill="#05060c"/>
-<polyline points="455.0,236.8 374.1,232.3 310.8,160.5 190.1,113.6 108.9,102.7 69.8,63.9 65.0,45.2" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="91.2" cy="179.2" r="3.2" fill="#ffffff" data-name="HIP 44901" data-meta="mag 4.46"/>
-<circle class="star" cx="310.8" cy="160.5" r="3.1" fill="#cfe0ff" data-name="HIP 36145" data-meta="mag 4.61"/>
-<circle class="star" cx="221.1" cy="178.4" r="3.0" fill="#ffffff" data-name="HIP 39847" data-meta="mag 4.78"/>
-<circle class="star" cx="75.5" cy="198.0" r="3.0" fill="#ffffff" data-name="HIP 45493" data-meta="mag 4.8"/>
-<circle class="star" cx="443.7" cy="161.1" r="2.9" fill="#ffb366" data-name="HIP 30520" data-meta="mag 4.92"/>
-<circle class="star" cx="275.8" cy="234.5" r="2.9" fill="#ffffff" data-name="HIP 37609" data-meta="mag 4.93"/>
-<circle class="star" cx="328.4" cy="162.5" r="2.9" fill="#ffffff" data-name="HIP 35384" data-meta="mag 5.0"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="65.0,365.8 145.9,360.8 209.2,281.6 329.9,229.8 411.1,217.7 450.2,174.9 455.0,154.2" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="428.8" cy="302.2" r="3.2" fill="#ffffff" data-name="HIP 44901" data-meta="mag 4.46"/>
+<circle class="star" cx="209.2" cy="281.6" r="3.1" fill="#cfe0ff" data-name="HIP 36145" data-meta="mag 4.61"/>
+<circle class="star" cx="298.9" cy="301.3" r="3.0" fill="#ffffff" data-name="HIP 39847" data-meta="mag 4.78"/>
+<circle class="star" cx="444.5" cy="322.9" r="3.0" fill="#ffffff" data-name="HIP 45493" data-meta="mag 4.8"/>
+<circle class="star" cx="76.3" cy="282.2" r="2.9" fill="#ffb366" data-name="HIP 30520" data-meta="mag 4.92"/>
+<circle class="star" cx="244.2" cy="363.3" r="2.9" fill="#ffffff" data-name="HIP 37609" data-meta="mag 4.93"/>
+<circle class="star" cx="191.6" cy="283.8" r="2.9" fill="#ffffff" data-name="HIP 35384" data-meta="mag 5.0"/>
 </svg>

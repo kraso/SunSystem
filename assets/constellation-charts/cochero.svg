@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317 520" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="317" height="520" fill="#05060c"/>
-<polyline points="48.8,313.2 199.6,329.1 235.4,256.8 268.9,134.2 165.8,65.0 48.1,195.7 48.8,313.2 48.8,455.0 199.6,329.1 251.4,296.1 249.6,254.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="169.9" cy="-273.1" r="4.6" fill="#cfe0ff" data-name="Capella" data-meta="mag 1.64"/>
-<text x="178.4" y="-269.1" fill="#cfe0ff" font-size="12" font-weight="bold">Capella</text>
-<circle class="star" cx="48.8" cy="455.0" r="3.5" fill="#ffd699" data-name="HIP 28358" data-meta="mag 3.72"/>
-<circle class="star" cx="267.9" cy="446.9" r="3.2" fill="#cfe0ff" data-name="HIP 23040" data-meta="mag 4.43"/>
-<circle class="star" cx="234.8" cy="414.2" r="2.9" fill="#ffffff" data-name="HIP 23783" data-meta="mag 4.98"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="378.4,313.2 215.7,329.1 177.1,256.8 140.9,134.2 252.2,65.0 379.1,195.7 378.4,313.2 378.4,455.0 215.7,329.1 159.8,296.1 161.7,254.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="247.8" cy="-273.1" r="4.6" fill="#cfe0ff" data-name="Capella" data-meta="mag 1.64"/>
+<text x="256.3" y="-269.1" fill="#cfe0ff" font-size="12" font-weight="bold">Capella</text>
+<circle class="star" cx="378.4" cy="455.0" r="3.5" fill="#ffd699" data-name="HIP 28358" data-meta="mag 3.72"/>
+<circle class="star" cx="142.0" cy="446.9" r="3.2" fill="#cfe0ff" data-name="HIP 23040" data-meta="mag 4.43"/>
+<circle class="star" cx="177.7" cy="414.2" r="2.9" fill="#ffffff" data-name="HIP 23783" data-meta="mag 4.98"/>
 </svg>

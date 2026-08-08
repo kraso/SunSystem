@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 413 520" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="413" height="520" fill="#05060c"/>
-<polyline points="249.8,341.9 255.2,455.0 356.9,408.3 249.8,341.9 116.8,302.1 56.1,65.0 177.3,102.9 249.8,341.9" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="1222.8" cy="-3866.8" r="4.6" fill="#cfe0ff" data-name="Vega" data-meta="mag 1.62"/>
-<text x="1231.4" y="-3862.8" fill="#cfe0ff" font-size="12" font-weight="bold">Vega</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="215.4,341.9 209.8,455.0 105.1,408.3 215.4,341.9 352.4,302.1 414.9,65.0 290.1,102.9 215.4,341.9" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="-786.9" cy="-3866.8" r="4.6" fill="#cfe0ff" data-name="Vega" data-meta="mag 1.62"/>
+<text x="-778.3" y="-3862.8" fill="#cfe0ff" font-size="12" font-weight="bold">Vega</text>
 </svg>

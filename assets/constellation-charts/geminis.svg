@@ -1,22 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 436" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="436" fill="#05060c"/>
-<polyline points="455.0,219.9 420.1,220.1 329.7,264.1 212.4,350.3 111.2,378.0 65.0,312.9 105.5,293.9 173.6,211.1 242.7,187.3 356.5,117.0 323.9,58.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="173.6,211.1 182.4,119.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="90.9" cy="-71.3" r="5.2" fill="#ffffff" data-name="Pollux" data-meta="mag 0.4"/>
-<text x="100.1" y="-67.3" fill="#cfe0ff" font-size="12" font-weight="bold">Pollux</text>
-<circle class="star" cx="65.0" cy="312.9" r="4.8" fill="#fff2cc" data-name="Castor" data-meta="mag 1.16"/>
-<text x="73.8" y="316.9" fill="#cfe0ff" font-size="12" font-weight="bold">Castor</text>
-<circle class="star" cx="356.5" cy="117.0" r="4.4" fill="#ffffff" data-name="HIP 31681" data-meta="mag 1.93"/>
-<circle class="star" cx="420.1" cy="220.0" r="4.0" fill="#ffb366" data-name="HIP 30343" data-meta="mag 2.87"/>
-<circle class="star" cx="311.3" cy="-1203.0" r="3.8" fill="#ffffff" data-name="Alhena" data-meta="mag 3.24"/>
-<text x="319.1" y="-1199.0" fill="#cfe0ff" font-size="12" font-weight="bold">Alhena</text>
-<circle class="star" cx="455.0" cy="219.9" r="3.7" fill="#ffb366" data-name="HIP 29655" data-meta="mag 3.31"/>
-<circle class="star" cx="173.6" cy="211.1" r="3.7" fill="#ffffff" data-name="HIP 35550" data-meta="mag 3.5"/>
-<circle class="star" cx="182.4" cy="119.4" r="3.6" fill="#ffffff" data-name="HIP 35350" data-meta="mag 3.58"/>
-<circle class="star" cx="242.7" cy="187.3" r="3.4" fill="#fff2cc" data-name="HIP 34088" data-meta="mag 4.01"/>
-<circle class="star" cx="285.5" cy="-362.1" r="3.4" fill="#ffd699" data-name="Mebsuta" data-meta="mag 4.08"/>
-<text x="292.8" y="-358.1" fill="#cfe0ff" font-size="12" font-weight="bold">Mebsuta</text>
-<circle class="star" cx="394.3" cy="181.3" r="3.3" fill="#cfe0ff" data-name="HIP 30883" data-meta="mag 4.13"/>
-<circle class="star" cx="329.5" cy="63.6" r="3.2" fill="#ffd699" data-name="HIP 32249" data-meta="mag 4.49"/>
-<circle class="star" cx="283.5" cy="62.7" r="3.0" fill="#ffffff" data-name="HIP 33202" data-meta="mag 4.73"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="65.0,262.0 99.9,262.1 190.3,307.2 307.6,395.5 408.8,423.8 455.0,357.2 414.5,337.7 346.4,252.9 277.3,228.6 163.5,156.6 196.1,96.2" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="346.4,252.9 337.6,159.1" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="429.1" cy="-36.1" r="5.2" fill="#ffffff" data-name="Pollux" data-meta="mag 0.4"/>
+<text x="438.3" y="-32.1" fill="#cfe0ff" font-size="12" font-weight="bold">Pollux</text>
+<circle class="star" cx="455.0" cy="357.2" r="4.8" fill="#fff2cc" data-name="Castor" data-meta="mag 1.16"/>
+<text x="463.8" y="361.2" fill="#cfe0ff" font-size="12" font-weight="bold">Castor</text>
+<circle class="star" cx="163.5" cy="156.6" r="4.4" fill="#ffffff" data-name="HIP 31681" data-meta="mag 1.93"/>
+<circle class="star" cx="99.9" cy="262.1" r="4.0" fill="#ffb366" data-name="HIP 30343" data-meta="mag 2.87"/>
+<circle class="star" cx="208.7" cy="-1194.7" r="3.8" fill="#ffffff" data-name="Alhena" data-meta="mag 3.24"/>
+<text x="216.4" y="-1190.7" fill="#cfe0ff" font-size="12" font-weight="bold">Alhena</text>
+<circle class="star" cx="65.0" cy="262.0" r="3.7" fill="#ffb366" data-name="HIP 29655" data-meta="mag 3.31"/>
+<circle class="star" cx="346.4" cy="252.9" r="3.7" fill="#ffffff" data-name="HIP 35550" data-meta="mag 3.5"/>
+<circle class="star" cx="337.6" cy="159.1" r="3.6" fill="#ffffff" data-name="HIP 35350" data-meta="mag 3.58"/>
+<circle class="star" cx="277.3" cy="228.6" r="3.4" fill="#fff2cc" data-name="HIP 34088" data-meta="mag 4.01"/>
+<circle class="star" cx="234.5" cy="-333.9" r="3.4" fill="#ffd699" data-name="Mebsuta" data-meta="mag 4.08"/>
+<text x="241.9" y="-329.9" fill="#cfe0ff" font-size="12" font-weight="bold">Mebsuta</text>
+<circle class="star" cx="125.7" cy="222.4" r="3.3" fill="#cfe0ff" data-name="HIP 30883" data-meta="mag 4.13"/>
+<circle class="star" cx="190.5" cy="101.9" r="3.2" fill="#ffd699" data-name="HIP 32249" data-meta="mag 4.49"/>
+<circle class="star" cx="236.5" cy="101.1" r="3.0" fill="#ffffff" data-name="HIP 33202" data-meta="mag 4.73"/>
 </svg>

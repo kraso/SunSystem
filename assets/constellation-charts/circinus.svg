@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 314" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="314" fill="#05060c"/>
-<polyline points="120.9,266.2 455.0,47.8 65.0,247.8" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="120.9" cy="266.2" r="3.4" fill="#ffffff" data-name="HIP 74824" data-meta="mag 4.07"/>
-<circle class="star" cx="119.7" cy="96.1" r="3.0" fill="#ffd699" data-name="HIP 74837" data-meta="mag 4.85"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="399.1,377.8 65.0,142.2 455.0,358.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="399.1" cy="377.8" r="3.4" fill="#ffffff" data-name="HIP 74824" data-meta="mag 4.07"/>
+<circle class="star" cx="400.3" cy="194.2" r="3.0" fill="#ffd699" data-name="HIP 74837" data-meta="mag 4.85"/>
 </svg>

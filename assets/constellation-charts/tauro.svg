@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 441" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="441" fill="#05060c"/>
-<polyline points="65.0,296.8 246.2,243.5 267.5,236.2 293.6,233.4 284.3,255.4 267.7,274.2 98.3,382.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="293.6,233.4 349.7,197.3 448.1,165.7 342.4,122.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="448.1,165.7 455.0,157.6 419.6,58.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="126.5" cy="582.4" r="5.4" fill="#fff2cc" data-name="Elnath" data-meta="mag 0.08"/>
-<text x="135.9" y="586.4" fill="#cfe0ff" font-size="12" font-weight="bold">Elnath</text>
-<circle class="star" cx="246.2" cy="243.5" r="5.0" fill="#ffb366" data-name="Aldebaran" data-meta="mag 0.87"/>
-<text x="255.2" y="247.5" fill="#cfe0ff" font-size="12" font-weight="bold">Aldebaran</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="455.0,337.9 273.8,283.5 252.5,276.0 226.4,273.2 235.7,295.7 252.3,314.9 421.7,425.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="226.4,273.2 170.3,236.3 71.9,204.0 177.6,160.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="71.9,204.0 65.0,195.7 100.4,94.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="393.5" cy="629.9" r="5.4" fill="#fff2cc" data-name="Elnath" data-meta="mag 0.08"/>
+<text x="402.8" y="633.9" fill="#cfe0ff" font-size="12" font-weight="bold">Elnath</text>
+<circle class="star" cx="273.8" cy="283.5" r="5.0" fill="#ffb366" data-name="Aldebaran" data-meta="mag 0.87"/>
+<text x="282.7" y="287.5" fill="#cfe0ff" font-size="12" font-weight="bold">Aldebaran</text>
 </svg>

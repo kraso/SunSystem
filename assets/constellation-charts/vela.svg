@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 192" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="192" fill="#05060c"/>
-<polyline points="367.8,40.1 275.0,37.7 188.8,41.2 65.0,82.5 144.5,141.1 253.7,154.3 310.0,130.5 455.0,99.2" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="144.5" cy="141.1" r="3.5" fill="#ffffff" data-name="HIP 50191" data-meta="mag 3.85"/>
-<circle class="star" cx="368.5" cy="136.8" r="3.4" fill="#fff2cc" data-name="HIP 42884" data-meta="mag 4.05"/>
-<circle class="star" cx="385.3" cy="134.1" r="3.3" fill="#ffffff" data-name="HIP 42312" data-meta="mag 4.11"/>
-<circle class="star" cx="329.6" cy="148.0" r="3.2" fill="#fff2cc" data-name="HIP 44191" data-meta="mag 4.45"/>
-<circle class="star" cx="450.3" cy="134.1" r="3.0" fill="#ffffff" data-name="HIP 40096" data-meta="mag 4.73"/>
-<circle class="star" cx="125.6" cy="144.8" r="3.0" fill="#ffd699" data-name="HIP 50799" data-meta="mag 4.82"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="152.2,190.8 245.0,187.9 331.2,192.2 455.0,243.3 375.5,315.7 266.3,332.1 210.0,302.7 65.0,264.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="375.5" cy="315.7" r="3.5" fill="#ffffff" data-name="HIP 50191" data-meta="mag 3.85"/>
+<circle class="star" cx="151.5" cy="310.5" r="3.4" fill="#fff2cc" data-name="HIP 42884" data-meta="mag 4.05"/>
+<circle class="star" cx="134.7" cy="307.1" r="3.3" fill="#ffffff" data-name="HIP 42312" data-meta="mag 4.11"/>
+<circle class="star" cx="190.4" cy="324.3" r="3.2" fill="#fff2cc" data-name="HIP 44191" data-meta="mag 4.45"/>
+<circle class="star" cx="69.7" cy="307.1" r="3.0" fill="#ffffff" data-name="HIP 40096" data-meta="mag 4.73"/>
+<circle class="star" cx="394.4" cy="320.4" r="3.0" fill="#ffd699" data-name="HIP 50799" data-meta="mag 4.82"/>
 </svg>

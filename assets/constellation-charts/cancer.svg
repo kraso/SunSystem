@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 520" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="278" height="520" fill="#05060c"/>
-<polyline points="44.8,118.2 106.8,243.6 113.1,309.7 97.9,455.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="106.8,243.6 233.2,65.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="106.8" cy="243.7" r="3.4" fill="#ffd699" data-name="HIP 42911" data-meta="mag 3.94"/>
-<circle class="star" cx="44.8" cy="118.2" r="3.3" fill="#ffffff" data-name="HIP 44066" data-meta="mag 4.26"/>
-<circle class="star" cx="113.0" cy="309.7" r="3.1" fill="#ffffff" data-name="HIP 42806" data-meta="mag 4.66"/>
-<circle class="star" cx="127.3" cy="280.1" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M44" data-meta="oc"/>
-<circle cx="127.3" cy="280.1" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
-<circle class="star" cx="81.1" cy="117.4" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M67" data-meta="oc"/>
-<circle cx="81.1" cy="117.4" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="520" fill="#05060c"/>
+<polyline points="364.5,118.2 295.8,243.6 288.8,309.7 305.6,455.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<polyline points="295.8,243.6 155.5,65.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="295.8" cy="243.7" r="3.4" fill="#ffd699" data-name="HIP 42911" data-meta="mag 3.94"/>
+<circle class="star" cx="364.5" cy="118.2" r="3.3" fill="#ffffff" data-name="HIP 44066" data-meta="mag 4.26"/>
+<circle class="star" cx="288.8" cy="309.7" r="3.1" fill="#ffffff" data-name="HIP 42806" data-meta="mag 4.66"/>
+<circle class="star" cx="272.9" cy="280.1" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M44" data-meta="oc"/>
+<circle cx="272.9" cy="280.1" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
+<circle class="star" cx="324.2" cy="117.4" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M67" data-meta="oc"/>
+<circle cx="324.2" cy="117.4" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
 </svg>
