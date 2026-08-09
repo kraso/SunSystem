@@ -93,6 +93,34 @@ def search_nasa_id(query: str):
     return None
 
 
+def alt_queries(cid: str, name: str, en: str) -> list[str]:
+    """Varias formas de buscar la misma constelación antes de rendirse."""
+    q = []
+    # 1) nombre en inglés + constellation
+    q.append(en + " constellation")
+    # 2) nombre en español + constelación
+    q.append(name + " constelación")
+    # 3) nombre en español + constellation
+    q.append(name + " constellation")
+    # 4) términos compuestos en inglés (p.ej. "Southern Triangle" -> "Triangulum Australe")
+    q.append(en)
+    # 5) abreviatura IAU en mayúsculas
+    q.append(cid.upper())
+    # 6) "deep sky" + inglés
+    q.append("deep sky " + en)
+    # 7) objetos famosos por constelación
+    q.append("constellation of " + en)
+    # dedupe preservando orden
+    seen = set()
+    out = []
+    for x in q:
+        if x.lower() not in seen:
+            seen.add(x.lower())
+            out.append(x)
+    return out
+
+
+
 def download_asset(nasa_id: str, dest: str) -> bool:
     for suffix in ("~orig", "~thumb", ""):
         url = f"https://images-assets.nasa.gov/image/{nasa_id}/{nasa_id}{suffix}.jpg"
@@ -122,12 +150,13 @@ def main() -> int:
             skip += 1
             continue
         en = IAU_EN.get(cid, name)
-        query = en + " constellation"
         print(f"== {name} ({en}) slug={slug} ==", flush=True)
-        nasa_id = search_nasa_id(query)
-        if not nasa_id:
-            # segundo intento: solo el nombre en inglés
-            nasa_id = search_nasa_id(en)
+        nasa_id = None
+        for q in alt_queries(cid, name, en):
+            nasa_id = search_nasa_id(q)
+            if nasa_id:
+                print(f"    query OK: {q}")
+                break
         if not nasa_id:
             print("    no results")
             continue
