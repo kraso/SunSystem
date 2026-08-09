@@ -23,7 +23,6 @@
 <text class="star-label" x="175.5" y="153.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="62956">Alioth</text>
 <circle class="star" cx="87.7" cy="153.4" r="5.6" fill="#ffffff" data-name="Phecda" data-meta="mag 2.41" data-vid="58001"/>
 <text class="star-label" x="97.3" y="157.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="58001">Phecda</text>
-<circle class="star" cx="355.3" cy="124.5" r="5.2" fill="#ffffff" data-name="HIP 75097" data-meta="mag 3.0" data-vid="75097"/>
 <circle class="star" cx="115.6" cy="148.1" r="5.0" fill="#ffffff" data-name="Megrez" data-meta="mag 3.32" data-vid="59774"/>
 <text class="star-label" x="124.7" y="152.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="59774">Megrez</text>
 <circle class="star" cx="661.1" cy="153.9" r="4.7" fill="#fff2cc" data-name="HIP 94779" data-meta="mag 3.8" data-vid="94779"/>
