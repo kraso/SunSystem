@@ -10,7 +10,8 @@
     "objectives": "Colocar el primer satélite artificial en órbita terrestre y transmitir señal de radio desde el espacio.",
     "result": "Éxito. Primer objeto hecho por el ser humano en orbitar la Tierra (periodo ~96 min, 215×939 km).",
     "details": "Esfera de 58 cm y 83,6 kg. Marcó el inicio de la carrera espacial. Transmitió durante 21 días hasta que se agotaron las baterías.",
-    "reference": "NASA / Roscosmos (historial Sputnik)"
+    "reference": "NASA / Roscosmos (historial Sputnik)",
+    "image": "sputnik-1.jpg"
   },
   {
     "id": "vostok-1",
@@ -19,11 +20,14 @@
     "agency": "URSS",
     "type": "Tripulada",
     "status": "success",
-    "crew": ["Yuri Gagarin"],
+    "crew": [
+      "Yuri Gagarin"
+    ],
     "objectives": "Enviar al primer ser humano al espacio y devolverlo con vida.",
     "result": "Éxito. Gagarin completó una órbita terrestre en 108 minutos.",
     "details": "Primer vuelo espacial tripulado de la historia. Gagarin se convirtió en un ícono global. La nave Vostok 3KA demostró que el ser humano podía sobrevivir a la ingravidez y al reingreso.",
-    "reference": "Roscosmos / NASA (Gagarin)"
+    "reference": "Roscosmos / NASA (Gagarin)",
+    "image": "vostok-1.jpg"
   },
   {
     "id": "mercury-redstone-3",
@@ -32,11 +36,14 @@
     "agency": "NASA",
     "type": "Tripulada",
     "status": "success",
-    "crew": ["Alan Shepard"],
+    "crew": [
+      "Alan Shepard"
+    ],
     "objectives": "Primer vuelo suborbital tripulado de EE. UU.",
     "result": "Éxito. Shepard alcanzó 187 km de apogeo en un vuelo de 15 min.",
     "details": "Primer estadounidense en el espacio (vuelo balístico suborbital, no orbital). Parte del programa Mercury.",
-    "reference": "NASA (Mercury)"
+    "reference": "NASA (Mercury)",
+    "image": "mercury-redstone-3.jpg"
   },
   {
     "id": "voskhod-2",
@@ -45,11 +52,15 @@
     "agency": "URSS",
     "type": "Tripulada",
     "status": "success",
-    "crew": ["Pavel Belyayev", "Alexei Leonov"],
+    "crew": [
+      "Pavel Belyayev",
+      "Alexei Leonov"
+    ],
     "objectives": "Realizar la primera actividad extravehicular (EVA, 'caminata espacial').",
     "result": "Éxito parcial. Leonov salió al espacio 12 min, pero el traje se infló y tuvo dificultades para reentrar.",
     "details": "Primera caminata espacial de la historia. El reingreso fue balístico forzado y la cápsula aterrizó lejos del planificado, en taiga nevada.",
-    "reference": "Roscosmos (Voskhod)"
+    "reference": "Roscosmos (Voskhod)",
+    "image": "voskhod-2.jpg"
   },
   {
     "id": "apollo-11",
@@ -59,11 +70,16 @@
     "agency": "NASA",
     "type": "Tripulada",
     "status": "success",
-    "crew": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins"],
+    "crew": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Michael Collins"
+    ],
     "objectives": "Alunizar con dos astronautas y devolverlos sanos y salvos.",
     "result": "Éxito. Armstrong y Aldrin caminaron sobre la Luna el 20-07-1969; Collins orbitaba en el módulo de mando.",
     "details": "Primer alunizaje tripulado. ~21,5 h en la superficie, 2,5 h de EVA, 21,5 kg de muestras lunares. Cumplió el objetivo de Kennedy de 1961.",
-    "reference": "NASA (Apollo 11)"
+    "reference": "NASA (Apollo 11)",
+    "image": "apollo-11.jpg"
   },
   {
     "id": "apollo-13",
@@ -73,11 +89,16 @@
     "agency": "NASA",
     "type": "Tripulada",
     "status": "failure",
-    "crew": ["Jim Lovell", "Jack Swigert", "Fred Haise"],
+    "crew": [
+      "Jim Lovell",
+      "Jack Swigert",
+      "Fred Haise"
+    ],
     "objectives": "Tercer alunizaje planeado (en Fra Mauro).",
     "result": "Abortada. Explosión del tanque de oxígeno 2 a 56 h de vuelo; la Luna no se alcanzó. La tripulación regresó sana.",
     "details": " 'Un éxito fallido': el ingenio humano mantuvo con vida a la tripulación usando el módulo lunar como bote salvavidas. Famoso por 'Houston, tenemos un problema'.",
-    "reference": "NASA (Apollo 13)"
+    "reference": "NASA (Apollo 13)",
+    "image": "apollo-13.jpg"
   },
   {
     "id": "salyut-1",
@@ -86,11 +107,16 @@
     "agency": "URSS",
     "type": "Estación espacial",
     "status": "success",
-    "crew": ["Vladimir Shatalov", "Alexei Yeliseyev", "Nikolai Rukavishnikov"],
+    "crew": [
+      "Vladimir Shatalov",
+      "Alexei Yeliseyev",
+      "Nikolai Rukavishnikov"
+    ],
     "objectives": "Primera estación espacial en orbitar la Tierra.",
     "result": "Éxito de puesta en órbita. La tripulación de Soyuz 11 ocupó la estación 23 días; fallecieron en el reingreso por despresurización.",
     "details": "Primera estación espacial de la historia. La pérdida de la tripulación de Soyuz 11 marcó un hito trágico en la seguridad.",
-    "reference": "Roscosmos (Salyut)"
+    "reference": "Roscosmos (Salyut)",
+    "image": "salyut-1.jpg"
   },
   {
     "id": "skylab",
@@ -100,11 +126,22 @@
     "agency": "NASA",
     "type": "Estación espacial",
     "status": "success",
-    "crew": ["Charles Conrad", "Joseph Kerwin", "Paul Weitz", "Alan Bean", "Jack Lousma", "Owen Garriott", "Gerald Carr", "Edward Gibson", "William Pogue"],
+    "crew": [
+      "Charles Conrad",
+      "Joseph Kerwin",
+      "Paul Weitz",
+      "Alan Bean",
+      "Jack Lousma",
+      "Owen Garriott",
+      "Gerald Carr",
+      "Edward Gibson",
+      "William Pogue"
+    ],
     "objectives": "Primera estación espacial de EE. UU.; observar el Sol y la Tierra y estudiar la ingravidez.",
     "result": "Éxito. 3 expediciones tripuladas (Skylab 2/3/4) entre 1973-1974. Reentró en 1979.",
     "details": "Estación construida a partir de un tanque del cohete Saturno V. Demostró estancias largas en microgravedad y observatorios en órbita.",
-    "reference": "NASA (Skylab)"
+    "reference": "NASA (Skylab)",
+    "image": "skylab.jpg"
   },
   {
     "id": "apollo-soyuz",
@@ -114,11 +151,18 @@
     "agency": "NASA / URSS",
     "type": "Tripulada",
     "status": "success",
-    "crew": ["Thomas Stafford", "Vance Brand", "Donald Slayton", "Alexei Leonov", "Valeri Kubasov"],
+    "crew": [
+      "Thomas Stafford",
+      "Vance Brand",
+      "Donald Slayton",
+      "Alexei Leonov",
+      "Valeri Kubasov"
+    ],
     "objectives": "Primer acoplamiento en órbita entre naves de EE. UU. y la URSS.",
     "result": "Éxito. Demostró encuentro y acoplamiento conjunto en plena Guerra Fría.",
     "details": "Símbolo de distensión. Estableció protocolos de acoplamiento más tarde usados en la ISS.",
-    "reference": "NASA / Roscosmos (ASTP)"
+    "reference": "NASA / Roscosmos (ASTP)",
+    "image": "apollo-soyuz.jpg"
   },
   {
     "id": "viking-1",
@@ -131,7 +175,8 @@
     "objectives": "Primer aterrizaje exitoso en Marte y búsqueda de vida.",
     "result": "Éxito. Aterrizó en Chryse Planitia el 20-07-1976; operó 6 años.",
     "details": "Primeras imágenes superficie de Marte y primeros experimentos de biología (resultados no concluyentes sobre vida).",
-    "reference": "NASA (Viking)"
+    "reference": "NASA (Viking)",
+    "image": "viking-1.jpg"
   },
   {
     "id": "voyager-1",
@@ -144,7 +189,8 @@
     "objectives": "Explorar Júpiter, Saturno y alcanzar el espacio interestelar.",
     "result": "Éxito. Sobrevuelo de Júpiter (1979) y Saturno (1980); en 2012 cruzó la heliopausa (espacio interestelar).",
     "details": "Objeto hecho por el ser humano más lejano de la Tierra. Lleva el 'Disco de Oro' con sonidos y mensajes de la Tierra.",
-    "reference": "NASA (Voyager)"
+    "reference": "NASA (Voyager)",
+    "image": "voyager-1.jpg"
   },
   {
     "id": "voyager-2",
@@ -157,7 +203,8 @@
     "objectives": "Visitar los cuatro planetas exteriores (Júpiter, Saturno, Urano, Neptuno).",
     "result": "Éxito. Única nave en visitar Urano (1986) y Neptuno (1989). En espacio interestelar desde 2018.",
     "details": "Gran Tour de los planetas exteriores gracias a la alineación planetaria de 175 años. Sigue enviando datos.",
-    "reference": "NASA (Voyager)"
+    "reference": "NASA (Voyager)",
+    "image": "voyager-2.jpg"
   },
   {
     "id": "sts-1",
@@ -167,11 +214,15 @@
     "agency": "NASA",
     "type": "Tripulada",
     "status": "success",
-    "crew": ["John Young", "Robert Crippen"],
+    "crew": [
+      "John Young",
+      "Robert Crippen"
+    ],
     "objectives": "Primer vuelo del transbordador espacial (vehículo reutilizable).",
     "result": "Éxito. Demostró el concepto de orbitador reutilizable y regreso como planeador.",
     "details": "Inició la era de los transbordadores (135 misiones hasta 2011). El Columbia se perdería en 2003.",
-    "reference": "NASA (Space Shuttle)"
+    "reference": "NASA (Space Shuttle)",
+    "image": "sts-1.jpg"
   },
   {
     "id": "mir",
@@ -181,11 +232,17 @@
     "agency": "URSS / Rusia",
     "type": "Estación espacial",
     "status": "success",
-    "crew": ["Yuri Romanenko", "Alexander Volkov", "Sergei Krikalev", "(y muchos más, ~104 visitantes)"],
+    "crew": [
+      "Yuri Romanenko",
+      "Alexander Volkov",
+      "Sergei Krikalev",
+      "(y muchos más, ~104 visitantes)"
+    ],
     "objectives": "Estación espacial modular soviética/rusa de larga duración.",
     "result": "Éxito. Occupada casi continuamente 1986-1999; récord de estancia (437 días, Polyakov).",
     "details": "Precursora de la ISS en diseño modular. Base del programa Shuttle-Mir con EE. UU.",
-    "reference": "Roscosmos (Mir)"
+    "reference": "Roscosmos (Mir)",
+    "image": "mir.jpg"
   },
   {
     "id": "sts-51l-challenger",
@@ -194,11 +251,20 @@
     "agency": "NASA",
     "type": "Tripulada",
     "status": "failure",
-    "crew": ["Francis Scobee", "Michael Smith", "Judith Resnik", "Ellison Onizuka", "Ronald McNair", "Gregory Jarvis", "Christa McAuliffe"],
+    "crew": [
+      "Francis Scobee",
+      "Michael Smith",
+      "Judith Resnik",
+      "Ellison Onizuka",
+      "Ronald McNair",
+      "Gregory Jarvis",
+      "Christa McAuliffe"
+    ],
     "objectives": "Desplegar el satélite TDRS-B y observar el cometa Halley; primera maestra en el espacio (McAuliffe).",
     "result": "Fallo. El transbordador se desintegró 73 s tras el despegue por fuga de un anillo O sellado.",
     "details": "Tragedia que paralizó el programa Shuttle 32 meses. Rediseñó los procedimientos de seguridad de la NASA.",
-    "reference": "NASA (Challenger)"
+    "reference": "NASA (Challenger)",
+    "image": "sts-51l-challenger.jpg"
   },
   {
     "id": "hst-sts-31",
@@ -207,11 +273,18 @@
     "agency": "NASA / ESA",
     "type": "No tripulada (observatorio)",
     "status": "success",
-    "crew": ["Loren Shriver", "Charles Bolden", "Steven Hawley", "Bruce McCandless", "Kathryn Sullivan"],
+    "crew": [
+      "Loren Shriver",
+      "Charles Bolden",
+      "Steven Hawley",
+      "Bruce McCandless",
+      "Kathryn Sullivan"
+    ],
     "objectives": "Colocar el telescopio espacial Hubble en órbita.",
     "result": "Éxito (tras la misión de servicio de 1993 que corrigió la aberración del espejo).",
     "details": "Uno de los observatorios más importantes de la historia; miles de descubrimientos en cosmología y astronomía.",
-    "reference": "NASA / ESA (Hubble)"
+    "reference": "NASA / ESA (Hubble)",
+    "image": "hst-sts-31.jpg"
   },
   {
     "id": "iss-zarya",
@@ -221,11 +294,14 @@
     "agency": "NASA · Roscosmos · ESA · JAXA · CSA",
     "type": "Estación espacial",
     "status": "success",
-    "crew": ["Expedición 1: William Shepherd (NASA), Yuri Gidzenko (RKA), Sergei Krikalev (RKA)"],
+    "crew": [
+      "Expedición 1: William Shepherd (NASA), Yuri Gidzenko (RKA), Sergei Krikalev (RKA)"
+    ],
     "objectives": "Laboratorio orbital internacional permanente para investigación en microgravedad, biología, física y observación de la Tierra.",
     "result": "Éxito. El módulo Zarya se lanzó el 20-11-1998; la tripulación continua ininterrumpida desde el 02-11-2000 (Expedición 1).",
     "details": "Mayor estructura humana en el espacio (≈420 t, ~108 m de envergadura). Cooperación de 15 naciones. Orbita a ~420 km, periodo ~92 min. Ha sido habitada por más de 270 personas de 20 países. Próxima retirada planeada ~2030-2031.",
-    "reference": "NASA / Roscosmos / ESA / JAXA / CSA (ISS)"
+    "reference": "NASA / Roscosmos / ESA / JAXA / CSA (ISS)",
+    "image": "iss-zarya.jpg"
   },
   {
     "id": "mars-climate-orbiter",
@@ -238,7 +314,8 @@
     "objectives": "Orbitar Marte para estudiar clima y atmósfera.",
     "result": "Fallo. Se perdió al entrar en órbita marciana el 23-09-1999.",
     "details": "Causa: error de conversión de unidades (fuerza en libras-fuerza vs newtons) entre equipos de tierra y nave. Caso clásico de fallo por falta de estándares.",
-    "reference": "NASA (MCO)"
+    "reference": "NASA (MCO)",
+    "image": "mars-climate-orbiter.jpg"
   },
   {
     "id": "cassini-huygens",
@@ -252,7 +329,8 @@
     "objectives": "Estudiar Saturno, sus anillos y lunas; posar la sonda Huygens en Titán.",
     "result": "Éxito. Llegó a Saturno en 2004; Huygens aterrizó en Titán en 2005 (primera vez en un mundo del sistema externo).",
     "details": "13 años en Saturno. Descubrió mares de metano en Titán y geysers en Encélado. Finalizó con la maniobra 'Grand Final' en 2017.",
-    "reference": "NASA / ESA / ASI (Cassini)"
+    "reference": "NASA / ESA / ASI (Cassini)",
+    "image": "cassini-huygens.jpg"
   },
   {
     "id": "sts-107-columbia",
@@ -261,11 +339,20 @@
     "agency": "NASA",
     "type": "Tripulada",
     "status": "failure",
-    "crew": ["Rick Husband", "William McCool", "David Brown", "Kalpana Chawla", "Michael Anderson", "Laurel Clark", "Ilan Ramon"],
+    "crew": [
+      "Rick Husband",
+      "William McCool",
+      "David Brown",
+      "Kalpana Chawla",
+      "Michael Anderson",
+      "Laurel Clark",
+      "Ilan Ramon"
+    ],
     "objectives": "Misión científica de microgravedad (SPACEHAB).",
     "result": "Fallo. La nave se desintegró en la reentrada por daño en el escudo térmico (impacto de espuma en el despegue).",
     "details": "Segunda tragedia del Shuttle. Llevó a la jubilación del programa en 2011 y a mejoras de inspección en órbita.",
-    "reference": "NASA (Columbia)"
+    "reference": "NASA (Columbia)",
+    "image": "sts-107-columbia.jpg"
   },
   {
     "id": "mer-spirit-opportunity",
@@ -279,7 +366,8 @@
     "objectives": "Explorar la superficie de Marte en busca de agua pasada.",
     "result": "Éxito. Opportunity operó 14 años (plan de 90 días); Spirit hasta 2010.",
     "details": "Demostraron que Marte tuvo agua líquida. Opportunity recorrió >45 km, récord de distancia en otro planeta.",
-    "reference": "NASA (MER)"
+    "reference": "NASA (MER)",
+    "image": "mer-spirit-opportunity.jpg"
   },
   {
     "id": "beagle-2",
@@ -292,7 +380,8 @@
     "objectives": "Aterrizar en Marte (Isidis Planitia) y buscar vida.",
     "result": "Fallo. Se perdió en el aterrizaje; en 2015 se halló intacto pero con paneles solares sin desplegar.",
     "details": "Acoplado a Mars Express. Su silencio motivó mejoras en aterrizajes posteriores de la ESA.",
-    "reference": "ESA (Beagle 2)"
+    "reference": "ESA (Beagle 2)",
+    "image": "beagle-2.jpg"
   },
   {
     "id": "rosetta",
@@ -306,7 +395,8 @@
     "objectives": "Acompañar y aterrizar una sonda (Philae) en el cometa 67P/Churyumov-Gerasimenko.",
     "result": "Éxito. Philae aterrizó en 2014 (rebote incluido); Rosetta orbitó el cometa hasta 2016.",
     "details": "Primera misión en orbitar y aterrizar en un cometa. Estudió la composición primitiva del sistema solar.",
-    "reference": "ESA (Rosetta)"
+    "reference": "ESA (Rosetta)",
+    "image": "rosetta.jpg"
   },
   {
     "id": "curiosity-msl",
@@ -320,7 +410,8 @@
     "objectives": "Evaluar la habitabilidad pasada de Marte en el cráter Gale.",
     "result": "Éxito. Aterrizó el 06-08-2012 por 'sky crane'. Sigue activa.",
     "details": "Rover del tamaño de un coche. Confirmó un entorno antiguo favorable a la vida microbiana y materia orgánica.",
-    "reference": "NASA (Curiosity)"
+    "reference": "NASA (Curiosity)",
+    "image": "curiosity-msl.jpg"
   },
   {
     "id": "orbital-sci-cygnus",
@@ -333,7 +424,8 @@
     "objectives": "Lanzar carga a la ISS (misión Orb-3).",
     "result": "Fallo. Explosión segundos después del despegue por fallo del motor Antares.",
     "details": "Incidente que aceleró la transición a nuevos motores y proveedores comerciales de carga.",
-    "reference": "NASA / Orbital ATK"
+    "reference": "NASA / Orbital ATK",
+    "image": "orbital-sci-cygnus.jpg"
   },
   {
     "id": "perseverance",
@@ -347,7 +439,8 @@
     "objectives": "Buscar indicios de vida microbiana pasada en Jezero y recoger muestras para retorno futuro.",
     "result": "Éxito. Aterrizó el 18-02-2021. Ingenuity realizó el primer vuelo motorizado en otro planeta (abr-2021).",
     "details": "Cráter Jezero, antiguo delta fluvial. Perseverance ha sellado muestras en tubos para una misión de retorno (Mars Sample Return).",
-    "reference": "NASA (Perseverance)"
+    "reference": "NASA (Perseverance)",
+    "image": "perseverance.jpg"
   },
   {
     "id": "artemis-1-orion",
@@ -361,7 +454,8 @@
     "objectives": "Vuelo de prueba no tripulado del cohete SLS y la cápsula Orion alrededor de la Luna.",
     "result": "Éxito. Orion dio dos vueltas lunares y regresó; base del programa Artemis de retorno a la Luna.",
     "details": "Primer vuelo del SLS. Prepara el alunizaje tripulado (Artemis II/III) y una futura presencia lunar sostenible.",
-    "reference": "NASA (Artemis)"
+    "reference": "NASA (Artemis)",
+    "image": "artemis-1-orion.jpg"
   },
   {
     "id": "starship-ift-1",
@@ -374,7 +468,8 @@
     "objectives": "Primer vuelo de prueba del sistema Starship completo (Super Heavy + Starship).",
     "result": "Fallo. Varios motores fallaron; la nave se autodestruyó ~4 min tras el despegue.",
     "details": "Paso clave en el desarrollo iterativo de SpaceX. Vuelos posteriores (IFT-2/3/4/5) mejoraron reutilización y captura del propulsor.",
-    "reference": "SpaceX (Starship)"
+    "reference": "SpaceX (Starship)",
+    "image": "starship-ift-1.jpg"
   },
   {
     "id": "lucy",
@@ -388,6 +483,7 @@
     "objectives": "Visitar asteroides troyanos de Júpiter (restos del sistema solar primitivo).",
     "result": "Éxito de lanzamiento y operación; sobrevuelos de troyanos programados hasta 2033.",
     "details": "Primera misión a los troyanos. Sobrevuelo de un asteroide del cinturón principal (Dinkinesh) en 2023.",
-    "reference": "NASA (Lucy)"
+    "reference": "NASA (Lucy)",
+    "image": "lucy.jpg"
   }
 ]

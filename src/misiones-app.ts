@@ -13,6 +13,7 @@ interface Mission {
   result: string;
   details: string;
   reference: string;
+  image?: string;
 }
 
 const missions = missionsData as unknown as Mission[];
@@ -77,12 +78,16 @@ function showDetail(id: string): void {
   if (!m || !detail) return;
   if (empty) empty.style.display = 'none';
   detail.style.display = 'block';
+  const photoHtml = m.image
+    ? `<img class="mission-photo" src="assets/mission-photos/${m.image}" alt="${m.name}" onerror="this.style.display='none'" />`
+    : '';
   const crewHtml = m.crew.length
     ? `<div class="mission-field"><span class="mf-label">Tripulación</span>` +
       `<span class="mf-value">${m.crew.join(', ')}</span></div>`
     : `<div class="mission-field"><span class="mf-label">Tripulación</span>` +
       `<span class="mf-value">No tripulada</span></div>`;
   detail.innerHTML =
+    photoHtml +
     `<h2 id="mission-title">${m.name}</h2>` +
     `<div class="mission-badges">` +
       `<span class="mission-status ${STATUS_CLASS[m.status]}">${STATUS_LABEL[m.status]}</span>` +

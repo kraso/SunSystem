@@ -1770,4 +1770,12 @@ html, body {
   font-size: 0.72rem;
   color: #7c8db0;
 }
+.mission-photo {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(120, 150, 220, 0.2);
+  display: block;
+}
 
