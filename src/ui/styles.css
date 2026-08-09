@@ -1769,12 +1769,83 @@ a.brand:hover,
   font-size: 0.72rem;
   color: #7c8db0;
 }
-.mission-photo {
+/* ═══════════ Acerca De ═══════════ */
+#about-layout {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 15;
+}
+
+.about-card {
+  max-width: 480px;
   width: 100%;
-  max-width: 520px;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(120, 150, 220, 0.2);
-  display: block;
+  background: rgba(10, 12, 22, 0.86);
+  border: 1px solid rgba(120, 150, 220, 0.28);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 32px 36px;
+  color: rgba(225, 230, 248, 0.94);
+  font-family: 'Audiowide', 'Segoe UI', system-ui, sans-serif;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+.about-card h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.about-sub {
+  font-size: 0.82rem;
+  color: rgba(180, 195, 225, 0.8);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1px solid rgba(120, 150, 220, 0.12);
+  padding-bottom: 10px;
+}
+
+.about-row dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6f82a8;
+}
+
+.about-row dd {
+  font-size: 0.9rem;
+  color: #e6edfb;
+  text-align: right;
+}
+
+.about-info a {
+  color: #4ea1ff;
+  text-decoration: none;
+}
+
+.about-info a:hover {
+  color: #7dc0ff;
 }
 
