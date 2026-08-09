@@ -105,14 +105,18 @@ html, body {
   color: #fff;
 }
 
-/* Planetario: layout original de la barra (logo izq, volver centro,
-   provincia der) sin el empuje global del logo. */
+/* Planetario: barra con logo a la izquierda y select de provincia fijado
+   a la derecha (a la altura de las leyendas), sin el empuje global. */
 .top-bar-planetario {
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .top-bar-planetario #logo {
   margin-right: 0;
+}
+
+.top-bar-planetario #province-select {
+  margin-left: auto;
 }
 
 #logo {
@@ -1836,11 +1840,16 @@ a.brand:hover,
   color: #7c8db0;
 }
 
-/* Foto de misión: límite proporcional a la ventana para que no se vea enorme */
-.mission-photo {
-  display: block;
-  max-width: min(100%, 55vw);
-  height: auto;
+/* Foto de misión: límite proporcional a la ventana para que no se vea enorme.
+   Especificidad alta (#mission-detail .mission-photo) + !important para
+   vencer cualquier regla de img { width:100% } del contenedor. */
+#mission-detail .mission-photo {
+  display: block !important;
+  max-width: min(100%, 48vw) !important;
+  max-height: 55vh !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
   border-radius: 10px;
   margin: 12px 0 4px;
   border: 1px solid rgba(120, 150, 220, 0.18);
