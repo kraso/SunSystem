@@ -249,6 +249,16 @@ a.brand:hover,
   text-decoration: none !important;
 }
 
+/* Icono de la aplicación usado en lugar del emoji del sol */
+.app-ico {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.18em;
+  border-radius: 3px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 /* Retorno "SunSystem" centrado en los paneles de Estadísticas y Luna,
    manteniendo la línea estética del resto de secciones. */
 #stats-header a.brand {

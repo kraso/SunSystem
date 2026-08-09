@@ -148,7 +148,7 @@ window.addEventListener('resize', () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-console.log('☀️ SunSystem inicializado');
+console.log('SunSystem inicializado');
 console.log(`   ${solarSystem.getAllBodies().length} cuerpos celestes cargados`);
 console.log('   🖱 Click en un planeta para ver información');
 console.log('   ⌨ Espacio = pausa | +/- = velocidad | 0 = reset');

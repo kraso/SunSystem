@@ -80,7 +80,7 @@ function showDetail(id: string): void {
   if (empty) empty.style.display = 'none';
   detail.style.display = 'block';
   const photoHtml = m.image
-    ? `<img class="mission-photo" src="assets/mission-photos/${m.image}" alt="${m.name}" onerror="this.style.display='none'" />`
+    ? `<img class="mission-photo" src="mission-photos/${m.image}" alt="${m.name}" onerror="this.style.display='none'" />`
     : '';
   const crewHtml = m.crew.length
     ? `<div class="mission-field"><span class="mf-label">Tripulación</span>` +

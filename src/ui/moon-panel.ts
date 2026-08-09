@@ -54,7 +54,7 @@ export class MoonPanel {
     return `
       <div id="stats-header">
         <h1>🌙 Fases de la Luna</h1>
-        <a id="moon-close" class="brand" href="./index.html" title="Volver a SunSystem">☀️ SunSystem</a>
+        <a id="moon-close" class="brand" href="./index.html" title="Volver a SunSystem"><img src="textures/sun.ico" class="app-ico" alt="SunSystem" /> SunSystem</a>
       </div>
       <div id="moon-body">
         <div id="moon-left">

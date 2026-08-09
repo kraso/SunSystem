@@ -18,7 +18,7 @@ export class StatsPanel {
     this.overlay.innerHTML = `
       <div id="stats-header">
         <h1>📊 Estadísticas del Sistema Solar</h1>
-        <a id="stats-close" class="brand" href="./index.html" title="Volver a SunSystem">☀️ SunSystem</a>
+        <a id="stats-close" class="brand" href="./index.html" title="Volver a SunSystem"><img src="textures/sun.ico" class="app-ico" alt="SunSystem" /> SunSystem</a>
       </div>
       <div id="stats-legend">
         <span class="legend-title">Leyenda (color del borde = tipo):</span>
@@ -162,7 +162,7 @@ export class StatsPanel {
 
     const photos: string[] = [];
     for (let i = 1; i <= 4; i++) {
-      photos.push(`/photos/${body.name}-${i}.jpg`);
+      photos.push(`photos/${body.name}-${i}.jpg`);
     }
 
     // Fallback: si no hay fotos locales, usar la textura del cuerpo

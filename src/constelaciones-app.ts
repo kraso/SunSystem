@@ -377,12 +377,12 @@ function showConstellation(name: string): void {
   img.className = 'ref-photo';
   img.alt = `Referencia real de ${name}`;
   img.onerror = () => {
-    fetch(`/assets/constellation-charts/${data.slug}.svg`)
+    fetch(`constellation-charts/${data.slug}.svg`)
       .then((r) => r.text())
       .then((t) => { refWrap.innerHTML = t; })
       .catch(() => { refWrap.innerHTML = '<p class="hint">Referencia no disponible.</p>'; });
   };
-  img.src = `assets/constellation-photos/${data.slug}.jpg`;
+  img.src = `constellation-photos/${data.slug}.jpg`;
   refWrap.appendChild(img);
 
   const wrap = document.createElement('div');
