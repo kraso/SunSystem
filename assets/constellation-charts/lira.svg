@@ -1,15 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 956" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="956" fill="#05060c"/>
-<polyline class="fig-line" points="306.7,305.4 297.6,66.9 125.4,165.3 306.7,305.4 531.8,389.2 634.6,889.1 429.5,809.2 306.7,305.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="91971,91926,91262,91971,92791,93194,92420,91971"/>
+<polyline class="fig-line" points="306.7,305.4 297.6,66.9 125.4,165.3 306.7,305.4 531.8,389.2 634.6,889.1 429.5,809.2 306.7,305.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="91971,91926,85927,91971,92791,93194,92420,91971"/>
 <circle class="star" cx="306.7" cy="305.4" r="4.4" fill="#ffffff" data-name="HIP 91971" data-meta="mag 4.34" data-vid="91971"/>
 <circle class="star" cx="297.6" cy="66.9" r="4.2" fill="#ffffff" data-name="HIP 91926" data-meta="mag 4.59" data-vid="91926"/>
-<circle class="star" cx="125.4" cy="165.4" r="7.0" fill="#cfe0ff" data-name="Deneb" data-meta="mag 0.03" data-vid="91262"/>
-<text class="star-label" x="136.4" y="169.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="91262">Deneb</text>
+<circle class="star" cx="125.0" cy="165.8" r="6.0" fill="#cfe0ff" data-name="Vega" data-meta="mag 1.62" data-vid="85927"/>
+<text class="star-label" x="135.0" y="169.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="85927">Vega</text>
 <circle class="star" cx="531.9" cy="389.3" r="4.5" fill="#ffb366" data-name="HIP 92791" data-meta="mag 4.22" data-vid="92791"/>
 <circle class="star" cx="634.6" cy="889.2" r="5.0" fill="#cfe0ff" data-name="HIP 93194" data-meta="mag 3.25" data-vid="93194"/>
 <circle class="star" cx="429.5" cy="809.2" r="4.9" fill="#ffffff" data-name="HIP 92420" data-meta="mag 3.52" data-vid="92420"/>
-<circle class="star" cx="-1339.9" cy="9178.3" r="6.0" fill="#cfe0ff" data-name="Vega" data-meta="mag 1.62" data-vid="85927"/>
-<text class="star-label" x="-1329.9" y="9182.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="85927">Vega</text>
 <circle class="star" cx="510.9" cy="848.3" r="9" fill="#ff8ce0" fill-opacity="0.15" data-name="M57" data-meta="pn"/>
 <circle cx="510.9" cy="848.3" r="3.5" fill="#ff8ce0" fill-opacity="0.5"/>
 </svg>

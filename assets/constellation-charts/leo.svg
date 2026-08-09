@@ -14,8 +14,8 @@
 <circle class="star" cx="220.0" cy="136.0" r="4.9" fill="#ffffff" data-name="HIP 50335" data-meta="mag 3.43" data-vid="50335"/>
 <circle class="star" cx="95.6" cy="114.3" r="4.7" fill="#ffd699" data-name="HIP 48455" data-meta="mag 3.88" data-vid="48455"/>
 <circle class="star" cx="59.6" cy="133.0" r="5.2" fill="#fff2cc" data-name="HIP 47908" data-meta="mag 2.97" data-vid="47908"/>
-<circle class="star" cx="853.1" cy="866.5" r="4.6" fill="#cfe0ff" data-name="Chertan" data-meta="mag 4.06" data-vid="60009"/>
-<text class="star-label" x="861.7" y="870.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60009">Chertan</text>
+<circle class="star" cx="519.3" cy="132.9" r="4.6" fill="#cfe0ff" data-name="Chertan" data-meta="mag 4.06" data-vid="60009"/>
+<text class="star-label" x="527.9" y="136.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60009">Chertan</text>
 <circle class="star" cx="422.4" cy="124.8" r="4.4" fill="#ffffff" data-name="HIP 53417" data-meta="mag 4.3" data-vid="53417"/>
 <circle class="star" cx="457.3" cy="163.0" r="4.3" fill="#ffffff" data-name="HIP 53954" data-meta="mag 4.42" data-vid="53954"/>
 <circle class="star" cx="694.8" cy="162.7" r="4.3" fill="#fff2cc" data-name="HIP 57565" data-meta="mag 4.5" data-vid="57565"/>

@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1109" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="1109" fill="#05060c"/>
-<polyline class="fig-line" points="576.2,249.8 505.7,72.6 556.7,77.0 599.6,267.8 548.5,414.7 509.9,486.8 349.2,520.8 187.5,398.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="29038,27913,28716,29426,28614,27989,25336,22845"/>
+<polyline class="fig-line" points="576.2,249.8 505.7,72.6 556.7,77.0 599.6,267.8 548.5,414.7 509.9,486.8 349.2,520.8 187.5,398.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="29038,27913,28716,29426,28614,30438,27989,22845"/>
 <polyline class="fig-line" points="207.0,670.0 184.0,646.6 167.7,544.8 160.4,501.1 164.5,438.7 187.5,398.5 195.4,290.2 239.2,229.4 266.7,223.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="23123,22797,22549,22449,22509,22845,22957,23607,24010"/>
-<polyline class="fig-line" points="292.5,989.2 345.7,802.3 386.0,734.8 349.2,520.8 402.7,405.4 509.9,486.8 432.8,787.7 470.2,1036.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="24436,25281,25930,25336,26207,27989,26727,27366"/>
+<polyline class="fig-line" points="292.5,989.2 345.7,802.3 386.0,734.8 349.2,520.8 402.7,405.4 509.9,486.8 432.8,787.7 470.2,1036.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="24436,25281,25930,27989,26207,30438,26727,27366"/>
 <polyline class="fig-line" points="432.8,787.7 408.5,763.9 386.0,734.8" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="26727,26311,25930"/>
 <circle class="star" cx="576.2" cy="249.8" r="4.3" fill="#cfe0ff" data-name="HIP 29038" data-meta="mag 4.42" data-vid="29038"/>
 <circle class="star" cx="505.7" cy="72.5" r="4.4" fill="#fff2cc" data-name="HIP 27913" data-meta="mag 4.39" data-vid="27913"/>
 <circle class="star" cx="556.7" cy="77.0" r="4.2" fill="#ffffff" data-name="HIP 28716" data-meta="mag 4.64" data-vid="28716"/>
 <circle class="star" cx="599.6" cy="267.8" r="4.3" fill="#cfe0ff" data-name="HIP 29426" data-meta="mag 4.45" data-vid="29426"/>
 <circle class="star" cx="548.5" cy="414.7" r="4.5" fill="#ffffff" data-name="HIP 28614" data-meta="mag 4.12" data-vid="28614"/>
-<circle class="star" cx="509.9" cy="486.8" r="6.7" fill="#ffb366" data-name="Bellatrix" data-meta="mag 0.45" data-vid="27989"/>
-<text class="star-label" x="520.6" y="490.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="27989">Bellatrix</text>
-<circle class="star" cx="349.2" cy="520.8" r="6.0" fill="#cfe0ff" data-name="Capella" data-meta="mag 1.64" data-vid="25336"/>
-<text class="star-label" x="359.2" y="524.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="25336">Capella</text>
+<circle class="star" cx="509.8" cy="486.7" r="7.4" fill="#ffffff" data-name="Betelgeuse" data-meta="mag -0.62" data-vid="30438"/>
+<text class="star-label" x="521.2" y="490.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="30438">Betelgeuse</text>
+<circle class="star" cx="349.1" cy="520.8" r="6.7" fill="#ffb366" data-name="Bellatrix" data-meta="mag 0.45" data-vid="27989"/>
+<text class="star-label" x="359.9" y="524.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="27989">Bellatrix</text>
 <circle class="star" cx="187.5" cy="398.5" r="4.2" fill="#ffffff" data-name="HIP 22845" data-meta="mag 4.64" data-vid="22845"/>
 <circle class="star" cx="207.0" cy="670.0" r="4.3" fill="#ffd699" data-name="HIP 23123" data-meta="mag 4.47" data-vid="23123"/>
 <circle class="star" cx="184.0" cy="646.6" r="4.8" fill="#cfe0ff" data-name="HIP 22797" data-meta="mag 3.71" data-vid="22797"/>
@@ -29,12 +29,10 @@
 <circle class="star" cx="432.8" cy="787.7" r="6.0" fill="#cfe0ff" data-name="HIP 26727" data-meta="mag 1.74" data-vid="26727"/>
 <circle class="star" cx="470.2" cy="1036.4" r="5.8" fill="#cfe0ff" data-name="HIP 27366" data-meta="mag 2.07" data-vid="27366"/>
 <circle class="star" cx="408.5" cy="763.9" r="6.0" fill="#cfe0ff" data-name="HIP 26311" data-meta="mag 1.69" data-vid="26311"/>
-<circle class="star" cx="663.8" cy="2421.3" r="7.4" fill="#ffffff" data-name="Betelgeuse" data-meta="mag -0.62" data-vid="30438"/>
-<text class="star-label" x="675.2" y="2425.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="30438">Betelgeuse</text>
-<circle class="star" cx="1041.7" cy="-301.2" r="6.1" fill="#ffffff" data-name="Meissa" data-meta="mag 1.58" data-vid="36850"/>
-<text class="star-label" x="1051.8" y="-297.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="36850">Meissa</text>
-<circle class="star" cx="355.4" cy="-195.6" r="6.0" fill="#cfe0ff" data-name="Rigel" data-meta="mag 1.65" data-vid="25428"/>
-<text class="star-label" x="365.4" y="-191.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="25428">Rigel</text>
+<circle class="star" cx="402.6" cy="405.6" r="6.1" fill="#ffffff" data-name="Meissa" data-meta="mag 1.58" data-vid="36850"/>
+<text class="star-label" x="412.7" y="409.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="36850">Meissa</text>
+<circle class="star" cx="292.4" cy="989.1" r="6.0" fill="#cfe0ff" data-name="Rigel" data-meta="mag 1.65" data-vid="25428"/>
+<text class="star-label" x="302.4" y="993.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="25428">Rigel</text>
 <circle class="star" cx="404.3" cy="915.4" r="5.3" fill="#cfe0ff" data-name="HIP 26241" data-meta="mag 2.75" data-vid="26241"/>
 <circle class="star" cx="256.8" cy="888.9" r="5.3" fill="#ffffff" data-name="HIP 23875" data-meta="mag 2.78" data-vid="23875"/>
 <circle class="star" cx="308.9" cy="945.5" r="4.8" fill="#cfe0ff" data-name="HIP 24674" data-meta="mag 3.59" data-vid="24674"/>

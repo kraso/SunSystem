@@ -1,17 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1796" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="1796" fill="#05060c"/>
-<polyline class="fig-line" points="322.5,388.9 290.7,98.0 340.0,202.6 392.9,372.5 322.5,388.9 244.5,723.3 309.3,1005.0 354.2,1138.4 515.5,1698.0" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="77233,76852,77450,78072,77233,76276,77070,77622,79593"/>
+<polyline class="fig-line" points="322.5,388.9 290.7,98.0 340.0,202.6 392.9,372.5 322.5,388.9 244.5,723.3 309.3,1005.0 354.2,1138.4 515.5,1698.0" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="77233,76852,77450,78072,77233,76276,76267,77622,79593"/>
 <circle class="star" cx="322.5" cy="388.9" r="4.8" fill="#ffffff" data-name="HIP 77233" data-meta="mag 3.65" data-vid="77233"/>
 <circle class="star" cx="290.7" cy="98.0" r="4.3" fill="#ffffff" data-name="HIP 76852" data-meta="mag 4.51" data-vid="76852"/>
 <circle class="star" cx="340.0" cy="202.7" r="4.5" fill="#ffb366" data-name="HIP 77450" data-meta="mag 4.09" data-vid="77450"/>
 <circle class="star" cx="392.9" cy="372.5" r="4.7" fill="#ffffff" data-name="HIP 78072" data-meta="mag 3.85" data-vid="78072"/>
 <circle class="star" cx="244.4" cy="723.3" r="4.7" fill="#ffffff" data-name="HIP 76276" data-meta="mag 3.8" data-vid="76276"/>
-<circle class="star" cx="309.3" cy="1005.0" r="5.4" fill="#ffd699" data-name="Sargas" data-meta="mag 2.63" data-vid="77070"/>
-<text class="star-label" x="318.8" y="1009.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="77070">Sargas</text>
+<circle class="star" cx="309.4" cy="968.4" r="5.7" fill="#ffffff" data-name="Unukalhai" data-meta="mag 2.22" data-vid="76267"/>
+<text class="star-label" x="319.1" y="972.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="76267">Unukalhai</text>
 <circle class="star" cx="354.2" cy="1138.4" r="4.8" fill="#ffffff" data-name="HIP 77622" data-meta="mag 3.71" data-vid="77622"/>
 <circle class="star" cx="515.6" cy="1698.0" r="5.4" fill="#ffb366" data-name="HIP 79593" data-meta="mag 2.73" data-vid="79593"/>
-<circle class="star" cx="243.7" cy="-384.4" r="5.7" fill="#ffffff" data-name="Unukalhai" data-meta="mag 2.22" data-vid="76267"/>
-<text class="star-label" x="253.3" y="-380.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="76267">Unukalhai</text>
 <circle class="star" cx="346.0" cy="1679.9" r="4.9" fill="#cfe0ff" data-name="HIP 77516" data-meta="mag 3.54" data-vid="77516"/>
 <circle class="star" cx="324.3" cy="941.5" r="4.3" fill="#fff2cc" data-name="HIP 77257" data-meta="mag 4.42" data-vid="77257"/>
 </svg>

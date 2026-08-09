@@ -21,8 +21,6 @@
 <circle class="star" cx="624.9" cy="198.1" r="5.0" fill="#ffd699" data-name="HIP 68895" data-meta="mag 3.25" data-vid="68895"/>
 <circle class="star" cx="700.4" cy="201.4" r="4.3" fill="#ffd699" data-name="HIP 72571" data-meta="mag 4.42" data-vid="72571"/>
 <circle class="star" cx="479.2" cy="132.6" r="5.4" fill="#ffffff" data-name="HIP 61941" data-meta="mag 2.74" data-vid="61941"/>
-<circle class="star" cx="46.9" cy="-28.7" r="5.0" fill="#fff2cc" data-name="Alphard" data-meta="mag 3.35" data-vid="41704"/>
-<text class="star-label" x="55.9" y="-24.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="41704">Alphard</text>
 <circle class="star" cx="503.2" cy="120.0" r="5.0" fill="#ffb366" data-name="HIP 63090" data-meta="mag 3.39" data-vid="63090"/>
 <circle class="star" cx="391.6" cy="124.3" r="4.8" fill="#fff2cc" data-name="HIP 57757" data-meta="mag 3.59" data-vid="57757"/>
 <circle class="star" cx="69.8" cy="214.9" r="4.8" fill="#cfe0ff" data-name="HIP 42828" data-meta="mag 3.68" data-vid="42828"/>

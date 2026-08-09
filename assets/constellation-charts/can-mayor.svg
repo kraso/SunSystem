@@ -2,7 +2,7 @@
 <rect width="760" height="859" fill="#05060c"/>
 <polyline class="fig-line" points="117.8,303.7 317.3,253.3 476.2,542.5 523.9,646.6 464.6,709.2 437.1,751.4 96.6,795.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="30324,32349,33977,34444,33856,33579,30122"/>
 <polyline class="fig-line" points="663.4,764.8 523.9,646.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="35904,34444"/>
-<polyline class="fig-line" points="317.3,253.3 414.9,267.1 482.7,209.3 397.6,63.3 414.9,267.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="32349,33347,34045,33160,33347"/>
+<polyline class="fig-line" points="317.3,253.3 414.9,267.1 482.7,209.3 397.6,63.3 414.9,267.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="32349,33347,34045,-900001,33347"/>
 <circle class="star" cx="117.8" cy="303.7" r="5.8" fill="#cfe0ff" data-name="HIP 30324" data-meta="mag 1.98" data-vid="30324"/>
 <circle class="star" cx="317.3" cy="253.4" r="7.9" fill="#ffffff" data-name="Sirio" data-meta="mag -1.44" data-vid="32349"/>
 <text class="star-label" x="329.2" y="257.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="32349">Sirio</text>
@@ -15,10 +15,7 @@
 <text class="star-label" x="673.0" y="768.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="35904">Procyon</text>
 <circle class="star" cx="415.0" cy="267.1" r="4.4" fill="#cfe0ff" data-name="HIP 33347" data-meta="mag 4.36" data-vid="33347"/>
 <circle class="star" cx="482.7" cy="209.4" r="4.5" fill="#cfe0ff" data-name="HIP 34045" data-meta="mag 4.11" data-vid="34045"/>
-<circle class="star" cx="397.7" cy="63.3" r="4.6" fill="#ffd699" data-name="Mebsuta" data-meta="mag 4.08" data-vid="33160"/>
-<text class="star-label" x="406.2" y="67.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="33160">Mebsuta</text>
-<circle class="star" cx="1067.2" cy="1497.6" r="6.0" fill="#cfe0ff" data-name="Sirio" data-meta="mag 1.75" data-vid="39953"/>
-<text class="star-label" x="1077.2" y="1501.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="39953">Sirio</text>
+<circle class="star" cx="397.6" cy="63.3" r="4.3" fill="#fff2cc" data-name="HIP -900001" data-meta="mag 4.5" data-vid="-900001"/>
 <circle class="star" cx="397.1" cy="556.8" r="4.7" fill="#ffb366" data-name="HIP 33152" data-meta="mag 3.89" data-vid="33152"/>
 <circle class="star" cx="242.1" cy="356.6" r="4.6" fill="#ffd699" data-name="HIP 31592" data-meta="mag 3.95" data-vid="31592"/>
 <circle class="star" cx="580.9" cy="662.0" r="4.6" fill="#cfe0ff" data-name="HIP 35037" data-meta="mag 4.01" data-vid="35037"/>

@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 421" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="421" fill="#05060c"/>
-<polyline class="fig-line" points="700.4,165.2 509.6,213.4 402.6,247.6 293.7,260.3" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="9640,5447,3092,677"/>
+<polyline class="fig-line" points="700.4,165.2 509.6,213.4 402.6,247.6 293.7,260.3" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="9640,2081,3092,677"/>
 <polyline class="fig-line" points="465.6,301.1 430.8,295.0 399.9,258.7 402.6,247.6 394.0,227.1 187.1,158.4 59.6,165.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="4463,3693,3031,3092,2912,116631,113726"/>
 <polyline class="fig-line" points="187.1,158.4 195.1,150.8 185.1,135.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="116631,116805,116584"/>
-<polyline class="fig-line" points="509.6,213.4 463.9,192.7 439.5,174.2 508.8,129.9 609.1,119.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="5447,4436,3881,5434,7607"/>
+<polyline class="fig-line" points="509.6,213.4 463.9,192.7 439.5,174.2 508.8,129.9 609.1,119.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="2081,4436,3881,5434,7607"/>
 <polyline class="fig-line" points="195.1,150.8 215.0,135.8" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="116805,117221"/>
 <circle class="star" cx="700.4" cy="165.2" r="5.7" fill="#ffd699" data-name="HIP 9640" data-meta="mag 2.1" data-vid="9640"/>
-<circle class="star" cx="509.6" cy="213.4" r="5.8" fill="#ffb366" data-name="Hamal" data-meta="mag 2.07" data-vid="5447"/>
-<text class="star-label" x="519.4" y="217.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="5447">Hamal</text>
+<circle class="star" cx="509.6" cy="213.4" r="5.6" fill="#ffd699" data-name="Mirach" data-meta="mag 2.4" data-vid="2081"/>
+<text class="star-label" x="519.2" y="217.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="2081">Mirach</text>
 <circle class="star" cx="402.6" cy="247.6" r="5.0" fill="#ffd699" data-name="HIP 3092" data-meta="mag 3.27" data-vid="3092"/>
 <circle class="star" cx="293.7" cy="260.3" r="5.8" fill="#cfe0ff" data-name="Alpheratz" data-meta="mag 2.07" data-vid="677"/>
 <text class="star-label" x="303.4" y="264.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="677">Alpheratz</text>
@@ -24,10 +24,8 @@
 <circle class="star" cx="508.8" cy="129.9" r="4.4" fill="#ffffff" data-name="HIP 5434" data-meta="mag 4.26" data-vid="5434"/>
 <circle class="star" cx="609.2" cy="119.9" r="4.8" fill="#ffd699" data-name="HIP 7607" data-meta="mag 3.59" data-vid="7607"/>
 <circle class="star" cx="215.0" cy="135.8" r="4.0" fill="#ffd699" data-name="HIP 117221" data-meta="mag 4.97" data-vid="117221"/>
-<circle class="star" cx="417.6" cy="598.5" r="5.8" fill="#ffd699" data-name="Almach" data-meta="mag 2.04" data-vid="3419"/>
-<text class="star-label" x="427.4" y="602.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="3419">Almach</text>
-<circle class="star" cx="356.7" cy="773.2" r="5.6" fill="#ffd699" data-name="Mirach" data-meta="mag 2.4" data-vid="2081"/>
-<text class="star-label" x="366.2" y="777.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="2081">Mirach</text>
+<circle class="star" cx="700.3" cy="165.2" r="5.8" fill="#ffd699" data-name="Almach" data-meta="mag 2.04" data-vid="3419"/>
+<text class="star-label" x="710.1" y="169.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="3419">Almach</text>
 <circle class="star" cx="662.3" cy="256.8" r="4.9" fill="#ffffff" data-name="HIP 8796" data-meta="mag 3.42" data-vid="8796"/>
 <circle class="star" cx="604.9" cy="171.8" r="4.5" fill="#fff2cc" data-name="HIP 7513" data-meta="mag 4.1" data-vid="7513"/>
 <circle class="star" cx="421.6" cy="122.4" r="4.3" fill="#cfe0ff" data-name="HIP 3504" data-meta="mag 4.48" data-vid="3504"/>

@@ -8,8 +8,8 @@
 <circle class="star" cx="543.0" cy="381.5" r="4.7" fill="#ffd699" data-name="HIP 76333" data-meta="mag 3.91" data-vid="76333"/>
 <circle class="star" cx="554.8" cy="1126.7" r="4.8" fill="#ffd699" data-name="HIP 76470" data-meta="mag 3.6" data-vid="76470"/>
 <circle class="star" cx="567.6" cy="1218.4" r="4.8" fill="#cfe0ff" data-name="HIP 76600" data-meta="mag 3.66" data-vid="76600"/>
-<circle class="star" cx="-938.2" cy="-2023.0" r="4.4" fill="#ffd699" data-name="Zubenelgenubi" data-meta="mag 4.35" data-vid="60742"/>
-<text class="star-label" x="-929.8" y="-2019.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60742">Zubenelgenubi</text>
+<circle class="star" cx="192.4" cy="50.9" r="4.4" fill="#ffd699" data-name="Zubenelgenubi" data-meta="mag 4.35" data-vid="60742"/>
+<text class="star-label" x="200.8" y="54.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60742">Zubenelgenubi</text>
 <circle class="star" cx="360.0" cy="660.8" r="4.3" fill="#cfe0ff" data-name="HIP 74392" data-meta="mag 4.54" data-vid="74392"/>
 <circle class="star" cx="532.5" cy="117.6" r="4.2" fill="#ffd699" data-name="HIP 76219" data-meta="mag 4.61" data-vid="76219"/>
 <circle class="star" cx="454.1" cy="132.0" r="4.0" fill="#ffffff" data-name="HIP 75379" data-meta="mag 4.92" data-vid="75379"/>

@@ -1,19 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 865" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="865" fill="#05060c"/>
-<polyline class="fig-line" points="447.5,191.5 486.2,260.2 524.9,357.1 661.5,641.6 500.6,569.7 270.1,486.6 98.5,63.5 486.2,260.2 270.1,486.6 105.6,801.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="97278,97649,98036,99473,97804,95501,93747,97649,95501,93805"/>
+<polyline class="fig-line" points="447.5,191.5 486.2,260.2 524.9,357.1 661.5,641.6 500.6,569.7 270.1,486.6 98.5,63.5 486.2,260.2 270.1,486.6 105.6,801.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="97278,81693,98036,99473,97804,95501,93747,81693,95501,93805"/>
 <circle class="star" cx="447.5" cy="191.5" r="5.4" fill="#ffb366" data-name="HIP 97278" data-meta="mag 2.72" data-vid="97278"/>
-<circle class="star" cx="486.2" cy="260.2" r="6.5" fill="#ffffff" data-name="Markab" data-meta="mag 0.76" data-vid="97649"/>
-<text class="star-label" x="496.7" y="264.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="97649">Markab</text>
+<circle class="star" cx="486.3" cy="260.1" r="5.3" fill="#fff2cc" data-name="Altair" data-meta="mag 2.81" data-vid="81693"/>
+<text class="star-label" x="495.6" y="264.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="81693">Altair</text>
 <circle class="star" cx="524.9" cy="357.1" r="4.8" fill="#fff2cc" data-name="HIP 98036" data-meta="mag 3.71" data-vid="98036"/>
 <circle class="star" cx="661.5" cy="641.6" r="5.1" fill="#cfe0ff" data-name="HIP 99473" data-meta="mag 3.24" data-vid="99473"/>
 <circle class="star" cx="500.6" cy="569.7" r="4.7" fill="#fff2cc" data-name="HIP 97804" data-meta="mag 3.87" data-vid="97804"/>
 <circle class="star" cx="270.1" cy="486.7" r="5.0" fill="#ffffff" data-name="HIP 95501" data-meta="mag 3.36" data-vid="95501"/>
 <circle class="star" cx="98.5" cy="63.5" r="5.2" fill="#ffffff" data-name="HIP 93747" data-meta="mag 2.99" data-vid="93747"/>
 <circle class="star" cx="105.6" cy="801.5" r="4.9" fill="#cfe0ff" data-name="HIP 93805" data-meta="mag 3.43" data-vid="93805"/>
-<circle class="star" cx="-1234.5" cy="1649.7" r="6.4" fill="#ffb366" data-name="Tarazed" data-meta="mag 1.06" data-vid="80763"/>
-<text class="star-label" x="-1224.1" y="1653.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="80763">Tarazed</text>
-<circle class="star" cx="-1133.0" cy="-634.8" r="5.3" fill="#fff2cc" data-name="Altair" data-meta="mag 2.81" data-vid="81693"/>
-<text class="star-label" x="-1123.7" y="-630.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="81693">Altair</text>
+<circle class="star" cx="436.8" cy="191.6" r="6.4" fill="#ffb366" data-name="Tarazed" data-meta="mag 1.06" data-vid="80763"/>
+<text class="star-label" x="447.1" y="195.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="80763">Tarazed</text>
 <circle class="star" cx="366.0" cy="659.9" r="4.4" fill="#cfe0ff" data-name="HIP 96468" data-meta="mag 4.36" data-vid="96468"/>
 <circle class="star" cx="343.5" cy="318.8" r="4.3" fill="#ffd699" data-name="HIP 96229" data-meta="mag 4.45" data-vid="96229"/>
 <circle class="star" cx="278.8" cy="595.9" r="4.2" fill="#fff2cc" data-name="HIP 95585" data-meta="mag 4.64" data-vid="95585"/>

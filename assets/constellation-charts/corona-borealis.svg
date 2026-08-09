@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 478" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="478" fill="#05060c"/>
-<polyline class="fig-line" points="156.8,119.5 59.6,221.3 190.4,329.3 343.9,348.2 474.5,358.5 626.9,321.9 700.4,187.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="76127,75695,76267,76952,77512,78159,78493"/>
+<polyline class="fig-line" points="156.8,119.5 59.6,221.3 190.4,329.3 343.9,348.2 474.5,358.5 626.9,321.9 700.4,187.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="76127,75695,-900010,76952,77512,78159,78493"/>
 <circle class="star" cx="156.9" cy="119.5" r="4.5" fill="#cfe0ff" data-name="HIP 76127" data-meta="mag 4.14" data-vid="76127"/>
 <circle class="star" cx="59.6" cy="221.3" r="4.8" fill="#ffffff" data-name="HIP 75695" data-meta="mag 3.66" data-vid="75695"/>
-<circle class="star" cx="190.4" cy="329.3" r="5.7" fill="#ffffff" data-name="Unukalhai" data-meta="mag 2.22" data-vid="76267"/>
-<text class="star-label" x="200.1" y="333.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="76267">Unukalhai</text>
+<circle class="star" cx="190.4" cy="329.3" r="4.3" fill="#fff2cc" data-name="HIP -900010" data-meta="mag 4.5" data-vid="-900010"/>
 <circle class="star" cx="343.9" cy="348.2" r="4.7" fill="#ffffff" data-name="HIP 76952" data-meta="mag 3.81" data-vid="76952"/>
 <circle class="star" cx="474.5" cy="358.5" r="4.2" fill="#fff2cc" data-name="HIP 77512" data-meta="mag 4.59" data-vid="77512"/>
 <circle class="star" cx="626.9" cy="321.9" r="4.5" fill="#ffd699" data-name="HIP 78159" data-meta="mag 4.14" data-vid="78159"/>

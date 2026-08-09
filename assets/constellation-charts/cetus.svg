@@ -1,23 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 525" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="525" fill="#05060c"/>
-<polyline class="fig-line" points="625.7,188.0 596.5,163.5 566.1,133.7 632.2,116.5 690.3,129.0 700.4,179.1 625.7,188.0 610.7,218.2 531.5,252.5 421.7,329.0 392.6,387.2 154.7,408.5 59.6,313.3 253.1,327.4 313.8,306.6 421.7,329.0" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="12706,12093,11484,12828,13954,14135,12706,12387,v8,8645,8102,3419,1562,5364,6537,8645"/>
+<polyline class="fig-line" points="625.7,188.0 596.5,163.5 566.1,133.7 632.2,116.5 690.3,129.0 700.4,179.1 625.7,188.0 610.7,218.2 531.5,252.5 421.7,329.0 392.6,387.2 154.7,408.5 59.6,313.3 253.1,327.4 313.8,306.6 421.7,329.0" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="12706,12093,11484,12828,13954,9884,12706,12387,-900007,8645,8102,-900008,1562,5364,6537,8645"/>
 <circle class="star" cx="625.7" cy="188.0" r="4.9" fill="#ffffff" data-name="HIP 12706" data-meta="mag 3.47" data-vid="12706"/>
 <circle class="star" cx="596.5" cy="163.5" r="4.1" fill="#fff2cc" data-name="HIP 12093" data-meta="mag 4.87" data-vid="12093"/>
 <circle class="star" cx="566.1" cy="133.7" r="4.4" fill="#cfe0ff" data-name="HIP 11484" data-meta="mag 4.3" data-vid="11484"/>
 <circle class="star" cx="632.2" cy="116.5" r="4.4" fill="#ffffff" data-name="HIP 12828" data-meta="mag 4.27" data-vid="12828"/>
 <circle class="star" cx="690.3" cy="129.0" r="4.2" fill="#cfe0ff" data-name="HIP 13954" data-meta="mag 4.71" data-vid="13954"/>
-<circle class="star" cx="700.4" cy="179.1" r="5.5" fill="#ffb366" data-name="Algol" data-meta="mag 2.54" data-vid="14135"/>
-<text class="star-label" x="709.8" y="183.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="14135">Algol</text>
+<circle class="star" cx="700.4" cy="179.1" r="5.8" fill="#ffd699" data-name="Menkar" data-meta="mag 2.01" data-vid="9884"/>
+<text class="star-label" x="710.2" y="183.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="9884">Menkar</text>
 <circle class="star" cx="610.7" cy="218.2" r="4.6" fill="#cfe0ff" data-name="HIP 12387" data-meta="mag 4.08" data-vid="12387"/>
+<circle class="star" cx="531.5" cy="252.5" r="4.3" fill="#fff2cc" data-name="HIP -900007" data-meta="mag 4.5" data-vid="-900007"/>
 <circle class="star" cx="421.7" cy="329.0" r="4.8" fill="#ffd699" data-name="HIP 8645" data-meta="mag 3.74" data-vid="8645"/>
 <circle class="star" cx="392.6" cy="387.2" r="4.9" fill="#fff2cc" data-name="HIP 8102" data-meta="mag 3.49" data-vid="8102"/>
-<circle class="star" cx="154.7" cy="408.5" r="5.8" fill="#ffd699" data-name="Almach" data-meta="mag 2.04" data-vid="3419"/>
-<text class="star-label" x="164.5" y="412.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="3419">Almach</text>
+<circle class="star" cx="154.7" cy="408.5" r="4.3" fill="#fff2cc" data-name="HIP -900008" data-meta="mag 4.5" data-vid="-900008"/>
 <circle class="star" cx="59.6" cy="313.3" r="4.9" fill="#ffd699" data-name="HIP 1562" data-meta="mag 3.56" data-vid="1562"/>
 <circle class="star" cx="253.1" cy="327.4" r="4.9" fill="#ffd699" data-name="HIP 5364" data-meta="mag 3.46" data-vid="5364"/>
 <circle class="star" cx="313.8" cy="306.6" r="4.8" fill="#ffd699" data-name="HIP 6537" data-meta="mag 3.6" data-vid="6537"/>
-<circle class="star" cx="483.6" cy="-22.3" r="5.8" fill="#ffd699" data-name="Menkar" data-meta="mag 2.01" data-vid="9884"/>
-<text class="star-label" x="493.3" y="-18.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="9884">Menkar</text>
 <circle class="star" cx="463.4" cy="192.9" r="4.7" fill="#ffffff" data-name="HIP 9487" data-meta="mag 3.82" data-vid="9487"/>
 <circle class="star" cx="677.3" cy="314.1" r="4.7" fill="#ffd699" data-name="HIP 13701" data-meta="mag 3.89" data-vid="13701"/>
 <circle class="star" cx="628.9" cy="365.6" r="4.5" fill="#cfe0ff" data-name="HIP 12770" data-meta="mag 4.24" data-vid="12770"/>

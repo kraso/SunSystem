@@ -11,7 +11,7 @@
 <circle class="star" cx="267.2" cy="219.9" r="4.1" fill="#fff2cc" data-name="HIP 109908" data-meta="mag 4.79" data-vid="109908"/>
 <circle class="star" cx="176.3" cy="157.0" r="4.3" fill="#ffd699" data-name="HIP 109111" data-meta="mag 4.47" data-vid="109111"/>
 <circle class="star" cx="59.6" cy="80.9" r="5.2" fill="#cfe0ff" data-name="HIP 108085" data-meta="mag 3.0" data-vid="108085"/>
-<circle class="star" cx="-1310.9" cy="-2199.3" r="5.2" fill="#ffd699" data-name="Alnair" data-meta="mag 3.05" data-vid="95947"/>
-<text class="star-label" x="-1301.7" y="-2195.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="95947">Alnair</text>
+<circle class="star" cx="196.6" cy="415.8" r="5.2" fill="#ffd699" data-name="Alnair" data-meta="mag 3.05" data-vid="95947"/>
+<text class="star-label" x="205.8" y="419.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="95947">Alnair</text>
 <circle class="star" cx="534.0" cy="222.3" r="4.1" fill="#ffd699" data-name="HIP 112203" data-meta="mag 4.84" data-vid="112203"/>
 </svg>

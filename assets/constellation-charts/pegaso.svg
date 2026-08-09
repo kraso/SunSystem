@@ -17,10 +17,10 @@
 <circle class="star" cx="327.6" cy="228.6" r="4.6" fill="#ffd699" data-name="HIP 112440" data-meta="mag 3.97" data-vid="112440"/>
 <circle class="star" cx="157.7" cy="207.2" r="4.7" fill="#ffffff" data-name="HIP 109176" data-meta="mag 3.77" data-vid="109176"/>
 <circle class="star" cx="61.6" cy="203.7" r="4.5" fill="#ffffff" data-name="HIP 107354" data-meta="mag 4.14" data-vid="107354"/>
-<circle class="star" cx="-427.9" cy="404.6" r="6.5" fill="#ffffff" data-name="Markab" data-meta="mag 0.76" data-vid="97649"/>
-<text class="star-label" x="-417.3" y="408.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="97649">Markab</text>
-<circle class="star" cx="-656.0" cy="763.6" r="4.9" fill="#ffd699" data-name="Enif" data-meta="mag 3.52" data-vid="93085"/>
-<text class="star-label" x="-647.1" y="767.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="93085">Enif</text>
+<circle class="star" cx="405.5" cy="328.6" r="6.5" fill="#ffffff" data-name="Markab" data-meta="mag 0.76" data-vid="97649"/>
+<text class="star-label" x="416.0" y="332.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="97649">Markab</text>
+<circle class="star" cx="59.7" cy="392.6" r="4.9" fill="#ffd699" data-name="Enif" data-meta="mag 3.52" data-vid="93085"/>
+<text class="star-label" x="68.6" y="396.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="93085">Enif</text>
 <circle class="star" cx="640.5" cy="428.6" r="4.6" fill="#ffffff" data-name="HIP 118268" data-meta="mag 4.03" data-vid="118268"/>
 <circle class="star" cx="505.8" cy="434.4" r="4.4" fill="#ffd699" data-name="HIP 115830" data-meta="mag 4.27" data-vid="115830"/>
 <circle class="star" cx="61.0" cy="303.0" r="4.4" fill="#ffd699" data-name="HIP 107348" data-meta="mag 4.34" data-vid="107348"/>

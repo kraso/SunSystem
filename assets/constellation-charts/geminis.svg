@@ -1,13 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 638" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="638" fill="#05060c"/>
-<polyline class="fig-line" points="59.6,316.3 116.9,316.2 265.5,255.1 458.2,135.7 624.4,97.3 700.4,187.5 633.8,213.9 521.9,328.6 408.4,361.5 221.4,458.9 275.1,540.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="29655,30343,32246,34693,36850,37826,36962,35550,34088,31681,32362"/>
+<polyline class="fig-line" points="59.6,316.3 116.9,316.2 265.5,255.1 458.2,135.7 624.4,97.3 700.4,187.5 633.8,213.9 521.9,328.6 408.4,361.5 221.4,458.9 275.1,540.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="29655,30343,32246,34693,v4,37826,36962,35550,34088,31681,32362"/>
 <polyline class="fig-line" points="521.9,328.6 507.5,455.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="35550,35350"/>
 <circle class="star" cx="59.6" cy="316.3" r="5.0" fill="#ffb366" data-name="HIP 29655" data-meta="mag 3.31" data-vid="29655"/>
 <circle class="star" cx="116.9" cy="316.2" r="5.3" fill="#ffb366" data-name="HIP 30343" data-meta="mag 2.87" data-vid="30343"/>
 <circle class="star" cx="265.5" cy="255.1" r="5.2" fill="#ffd699" data-name="HIP 32246" data-meta="mag 3.06" data-vid="32246"/>
 <circle class="star" cx="458.2" cy="135.7" r="4.4" fill="#ffd699" data-name="HIP 34693" data-meta="mag 4.41" data-vid="34693"/>
-<circle class="star" cx="624.4" cy="97.3" r="6.1" fill="#ffffff" data-name="Meissa" data-meta="mag 1.58" data-vid="36850"/>
-<text class="star-label" x="634.5" y="101.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="36850">Meissa</text>
 <circle class="star" cx="700.4" cy="187.5" r="6.3" fill="#fff2cc" data-name="Castor" data-meta="mag 1.16" data-vid="37826"/>
 <text class="star-label" x="710.7" y="191.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="37826">Castor</text>
 <circle class="star" cx="633.8" cy="213.9" r="4.6" fill="#ffb366" data-name="HIP 36962" data-meta="mag 4.06" data-vid="36962"/>
@@ -16,14 +14,14 @@
 <circle class="star" cx="221.4" cy="458.9" r="5.8" fill="#ffffff" data-name="HIP 31681" data-meta="mag 1.93" data-vid="31681"/>
 <circle class="star" cx="275.1" cy="540.7" r="5.0" fill="#ffffff" data-name="HIP 32362" data-meta="mag 3.35" data-vid="32362"/>
 <circle class="star" cx="507.5" cy="455.6" r="4.9" fill="#ffffff" data-name="HIP 35350" data-meta="mag 3.58" data-vid="35350"/>
-<circle class="star" cx="657.8" cy="719.7" r="6.8" fill="#ffffff" data-name="Pollux" data-meta="mag 0.4" data-vid="37279"/>
-<text class="star-label" x="668.5" y="723.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="37279">Pollux</text>
-<circle class="star" cx="295.7" cy="2287.6" r="5.1" fill="#ffffff" data-name="Alhena" data-meta="mag 3.24" data-vid="32607"/>
-<text class="star-label" x="304.7" y="2291.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="32607">Alhena</text>
+<circle class="star" cx="700.4" cy="187.4" r="6.8" fill="#ffffff" data-name="Pollux" data-meta="mag 0.4" data-vid="37279"/>
+<text class="star-label" x="711.2" y="191.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="37279">Pollux</text>
+<circle class="star" cx="116.9" cy="468.2" r="5.1" fill="#ffffff" data-name="Alhena" data-meta="mag 3.24" data-vid="32607"/>
+<text class="star-label" x="126.0" y="472.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="32607">Alhena</text>
 <circle class="star" cx="694.2" cy="272.2" r="4.9" fill="#fff2cc" data-name="HIP 37740" data-meta="mag 3.57" data-vid="37740"/>
 <circle class="star" cx="561.6" cy="192.8" r="4.7" fill="#ffd699" data-name="HIP 36046" data-meta="mag 3.78" data-vid="36046"/>
-<circle class="star" cx="338.2" cy="1122.7" r="4.6" fill="#ffd699" data-name="Mebsuta" data-meta="mag 4.08" data-vid="33160"/>
-<text class="star-label" x="346.7" y="1126.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="33160">Mebsuta</text>
+<circle class="star" cx="338.2" cy="255.1" r="4.6" fill="#ffd699" data-name="Mebsuta" data-meta="mag 4.08" data-vid="33160"/>
+<text class="star-label" x="346.8" y="259.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="33160">Mebsuta</text>
 <circle class="star" cx="159.4" cy="369.9" r="4.5" fill="#cfe0ff" data-name="HIP 30883" data-meta="mag 4.13" data-vid="30883"/>
 <circle class="star" cx="585.6" cy="99.8" r="4.5" fill="#ffffff" data-name="HIP 36366" data-meta="mag 4.16" data-vid="36366"/>
 <circle class="star" cx="686.2" cy="167.5" r="4.5" fill="#ffd699" data-name="HIP 37629" data-meta="mag 4.23" data-vid="37629"/>

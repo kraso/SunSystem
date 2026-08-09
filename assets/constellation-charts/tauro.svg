@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 646" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="646" fill="#05060c"/>
-<polyline class="fig-line" points="700.4,216.0 402.6,290.7 367.6,301.0 324.8,304.9 340.0,274.0 367.4,247.7 645.6,95.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="26451,21421,20894,20205,20455,20889,25428"/>
+<polyline class="fig-line" points="700.4,216.0 402.6,290.7 367.6,301.0 324.8,304.9 340.0,274.0 367.4,247.7 645.6,95.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="26451,21421,20894,20205,20455,20889,-900000"/>
 <polyline class="fig-line" points="324.8,304.9 232.6,355.5 71.0,399.9 244.6,460.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="20205,18724,16083,18907"/>
 <polyline class="fig-line" points="71.0,399.9 59.6,411.3 117.8,550.3" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="16083,15900,16852"/>
 <circle class="star" cx="700.4" cy="216.0" r="5.2" fill="#cfe0ff" data-name="HIP 26451" data-meta="mag 2.97" data-vid="26451"/>
@@ -10,8 +10,7 @@
 <circle class="star" cx="324.8" cy="304.9" r="4.8" fill="#fff2cc" data-name="HIP 20205" data-meta="mag 3.65" data-vid="20205"/>
 <circle class="star" cx="340.0" cy="274.0" r="4.7" fill="#fff2cc" data-name="HIP 20455" data-meta="mag 3.77" data-vid="20455"/>
 <circle class="star" cx="367.4" cy="247.7" r="4.9" fill="#ffd699" data-name="HIP 20889" data-meta="mag 3.53" data-vid="20889"/>
-<circle class="star" cx="645.6" cy="95.7" r="6.0" fill="#cfe0ff" data-name="Rigel" data-meta="mag 1.65" data-vid="25428"/>
-<text class="star-label" x="655.6" y="99.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="25428">Rigel</text>
+<circle class="star" cx="645.6" cy="95.7" r="4.3" fill="#fff2cc" data-name="HIP -900000" data-meta="mag 4.5" data-vid="-900000"/>
 <circle class="star" cx="232.6" cy="355.5" r="5.0" fill="#cfe0ff" data-name="HIP 18724" data-meta="mag 3.41" data-vid="18724"/>
 <circle class="star" cx="71.0" cy="399.9" r="4.8" fill="#cfe0ff" data-name="HIP 16083" data-meta="mag 3.73" data-vid="16083"/>
 <circle class="star" cx="244.6" cy="460.2" r="4.7" fill="#ffffff" data-name="HIP 18907" data-meta="mag 3.91" data-vid="18907"/>

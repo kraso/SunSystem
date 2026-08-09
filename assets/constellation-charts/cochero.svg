@@ -1,20 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1244" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="1244" fill="#05060c"/>
-<polyline class="fig-line" points="574.5,473.6 307.2,429.0 243.8,631.0 184.3,973.2 367.1,1166.4 575.7,801.5 574.5,473.6 574.5,77.6 307.2,429.0 215.4,521.2 218.6,637.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="28360,24608,23767,23015,25428,28380,28360,28358,24608,23416,23453"/>
+<polyline class="fig-line" points="574.5,473.6 307.2,429.0 243.8,631.0 184.3,973.2 367.1,1166.4 575.7,801.5 574.5,473.6 574.5,77.6 307.2,429.0 215.4,521.2 218.6,637.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="28360,24608,23767,23015,-900000,28380,28360,28358,24608,23416,23453"/>
 <circle class="star" cx="574.5" cy="473.5" r="5.9" fill="#ffffff" data-name="Hassaleh" data-meta="mag 1.9" data-vid="28360"/>
 <text class="star-label" x="584.3" y="477.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="28360">Hassaleh</text>
 <circle class="star" cx="307.2" cy="429.0" r="7.0" fill="#fff2cc" data-name="Elnath" data-meta="mag 0.08" data-vid="24608"/>
 <text class="star-label" x="318.2" y="433.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="24608">Elnath</text>
 <circle class="star" cx="243.7" cy="631.0" r="5.1" fill="#cfe0ff" data-name="HIP 23767" data-meta="mag 3.18" data-vid="23767"/>
 <circle class="star" cx="184.3" cy="973.1" r="5.4" fill="#ffd699" data-name="HIP 23015" data-meta="mag 2.69" data-vid="23015"/>
-<circle class="star" cx="367.1" cy="1166.5" r="6.0" fill="#cfe0ff" data-name="Rigel" data-meta="mag 1.65" data-vid="25428"/>
-<text class="star-label" x="377.1" y="1170.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="25428">Rigel</text>
+<circle class="star" cx="367.1" cy="1166.4" r="4.3" fill="#fff2cc" data-name="HIP -900000" data-meta="mag 4.5" data-vid="-900000"/>
 <circle class="star" cx="575.7" cy="801.5" r="5.4" fill="#cfe0ff" data-name="HIP 28380" data-meta="mag 2.65" data-vid="28380"/>
 <circle class="star" cx="574.5" cy="77.6" r="4.8" fill="#ffd699" data-name="HIP 28358" data-meta="mag 3.72" data-vid="28358"/>
 <circle class="star" cx="215.4" cy="521.2" r="5.2" fill="#fff2cc" data-name="HIP 23416" data-meta="mag 3.03" data-vid="23416"/>
 <circle class="star" cx="218.6" cy="637.7" r="4.8" fill="#ffd699" data-name="HIP 23453" data-meta="mag 3.69" data-vid="23453"/>
-<circle class="star" cx="359.9" cy="2110.4" r="6.0" fill="#cfe0ff" data-name="Capella" data-meta="mag 1.64" data-vid="25336"/>
-<text class="star-label" x="369.9" y="2114.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="25336">Capella</text>
+<circle class="star" cx="307.2" cy="429.0" r="6.0" fill="#cfe0ff" data-name="Capella" data-meta="mag 1.64" data-vid="25336"/>
+<text class="star-label" x="317.2" y="433.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="25336">Capella</text>
 <circle class="star" cx="524.3" cy="719.5" r="4.6" fill="#ffd699" data-name="HIP 27673" data-meta="mag 3.97" data-vid="27673"/>
 <circle class="star" cx="186.2" cy="100.2" r="4.3" fill="#cfe0ff" data-name="HIP 23040" data-meta="mag 4.43" data-vid="23040"/>
 <circle class="star" cx="509.9" cy="718.1" r="4.3" fill="#fff2cc" data-name="HIP 27483" data-meta="mag 4.51" data-vid="27483"/>

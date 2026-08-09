@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 667" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="667" fill="#05060c"/>
 <polyline class="fig-line" points="700.4,533.4 552.5,461.7 419.9,341.3 213.8,247.9 129.4,121.6 59.6,90.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="104732,102488,100453,97165,95853,94779"/>
-<polyline class="fig-line" points="526.1,245.1 419.9,341.3 276.5,440.4 134.9,576.8" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="102098,100453,98110,95947"/>
+<polyline class="fig-line" points="526.1,245.1 419.9,341.3 276.5,440.4 134.9,576.8" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="102098,100453,98110,-900012"/>
 <circle class="star" cx="700.4" cy="533.4" r="5.1" fill="#fff2cc" data-name="HIP 104732" data-meta="mag 3.21" data-vid="104732"/>
 <circle class="star" cx="552.5" cy="461.7" r="5.5" fill="#ffd699" data-name="HIP 102488" data-meta="mag 2.48" data-vid="102488"/>
 <circle class="star" cx="419.9" cy="341.3" r="5.7" fill="#fff2cc" data-name="HIP 100453" data-meta="mag 2.23" data-vid="100453"/>
@@ -10,10 +10,9 @@
 <circle class="star" cx="59.6" cy="90.2" r="4.7" fill="#fff2cc" data-name="HIP 94779" data-meta="mag 3.8" data-vid="94779"/>
 <circle class="star" cx="526.1" cy="245.1" r="6.2" fill="#ffffff" data-name="HIP 102098" data-meta="mag 1.25" data-vid="102098"/>
 <circle class="star" cx="276.5" cy="440.4" r="4.7" fill="#ffd699" data-name="HIP 98110" data-meta="mag 3.89" data-vid="98110"/>
-<circle class="star" cx="135.0" cy="576.8" r="5.2" fill="#ffd699" data-name="Alnair" data-meta="mag 3.05" data-vid="95947"/>
-<text class="star-label" x="144.1" y="580.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="95947">Alnair</text>
-<circle class="star" cx="-162.5" cy="369.5" r="7.0" fill="#cfe0ff" data-name="Deneb" data-meta="mag 0.03" data-vid="91262"/>
-<text class="star-label" x="-151.6" y="373.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="91262">Deneb</text>
+<circle class="star" cx="134.9" cy="576.8" r="4.3" fill="#fff2cc" data-name="HIP -900012" data-meta="mag 4.5" data-vid="-900012"/>
+<circle class="star" cx="526.1" cy="245.1" r="7.0" fill="#cfe0ff" data-name="Deneb" data-meta="mag 0.03" data-vid="91262"/>
+<text class="star-label" x="537.1" y="249.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="91262">Deneb</text>
 <circle class="star" cx="656.1" cy="271.0" r="4.8" fill="#ffb366" data-name="HIP 104060" data-meta="mag 3.72" data-vid="104060"/>
 <circle class="star" cx="372.3" cy="217.1" r="4.7" fill="#ffd699" data-name="HIP 99675" data-meta="mag 3.8" data-vid="99675"/>
 <circle class="star" cx="613.2" cy="323.9" r="4.6" fill="#ffffff" data-name="HIP 103413" data-meta="mag 3.94" data-vid="103413"/>

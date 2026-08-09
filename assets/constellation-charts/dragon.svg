@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="280" fill="#05060c"/>
-<polyline class="fig-line" points="553.0,148.4 557.0,156.9 523.1,155.7 525.5,151.1 553.0,148.4 655.2,131.1 588.2,125.3 495.1,134.2 437.2,141.0 408.6,145.7 360.8,145.0 256.6,136.4 139.0,127.8 58.7,128.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="87585,87833,85670,85829,87585,94376,89908,83895,80331,78527,75458,68756,61281,56211"/>
+<polyline class="fig-line" points="553.0,148.4 557.0,156.9 523.1,155.7 525.5,151.1 553.0,148.4 655.2,131.1 588.2,125.3 495.1,134.2 437.2,141.0 408.6,145.7 360.8,145.0 256.6,136.4 139.0,127.8 58.7,128.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="87585,87833,85670,85829,87585,94376,89908,83895,80331,78527,75458,-900013,61281,56211"/>
 <polyline class="fig-line" points="588.2,125.3 588.6,123.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="89908,89937"/>
 <polyline class="fig-line" points="655.2,131.1 701.3,127.0" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="94376,97433"/>
 <circle class="star" cx="553.0" cy="148.4" r="4.8" fill="#ffd699" data-name="HIP 87585" data-meta="mag 3.73" data-vid="87585"/>
@@ -13,8 +13,7 @@
 <circle class="star" cx="437.2" cy="141.0" r="5.4" fill="#fff2cc" data-name="HIP 80331" data-meta="mag 2.73" data-vid="80331"/>
 <circle class="star" cx="408.6" cy="145.7" r="4.6" fill="#fff2cc" data-name="HIP 78527" data-meta="mag 4.01" data-vid="78527"/>
 <circle class="star" cx="360.8" cy="145.0" r="5.0" fill="#ffd699" data-name="HIP 75458" data-meta="mag 3.29" data-vid="75458"/>
-<circle class="star" cx="256.6" cy="136.4" r="4.8" fill="#cfe0ff" data-name="Spica" data-meta="mag 3.67" data-vid="68756"/>
-<text class="star-label" x="265.4" y="140.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="68756">Spica</text>
+<circle class="star" cx="256.6" cy="136.4" r="4.3" fill="#fff2cc" data-name="HIP -900013" data-meta="mag 4.5" data-vid="-900013"/>
 <circle class="star" cx="139.0" cy="127.8" r="4.7" fill="#cfe0ff" data-name="HIP 61281" data-meta="mag 3.85" data-vid="61281"/>
 <circle class="star" cx="58.7" cy="128.5" r="4.7" fill="#ffb366" data-name="HIP 56211" data-meta="mag 3.82" data-vid="56211"/>
 <circle class="star" cx="588.6" cy="123.1" r="4.9" fill="#ffffff" data-name="HIP 89937" data-meta="mag 3.55" data-vid="89937"/>

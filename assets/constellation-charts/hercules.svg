@@ -1,14 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 720" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="720" fill="#05060c"/>
-<polyline class="fig-line" points="198.6,560.5 238.0,518.7 290.6,337.6 298.2,206.5 256.4,143.6 188.2,74.2 136.1,98.9 59.6,143.3" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="80170,80816,81693,81833,81126,79992,79101,77760"/>
-<polyline class="fig-line" points="290.6,337.6 380.8,349.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="81693,83207"/>
+<polyline class="fig-line" points="198.6,560.5 238.0,518.7 290.6,337.6 298.2,206.5 256.4,143.6 188.2,74.2 136.1,98.9 59.6,143.3" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="80170,80816,-900014,81833,81126,79992,79101,77760"/>
+<polyline class="fig-line" points="290.6,337.6 380.8,349.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="-900014,83207"/>
 <polyline class="fig-line" points="298.2,206.5 451.0,244.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="81833,84380"/>
 <polyline class="fig-line" points="646.7,236.5 492.0,238.3 451.0,244.4 380.8,349.7 450.9,458.7 600.2,407.1 653.9,379.8 700.4,388.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="87808,85112,84380,83207,84379,86974,87933,88794"/>
 <polyline class="fig-line" points="449.1,645.8 238.0,518.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="84345,80816"/>
 <circle class="star" cx="198.6" cy="560.5" r="4.8" fill="#ffffff" data-name="HIP 80170" data-meta="mag 3.74" data-vid="80170"/>
 <circle class="star" cx="238.0" cy="518.7" r="5.3" fill="#fff2cc" data-name="HIP 80816" data-meta="mag 2.78" data-vid="80816"/>
-<circle class="star" cx="290.6" cy="337.6" r="5.3" fill="#fff2cc" data-name="Altair" data-meta="mag 2.81" data-vid="81693"/>
-<text class="star-label" x="299.9" y="341.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="81693">Altair</text>
+<circle class="star" cx="290.6" cy="337.6" r="4.3" fill="#fff2cc" data-name="HIP -900014" data-meta="mag 4.5" data-vid="-900014"/>
 <circle class="star" cx="298.2" cy="206.5" r="4.9" fill="#fff2cc" data-name="HIP 81833" data-meta="mag 3.48" data-vid="81833"/>
 <circle class="star" cx="256.4" cy="143.6" r="4.5" fill="#cfe0ff" data-name="HIP 81126" data-meta="mag 4.2" data-vid="81126"/>
 <circle class="star" cx="188.2" cy="74.2" r="4.7" fill="#cfe0ff" data-name="HIP 79992" data-meta="mag 3.91" data-vid="79992"/>

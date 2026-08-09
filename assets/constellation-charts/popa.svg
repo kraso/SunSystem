@@ -10,8 +10,7 @@
 <circle class="star" cx="597.5" cy="61.5" r="4.5" fill="#fff2cc" data-name="HIP 38835" data-meta="mag 4.2" data-vid="38835"/>
 <circle class="star" cx="667.5" cy="101.5" r="5.3" fill="#ffffff" data-name="HIP 39757" data-meta="mag 2.83" data-vid="39757"/>
 <circle class="star" cx="641.6" cy="542.5" r="5.7" fill="#cfe0ff" data-name="HIP 39429" data-meta="mag 2.21" data-vid="39429"/>
-<circle class="star" cx="680.5" cy="748.5" r="6.0" fill="#cfe0ff" data-name="Sirio" data-meta="mag 1.75" data-vid="39953"/>
-<text class="star-label" x="690.5" y="752.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="39953">Sirio</text>
+<circle class="star" cx="680.5" cy="748.5" r="6.0" fill="#cfe0ff" data-name="HIP 39953" data-meta="mag 1.75" data-vid="39953"/>
 <circle class="star" cx="540.1" cy="147.4" r="4.4" fill="#cfe0ff" data-name="HIP 38070" data-meta="mag 4.4" data-vid="38070"/>
 <circle class="star" cx="512.1" cy="232.1" r="4.6" fill="#ffffff" data-name="HIP 37677" data-meta="mag 3.94" data-vid="37677"/>
 <circle class="star" cx="158.6" cy="332.0" r="4.9" fill="#cfe0ff" data-name="HIP 32759" data-meta="mag 3.5" data-vid="32759"/>

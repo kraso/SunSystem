@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 481" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="481" fill="#05060c"/>
-<polyline class="fig-line" points="191.7,119.6 503.3,202.0 677.8,138.5 700.4,246.1 521.3,361.4 503.3,202.0 59.6,183.9 191.7,119.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="2081,5165,6867,7083,5348,5165,765,2081"/>
-<circle class="star" cx="191.7" cy="119.6" r="5.6" fill="#ffd699" data-name="Mirach" data-meta="mag 2.4" data-vid="2081"/>
-<text class="star-label" x="201.3" y="123.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="2081">Mirach</text>
+<polyline class="fig-line" points="191.7,119.6 503.3,202.0 677.8,138.5 700.4,246.1 521.3,361.4 503.3,202.0 59.6,183.9 191.7,119.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="-900025,5165,6867,7083,5348,5165,765,-900025"/>
+<circle class="star" cx="191.7" cy="119.6" r="4.3" fill="#fff2cc" data-name="HIP -900025" data-meta="mag 4.5" data-vid="-900025"/>
 <circle class="star" cx="503.3" cy="202.0" r="5.0" fill="#fff2cc" data-name="HIP 5165" data-meta="mag 3.32" data-vid="5165"/>
 <circle class="star" cx="677.8" cy="138.5" r="5.0" fill="#ffb366" data-name="HIP 6867" data-meta="mag 3.41" data-vid="6867"/>
 <circle class="star" cx="700.4" cy="246.0" r="4.6" fill="#fff2cc" data-name="HIP 7083" data-meta="mag 3.93" data-vid="7083"/>

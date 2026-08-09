@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 767" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="767" fill="#05060c"/>
-<polyline class="fig-line" points="697.7,707.1 62.3,59.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="37279,36188"/>
-<circle class="star" cx="697.5" cy="707.1" r="6.8" fill="#ffffff" data-name="Pollux" data-meta="mag 0.4" data-vid="37279"/>
-<text class="star-label" x="708.3" y="711.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="37279">Pollux</text>
+<polyline class="fig-line" points="697.7,707.1 62.3,59.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="-900002,36188"/>
+<circle class="star" cx="697.7" cy="707.1" r="4.3" fill="#fff2cc" data-name="HIP -900002" data-meta="mag 4.5" data-vid="-900002"/>
 <circle class="star" cx="62.3" cy="59.8" r="5.3" fill="#cfe0ff" data-name="HIP 36188" data-meta="mag 2.89" data-vid="36188"/>
 <circle class="star" cx="-97.5" cy="8000.6" r="5.5" fill="#cfe0ff" data-name="Procyon" data-meta="mag 2.45" data-vid="35904"/>
 <text class="star-label" x="-87.9" y="8004.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="35904">Procyon</text>

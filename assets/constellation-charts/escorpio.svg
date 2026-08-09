@@ -1,15 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 655" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="655" fill="#05060c"/>
-<polyline class="fig-line" points="59.6,219.4 68.4,149.5 98.4,93.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="78265,78401,78820"/>
-<polyline class="fig-line" points="68.4,149.5 191.3,209.0 239.7,225.7 277.9,261.4 362.0,382.9 372.1,458.0 388.0,544.2 491.6,561.8 639.9,557.0 700.4,499.6 670.3,477.6 618.0,439.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="78401,80112,80763,81266,82396,82514,82729,84143,86228,87073,86670,85927"/>
+<polyline class="fig-line" points="59.6,219.4 68.4,149.5 98.4,93.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="78265,-900030,78820"/>
+<polyline class="fig-line" points="68.4,149.5 191.3,209.0 239.7,225.7 277.9,261.4 362.0,382.9 372.1,458.0 388.0,544.2 491.6,561.8 639.9,557.0 700.4,499.6 670.3,477.6 618.0,439.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="-900030,80112,-900031,81266,82396,82514,82729,84143,86228,87073,86670,85696"/>
 <circle class="star" cx="59.6" cy="219.4" r="5.3" fill="#cfe0ff" data-name="HIP 78265" data-meta="mag 2.89" data-vid="78265"/>
-<circle class="star" cx="68.4" cy="149.5" r="5.6" fill="#cfe0ff" data-name="Rasalhague" data-meta="mag 2.29" data-vid="78401"/>
-<text class="star-label" x="78.0" y="153.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="78401">Rasalhague</text>
+<circle class="star" cx="68.4" cy="149.5" r="4.3" fill="#fff2cc" data-name="HIP -900030" data-meta="mag 4.5" data-vid="-900030"/>
 <circle class="star" cx="98.4" cy="93.2" r="5.5" fill="#cfe0ff" data-name="HIP 78820" data-meta="mag 2.56" data-vid="78820"/>
-<circle class="star" cx="191.3" cy="208.9" r="5.3" fill="#ffffff" data-name="Rasalague" data-meta="mag 2.9" data-vid="80112"/>
-<text class="star-label" x="200.5" y="212.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="80112">Rasalague</text>
-<circle class="star" cx="239.7" cy="225.7" r="6.4" fill="#ffb366" data-name="Tarazed" data-meta="mag 1.06" data-vid="80763"/>
-<text class="star-label" x="250.1" y="229.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="80763">Tarazed</text>
+<circle class="star" cx="191.3" cy="208.9" r="5.3" fill="#ffffff" data-name="HIP 80112" data-meta="mag 2.9" data-vid="80112"/>
+<circle class="star" cx="239.7" cy="225.7" r="4.3" fill="#fff2cc" data-name="HIP -900031" data-meta="mag 4.5" data-vid="-900031"/>
 <circle class="star" cx="277.8" cy="261.4" r="5.3" fill="#cfe0ff" data-name="HIP 81266" data-meta="mag 2.82" data-vid="81266"/>
 <circle class="star" cx="362.0" cy="382.9" r="5.6" fill="#ffd699" data-name="HIP 82396" data-meta="mag 2.29" data-vid="82396"/>
 <circle class="star" cx="372.1" cy="458.0" r="5.2" fill="#cfe0ff" data-name="HIP 82514" data-meta="mag 3.0" data-vid="82514"/>
@@ -18,11 +15,9 @@
 <circle class="star" cx="639.9" cy="557.0" r="5.9" fill="#ffffff" data-name="HIP 86228" data-meta="mag 1.86" data-vid="86228"/>
 <circle class="star" cx="700.4" cy="499.6" r="5.2" fill="#fff2cc" data-name="HIP 87073" data-meta="mag 2.99" data-vid="87073"/>
 <circle class="star" cx="670.3" cy="477.6" r="5.6" fill="#cfe0ff" data-name="HIP 86670" data-meta="mag 2.39" data-vid="86670"/>
-<circle class="star" cx="618.0" cy="439.1" r="6.0" fill="#cfe0ff" data-name="Vega" data-meta="mag 1.62" data-vid="85927"/>
-<text class="star-label" x="628.0" y="443.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="85927">Vega</text>
-<circle class="star" cx="-26.3" cy="-431.3" r="5.4" fill="#ffd699" data-name="Sargas" data-meta="mag 2.63" data-vid="77070"/>
-<text class="star-label" x="-16.9" y="-427.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="77070">Sargas</text>
 <circle class="star" cx="601.3" cy="442.9" r="5.4" fill="#cfe0ff" data-name="HIP 85696" data-meta="mag 2.7" data-vid="85696"/>
+<circle class="star" cx="677.8" cy="556.8" r="5.4" fill="#ffd699" data-name="Sargas" data-meta="mag 2.63" data-vid="77070"/>
+<text class="star-label" x="687.3" y="560.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="77070">Sargas</text>
 <circle class="star" cx="374.8" cy="457.4" r="4.9" fill="#cfe0ff" data-name="HIP 82545" data-meta="mag 3.56" data-vid="82545"/>
 <circle class="star" cx="106.5" cy="110.5" r="4.6" fill="#cfe0ff" data-name="HIP 78933" data-meta="mag 3.93" data-vid="78933"/>
 <circle class="star" cx="280.7" cy="402.1" r="4.5" fill="#ffb366" data-name="HIP 81304" data-meta="mag 4.18" data-vid="81304"/>
