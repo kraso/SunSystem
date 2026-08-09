@@ -1084,7 +1084,7 @@ a.brand:hover,
 /* ─── Panel de control del Planetario ─────────────────────────────── */
 #planetario-controls {
   position: fixed;
-  top: 60px;
+  top: 104px;
   right: 16px;
   z-index: 20;
   width: 260px;
