@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="760" height="280" fill="#05060c"/>
-<polyline class="fig-line" points="701.3,164.7 318.1,115.3 58.7,161.6 701.3,164.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="82273,77952,74946,82273"/>
-<circle class="star" cx="701.3" cy="164.7" r="5.9" fill="#ffd699" data-name="Atria" data-meta="mag 1.91" data-vid="82273"/>
-<text class="star-label" x="711.2" y="168.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="82273">Atria</text>
-<circle class="star" cx="318.1" cy="115.3" r="5.3" fill="#ffffff" data-name="HIP 77952" data-meta="mag 2.83" data-vid="77952"/>
-<circle class="star" cx="58.7" cy="161.6" r="5.3" fill="#ffffff" data-name="HIP 74946" data-meta="mag 2.87" data-vid="74946"/>
-<circle class="star" cx="186.2" cy="140.8" r="4.5" fill="#ffd699" data-name="HIP 76440" data-meta="mag 4.11" data-vid="76440"/>
-<circle class="star" cx="320.6" cy="161.0" r="3.9" fill="#ffd699" data-name="HIP 77982" data-meta="mag 5.11" data-vid="77982"/>
-<circle class="star" cx="463.4" cy="117.5" r="4.7" fill="#ffd699" data-name="HIP 79664" data-meta="mag 3.86" data-vid="79664"/>
-<circle class="star" cx="553.0" cy="120.8" r="3.8" fill="#ffffff" data-name="HIP 80645" data-meta="mag 5.28" data-vid="80645"/>
-<circle class="star" cx="556.7" cy="174.0" r="4.1" fill="#fff2cc" data-name="HIP 80686" data-meta="mag 4.9" data-vid="80686"/>
-<circle class="star" cx="573.6" cy="99.4" r="3.9" fill="#ffd699" data-name="HIP 80874" data-meta="mag 5.19" data-vid="80874"/>
-<circle class="star" cx="608.8" cy="133.5" r="3.7" fill="#fff2cc" data-name="HIP 81252" data-meta="mag 5.5" data-vid="81252"/>
-<circle class="star" cx="687.0" cy="147.8" r="3.9" fill="#cfe0ff" data-name="HIP 82129" data-meta="mag 5.1" data-vid="82129"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 286" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="286" fill="#05060c"/>
+<polyline class="fig-line" points="700.4,171.5 318.3,121.2 59.6,168.4 700.4,171.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="82273,77952,74946,82273"/>
+<circle class="star" cx="700.4" cy="171.5" r="5.9" fill="#ffd699" data-name="Atria" data-meta="mag 1.91" data-vid="82273"/>
+<text class="star-label" x="710.2" y="175.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="82273">Atria</text>
+<circle class="star" cx="318.3" cy="121.2" r="5.3" fill="#ffffff" data-name="HIP 77952" data-meta="mag 2.83" data-vid="77952"/>
+<circle class="star" cx="59.6" cy="168.4" r="5.3" fill="#ffffff" data-name="HIP 74946" data-meta="mag 2.87" data-vid="74946"/>
+<circle class="star" cx="186.8" cy="147.1" r="4.5" fill="#ffd699" data-name="HIP 76440" data-meta="mag 4.11" data-vid="76440"/>
+<circle class="star" cx="320.8" cy="167.7" r="3.9" fill="#ffd699" data-name="HIP 77982" data-meta="mag 5.11" data-vid="77982"/>
+<circle class="star" cx="463.2" cy="123.5" r="4.7" fill="#ffd699" data-name="HIP 79664" data-meta="mag 3.86" data-vid="79664"/>
+<circle class="star" cx="552.5" cy="126.8" r="3.8" fill="#ffffff" data-name="HIP 80645" data-meta="mag 5.28" data-vid="80645"/>
+<circle class="star" cx="556.2" cy="181.0" r="4.1" fill="#fff2cc" data-name="HIP 80686" data-meta="mag 4.9" data-vid="80686"/>
+<circle class="star" cx="573.0" cy="105.0" r="3.9" fill="#ffd699" data-name="HIP 80874" data-meta="mag 5.19" data-vid="80874"/>
+<circle class="star" cx="608.2" cy="139.7" r="3.7" fill="#fff2cc" data-name="HIP 81252" data-meta="mag 5.5" data-vid="81252"/>
+<circle class="star" cx="686.1" cy="154.3" r="3.9" fill="#cfe0ff" data-name="HIP 82129" data-meta="mag 5.1" data-vid="82129"/>
 </svg>

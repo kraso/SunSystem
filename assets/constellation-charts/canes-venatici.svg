@@ -1,24 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 416" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="760" height="416" fill="#05060c"/>
-<polyline class="fig-line" points="700.4,296.1 59.6,119.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="63125,61317"/>
-<circle class="star" cx="701.0" cy="295.9" r="5.3" fill="#cfe0ff" data-name="Cor Caroli" data-meta="mag 2.89" data-vid="63125"/>
-<text class="star-label" x="710.2" y="299.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="63125">Cor Caroli</text>
-<circle class="star" cx="59.7" cy="119.9" r="4.5" fill="#fff2cc" data-name="Chara" data-meta="mag 4.24" data-vid="61317"/>
-<text class="star-label" x="68.1" y="123.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="61317">Chara</text>
-<circle class="star" cx="-341.3" cy="-321.6" r="3.8" fill="#ffb366" data-name="HIP 60122" data-meta="mag 5.28" data-vid="60122"/>
-<circle class="star" cx="-220.1" cy="-470.8" r="4.1" fill="#fff2cc" data-name="HIP 60485" data-meta="mag 4.76" data-vid="60485"/>
-<circle class="star" cx="-167.6" cy="255.3" r="4.0" fill="#fff2cc" data-name="HIP 60646" data-meta="mag 5.01" data-vid="60646"/>
-<circle class="star" cx="56.9" cy="589.4" r="3.7" fill="#ffd699" data-name="HIP 61309" data-meta="mag 5.42" data-vid="61309"/>
-<circle class="star" cx="387.3" cy="-116.4" r="3.7" fill="#ffb366" data-name="La Superba" data-meta="mag 5.42" data-vid="62223"/>
-<text class="star-label" x="395.1" y="-112.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="62223">La Superba</text>
-<circle class="star" cx="980.5" cy="441.7" r="3.9" fill="#cfe0ff" data-name="HIP 63901" data-meta="mag 5.2" data-vid="63901"/>
-<circle class="star" cx="1210.0" cy="189.7" r="4.0" fill="#ffd699" data-name="HIP 64540" data-meta="mag 4.94" data-vid="64540"/>
-<circle class="star" cx="1320.1" cy="165.4" r="4.2" fill="#ffffff" data-name="HIP 64844" data-meta="mag 4.72" data-vid="64844"/>
-<circle class="star" cx="1340.2" cy="-362.0" r="3.9" fill="#cfe0ff" data-name="HIP 64906" data-meta="mag 5.14" data-vid="64906"/>
-<circle class="star" cx="1806.8" cy="-323.4" r="4.2" fill="#ffffff" data-name="HIP 66234" data-meta="mag 4.68" data-vid="66234"/>
-<circle class="star" cx="1816.7" cy="361.6" r="4.1" fill="#ffffff" data-name="HIP 66257" data-meta="mag 4.91" data-vid="66257"/>
-<circle class="star" cx="1893.3" cy="413.0" r="4.1" fill="#ffffff" data-name="HIP 66458" data-meta="mag 4.82" data-vid="66458"/>
-<circle class="star" cx="2305.8" cy="520.2" r="4.1" fill="#ffb366" data-name="HIP 67665" data-meta="mag 4.76" data-vid="67665"/>
-<circle class="star" cx="553.4" cy="133.9" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M94" data-meta="s"/>
-<circle cx="553.4" cy="133.9" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 605" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="605" fill="#05060c"/>
+<polyline class="fig-line" points="311.8,390.9 156.7,325.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="63125,61317"/>
+<circle class="star" cx="311.9" cy="390.9" r="5.3" fill="#cfe0ff" data-name="Cor Caroli" data-meta="mag 2.89" data-vid="63125"/>
+<text class="star-label" x="321.2" y="394.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="63125">Cor Caroli</text>
+<circle class="star" cx="156.7" cy="325.1" r="4.5" fill="#fff2cc" data-name="Chara" data-meta="mag 4.24" data-vid="61317"/>
+<text class="star-label" x="165.1" y="329.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="61317">Chara</text>
+<circle class="star" cx="59.6" cy="160.2" r="3.8" fill="#ffb366" data-name="HIP 60122" data-meta="mag 5.28" data-vid="60122"/>
+<circle class="star" cx="89.0" cy="104.5" r="4.1" fill="#fff2cc" data-name="HIP 60485" data-meta="mag 4.76" data-vid="60485"/>
+<circle class="star" cx="101.7" cy="375.7" r="4.0" fill="#fff2cc" data-name="HIP 60646" data-meta="mag 5.01" data-vid="60646"/>
+<circle class="star" cx="156.0" cy="500.5" r="3.7" fill="#ffd699" data-name="HIP 61309" data-meta="mag 5.42" data-vid="61309"/>
+<circle class="star" cx="236.0" cy="236.9" r="3.7" fill="#ffb366" data-name="La Superba" data-meta="mag 5.42" data-vid="62223"/>
+<text class="star-label" x="243.7" y="240.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="62223">La Superba</text>
+<circle class="star" cx="379.6" cy="445.3" r="3.9" fill="#cfe0ff" data-name="HIP 63901" data-meta="mag 5.2" data-vid="63901"/>
+<circle class="star" cx="435.1" cy="351.2" r="4.0" fill="#ffd699" data-name="HIP 64540" data-meta="mag 4.94" data-vid="64540"/>
+<circle class="star" cx="461.8" cy="342.1" r="4.2" fill="#ffffff" data-name="HIP 64844" data-meta="mag 4.72" data-vid="64844"/>
+<circle class="star" cx="466.7" cy="145.1" r="3.9" fill="#cfe0ff" data-name="HIP 64906" data-meta="mag 5.14" data-vid="64906"/>
+<circle class="star" cx="579.6" cy="159.5" r="4.2" fill="#ffffff" data-name="HIP 66234" data-meta="mag 4.68" data-vid="66234"/>
+<circle class="star" cx="582.0" cy="415.4" r="4.1" fill="#ffffff" data-name="HIP 66257" data-meta="mag 4.91" data-vid="66257"/>
+<circle class="star" cx="600.5" cy="434.6" r="4.1" fill="#ffffff" data-name="HIP 66458" data-meta="mag 4.82" data-vid="66458"/>
+<circle class="star" cx="700.4" cy="474.6" r="4.1" fill="#ffb366" data-name="HIP 67665" data-meta="mag 4.76" data-vid="67665"/>
+<circle class="star" cx="276.2" cy="330.4" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M94" data-meta="s"/>
+<circle cx="276.2" cy="330.4" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
 </svg>

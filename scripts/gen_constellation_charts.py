@@ -78,33 +78,36 @@ def type_color(t: str) -> str:
 
 
 def fig_bbox(lines):
-    """Devuelve (ra_min, ra_max, dec_min, dec_max) de la figura, con RA desenrollada
+  """Devuelve (ra_min, ra_max, dec_min, dec_max) de la figura, con RA desenrollada
     circularmente respecto a su centroide (diferencia angular en [-180,180)). Así
     constelaciones que cruzan el meridiano 180° (p.ej. Osa Menor, RA 38 y 263) no
     producen un recuadro de 225° de ancho ni estiran a Polaris al otro extremo."""
-    ras, decs = [], []
-    for ln in lines:
-        for ra, dec in ln:
-            ras.append(ra)
-            decs.append(dec)
-    if not ras:
-        return None
-    # centroide RA circular
-    import math
-    xs = sum(math.cos(math.radians(r)) for r in ras)
-    ys = sum(math.sin(math.radians(r)) for r in ras)
-    mean_ra = math.degrees(math.atan2(ys, xs)) % 360.0
+  return bbox_of_points([(ra, dec) for ln in lines for ra, dec in ln])
 
-    def unwrap(r):
-        d = r - mean_ra
-        if d > 180.0:
-            d -= 360.0
-        elif d < -180.0:
-            d += 360.0
-        return mean_ra + d
 
-    ras_u = [unwrap(r) for r in ras]
-    return min(ras_u), max(ras_u), min(decs), max(decs)
+def bbox_of_points(pts):
+  """Igual que fig_bbox pero sobre una lista arbitraria de (ra, dec). Se usa
+    para que el recuadro de la carta abarque también las estrellas de la
+    constelación (no solo el asterismo), evitando que se amontonen."""
+  if not pts:
+    return None
+  ras = [p[0] for p in pts]
+  decs = [p[1] for p in pts]
+  import math
+  xs = sum(math.cos(math.radians(r)) for r in ras)
+  ys = sum(math.sin(math.radians(r)) for r in ras)
+  mean_ra = math.degrees(math.atan2(ys, xs)) % 360.0
+
+  def unwrap(r):
+    d = r - mean_ra
+    if d > 180.0:
+      d -= 360.0
+    elif d < -180.0:
+      d += 360.0
+    return mean_ra + d
+
+  ras_u = [unwrap(r) for r in ras]
+  return min(ras_u), max(ras_u), min(decs), max(decs)
 
 
 def constellation_of(s, conss):
@@ -171,9 +174,14 @@ for c in conss:
     # Solo las estrellas que realmente pertenecen a esta constelación.
     cstars = [s for s in stars if constellation_of(s, conss) == name and s["mag"] <= 5.5]
 
-    # Recuadro del SVG: las líneas que se dibujan (el asterismo principal),
-    # para que ocupe casi todo el lienzo y quede centrado.
-    bb = fig_bbox(draw_lines)
+    # Recuadro del SVG: el asterismo seleccionado UNIDO a todas las estrellas
+    # reales de la constelación, para que la carta abarque la extensión
+    # completa de la constelación (no solo el asterismo) y se vean distribuidas
+    # en vez de amontonarse. Se excluyen las de constelaciones vecinas porque
+    # cstars ya está filtrado por la constelación real (campo 'con').
+    aster_pts = [(ra, dec) for ln in draw_lines for ra, dec in ln]
+    star_pts = [(s["ra"], s["dec"]) for s in cstars]
+    bb = bbox_of_points(aster_pts + star_pts)
     if not bb:
         continue
     ra_min, ra_max, dec_min, dec_max = bb

@@ -1,33 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 956" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="760" height="956" fill="#05060c"/>
-<polyline class="fig-line" points="306.7,305.4 297.6,66.9 125.4,165.3 306.7,305.4 531.8,389.2 634.6,889.1 429.5,809.2 306.7,305.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="91971,91926,91262,91971,92791,93194,92420,91971"/>
-<circle class="star" cx="306.7" cy="305.4" r="4.4" fill="#ffffff" data-name="HIP 91971" data-meta="mag 4.34" data-vid="91971"/>
-<circle class="star" cx="297.6" cy="66.9" r="4.2" fill="#ffffff" data-name="HIP 91926" data-meta="mag 4.59" data-vid="91926"/>
-<circle class="star" cx="125.4" cy="165.4" r="7.0" fill="#cfe0ff" data-name="Vega" data-meta="mag 0.03" data-vid="91262"/>
-<text class="star-label" x="136.4" y="169.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="91262">Vega</text>
-<circle class="star" cx="531.9" cy="389.3" r="4.5" fill="#ffb366" data-name="HIP 92791" data-meta="mag 4.22" data-vid="92791"/>
-<circle class="star" cx="634.6" cy="889.2" r="5.0" fill="#cfe0ff" data-name="Sulafat" data-meta="mag 3.25" data-vid="93194"/>
-<text class="star-label" x="643.6" y="893.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="93194">Sulafat</text>
-<circle class="star" cx="429.5" cy="809.2" r="4.9" fill="#ffffff" data-name="Sheliak" data-meta="mag 3.52" data-vid="92420"/>
-<text class="star-label" x="438.4" y="813.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="92420">Sheliak</text>
-<circle class="star" cx="-269.7" cy="488.3" r="4.4" fill="#ffd699" data-name="HIP 89826" data-meta="mag 4.33" data-vid="89826"/>
-<circle class="star" cx="-168.7" cy="79.5" r="3.9" fill="#ffffff" data-name="HIP 90191" data-meta="mag 5.11" data-vid="90191"/>
-<circle class="star" cx="30.4" cy="1142.8" r="3.7" fill="#cfe0ff" data-name="HIP 90923" data-meta="mag 5.47" data-vid="90923"/>
-<circle class="star" cx="118.1" cy="796.6" r="3.8" fill="#cfe0ff" data-name="HIP 91235" data-meta="mag 5.41" data-vid="91235"/>
-<circle class="star" cx="296.6" cy="60.1" r="4.2" fill="#ffffff" data-name="HIP 91919" data-meta="mag 4.67" data-vid="91919"/>
-<circle class="star" cx="336.8" cy="1605.0" r="4.1" fill="#ffd699" data-name="HIP 92088" data-meta="mag 4.83" data-vid="92088"/>
-<circle class="star" cx="424.9" cy="905.6" r="3.9" fill="#ffffff" data-name="HIP 92405" data-meta="mag 5.22" data-vid="92405"/>
-<circle class="star" cx="540.3" cy="-169.4" r="3.7" fill="#ffd699" data-name="HIP 92831" data-meta="mag 5.46" data-vid="92831"/>
-<circle class="star" cx="551.1" cy="-447.7" r="4.6" fill="#ffd699" data-name="HIP 92862" data-meta="mag 4.08" data-vid="92862"/>
-<circle class="star" cx="590.2" cy="864.0" r="3.9" fill="#fff2cc" data-name="HIP 93017" data-meta="mag 5.2" data-vid="93017"/>
-<circle class="star" cx="653.4" cy="1656.3" r="3.8" fill="#ffd699" data-name="HIP 93256" data-meta="mag 5.26" data-vid="93256"/>
-<circle class="star" cx="659.3" cy="953.8" r="4.0" fill="#ffd699" data-name="HIP 93279" data-meta="mag 4.94" data-vid="93279"/>
-<circle class="star" cx="692.3" cy="-802.7" r="4.0" fill="#ffffff" data-name="HIP 93408" data-meta="mag 5.0" data-vid="93408"/>
-<circle class="star" cx="828.0" cy="484.1" r="3.9" fill="#cfe0ff" data-name="HIP 93903" data-meta="mag 5.25" data-vid="93903"/>
-<circle class="star" cx="830.8" cy="911.5" r="3.9" fill="#ffffff" data-name="HIP 93917" data-meta="mag 5.2" data-vid="93917"/>
-<circle class="star" cx="977.3" cy="122.4" r="4.3" fill="#cfe0ff" data-name="Aladfar" data-meta="mag 4.43" data-vid="94481"/>
-<text class="star-label" x="985.7" y="126.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="94481">Aladfar</text>
-<circle class="star" cx="1037.7" cy="242.6" r="4.4" fill="#ffd699" data-name="HIP 94713" data-meta="mag 4.35" data-vid="94713"/>
-<circle class="star" cx="510.9" cy="848.3" r="9" fill="#ff8ce0" fill-opacity="0.15" data-name="M57" data-meta="pn"/>
-<circle cx="510.9" cy="848.3" r="3.5" fill="#ff8ce0" fill-opacity="0.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1114" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="1114" fill="#05060c"/>
+<polyline class="fig-line" points="354.1,509.2 351.1,415.2 293.5,454.0 354.1,509.2 429.4,542.2 463.8,739.1 395.2,707.6 354.1,509.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="91971,91926,91262,91971,92791,93194,92420,91971"/>
+<circle class="star" cx="354.1" cy="509.2" r="4.4" fill="#ffffff" data-name="HIP 91971" data-meta="mag 4.34" data-vid="91971"/>
+<circle class="star" cx="351.1" cy="415.3" r="4.2" fill="#ffffff" data-name="HIP 91926" data-meta="mag 4.59" data-vid="91926"/>
+<circle class="star" cx="293.5" cy="454.0" r="7.0" fill="#cfe0ff" data-name="Vega" data-meta="mag 0.03" data-vid="91262"/>
+<text class="star-label" x="304.5" y="458.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="91262">Vega</text>
+<circle class="star" cx="429.4" cy="542.2" r="4.5" fill="#ffb366" data-name="HIP 92791" data-meta="mag 4.22" data-vid="92791"/>
+<circle class="star" cx="463.8" cy="739.1" r="5.0" fill="#cfe0ff" data-name="Sulafat" data-meta="mag 3.25" data-vid="93194"/>
+<text class="star-label" x="472.8" y="743.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="93194">Sulafat</text>
+<circle class="star" cx="395.2" cy="707.6" r="4.9" fill="#ffffff" data-name="Sheliak" data-meta="mag 3.52" data-vid="92420"/>
+<text class="star-label" x="404.1" y="711.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="92420">Sheliak</text>
+<circle class="star" cx="161.4" cy="581.2" r="4.4" fill="#ffd699" data-name="HIP 89826" data-meta="mag 4.33" data-vid="89826"/>
+<circle class="star" cx="195.2" cy="420.2" r="3.9" fill="#ffffff" data-name="HIP 90191" data-meta="mag 5.11" data-vid="90191"/>
+<circle class="star" cx="261.8" cy="839.0" r="3.7" fill="#cfe0ff" data-name="HIP 90923" data-meta="mag 5.47" data-vid="90923"/>
+<circle class="star" cx="291.1" cy="702.6" r="3.8" fill="#cfe0ff" data-name="HIP 91235" data-meta="mag 5.41" data-vid="91235"/>
+<circle class="star" cx="350.8" cy="412.6" r="4.2" fill="#ffffff" data-name="HIP 91919" data-meta="mag 4.67" data-vid="91919"/>
+<circle class="star" cx="364.2" cy="1021.1" r="4.1" fill="#ffd699" data-name="HIP 92088" data-meta="mag 4.83" data-vid="92088"/>
+<circle class="star" cx="393.7" cy="745.6" r="3.9" fill="#ffffff" data-name="HIP 92405" data-meta="mag 5.22" data-vid="92405"/>
+<circle class="star" cx="432.3" cy="322.2" r="3.7" fill="#ffd699" data-name="HIP 92831" data-meta="mag 5.46" data-vid="92831"/>
+<circle class="star" cx="435.9" cy="212.5" r="4.6" fill="#ffd699" data-name="HIP 92862" data-meta="mag 4.08" data-vid="92862"/>
+<circle class="star" cx="448.9" cy="729.2" r="3.9" fill="#fff2cc" data-name="HIP 93017" data-meta="mag 5.2" data-vid="93017"/>
+<circle class="star" cx="470.1" cy="1041.3" r="3.8" fill="#ffd699" data-name="HIP 93256" data-meta="mag 5.26" data-vid="93256"/>
+<circle class="star" cx="472.1" cy="764.6" r="4.0" fill="#ffd699" data-name="HIP 93279" data-meta="mag 4.94" data-vid="93279"/>
+<circle class="star" cx="483.1" cy="72.7" r="4.0" fill="#ffffff" data-name="HIP 93408" data-meta="mag 5.0" data-vid="93408"/>
+<circle class="star" cx="528.4" cy="579.6" r="3.9" fill="#cfe0ff" data-name="HIP 93903" data-meta="mag 5.25" data-vid="93903"/>
+<circle class="star" cx="529.4" cy="747.9" r="3.9" fill="#ffffff" data-name="HIP 93917" data-meta="mag 5.2" data-vid="93917"/>
+<circle class="star" cx="578.4" cy="437.1" r="4.3" fill="#cfe0ff" data-name="Aladfar" data-meta="mag 4.43" data-vid="94481"/>
+<text class="star-label" x="586.7" y="441.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="94481">Aladfar</text>
+<circle class="star" cx="598.6" cy="484.4" r="4.4" fill="#ffd699" data-name="HIP 94713" data-meta="mag 4.35" data-vid="94713"/>
+<circle class="star" cx="422.4" cy="723.0" r="9" fill="#ff8ce0" fill-opacity="0.15" data-name="M57" data-meta="pn"/>
+<circle cx="422.4" cy="723.0" r="3.5" fill="#ff8ce0" fill-opacity="0.5"/>
 </svg>

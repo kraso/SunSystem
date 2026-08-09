@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 678" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="760" height="678" fill="#05060c"/>
-<polyline class="fig-line" points="59.6,591.1 494.9,86.9 700.4,193.2 59.6,591.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="8796,10064,10670,8796"/>
-<circle class="star" cx="59.7" cy="591.1" r="4.9" fill="#ffffff" data-name="Mothallah" data-meta="mag 3.42" data-vid="8796"/>
-<text class="star-label" x="68.6" y="595.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="8796">Mothallah</text>
-<circle class="star" cx="494.9" cy="86.9" r="5.2" fill="#ffffff" data-name="HIP 10064" data-meta="mag 3.0" data-vid="10064"/>
-<circle class="star" cx="700.3" cy="193.2" r="4.6" fill="#ffffff" data-name="HIP 10670" data-meta="mag 4.03" data-vid="10670"/>
-<circle class="star" cx="321.0" cy="245.7" r="3.7" fill="#ffffff" data-name="HIP 9570" data-meta="mag 5.5" data-vid="9570"/>
-<circle class="star" cx="569.7" cy="523.6" r="4.0" fill="#fff2cc" data-name="HIP 10280" data-meta="mag 4.94" data-vid="10280"/>
-<circle class="star" cx="663.9" cy="238.7" r="3.9" fill="#cfe0ff" data-name="HIP 10559" data-meta="mag 5.25" data-vid="10559"/>
-<circle class="star" cx="693.4" cy="158.0" r="4.1" fill="#fff2cc" data-name="HIP 10644" data-meta="mag 4.84" data-vid="10644"/>
-<circle class="star" cx="743.6" cy="678.3" r="3.8" fill="#ffffff" data-name="HIP 10793" data-meta="mag 5.29" data-vid="10793"/>
-<circle class="star" cx="987.2" cy="582.6" r="3.8" fill="#ffffff" data-name="HIP 11486" data-meta="mag 5.29" data-vid="11486"/>
-<circle class="star" cx="1091.3" cy="-21.2" r="3.9" fill="#ffd699" data-name="HIP 11784" data-meta="mag 5.15" data-vid="11784"/>
-<circle class="star" cx="1188.5" cy="114.8" r="3.8" fill="#ffb366" data-name="HIP 12086" data-meta="mag 5.38" data-vid="12086"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 534" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="534" fill="#05060c"/>
+<polyline class="fig-line" points="59.6,380.8 306.7,162.2 423.3,208.3 59.6,380.8" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="8796,10064,10670,8796"/>
+<circle class="star" cx="59.7" cy="380.8" r="4.9" fill="#ffffff" data-name="Mothallah" data-meta="mag 3.42" data-vid="8796"/>
+<text class="star-label" x="68.6" y="384.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="8796">Mothallah</text>
+<circle class="star" cx="306.7" cy="162.2" r="5.2" fill="#ffffff" data-name="HIP 10064" data-meta="mag 3.0" data-vid="10064"/>
+<circle class="star" cx="423.3" cy="208.3" r="4.6" fill="#ffffff" data-name="HIP 10670" data-meta="mag 4.03" data-vid="10670"/>
+<circle class="star" cx="208.0" cy="231.1" r="3.7" fill="#ffffff" data-name="HIP 9570" data-meta="mag 5.5" data-vid="9570"/>
+<circle class="star" cx="349.1" cy="351.6" r="4.0" fill="#fff2cc" data-name="HIP 10280" data-meta="mag 4.94" data-vid="10280"/>
+<circle class="star" cx="402.6" cy="228.0" r="3.9" fill="#cfe0ff" data-name="HIP 10559" data-meta="mag 5.25" data-vid="10559"/>
+<circle class="star" cx="419.3" cy="193.1" r="4.1" fill="#fff2cc" data-name="HIP 10644" data-meta="mag 4.84" data-vid="10644"/>
+<circle class="star" cx="447.8" cy="418.7" r="3.8" fill="#ffffff" data-name="HIP 10793" data-meta="mag 5.29" data-vid="10793"/>
+<circle class="star" cx="586.1" cy="377.2" r="3.8" fill="#ffffff" data-name="HIP 11486" data-meta="mag 5.29" data-vid="11486"/>
+<circle class="star" cx="645.2" cy="115.3" r="3.9" fill="#ffd699" data-name="HIP 11784" data-meta="mag 5.15" data-vid="11784"/>
+<circle class="star" cx="700.4" cy="174.3" r="3.8" fill="#ffb366" data-name="HIP 12086" data-meta="mag 5.38" data-vid="12086"/>
 </svg>
