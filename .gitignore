@@ -10,3 +10,6 @@ nul
 .hermes-tmp*
 *.log
 verify-*.png
+
+# Banco reserva de fotos de constelaciones (no se sube al repo)
+assets/constellation-photos-v2/
