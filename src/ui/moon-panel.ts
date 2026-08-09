@@ -54,7 +54,7 @@ export class MoonPanel {
     return `
       <div id="stats-header">
         <h1>🌙 Fases de la Luna</h1>
-        <button id="moon-close" class="btn-hud">✕ Cerrar</button>
+        <a id="moon-close" class="brand" href="./index.html" title="Volver a SunSystem">☀️ SunSystem</a>
       </div>
       <div id="moon-body">
         <div id="moon-left">
@@ -107,7 +107,8 @@ export class MoonPanel {
   }
 
   private bindEvents(): void {
-    this.overlay.querySelector('#moon-close')!.addEventListener('click', () => this.hide());
+    // Volver a la página principal (el enlace navega a index.html)
+
     this.overlay.querySelector('#moon-prev')!.addEventListener('click', () => this.changeMonth(-1));
     this.overlay.querySelector('#moon-next')!.addEventListener('click', () => this.changeMonth(1));
     this.overlay.querySelector('#moon-today')!.addEventListener('click', () => this.goToday());

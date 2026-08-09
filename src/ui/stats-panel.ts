@@ -18,7 +18,7 @@ export class StatsPanel {
     this.overlay.innerHTML = `
       <div id="stats-header">
         <h1>📊 Estadísticas del Sistema Solar</h1>
-        <button id="stats-close">✕ Cerrar</button>
+        <a id="stats-close" class="brand" href="./index.html" title="Volver a SunSystem">☀️ SunSystem</a>
       </div>
       <div id="stats-legend">
         <span class="legend-title">Leyenda (color del borde = tipo):</span>
@@ -34,8 +34,8 @@ export class StatsPanel {
 
     this.grid = this.overlay.querySelector('#stats-grid')!;
 
-    // Cerrar
-    this.overlay.querySelector('#stats-close')!.addEventListener('click', () => this.hide());
+    // Volver a la página principal (el enlace navega a index.html)
+
 
     // ESC para cerrar
     document.addEventListener('keydown', (e) => {

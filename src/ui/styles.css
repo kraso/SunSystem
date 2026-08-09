@@ -128,6 +128,32 @@ html, body {
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
 }
 
+/* Enlace "SunSystem" para volver a la página principal (azul, sin subrayado) */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+  color: #4ea1ff;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+.brand:hover {
+  color: #7dc0ff;
+  text-decoration: none;
+}
+
+/* El header de los paneles (Estadísticas/Luna) define color propio;
+   forzamos el azul del enlace brand con mayor especificidad. */
+#stats-header .brand {
+  color: #4ea1ff;
+  text-decoration: none;
+}
+
 .btn-hud:hover .ico {
   opacity: 1;
 }
