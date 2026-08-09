@@ -390,7 +390,7 @@ function showConstellation(name: string): void {
   wrap.innerHTML = '<p class="hint">Cargando carta…</p>';
   stage.appendChild(wrap);
 
-  fetch(`/assets/constellation-charts/${data.slug}.svg`)
+  fetch(`constellation-charts/${data.slug}.svg`)
     .then((r) => r.text())
     .then((svgText) => {
       wrap.innerHTML = svgText;
