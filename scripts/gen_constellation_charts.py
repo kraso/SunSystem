@@ -33,25 +33,27 @@ def slug(name: str) -> str:
     return s
 
 
-def ra_to_x(ra, ra_min, ra_max, dec_min, dec_max, w, pad):
+def ra_to_x(ra, ra_min, ra_max, scale, w, pad):
     # RA crece hacia la IZQUIERDA (este a la izquierda, como en mapas celestes).
-    # Normaliza la RA al mismo sistema que el recuadro (enrollado a [0,360)) para
-    # que los puntos con RA negativa no se dibujen fuera del canvas.
-    # Usa el MISMO span que dec_to_y (el mayor) para no deformar la figura.
-    if ra < 0:
-        ra += 360.0
-    span = max(ra_max - ra_min, dec_max - dec_min, 1e-3)
-    inner = w - 2 * pad
-    # centro el rango real dentro del lienzo cuadrado
+    # Desenrolla la RA respecto al centroide del recuadro (diferencia angular en
+    # [-180,180)) para que constelaciones que cruzan 180° se mapeen sin saltos.
+    # Usa 'scale' (grados por eje) comun con dec_to_y para no deformar.
     cx = (ra_min + ra_max) / 2
-    return w / 2 - (cx - ra) / span * inner
+    d = ra - cx
+    if d > 180.0:
+        ra -= 360.0
+    elif d < -180.0:
+        ra += 360.0
+    inner = w - 2 * pad
+    return w / 2 - (cx - ra) / scale * inner
 
 
-def dec_to_y(dec, dec_min, dec_max, ra_min, ra_max, h, pad):
-    span = max(ra_max - ra_min, dec_max - dec_min, 1e-3)
+def dec_to_y(dec, dec_min, dec_max, scale, h, pad):
+    # Dec alta = ARRIBA (norte arriba), como en mapas celestes reales.
+    # Usa 'scale' comun con ra_to_x para no deformar la figura.
     inner = h - 2 * pad
     cy = (dec_min + dec_max) / 2
-    return h / 2 - (cy - dec) / span * inner
+    return h / 2 - (dec - cy) / scale * inner
 
 
 def star_radius(mag):
@@ -76,19 +78,33 @@ def type_color(t: str) -> str:
 
 
 def fig_bbox(lines):
-    """Devuelve (ra_min, ra_max, dec_min, dec_max) de la figura, con RA enrollada
-    a [0,360) para que constelaciones que cruzan el meridiano 180° (p.ej. Osa
-    Mayor, RA -176..+178) no produzcan un recuadro de 354° de ancho."""
+    """Devuelve (ra_min, ra_max, dec_min, dec_max) de la figura, con RA desenrollada
+    circularmente respecto a su centroide (diferencia angular en [-180,180)). Así
+    constelaciones que cruzan el meridiano 180° (p.ej. Osa Menor, RA 38 y 263) no
+    producen un recuadro de 225° de ancho ni estiran a Polaris al otro extremo."""
     ras, decs = [], []
     for ln in lines:
         for ra, dec in ln:
-            if ra < 0:
-                ra += 360.0
             ras.append(ra)
             decs.append(dec)
     if not ras:
         return None
-    return min(ras), max(ras), min(decs), max(decs)
+    # centroide RA circular
+    import math
+    xs = sum(math.cos(math.radians(r)) for r in ras)
+    ys = sum(math.sin(math.radians(r)) for r in ras)
+    mean_ra = math.degrees(math.atan2(ys, xs)) % 360.0
+
+    def unwrap(r):
+        d = r - mean_ra
+        if d > 180.0:
+            d -= 360.0
+        elif d < -180.0:
+            d += 360.0
+        return mean_ra + d
+
+    ras_u = [unwrap(r) for r in ras]
+    return min(ras_u), max(ras_u), min(decs), max(decs)
 
 
 def constellation_of(s, conss):
@@ -171,9 +187,12 @@ for c in conss:
     ra_span = ra_max - ra_min
     dec_span = dec_max - dec_min
 
-    # Lienzo CUADRADO: misma escala en ambos ejes para no deformar.
-    W = H = 520
-    pad = 26
+    # Lienzo con el ASPECTO REAL de la constelacion: ancho/alto = RA/Dec.
+    # Misma escala (scale) en ambos ejes -> no se deforma ni se aplasta.
+    scale = max(ra_span, dec_span)
+    W = 520
+    H = max(200, int(round(W * dec_span / ra_span)))
+    pad = min(26, int(H * 0.12))
 
     # Objetos Messier que realmente pertenecen a esta constelación.
     cobjs = [o for o in deep
@@ -191,8 +210,8 @@ for c in conss:
     for ln in draw_lines:
         pts = []
         for ra, dec in ln:
-            x = ra_to_x(ra, ra_min, ra_max, dec_min, dec_max, W, pad)
-            y = dec_to_y(dec, dec_min, dec_max, ra_min, ra_max, H, pad)
+            x = ra_to_x(ra, ra_min, ra_max, scale, W, pad)
+            y = dec_to_y(dec, dec_min, dec_max, scale, H, pad)
             pts.append(f"{x:.1f},{y:.1f}")
         parts.append(f'<polyline points="{" ".join(pts)}" fill="none" '
                      f'stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>')
@@ -227,8 +246,8 @@ for c in conss:
         if s.get("hip") in drawn_hip:
             continue
         drawn_hip.add(s.get("hip"))
-        x = ra_to_x(s["ra"], ra_min, ra_max, dec_min, dec_max, W, pad)
-        y = dec_to_y(s["dec"], dec_min, dec_max, ra_min, ra_max, H, pad)
+        x = ra_to_x(s["ra"], ra_min, ra_max, scale, W, pad)
+        y = dec_to_y(s["dec"], dec_min, dec_max, scale, H, pad)
         r = star_radius(s["mag"])
         bv = float(s["bv"]) if s.get("bv") else 0.0
         if bv < 0:
@@ -250,8 +269,8 @@ for c in conss:
 
     # objetos Messier (mancha difusa por tipo)
     for o in cobjs:
-        x = ra_to_x(o["ra"], ra_min, ra_max, dec_min, dec_max, W, pad)
-        y = dec_to_y(o["dec"], dec_min, dec_max, ra_min, ra_max, H, pad)
+        x = ra_to_x(o["ra"], ra_min, ra_max, scale, W, pad)
+        y = dec_to_y(o["dec"], dec_min, dec_max, scale, H, pad)
         label = o.get("name") or o.get("desig") or o.get("id")
         tname = o.get("typeName") or o.get("type") or ""
         col = type_color(o.get("type"))

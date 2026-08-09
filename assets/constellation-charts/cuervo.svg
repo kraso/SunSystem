@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="520" fill="#05060c"/>
-<polyline points="105.8,65.0 126.2,165.1 193.6,406.2 360.5,455.0 414.2,128.2 126.2,165.1" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="105.9" cy="65.0" r="3.4" fill="#ffffff" data-name="HIP 59199" data-meta="mag 4.02"/>
-<circle class="star" cx="126.2" cy="165.1" r="3.9" fill="#ffd699" data-name="HIP 59316" data-meta="mag 3.02"/>
-<circle class="star" cx="193.6" cy="406.2" r="4.1" fill="#cfe0ff" data-name="HIP 59803" data-meta="mag 2.58"/>
-<circle class="star" cx="360.5" cy="455.0" r="3.9" fill="#cfe0ff" data-name="HIP 60965" data-meta="mag 2.94"/>
-<circle class="star" cx="414.2" cy="128.3" r="4.1" fill="#fff2cc" data-name="HIP 61359" data-meta="mag 2.65"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 658" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="658" fill="#05060c"/>
+<polyline points="105.8,581.5 126.2,451.8 193.6,139.6 360.5,76.5 414.2,499.6 126.2,451.8" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="105.9" cy="581.5" r="3.4" fill="#ffffff" data-name="HIP 59199" data-meta="mag 4.02"/>
+<circle class="star" cx="126.2" cy="451.8" r="3.9" fill="#ffd699" data-name="HIP 59316" data-meta="mag 3.02"/>
+<circle class="star" cx="193.6" cy="139.6" r="4.1" fill="#cfe0ff" data-name="HIP 59803" data-meta="mag 2.58"/>
+<circle class="star" cx="360.5" cy="76.5" r="3.9" fill="#cfe0ff" data-name="HIP 60965" data-meta="mag 2.94"/>
+<circle class="star" cx="414.2" cy="499.6" r="4.1" fill="#fff2cc" data-name="HIP 61359" data-meta="mag 2.65"/>
 </svg>

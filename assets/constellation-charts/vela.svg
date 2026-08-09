@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="520" fill="#05060c"/>
-<polyline points="152.2,190.8 245.0,187.9 331.2,192.2 455.0,243.3 375.5,315.7 266.3,332.1 210.0,302.7 65.0,264.0" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="152.2" cy="190.8" r="4.4" fill="#ffffff" data-name="HIP 42913" data-meta="mag 1.93"/>
-<circle class="star" cx="245.0" cy="187.9" r="4.2" fill="#cfe0ff" data-name="HIP 45941" data-meta="mag 2.47"/>
-<circle class="star" cx="331.2" cy="192.2" r="3.6" fill="#cfe0ff" data-name="HIP 48774" data-meta="mag 3.52"/>
-<circle class="star" cx="455.0" cy="243.3" r="4.1" fill="#fff2cc" data-name="HIP 52727" data-meta="mag 2.69"/>
-<circle class="star" cx="375.5" cy="315.7" r="3.5" fill="#ffffff" data-name="HIP 50191" data-meta="mag 3.85"/>
-<circle class="star" cx="266.3" cy="332.2" r="3.6" fill="#ffffff" data-name="HIP 46651" data-meta="mag 3.6"/>
-<circle class="star" cx="210.0" cy="302.7" r="4.3" fill="#ffb366" data-name="HIP 44816" data-meta="mag 2.23"/>
-<circle class="star" cx="65.0" cy="264.0" r="4.5" fill="#cfe0ff" data-name="Sirio" data-meta="mag 1.75"/>
-<text x="73.5" y="268.0" fill="#cfe0ff" font-size="12" font-weight="bold">Sirio</text>
-<circle class="star" cx="151.5" cy="310.5" r="3.4" fill="#fff2cc" data-name="HIP 42884" data-meta="mag 4.05"/>
-<circle class="star" cx="134.7" cy="307.1" r="3.3" fill="#ffffff" data-name="HIP 42312" data-meta="mag 4.11"/>
-<circle class="star" cx="190.4" cy="324.3" r="3.2" fill="#fff2cc" data-name="HIP 44191" data-meta="mag 4.45"/>
-<circle class="star" cx="69.7" cy="307.1" r="3.0" fill="#ffffff" data-name="HIP 40096" data-meta="mag 4.73"/>
-<circle class="star" cx="394.4" cy="320.4" r="3.0" fill="#ffd699" data-name="HIP 50799" data-meta="mag 4.82"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="200" fill="#05060c"/>
+<polyline points="151.3,122.5 244.9,123.4 331.8,122.0 456.7,105.4 376.5,81.9 266.4,76.6 209.6,86.1 63.3,98.7" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="151.3" cy="122.5" r="4.4" fill="#ffffff" data-name="HIP 42913" data-meta="mag 1.93"/>
+<circle class="star" cx="244.9" cy="123.4" r="4.2" fill="#cfe0ff" data-name="HIP 45941" data-meta="mag 2.47"/>
+<circle class="star" cx="331.8" cy="122.0" r="3.6" fill="#cfe0ff" data-name="HIP 48774" data-meta="mag 3.52"/>
+<circle class="star" cx="456.7" cy="105.4" r="4.1" fill="#fff2cc" data-name="HIP 52727" data-meta="mag 2.69"/>
+<circle class="star" cx="376.5" cy="81.9" r="3.5" fill="#ffffff" data-name="HIP 50191" data-meta="mag 3.85"/>
+<circle class="star" cx="266.4" cy="76.6" r="3.6" fill="#ffffff" data-name="HIP 46651" data-meta="mag 3.6"/>
+<circle class="star" cx="209.6" cy="86.1" r="4.3" fill="#ffb366" data-name="HIP 44816" data-meta="mag 2.23"/>
+<circle class="star" cx="63.3" cy="98.7" r="4.5" fill="#cfe0ff" data-name="Sirio" data-meta="mag 1.75"/>
+<text x="71.9" y="102.7" fill="#cfe0ff" font-size="12" font-weight="bold">Sirio</text>
+<circle class="star" cx="150.6" cy="83.6" r="3.4" fill="#fff2cc" data-name="HIP 42884" data-meta="mag 4.05"/>
+<circle class="star" cx="133.7" cy="84.7" r="3.3" fill="#ffffff" data-name="HIP 42312" data-meta="mag 4.11"/>
+<circle class="star" cx="189.8" cy="79.1" r="3.2" fill="#fff2cc" data-name="HIP 44191" data-meta="mag 4.45"/>
+<circle class="star" cx="68.1" cy="84.7" r="3.0" fill="#ffffff" data-name="HIP 40096" data-meta="mag 4.73"/>
+<circle class="star" cx="395.5" cy="80.4" r="3.0" fill="#ffd699" data-name="HIP 50799" data-meta="mag 4.82"/>
 </svg>

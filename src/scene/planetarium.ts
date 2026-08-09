@@ -4,6 +4,19 @@ import { getHorizonPos } from '../core/sky';
 
 const DOME_RADIUS = 400;
 
+// Para algunas constelaciones el catálogo trae la figura completa (con patas
+// muy largas) y el asterismo principal es más reconocible. En esos casos el
+// planetario dibuja solo las lineas indicadas (indices sobre c.lines).
+const ASTERISM_LINES: Record<string, number[]> = {
+  "Osa Mayor": [0], // el Carro (Big Dipper), linea 0 = las 7 estrellas del cazo
+};
+
+function drawLinesOf(c: ConstellationData): number[][][] {
+  const idx = ASTERISM_LINES[c.name as keyof typeof ASTERISM_LINES];
+  if (idx) return idx.map((i) => c.lines[i]).filter(Boolean);
+  return c.lines;
+}
+
 export interface SkyLabel {
   text: string;
   pos: THREE.Vector3;
@@ -233,7 +246,8 @@ export class Planetarium {
 
     const segs: number[] = [];
     for (const c of this.constellations) {
-      for (const line of c.lines) {
+      const lines = drawLinesOf(c);
+      for (const line of lines) {
         for (let i = 0; i < line.length - 1; i++) {
           const ha = getHorizonPos(line[i][0], line[i][1], this.latDeg, this.lonDeg, this.date);
           const hb = getHorizonPos(line[i + 1][0], line[i + 1][1], this.latDeg, this.lonDeg, this.date);
@@ -268,8 +282,9 @@ export class Planetarium {
 
     if (this.showConstLabels) {
       for (const c of this.constellations) {
+        const lines = drawLinesOf(c);
         const pts: THREE.Vector3[] = [];
-        for (const line of c.lines) {
+        for (const line of lines) {
           for (let i = 0; i < line.length - 1; i++) {
             const ha = getHorizonPos(line[i][0], line[i][1], this.latDeg, this.lonDeg, this.date);
             const hb = getHorizonPos(line[i + 1][0], line[i + 1][1], this.latDeg, this.lonDeg, this.date);

@@ -40,12 +40,17 @@ def build_stars():
         95947: "Alnair", 97649: "Markab", 9884: "Menkar", 25336: "Capella",
         24608: "Elnath", 28360: "Hassaleh", 32607: "Alhena", 33160: "Mebsuta",
         35468: "Wasat", 36850: "Meissa", 41704: "Alphard", 53410: "Adhafera",
-        57853: "Zubeneschamali", 67301: "Muphrid", 70027: "Zaniah", 70249: "Porrima",
+        57853: "Zubeneschamali", 67301: "Alkaid", 70027: "Zaniah", 70249: "Porrima",
         70957: "Auva", 73967: "Kraz", 76229: "Yed Prior", 77070: "Sargas",
         80763: "Tarazed", 81693: "Altair", 87308: "Sadr", 87769: "Gienah",
-        90088: "Deneb Algedi", 93429: "Fomalhaut", 22449: "Mizar", 53910: "Coxa",
-        59774: "Acrab", 60718: "Dschubba", 62862: "Pi Scorpii", 60765: "Graffias",
-        85927: "Vega", 91262: "Deneb", 67315: "Seginus", 6734: "Botein",
+        90088: "Deneb Algedi", 93429: "Fomalhaut", 54061: "Dubhe", 53910: "Merak",
+        58001: "Phecda", 59774: "Megrez", 62956: "Alioth", 65378: "Mizar", 67315: "Seginus",
+        60009: "Chertan", 60742: "Zubenelgenubi", 65474: "Arcturus", 66249: "Izar",
+        68756: "Spica", 69673: "Arich", 72105: "Vindemiatrix", 72607: "Heze",
+        75177: "Syrma", 76267: "Unukalhai", 78401: "Rasalhague", 79275: "Sabik",
+        80112: "Rasalague", 85927: "Vega", 89080: "Albireo", 90039: "Albirio",
+        91262: "Deneb", 93085: "Enif", 95947: "Alnair", 97649: "Markab",
+        6734: "Botein",
     }
     # Constelación correcta por nombre propio (corrige casos visibles)
     name_to_const = {

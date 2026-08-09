@@ -152,6 +152,115 @@ document.querySelectorAll('.col-sort').forEach((btn) => {
   });
 });
 
+// ─── Manipulación de la carta (pan / zoom / rotación libre, por carta) ──
+interface ChartTransform { x: number; y: number; zoom: number; rot: number; }
+const TF_DEFAULT: ChartTransform = { x: 0, y: 0, zoom: 1, rot: 0 };
+const TF_LIMITS = { zoomMin: 0.4, zoomMax: 5, rotMax: 360 };
+
+function tfKey(name: string): string {
+  return 'sunconst:tf:' + name;
+}
+function loadChartTf(name: string): ChartTransform {
+  try {
+    const raw = localStorage.getItem(tfKey(name));
+    if (raw) {
+      const t = JSON.parse(raw) as Partial<ChartTransform>;
+      return {
+        x: t.x ?? 0,
+        y: t.y ?? 0,
+        zoom: Math.max(TF_LIMITS.zoomMin, Math.min(TF_LIMITS.zoomMax, t.zoom ?? 1)),
+        rot: ((t.rot ?? 0) % 360 + 360) % 360,
+      };
+    }
+  } catch { /* ignore */ }
+  return { ...TF_DEFAULT };
+}
+let tfSaveTimer: number | undefined;
+function saveChartTf(name: string, tf: ChartTransform): void {
+  if (tfSaveTimer) window.clearTimeout(tfSaveTimer);
+  tfSaveTimer = window.setTimeout(() => {
+    try { localStorage.setItem(tfKey(name), JSON.stringify(tf)); } catch { /* ignore */ }
+  }, 250);
+}
+function applyChartTf(wrap: HTMLElement, tf: ChartTransform): void {
+  wrap.style.transform =
+    `translate(${tf.x}px, ${tf.y}px) rotate(${tf.rot}deg) scale(${tf.zoom})`;
+}
+
+// Une los gestos de la carta: arrastrar = pan, rueda = zoom,
+// Shift+arrastrar = rotación libre. El ajuste se guarda por constelación.
+function bindChartControls(stage: HTMLElement, wrap: HTMLElement, name: string): void {
+  let tf = loadChartTf(name);
+  applyChartTf(wrap, tf);
+
+  let dragging = false;
+  let rotating = false;
+  let lastX = 0;
+  let lastY = 0;
+  let startRot = 0;
+  let startAngle = 0;
+
+  const centerAngle = (cx: number, cy: number): number => {
+    const r = stage.getBoundingClientRect();
+    return Math.atan2(cy - (r.top + r.height / 2), cx - (r.left + r.width / 2)) * 180 / Math.PI;
+  };
+
+  stage.addEventListener('pointerdown', (e) => {
+    if (e.button !== 0) return;
+    stage.setPointerCapture(e.pointerId);
+    if (e.shiftKey) {
+      rotating = true;
+      startRot = tf.rot;
+      startAngle = centerAngle(e.clientX, e.clientY);
+    } else {
+      dragging = true;
+    }
+    lastX = e.clientX;
+    lastY = e.clientY;
+    stage.classList.add('grabbing');
+  });
+  stage.addEventListener('pointermove', (e) => {
+    if (rotating) {
+      const a = centerAngle(e.clientX, e.clientY);
+      tf.rot = startRot + (a - startAngle);
+      applyChartTf(wrap, tf);
+    } else if (dragging) {
+      tf.x += e.clientX - lastX;
+      tf.y += e.clientY - lastY;
+      lastX = e.clientX;
+      lastY = e.clientY;
+      applyChartTf(wrap, tf);
+    }
+  });
+  const endDrag = (e: PointerEvent) => {
+    if (!dragging && !rotating) return;
+    dragging = false;
+    rotating = false;
+    stage.classList.remove('grabbing');
+    try { stage.releasePointerCapture(e.pointerId); } catch { /* ignore */ }
+    saveChartTf(name, tf);
+  };
+  stage.addEventListener('pointerup', endDrag);
+  stage.addEventListener('pointercancel', endDrag);
+
+  stage.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const factor = e.deltaY < 0 ? 1.1 : 1 / 1.1;
+    tf.zoom = Math.max(TF_LIMITS.zoomMin, Math.min(TF_LIMITS.zoomMax, tf.zoom * factor));
+    applyChartTf(wrap, tf);
+    saveChartTf(name, tf);
+  }, { passive: false });
+
+  const resetBtn = stage.parentElement?.querySelector('.chart-reset') as HTMLButtonElement | null;
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      tf = { ...TF_DEFAULT };
+      applyChartTf(wrap, tf);
+      saveChartTf(name, tf);
+    });
+  }
+}
+
 // ─── Card de constelación ───────────────────────────────────────────
 function showConstellation(name: string): void {
   const data = rawInfo[name];
@@ -181,17 +290,38 @@ function showConstellation(name: string): void {
     `<ul class="obj-list">${objsHtml}</ul></div></div>`;
 
   const chartEl = document.getElementById('const-chart') as HTMLDivElement;
-  chartEl.innerHTML = '<p class="hint">Cargando carta…</p>';
+  chartEl.innerHTML = '';
+
+  // Escenario de manipulación: stage (recorta) + wrap (lleva el transform).
+  const stage = document.createElement('div');
+  stage.className = 'chart-stage';
+  const controls = document.createElement('div');
+  controls.className = 'chart-controls';
+  controls.innerHTML =
+    `<span class="chart-hint">Arrastra: mover · Rueda: zoom · Mayús+arrastra: rotar</span>` +
+    `<button type="button" class="chart-reset">Restablecer</button>`;
+  chartEl.appendChild(controls);
+  chartEl.appendChild(stage);
+
+  const wrap = document.createElement('div');
+  wrap.className = 'const-svg-inline';
+  wrap.innerHTML = '<p class=\"hint\">Cargando carta…</p>';
+  stage.appendChild(wrap);
+
+  bindChartControls(stage, wrap, name);
+
   fetch(`/assets/constellation-charts/${data.slug}.svg`)
     .then((r) => r.text())
     .then((svg) => {
-      const wrap = document.createElement('div');
-      wrap.className = 'const-svg-inline';
       wrap.innerHTML = svg;
-      chartEl.innerHTML = '';
-      chartEl.appendChild(wrap);
+      const vb = wrap.querySelector('svg')?.getAttribute('viewBox');
+      if (vb) {
+        const m = vb.match(/[\d.]+/g);
+        if (m && m.length >= 4) stage.style.aspectRatio = `${m[2]} / ${m[3]}`;
+      }
+      applyChartTf(wrap, loadChartTf(name));
     })
-    .catch(() => { chartEl.innerHTML = '<p class="hint">Carta no disponible.</p>'; });
+    .catch(() => { wrap.innerHTML = '<p class=\"hint\">Carta no disponible.</p>'; });
 }
 
 // ─── Card de objeto astronómico (Messier, etc.) ─────────────────────

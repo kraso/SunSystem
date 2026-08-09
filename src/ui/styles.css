@@ -1423,15 +1423,58 @@ html, body {
 .const-svg-inline {
   display: block;
   width: 100%;
-  max-width: 720px;
   height: auto;
-  margin: 0 auto 18px;
+  margin: 0 auto;
   border-radius: 10px;
   border: 1px solid rgba(120, 150, 220, 0.2);
 }
+.const-svg-inline {
+  transform-origin: center center;
+  will-change: transform;
+  touch-action: none;
+  cursor: grab;
+}
+.const-svg-inline.grabbing { cursor: grabbing; }
 .const-svg-inline svg { width: 100%; height: auto; display: block; }
 .const-svg-inline .star { cursor: pointer; }
 .const-svg-inline .star:hover { filter: drop-shadow(0 0 4px #88ffcc); }
+
+.chart-stage {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 6px;
+  aspect-ratio: 520 / 200;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(120, 150, 220, 0.2);
+  background: #05060c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 8px;
+  font-size: 12px;
+  color: #9fb0d8;
+}
+.chart-hint { opacity: 0.8; font-family: "Segoe UI", sans-serif; }
+.chart-reset {
+  background: rgba(120, 150, 220, 0.15);
+  color: #cfe0ff;
+  border: 1px solid rgba(120, 150, 220, 0.4);
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+}
+.chart-reset:hover { background: rgba(120, 150, 220, 0.3); }
 
 #const-tooltip {
   position: fixed;

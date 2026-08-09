@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="520" fill="#05060c"/>
-<polyline points="65.0,175.9 146.8,261.7 308.9,246.3 358.9,342.6 455.0,344.1" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="65.0" cy="175.9" r="3.0" fill="#cfe0ff" data-name="HIP 94703" data-meta="mag 4.76"/>
-<circle class="star" cx="146.8" cy="261.6" r="3.2" fill="#ffb366" data-name="HIP 95771" data-meta="mag 4.44"/>
-<circle class="star" cx="308.9" cy="246.3" r="3.1" fill="#cfe0ff" data-name="HIP 97886" data-meta="mag 4.57"/>
-<circle class="star" cx="358.9" cy="342.6" r="3.1" fill="#ffffff" data-name="HIP 98543" data-meta="mag 4.66"/>
-<circle class="star" cx="455.0" cy="344.1" r="3.2" fill="#ffd699" data-name="HIP 99874" data-meta="mag 4.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 224" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="224" fill="#05060c"/>
+<polyline points="65.0,142.9 146.8,111.4 308.9,117.0 358.9,81.7 455.0,81.1" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="65.0" cy="142.9" r="3.0" fill="#cfe0ff" data-name="HIP 94703" data-meta="mag 4.76"/>
+<circle class="star" cx="146.8" cy="111.4" r="3.2" fill="#ffb366" data-name="HIP 95771" data-meta="mag 4.44"/>
+<circle class="star" cx="308.9" cy="117.0" r="3.1" fill="#cfe0ff" data-name="HIP 97886" data-meta="mag 4.57"/>
+<circle class="star" cx="358.9" cy="81.7" r="3.1" fill="#ffffff" data-name="HIP 98543" data-meta="mag 4.66"/>
+<circle class="star" cx="455.0" cy="81.1" r="3.2" fill="#ffd699" data-name="HIP 99874" data-meta="mag 4.5"/>
+<circle class="star" cx="451.7" cy="102.5" r="3.0" fill="#cfe0ff" data-name="HIP 99824" data-meta="mag 4.79"/>
+<circle class="star" cx="293.2" cy="131.2" r="3.0" fill="#cfe0ff" data-name="HIP 97679" data-meta="mag 4.9"/>
+<circle class="star" cx="349.1" cy="130.2" r="9" fill="#ff8ce0" fill-opacity="0.15" data-name="M27" data-meta="pn"/>
+<circle cx="349.1" cy="130.2" r="3.5" fill="#ff8ce0" fill-opacity="0.5"/>
 </svg>

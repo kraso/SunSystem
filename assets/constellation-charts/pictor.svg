@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="520" fill="#05060c"/>
-<polyline points="455.0,120.7 81.3,268.6 65.0,399.3" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="455.0" cy="120.7" r="3.8" fill="#ffffff" data-name="Alhena" data-meta="mag 3.24"/>
-<text x="462.8" y="124.7" fill="#cfe0ff" font-size="12" font-weight="bold">Alhena</text>
-<circle class="star" cx="81.3" cy="268.6" r="3.2" fill="#ffd699" data-name="HIP 27530" data-meta="mag 4.5"/>
-<circle class="star" cx="65.0" cy="399.3" r="3.5" fill="#ffffff" data-name="HIP 27321" data-meta="mag 3.85"/>
-<circle class="star" cx="212.4" cy="299.3" r="3.0" fill="#cfe0ff" data-name="HIP 29276" data-meta="mag 4.72"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 371" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="520" height="371" fill="#05060c"/>
+<polyline points="455.0,280.4 81.3,179.6 65.0,90.6" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
+<circle class="star" cx="455.0" cy="280.4" r="3.8" fill="#ffffff" data-name="Alhena" data-meta="mag 3.24"/>
+<text x="462.8" y="284.4" fill="#cfe0ff" font-size="12" font-weight="bold">Alhena</text>
+<circle class="star" cx="81.3" cy="179.6" r="3.2" fill="#ffd699" data-name="HIP 27530" data-meta="mag 4.5"/>
+<circle class="star" cx="65.0" cy="90.6" r="3.5" fill="#ffffff" data-name="HIP 27321" data-meta="mag 3.85"/>
+<circle class="star" cx="212.4" cy="158.7" r="3.0" fill="#cfe0ff" data-name="HIP 29276" data-meta="mag 4.72"/>
 </svg>
