@@ -1439,6 +1439,42 @@ html, body {
 .const-svg-inline .star { cursor: pointer; }
 .const-svg-inline .star:hover { filter: drop-shadow(0 0 4px #88ffcc); }
 
+#const-chart {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.chart-edit, .chart-ref {
+  flex: 1 1 340px;
+  min-width: 300px;
+}
+.chart-ref {
+  background: #05060c;
+  border: 1px solid rgba(120, 150, 220, 0.2);
+  border-radius: 10px;
+  padding: 8px;
+}
+.chart-ref h4 {
+  margin: 2px 4px 8px;
+  color: #aebfe0;
+  font-size: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.chart-ref .ref-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.chart-ref .const-svg-inline svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .chart-stage {
   position: relative;
   width: 100%;

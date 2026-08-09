@@ -343,6 +343,16 @@ function showConstellation(name: string): void {
   const chartEl = document.getElementById('const-chart') as HTMLDivElement;
   chartEl.innerHTML = '';
 
+  // Dos columnas: a la izquierda el recuadro editable, a la derecha la
+  // referencia real (foto local si existe, si no el mapa del catálogo).
+  const editCol = document.createElement('div');
+  editCol.className = 'chart-edit';
+  const refCol = document.createElement('div');
+  refCol.className = 'chart-ref';
+  refCol.innerHTML = `<h4>Referencia real</h4>`;
+  chartEl.appendChild(editCol);
+  chartEl.appendChild(refCol);
+
   // Escenario de edición: el SVG vive en un stage sin recorte (para poder
   // arrastrar estrellas fuera de los márgenes) y se editan los nodos a mano.
   const stage = document.createElement('div');
@@ -354,8 +364,25 @@ function showConstellation(name: string): void {
     `<label class="chart-expand-wrap">Expansión ` +
     `<input type="range" class="chart-expand" min="0.6" max="3" step="0.05" value="1"></label>` +
     `<button type="button" class="chart-reset">Restablecer</button>`;
-  chartEl.appendChild(controls);
-  chartEl.appendChild(stage);
+  editCol.appendChild(controls);
+  editCol.appendChild(stage);
+
+  // Referencia real al lado: foto local (assets/constellation-photos/<slug>.jpg)
+  // si existe; si no, el mapa del catálogo (estrellas en posición/color/mag reales).
+  const refWrap = document.createElement('div');
+  refWrap.className = 'const-svg-inline';
+  refCol.appendChild(refWrap);
+  const img = document.createElement('img');
+  img.className = 'ref-photo';
+  img.alt = `Referencia real de ${name}`;
+  img.onerror = () => {
+    fetch(`/assets/constellation-charts/${data.slug}.svg`)
+      .then((r) => r.text())
+      .then((t) => { refWrap.innerHTML = t; })
+      .catch(() => { refWrap.innerHTML = '<p class="hint">Referencia no disponible.</p>'; });
+  };
+  img.src = `assets/constellation-photos/${data.slug}.jpg`;
+  refWrap.appendChild(img);
 
   const wrap = document.createElement('div');
   wrap.className = 'const-svg-inline';
