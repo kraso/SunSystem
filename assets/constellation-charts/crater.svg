@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 704" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="704" fill="#05060c"/>
-<polyline class="fig-line" points="480.1,79.3 342.6,123.5 282.5,287.7 59.6,435.1 195.0,624.7 328.4,455.3 345.6,409.4 572.2,437.3 700.4,387.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="56633,55687,55282,53740,54682,55598,55705,57283,58188"/>
-<polyline class="fig-line" points="282.5,287.7 345.6,409.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="55282,55705"/>
-<circle class="star" cx="480.1" cy="79.3" r="4.2" fill="#cfe0ff" data-name="HIP 56633" data-meta="mag 4.7" data-vid="56633"/>
-<circle class="star" cx="342.6" cy="123.5" r="4.1" fill="#ffb366" data-name="HIP 55687" data-meta="mag 4.81" data-vid="55687"/>
-<circle class="star" cx="282.5" cy="287.7" r="4.9" fill="#ffd699" data-name="HIP 55282" data-meta="mag 3.56" data-vid="55282"/>
-<circle class="star" cx="59.6" cy="435.1" r="4.6" fill="#ffd699" data-name="Alkes" data-meta="mag 4.08" data-vid="53740"/>
-<text class="star-label" x="68.2" y="439.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="53740">Alkes</text>
-<circle class="star" cx="195.0" cy="624.7" r="4.3" fill="#ffffff" data-name="HIP 54682" data-meta="mag 4.46" data-vid="54682"/>
-<circle class="star" cx="328.4" cy="455.3" r="4.0" fill="#ffffff" data-name="HIP 55598" data-meta="mag 5.08" data-vid="55598"/>
-<circle class="star" cx="345.7" cy="409.4" r="4.6" fill="#ffffff" data-name="HIP 55705" data-meta="mag 4.06" data-vid="55705"/>
-<circle class="star" cx="572.2" cy="437.3" r="4.2" fill="#fff2cc" data-name="HIP 57283" data-meta="mag 4.71" data-vid="57283"/>
-<circle class="star" cx="700.4" cy="387.0" r="3.9" fill="#cfe0ff" data-name="HIP 58188" data-meta="mag 5.17" data-vid="58188"/>
-<circle class="star" cx="502.7" cy="221.7" r="3.7" fill="#fff2cc" data-name="HIP 56802" data-meta="mag 5.48" data-vid="56802"/>
+<polyline class="fig-line" points="447.6,167.9 354.7,197.8 314.2,308.6 163.7,408.1 255.1,536.1 345.1,421.7 356.8,390.7 509.7,409.6 596.3,375.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="56633,55687,55282,53740,54682,55598,55705,57283,58188"/>
+<polyline class="fig-line" points="314.2,308.6 356.8,390.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="55282,55705"/>
+<circle class="star" cx="447.6" cy="167.9" r="4.2" fill="#cfe0ff" data-name="HIP 56633" data-meta="mag 4.7" data-vid="56633"/>
+<circle class="star" cx="354.7" cy="197.8" r="4.1" fill="#ffb366" data-name="HIP 55687" data-meta="mag 4.81" data-vid="55687"/>
+<circle class="star" cx="314.2" cy="308.6" r="4.9" fill="#ffd699" data-name="HIP 55282" data-meta="mag 3.56" data-vid="55282"/>
+<circle class="star" cx="163.7" cy="408.1" r="4.6" fill="#ffd699" data-name="Alkes" data-meta="mag 4.08" data-vid="53740"/>
+<text class="star-label" x="172.3" y="412.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="53740">Alkes</text>
+<circle class="star" cx="255.1" cy="536.1" r="4.3" fill="#ffffff" data-name="HIP 54682" data-meta="mag 4.46" data-vid="54682"/>
+<circle class="star" cx="345.2" cy="421.7" r="4.0" fill="#ffffff" data-name="HIP 55598" data-meta="mag 5.08" data-vid="55598"/>
+<circle class="star" cx="356.8" cy="390.7" r="4.6" fill="#ffffff" data-name="HIP 55705" data-meta="mag 4.06" data-vid="55705"/>
+<circle class="star" cx="509.7" cy="409.6" r="4.2" fill="#fff2cc" data-name="HIP 57283" data-meta="mag 4.71" data-vid="57283"/>
+<circle class="star" cx="596.3" cy="375.7" r="3.9" fill="#cfe0ff" data-name="HIP 58188" data-meta="mag 5.17" data-vid="58188"/>
+<circle class="star" cx="462.8" cy="264.0" r="3.7" fill="#fff2cc" data-name="HIP 56802" data-meta="mag 5.48" data-vid="56802"/>
 </svg>

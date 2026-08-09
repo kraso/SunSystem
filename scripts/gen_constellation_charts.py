@@ -174,26 +174,37 @@ for c in conss:
     # Solo las estrellas que realmente pertenecen a esta constelación.
     cstars = [s for s in stars if constellation_of(s, conss) == name and s["mag"] <= 5.5]
 
-    # Recuadro del SVG: el asterismo seleccionado UNIDO a todas las estrellas
-    # reales de la constelación, para que la carta abarque la extensión
-    # completa de la constelación (no solo el asterismo) y se vean distribuidas
-    # en vez de amontonarse. Se excluyen las de constelaciones vecinas porque
-    # cstars ya está filtrado por la constelación real (campo 'con').
+    # Recuadro del SVG: el asterismo seleccionado (p.ej. el Carro), para que
+    # ocupe el lienzo. Se amplía un margen para incluir "algunas vecinas" de
+    # contexto cercanas, pero no todas las estrellas de la constelación lejana.
     aster_pts = [(ra, dec) for ln in draw_lines for ra, dec in ln]
-    star_pts = [(s["ra"], s["dec"]) for s in cstars]
-    bb = bbox_of_points(aster_pts + star_pts)
+    bb = bbox_of_points(aster_pts)
     if not bb:
         continue
     ra_min, ra_max, dec_min, dec_max = bb
-    # margen pequeño: la figura ocupa casi todo el lienzo (carta expansiva)
     ra_span = max(ra_max - ra_min, 1e-3)
     dec_span = max(dec_max - dec_min, 1e-3)
-    ra_min -= ra_span * 0.04
-    ra_max += ra_span * 0.04
-    dec_min -= dec_span * 0.04
-    dec_max += dec_span * 0.04
+    # margen para "algunas vecinas" de contexto inmediato
+    ra_min -= ra_span * 0.30
+    ra_max += ra_span * 0.30
+    dec_min -= dec_span * 0.30
+    dec_max += dec_span * 0.30
     ra_span = ra_max - ra_min
     dec_span = dec_max - dec_min
+    # Solo las estrellas de la constelación que caen dentro del recuadro
+    # ampliado (contexto cercano del asterismo), no toda la constelación.
+    cx_ra = (ra_min + ra_max) / 2
+
+    def _in_box(s):
+      d = s["ra"] - cx_ra
+      if d > 180.0:
+        d -= 360.0
+      elif d < -180.0:
+        d += 360.0
+      ra_u = cx_ra + d
+      return (ra_min <= ra_u <= ra_max) and (dec_min <= s["dec"] <= dec_max)
+
+    cstars_box = [s for s in cstars if _in_box(s)]
 
     # Lienzo con el ASPECTO REAL de la constelacion: ancho/alto = RA/Dec.
     # Misma escala (scale) en ambos ejes -> no se deforma ni se aplasta.
@@ -256,9 +267,10 @@ for c in conss:
                 seen_hip.add(s.get("hip"))
                 asterism.append(s)
 
-    # estrellas (las del asterismo siempre + las que pertenecen a la constelación)
+    # estrellas (las del asterismo siempre + las que pertenecen a la constelación
+    # y caen dentro del recuadro ampliado, para contexto cercano)
     drawn_hip = set()
-    for s in asterism + cstars:
+    for s in asterism + cstars_box:
         if s.get("hip") in drawn_hip:
             continue
         drawn_hip.add(s.get("hip"))
@@ -307,7 +319,7 @@ for c in conss:
     # --- Info JSON (estrellas del asterismo + las de la constelación) ---
     star_info = []
     info_hip = set()
-    for s in asterism + cstars:
+    for s in asterism + cstars_box:
         if s.get("hip") in info_hip:
             continue
         info_hip.add(s.get("hip"))

@@ -1,18 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 967" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="760" height="967" fill="#05060c"/>
-<polyline class="fig-line" points="280.4,370.8 266.3,873.7 572.3,717.1 545.6,291.6 387.8,295.8 280.4,370.8" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="102831,102693,105382,105140,103738,102831"/>
-<circle class="star" cx="280.4" cy="370.8" r="4.1" fill="#ffd699" data-name="HIP 102831" data-meta="mag 4.89" data-vid="102831"/>
-<circle class="star" cx="266.4" cy="873.7" r="3.9" fill="#ffffff" data-name="HIP 102693" data-meta="mag 5.11" data-vid="102693"/>
-<circle class="star" cx="572.3" cy="717.1" r="4.1" fill="#ffffff" data-name="HIP 105382" data-meta="mag 4.8" data-vid="105382"/>
-<circle class="star" cx="545.6" cy="291.6" r="4.2" fill="#ffffff" data-name="HIP 105140" data-meta="mag 4.71" data-vid="105140"/>
-<circle class="star" cx="387.8" cy="295.8" r="4.2" fill="#fff2cc" data-name="HIP 103738" data-meta="mag 4.67" data-vid="103738"/>
-<circle class="star" cx="128.3" cy="899.7" r="3.9" fill="#fff2cc" data-name="HIP 101477" data-meta="mag 5.12" data-vid="101477"/>
-<circle class="star" cx="189.0" cy="353.6" r="3.7" fill="#ffd699" data-name="HIP 102014" data-meta="mag 5.47" data-vid="102014"/>
-<circle class="star" cx="246.0" cy="637.8" r="3.7" fill="#cfe0ff" data-name="HIP 102497" data-meta="mag 5.48" data-vid="102497"/>
-<circle class="star" cx="315.5" cy="667.9" r="3.8" fill="#ffd699" data-name="HIP 103127" data-meta="mag 5.34" data-vid="103127"/>
-<circle class="star" cx="403.6" cy="609.8" r="3.8" fill="#ffffff" data-name="HIP 103882" data-meta="mag 5.32" data-vid="103882"/>
-<circle class="star" cx="436.3" cy="299.9" r="3.9" fill="#ffd699" data-name="HIP 104174" data-meta="mag 5.2" data-vid="104174"/>
-<circle class="star" cx="499.2" cy="648.9" r="3.9" fill="#ffffff" data-name="HIP 104738" data-meta="mag 5.25" data-vid="104738"/>
-<circle class="star" cx="501.5" cy="67.3" r="3.8" fill="#ffd699" data-name="HIP 104750" data-meta="mag 5.41" data-vid="104750"/>
-<circle class="star" cx="631.7" cy="802.7" r="3.7" fill="#ffffff" data-name="HIP 105913" data-meta="mag 5.5" data-vid="105913"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1113" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="1113" fill="#05060c"/>
+<polyline class="fig-line" points="245.9,318.8 232.3,883.1 527.7,707.3 501.8,229.9 349.5,234.7 245.9,318.8" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="102831,102693,105382,105140,103738,102831"/>
+<circle class="star" cx="245.9" cy="318.8" r="4.1" fill="#ffd699" data-name="HIP 102831" data-meta="mag 4.89" data-vid="102831"/>
+<circle class="star" cx="232.3" cy="883.0" r="3.9" fill="#ffffff" data-name="HIP 102693" data-meta="mag 5.11" data-vid="102693"/>
+<circle class="star" cx="527.7" cy="707.3" r="4.1" fill="#ffffff" data-name="HIP 105382" data-meta="mag 4.8" data-vid="105382"/>
+<circle class="star" cx="501.8" cy="230.0" r="4.2" fill="#ffffff" data-name="HIP 105140" data-meta="mag 4.71" data-vid="105140"/>
+<circle class="star" cx="349.5" cy="234.7" r="4.2" fill="#fff2cc" data-name="HIP 103738" data-meta="mag 4.67" data-vid="103738"/>
+<circle class="star" cx="157.7" cy="299.6" r="3.7" fill="#ffd699" data-name="HIP 102014" data-meta="mag 5.47" data-vid="102014"/>
+<circle class="star" cx="212.7" cy="618.3" r="3.7" fill="#cfe0ff" data-name="HIP 102497" data-meta="mag 5.48" data-vid="102497"/>
+<circle class="star" cx="279.8" cy="652.1" r="3.8" fill="#ffd699" data-name="HIP 103127" data-meta="mag 5.34" data-vid="103127"/>
+<circle class="star" cx="364.8" cy="586.9" r="3.8" fill="#ffffff" data-name="HIP 103882" data-meta="mag 5.32" data-vid="103882"/>
+<circle class="star" cx="396.4" cy="239.3" r="3.9" fill="#ffd699" data-name="HIP 104174" data-meta="mag 5.2" data-vid="104174"/>
+<circle class="star" cx="457.1" cy="630.8" r="3.9" fill="#ffffff" data-name="HIP 104738" data-meta="mag 5.25" data-vid="104738"/>
+<circle class="star" cx="585.0" cy="803.4" r="3.7" fill="#ffffff" data-name="HIP 105913" data-meta="mag 5.5" data-vid="105913"/>
 </svg>

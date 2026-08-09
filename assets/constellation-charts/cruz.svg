@@ -1,31 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 437" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="760" height="437" fill="#05060c"/>
-<polyline class="fig-line" points="608.9,200.1 247.2,177.8" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="62434,59747"/>
-<polyline class="fig-line" points="374.4,280.9 425.1,139.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="60718,61084"/>
-<circle class="star" cx="609.0" cy="200.1" r="6.2" fill="#cfe0ff" data-name="Mimosa" data-meta="mag 1.25" data-vid="62434"/>
-<text class="star-label" x="619.2" y="204.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="62434">Mimosa</text>
-<circle class="star" cx="247.2" cy="177.8" r="5.3" fill="#cfe0ff" data-name="Imai" data-meta="mag 2.79" data-vid="59747"/>
-<text class="star-label" x="256.5" y="181.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="59747">Imai</text>
-<circle class="star" cx="374.4" cy="280.9" r="6.5" fill="#cfe0ff" data-name="Acrux" data-meta="mag 0.77" data-vid="60718"/>
-<text class="star-label" x="384.9" y="284.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60718">Acrux</text>
-<circle class="star" cx="425.1" cy="139.1" r="6.0" fill="#ffb366" data-name="Gacrux" data-meta="mag 1.59" data-vid="61084"/>
-<text class="star-label" x="435.2" y="143.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="61084">Gacrux</text>
-<circle class="star" cx="59.6" cy="120.2" r="3.7" fill="#cfe0ff" data-name="HIP 58379" data-meta="mag 5.44" data-vid="58379"/>
-<circle class="star" cx="112.6" cy="285.9" r="4.4" fill="#ffffff" data-name="HIP 58758" data-meta="mag 4.32" data-vid="58758"/>
-<circle class="star" cx="127.0" cy="282.5" r="4.2" fill="#cfe0ff" data-name="HIP 58867" data-meta="mag 4.72" data-vid="58867"/>
-<circle class="star" cx="155.4" cy="316.8" r="4.5" fill="#ffffff" data-name="HIP 59072" data-meta="mag 4.14" data-vid="59072"/>
-<circle class="star" cx="283.8" cy="302.3" r="4.6" fill="#cfe0ff" data-name="HIP 60009" data-meta="mag 4.06" data-vid="60009"/>
-<circle class="star" cx="316.2" cy="217.0" r="4.8" fill="#ffd699" data-name="Ginan" data-meta="mag 3.59" data-vid="60260"/>
-<text class="star-label" x="325.1" y="221.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60260">Ginan</text>
-<circle class="star" cx="332.5" cy="152.4" r="3.8" fill="#cfe0ff" data-name="HIP 60379" data-meta="mag 5.38" data-vid="60379"/>
-<circle class="star" cx="384.2" cy="183.6" r="3.8" fill="#ffb366" data-name="HIP 60781" data-meta="mag 5.38" data-vid="60781"/>
-<circle class="star" cx="430.7" cy="193.8" r="3.7" fill="#fff2cc" data-name="HIP 61136" data-meta="mag 5.49" data-vid="61136"/>
-<circle class="star" cx="544.8" cy="200.0" r="4.1" fill="#cfe0ff" data-name="HIP 61966" data-meta="mag 4.91" data-vid="61966"/>
-<circle class="star" cx="554.7" cy="279.9" r="3.8" fill="#ffffff" data-name="HIP 62027" data-meta="mag 5.27" data-vid="62027"/>
-<circle class="star" cx="585.8" cy="230.7" r="4.2" fill="#ffd699" data-name="HIP 62268" data-meta="mag 4.69" data-vid="62268"/>
-<circle class="star" cx="594.1" cy="124.3" r="4.2" fill="#cfe0ff" data-name="HIP 62327" data-meta="mag 4.62" data-vid="62327"/>
-<circle class="star" cx="685.3" cy="140.6" r="4.6" fill="#cfe0ff" data-name="HIP 63003" data-meta="mag 4.03" data-vid="63003"/>
-<circle class="star" cx="685.5" cy="140.4" r="4.0" fill="#cfe0ff" data-name="HIP 63005" data-meta="mag 5.08" data-vid="63005"/>
-<circle class="star" cx="685.9" cy="187.3" r="4.2" fill="#cfe0ff" data-name="HIP 63007" data-meta="mag 4.62" data-vid="63007"/>
-<circle class="star" cx="700.4" cy="132.5" r="3.8" fill="#ffffff" data-name="HIP 63117" data-meta="mag 5.34" data-vid="63117"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 559" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="559" fill="#05060c"/>
+<polyline class="fig-line" points="596.3,263.8 163.8,228.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="62434,59747"/>
+<polyline class="fig-line" points="315.8,392.3 376.5,166.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="60718,61084"/>
+<circle class="star" cx="596.3" cy="263.8" r="6.2" fill="#cfe0ff" data-name="Mimosa" data-meta="mag 1.25" data-vid="62434"/>
+<text class="star-label" x="606.5" y="267.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="62434">Mimosa</text>
+<circle class="star" cx="163.8" cy="228.4" r="5.3" fill="#cfe0ff" data-name="Imai" data-meta="mag 2.79" data-vid="59747"/>
+<text class="star-label" x="173.1" y="232.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="59747">Imai</text>
+<circle class="star" cx="315.8" cy="392.3" r="6.5" fill="#cfe0ff" data-name="Acrux" data-meta="mag 0.77" data-vid="60718"/>
+<text class="star-label" x="326.4" y="396.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60718">Acrux</text>
+<circle class="star" cx="376.5" cy="166.7" r="6.0" fill="#ffb366" data-name="Gacrux" data-meta="mag 1.59" data-vid="61084"/>
+<text class="star-label" x="386.5" y="170.7" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="61084">Gacrux</text>
+<circle class="star" cx="54.0" cy="449.4" r="4.5" fill="#ffffff" data-name="HIP 59072" data-meta="mag 4.14" data-vid="59072"/>
+<circle class="star" cx="207.5" cy="426.3" r="4.6" fill="#cfe0ff" data-name="HIP 60009" data-meta="mag 4.06" data-vid="60009"/>
+<circle class="star" cx="246.3" cy="290.6" r="4.8" fill="#ffd699" data-name="Ginan" data-meta="mag 3.59" data-vid="60260"/>
+<text class="star-label" x="255.2" y="294.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60260">Ginan</text>
+<circle class="star" cx="265.7" cy="187.9" r="3.8" fill="#cfe0ff" data-name="HIP 60379" data-meta="mag 5.38" data-vid="60379"/>
+<circle class="star" cx="327.5" cy="237.5" r="3.8" fill="#ffb366" data-name="HIP 60781" data-meta="mag 5.38" data-vid="60781"/>
+<circle class="star" cx="383.2" cy="253.8" r="3.7" fill="#fff2cc" data-name="HIP 61136" data-meta="mag 5.49" data-vid="61136"/>
+<circle class="star" cx="519.6" cy="263.7" r="4.1" fill="#cfe0ff" data-name="HIP 61966" data-meta="mag 4.91" data-vid="61966"/>
+<circle class="star" cx="531.4" cy="390.8" r="3.8" fill="#ffffff" data-name="HIP 62027" data-meta="mag 5.27" data-vid="62027"/>
+<circle class="star" cx="568.5" cy="312.5" r="4.2" fill="#ffd699" data-name="HIP 62268" data-meta="mag 4.69" data-vid="62268"/>
+<circle class="star" cx="578.4" cy="143.2" r="4.2" fill="#cfe0ff" data-name="HIP 62327" data-meta="mag 4.62" data-vid="62327"/>
+<circle class="star" cx="687.5" cy="169.2" r="4.6" fill="#cfe0ff" data-name="HIP 63003" data-meta="mag 4.03" data-vid="63003"/>
+<circle class="star" cx="687.8" cy="168.8" r="4.0" fill="#cfe0ff" data-name="HIP 63005" data-meta="mag 5.08" data-vid="63005"/>
+<circle class="star" cx="688.3" cy="243.4" r="4.2" fill="#cfe0ff" data-name="HIP 63007" data-meta="mag 4.62" data-vid="63007"/>
+<circle class="star" cx="705.5" cy="156.3" r="3.8" fill="#ffffff" data-name="HIP 63117" data-meta="mag 5.34" data-vid="63117"/>
 </svg>

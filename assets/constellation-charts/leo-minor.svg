@@ -1,18 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 664" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="760" height="664" fill="#05060c"/>
-<polyline class="fig-line" points="340.8,247.7 485.7,286.8 700.4,275.5 501.1,208.2 340.8,247.7 80.7,216.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="49593,51056,53229,51233,49593,46952"/>
-<circle class="star" cx="340.8" cy="247.7" r="4.3" fill="#ffffff" data-name="HIP 49593" data-meta="mag 4.49" data-vid="49593"/>
-<circle class="star" cx="485.7" cy="286.8" r="4.2" fill="#ffffff" data-name="HIP 51056" data-meta="mag 4.72" data-vid="51056"/>
-<circle class="star" cx="700.4" cy="275.5" r="4.7" fill="#ffd699" data-name="Praecipua" data-meta="mag 3.79" data-vid="53229"/>
-<text class="star-label" x="709.1" y="279.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="53229">Praecipua</text>
-<circle class="star" cx="501.1" cy="208.2" r="4.5" fill="#fff2cc" data-name="HIP 51233" data-meta="mag 4.2" data-vid="51233"/>
-<circle class="star" cx="80.7" cy="216.6" r="4.3" fill="#fff2cc" data-name="HIP 46952" data-meta="mag 4.54" data-vid="46952"/>
-<circle class="star" cx="59.6" cy="251.5" r="3.8" fill="#ffb366" data-name="HIP 46735" data-meta="mag 5.39" data-vid="46735"/>
-<circle class="star" cx="91.9" cy="232.4" r="3.8" fill="#fff2cc" data-name="HIP 47080" data-meta="mag 5.4" data-vid="47080"/>
-<circle class="star" cx="264.5" cy="90.8" r="3.9" fill="#ffffff" data-name="HIP 48833" data-meta="mag 5.11" data-vid="48833"/>
-<circle class="star" cx="290.6" cy="337.4" r="3.8" fill="#fff2cc" data-name="HIP 49081" data-meta="mag 5.37" data-vid="49081"/>
-<circle class="star" cx="409.9" cy="407.9" r="3.7" fill="#ffffff" data-name="HIP 50303" data-meta="mag 5.49" data-vid="50303"/>
-<circle class="star" cx="586.0" cy="335.9" r="4.2" fill="#fff2cc" data-name="HIP 52098" data-meta="mag 4.68" data-vid="52098"/>
-<circle class="star" cx="622.8" cy="573.2" r="4.0" fill="#ffffff" data-name="HIP 52457" data-meta="mag 5.08" data-vid="52457"/>
-<circle class="star" cx="642.0" cy="370.9" r="3.8" fill="#cfe0ff" data-name="HIP 52638" data-meta="mag 5.36" data-vid="52638"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="280" fill="#05060c"/>
+<polyline class="fig-line" points="345.2,140.0 446.6,149.8 596.9,147.0 457.4,130.2 345.2,140.0 163.1,132.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="49593,51056,53229,51233,49593,46952"/>
+<circle class="star" cx="345.2" cy="140.0" r="4.3" fill="#ffffff" data-name="HIP 49593" data-meta="mag 4.49" data-vid="49593"/>
+<circle class="star" cx="446.6" cy="149.8" r="4.2" fill="#ffffff" data-name="HIP 51056" data-meta="mag 4.72" data-vid="51056"/>
+<circle class="star" cx="596.9" cy="147.0" r="4.7" fill="#ffd699" data-name="Praecipua" data-meta="mag 3.79" data-vid="53229"/>
+<text class="star-label" x="605.6" y="151.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="53229">Praecipua</text>
+<circle class="star" cx="457.4" cy="130.2" r="4.5" fill="#fff2cc" data-name="HIP 51233" data-meta="mag 4.2" data-vid="51233"/>
+<circle class="star" cx="163.1" cy="132.2" r="4.3" fill="#fff2cc" data-name="HIP 46952" data-meta="mag 4.54" data-vid="46952"/>
+<circle class="star" cx="148.4" cy="141.0" r="3.8" fill="#ffb366" data-name="HIP 46735" data-meta="mag 5.39" data-vid="46735"/>
+<circle class="star" cx="171.0" cy="136.2" r="3.8" fill="#fff2cc" data-name="HIP 47080" data-meta="mag 5.4" data-vid="47080"/>
 </svg>

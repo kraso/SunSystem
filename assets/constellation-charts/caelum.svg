@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 858" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="858" fill="#05060c"/>
-<polyline class="fig-line" points="96.1,794.7 260.6,556.1 285.9,191.5 663.9,63.3" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="21060,21770,21861,23595"/>
-<circle class="star" cx="96.1" cy="794.7" r="4.0" fill="#cfe0ff" data-name="HIP 21060" data-meta="mag 5.07" data-vid="21060"/>
-<circle class="star" cx="260.6" cy="556.1" r="4.3" fill="#ffffff" data-name="HIP 21770" data-meta="mag 4.44" data-vid="21770"/>
-<circle class="star" cx="285.9" cy="191.6" r="4.0" fill="#ffffff" data-name="HIP 21861" data-meta="mag 5.04" data-vid="21861"/>
-<circle class="star" cx="663.9" cy="63.3" r="4.3" fill="#ffd699" data-name="HIP 23595" data-meta="mag 4.55" data-vid="23595"/>
+<polyline class="fig-line" points="188.4,675.9 299.4,514.8 316.5,268.7 571.6,182.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="21060,21770,21861,23595"/>
+<circle class="star" cx="188.4" cy="675.9" r="4.0" fill="#cfe0ff" data-name="HIP 21060" data-meta="mag 5.07" data-vid="21060"/>
+<circle class="star" cx="299.4" cy="514.8" r="4.3" fill="#ffffff" data-name="HIP 21770" data-meta="mag 4.44" data-vid="21770"/>
+<circle class="star" cx="316.5" cy="268.7" r="4.0" fill="#ffffff" data-name="HIP 21861" data-meta="mag 5.04" data-vid="21861"/>
+<circle class="star" cx="571.6" cy="182.1" r="4.3" fill="#ffd699" data-name="HIP 23595" data-meta="mag 4.55" data-vid="23595"/>
 </svg>

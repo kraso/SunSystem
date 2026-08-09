@@ -1,18 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 819" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="760" height="819" fill="#05060c"/>
-<polyline class="fig-line" points="82.9,617.1 197.9,237.9 253.4,86.3 439.3,61.8 354.7,182.7 197.9,237.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="101421,101769,101958,102531,102281,101769"/>
-<circle class="star" cx="82.9" cy="617.0" r="4.6" fill="#cfe0ff" data-name="Aldulfin" data-meta="mag 4.03" data-vid="101421"/>
-<text class="star-label" x="91.5" y="621.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="101421">Aldulfin</text>
-<circle class="star" cx="197.9" cy="237.9" r="4.8" fill="#ffffff" data-name="Rotanev" data-meta="mag 3.64" data-vid="101769"/>
-<text class="star-label" x="206.7" y="241.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="101769">Rotanev</text>
-<circle class="star" cx="253.4" cy="86.3" r="4.7" fill="#cfe0ff" data-name="Sualocin" data-meta="mag 3.77" data-vid="101958"/>
-<text class="star-label" x="262.1" y="90.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="101958">Sualocin</text>
-<circle class="star" cx="439.3" cy="61.8" r="3.9" fill="#ffffff" data-name="HIP 102531" data-meta="mag 5.15" data-vid="102531"/>
-<circle class="star" cx="354.7" cy="182.7" r="4.3" fill="#ffffff" data-name="HIP 102281" data-meta="mag 4.43" data-vid="102281"/>
-<circle class="star" cx="102.5" cy="418.5" r="3.8" fill="#ffffff" data-name="HIP 101483" data-meta="mag 5.39" data-vid="101483"/>
-<circle class="star" cx="138.5" cy="228.8" r="4.2" fill="#ffffff" data-name="HIP 101589" data-meta="mag 4.64" data-vid="101589"/>
-<circle class="star" cx="205.1" cy="608.5" r="3.7" fill="#ffffff" data-name="HIP 101800" data-meta="mag 5.42" data-vid="101800"/>
-<circle class="star" cx="239.9" cy="757.2" r="4.0" fill="#fff2cc" data-name="HIP 101916" data-meta="mag 5.07" data-vid="101916"/>
-<circle class="star" cx="439.6" cy="61.8" r="4.4" fill="#ffd699" data-name="HIP 102532" data-meta="mag 4.27" data-vid="102532"/>
-<circle class="star" cx="677.1" cy="338.5" r="3.9" fill="#ffd699" data-name="HIP 103294" data-meta="mag 5.19" data-vid="103294"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1091" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="1091" fill="#05060c"/>
+<polyline class="fig-line" points="229.3,865.2 326.6,428.6 373.5,253.9 530.7,225.8 459.2,364.9 326.6,428.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="101421,101769,101958,102531,102281,101769"/>
+<circle class="star" cx="229.3" cy="865.1" r="4.6" fill="#cfe0ff" data-name="Aldulfin" data-meta="mag 4.03" data-vid="101421"/>
+<text class="star-label" x="237.9" y="869.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="101421">Aldulfin</text>
+<circle class="star" cx="326.6" cy="428.6" r="4.8" fill="#ffffff" data-name="Rotanev" data-meta="mag 3.64" data-vid="101769"/>
+<text class="star-label" x="335.4" y="432.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="101769">Rotanev</text>
+<circle class="star" cx="373.5" cy="253.9" r="4.7" fill="#cfe0ff" data-name="Sualocin" data-meta="mag 3.77" data-vid="101958"/>
+<text class="star-label" x="382.2" y="257.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="101958">Sualocin</text>
+<circle class="star" cx="530.7" cy="225.8" r="3.9" fill="#ffffff" data-name="HIP 102531" data-meta="mag 5.15" data-vid="102531"/>
+<circle class="star" cx="459.1" cy="365.0" r="4.3" fill="#ffffff" data-name="HIP 102281" data-meta="mag 4.43" data-vid="102281"/>
+<circle class="star" cx="245.9" cy="636.5" r="3.8" fill="#ffffff" data-name="HIP 101483" data-meta="mag 5.39" data-vid="101483"/>
+<circle class="star" cx="276.4" cy="418.1" r="4.2" fill="#ffffff" data-name="HIP 101589" data-meta="mag 4.64" data-vid="101589"/>
+<circle class="star" cx="332.7" cy="855.3" r="3.7" fill="#ffffff" data-name="HIP 101800" data-meta="mag 5.42" data-vid="101800"/>
+<circle class="star" cx="362.0" cy="1026.6" r="4.0" fill="#fff2cc" data-name="HIP 101916" data-meta="mag 5.07" data-vid="101916"/>
+<circle class="star" cx="530.9" cy="225.8" r="4.4" fill="#ffd699" data-name="HIP 102532" data-meta="mag 4.27" data-vid="102532"/>
 </svg>
