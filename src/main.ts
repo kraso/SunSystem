@@ -18,7 +18,7 @@ import type { CelestialBodyData } from './core/types';
 
 const app = document.getElementById('app')!;
 const renderer = createRenderer(app);
-const timeManager = new TimeManager(5);
+const timeManager = new TimeManager(0.625); // 15 h/s (0.625 dias/s)
 const solarSystem = new SolarSystem(timeManager);
 const camera = new OrbitalCamera();
 const raycaster = new CelestialRaycaster(camera.camera);
@@ -36,9 +36,9 @@ solarSystem.load(celestialBodiesData as CelestialBodyData[]);
 labels.createForBodies(solarSystem.getAllBodies());
 
 // ─── Cámara inicial ──────────────────────────────────────────────────
-// Distancia suficiente para ver todo el sistema solar (incluido Neptuno,
-// ~30 UA · AU_SCALE = 450 unidades de escena) al arrancar.
-camera.lookAt(new THREE.Vector3(0, 0, 0), 470);
+// Vista en perspectiva sesgada (45°/45°) como la captura de referencia:
+// distancia suficiente para ver todo el sistema solar al arrancar.
+camera.lookAt(new THREE.Vector3(0, 0, 0), 470, Math.PI / 4, 1.2);
 
 // ─── Interactividad ──────────────────────────────────────────────────
 

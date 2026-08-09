@@ -88,10 +88,16 @@ export class OrbitalCamera {
   }
 
   /** Apunta la cámara hacia un nuevo objetivo */
-  lookAt(target: THREE.Vector3, distance?: number): void {
+  lookAt(target: THREE.Vector3, distance?: number, theta?: number, phi?: number): void {
     this._target.copy(target);
     if (distance !== undefined) {
       this._distance = distance;
+    }
+    if (theta !== undefined) {
+      this._theta = theta;
+    }
+    if (phi !== undefined) {
+      this._phi = phi;
     }
     this.updatePosition();
   }

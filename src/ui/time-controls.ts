@@ -28,6 +28,7 @@ export class TimeControls {
     this.speedMap = this.buildSpeedMap();
 
     this.bindEvents();
+    this.syncSliderToSpeed();
     this.updateUI();
   }
 
