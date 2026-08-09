@@ -1,40 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 588" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="588" fill="#05060c"/>
-<polyline points="100.4,217.3 221.8,186.6 318.5,362.9 347.6,426.4 311.5,464.6 294.7,490.3 87.5,517.3" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="432.5,498.5 347.6,426.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="221.8,186.6 281.3,194.9 322.5,159.7 270.7,70.7 281.3,194.9" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="100.4" cy="217.3" r="4.4" fill="#cfe0ff" data-name="HIP 30324" data-meta="mag 1.98"/>
-<circle class="star" cx="221.8" cy="186.6" r="6.1" fill="#ffffff" data-name="Sirio" data-meta="mag -1.44"/>
-<text x="232.0" y="190.6" fill="#cfe0ff" font-size="12" font-weight="bold">Sirio</text>
-<circle class="star" cx="318.5" cy="363.0" r="3.9" fill="#cfe0ff" data-name="HIP 33977" data-meta="mag 3.02"/>
-<circle class="star" cx="347.6" cy="426.4" r="4.5" fill="#fff2cc" data-name="HIP 34444" data-meta="mag 1.83"/>
-<circle class="star" cx="311.5" cy="464.6" r="3.7" fill="#ffb366" data-name="HIP 33856" data-meta="mag 3.49"/>
-<circle class="star" cx="294.7" cy="490.3" r="4.7" fill="#cfe0ff" data-name="HIP 33579" data-meta="mag 1.5"/>
-<circle class="star" cx="87.5" cy="517.3" r="3.9" fill="#cfe0ff" data-name="HIP 30122" data-meta="mag 3.02"/>
-<circle class="star" cx="432.5" cy="498.5" r="4.2" fill="#cfe0ff" data-name="Procyon" data-meta="mag 2.45"/>
-<text x="440.7" y="502.5" fill="#cfe0ff" font-size="12" font-weight="bold">Procyon</text>
-<circle class="star" cx="281.3" cy="195.0" r="3.2" fill="#cfe0ff" data-name="HIP 33347" data-meta="mag 4.36"/>
-<circle class="star" cx="322.5" cy="159.7" r="3.3" fill="#cfe0ff" data-name="HIP 34045" data-meta="mag 4.11"/>
-<circle class="star" cx="270.7" cy="70.7" r="3.4" fill="#ffd699" data-name="Mebsuta" data-meta="mag 4.08"/>
-<text x="278.1" y="74.7" fill="#cfe0ff" font-size="12" font-weight="bold">Mebsuta</text>
-<circle class="star" cx="678.3" cy="945.4" r="4.5" fill="#cfe0ff" data-name="Sirio" data-meta="mag 1.75"/>
-<text x="686.8" y="949.4" fill="#cfe0ff" font-size="12" font-weight="bold">Sirio</text>
-<circle class="star" cx="270.4" cy="371.6" r="3.5" fill="#ffb366" data-name="HIP 33152" data-meta="mag 3.89"/>
-<circle class="star" cx="176.0" cy="249.5" r="3.4" fill="#ffd699" data-name="HIP 31592" data-meta="mag 3.95"/>
-<circle class="star" cx="382.3" cy="435.8" r="3.4" fill="#cfe0ff" data-name="HIP 35037" data-meta="mag 4.01"/>
-<circle class="star" cx="149.9" cy="352.7" r="3.2" fill="#cfe0ff" data-name="HIP 31125" data-meta="mag 4.34"/>
-<circle class="star" cx="403.4" cy="390.7" r="3.2" fill="#cfe0ff" data-name="HIP 35415" data-meta="mag 4.37"/>
-<circle class="star" cx="182.6" cy="224.3" r="3.2" fill="#ffd699" data-name="HIP 31700" data-meta="mag 4.42"/>
-<circle class="star" cx="379.3" cy="425.4" r="3.2" fill="#cfe0ff" data-name="HIP 34981" data-meta="mag 4.42"/>
-<circle class="star" cx="167.2" cy="341.4" r="3.1" fill="#cfe0ff" data-name="HIP 31416" data-meta="mag 4.54"/>
-<circle class="star" cx="278.5" cy="271.3" r="3.1" fill="#ffffff" data-name="HIP 33302" data-meta="mag 4.66"/>
-<circle class="star" cx="391.9" cy="463.3" r="3.1" fill="#ffb366" data-name="HIP 35205" data-meta="mag 4.66"/>
-<circle class="star" cx="190.1" cy="122.9" r="3.0" fill="#ffd699" data-name="HIP 31827" data-meta="mag 4.82"/>
-<circle class="star" cx="267.3" cy="273.5" r="3.0" fill="#cfe0ff" data-name="HIP 33092" data-meta="mag 4.82"/>
-<circle class="star" cx="392.0" cy="350.1" r="3.0" fill="#ffb366" data-name="HIP 35210" data-meta="mag 4.83"/>
-<circle class="star" cx="403.2" cy="380.9" r="3.0" fill="#cfe0ff" data-name="HIP 35412" data-meta="mag 4.88"/>
-<circle class="star" cx="422.4" cy="243.6" r="2.9" fill="#cfe0ff" data-name="HIP 35727" data-meta="mag 4.94"/>
-<circle class="star" cx="281.1" cy="120.3" r="2.9" fill="#ffd699" data-name="HIP 33345" data-meta="mag 5.0"/>
-<circle class="star" cx="231.8" cy="286.1" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M41" data-meta="oc"/>
-<circle cx="231.8" cy="286.1" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 859" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="859" fill="#05060c"/>
+<polyline class="fig-line" points="117.8,303.7 317.3,253.3 476.2,542.5 523.9,646.6 464.6,709.2 437.1,751.4 96.6,795.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="30324,32349,33977,34444,33856,33579,30122"/>
+<polyline class="fig-line" points="663.4,764.8 523.9,646.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="35904,34444"/>
+<polyline class="fig-line" points="317.3,253.3 414.9,267.1 482.7,209.3 397.6,63.3 414.9,267.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="32349,33347,34045,33160,33347"/>
+<circle class="star" cx="117.8" cy="303.7" r="5.8" fill="#cfe0ff" data-name="HIP 30324" data-meta="mag 1.98" data-vid="30324"/>
+<circle class="star" cx="317.3" cy="253.4" r="7.9" fill="#ffffff" data-name="Sirio" data-meta="mag -1.44" data-vid="32349"/>
+<text class="star-label" x="329.2" y="257.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="32349">Sirio</text>
+<circle class="star" cx="476.2" cy="542.6" r="5.2" fill="#cfe0ff" data-name="HIP 33977" data-meta="mag 3.02" data-vid="33977"/>
+<circle class="star" cx="523.9" cy="646.6" r="5.9" fill="#fff2cc" data-name="HIP 34444" data-meta="mag 1.83" data-vid="34444"/>
+<circle class="star" cx="464.6" cy="709.2" r="4.9" fill="#ffb366" data-name="HIP 33856" data-meta="mag 3.49" data-vid="33856"/>
+<circle class="star" cx="437.1" cy="751.4" r="6.1" fill="#cfe0ff" data-name="HIP 33579" data-meta="mag 1.5" data-vid="33579"/>
+<circle class="star" cx="96.6" cy="795.7" r="5.2" fill="#cfe0ff" data-name="HIP 30122" data-meta="mag 3.02" data-vid="30122"/>
+<circle class="star" cx="663.4" cy="764.8" r="5.5" fill="#cfe0ff" data-name="Procyon" data-meta="mag 2.45" data-vid="35904"/>
+<text class="star-label" x="673.0" y="768.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="35904">Procyon</text>
+<circle class="star" cx="415.0" cy="267.1" r="4.4" fill="#cfe0ff" data-name="HIP 33347" data-meta="mag 4.36" data-vid="33347"/>
+<circle class="star" cx="482.7" cy="209.4" r="4.5" fill="#cfe0ff" data-name="HIP 34045" data-meta="mag 4.11" data-vid="34045"/>
+<circle class="star" cx="397.7" cy="63.3" r="4.6" fill="#ffd699" data-name="Mebsuta" data-meta="mag 4.08" data-vid="33160"/>
+<text class="star-label" x="406.2" y="67.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="33160">Mebsuta</text>
+<circle class="star" cx="1067.2" cy="1497.6" r="6.0" fill="#cfe0ff" data-name="Sirio" data-meta="mag 1.75" data-vid="39953"/>
+<text class="star-label" x="1077.2" y="1501.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="39953">Sirio</text>
+<circle class="star" cx="397.1" cy="556.8" r="4.7" fill="#ffb366" data-name="HIP 33152" data-meta="mag 3.89" data-vid="33152"/>
+<circle class="star" cx="242.1" cy="356.6" r="4.6" fill="#ffd699" data-name="HIP 31592" data-meta="mag 3.95" data-vid="31592"/>
+<circle class="star" cx="580.9" cy="662.0" r="4.6" fill="#cfe0ff" data-name="HIP 35037" data-meta="mag 4.01" data-vid="35037"/>
+<circle class="star" cx="199.2" cy="525.7" r="4.4" fill="#cfe0ff" data-name="HIP 31125" data-meta="mag 4.34" data-vid="31125"/>
+<circle class="star" cx="615.5" cy="588.1" r="4.4" fill="#cfe0ff" data-name="HIP 35415" data-meta="mag 4.37" data-vid="35415"/>
+<circle class="star" cx="252.8" cy="315.2" r="4.3" fill="#ffd699" data-name="HIP 31700" data-meta="mag 4.42" data-vid="31700"/>
+<circle class="star" cx="576.0" cy="644.9" r="4.3" fill="#cfe0ff" data-name="HIP 34981" data-meta="mag 4.42" data-vid="34981"/>
+<circle class="star" cx="227.6" cy="507.3" r="4.3" fill="#cfe0ff" data-name="HIP 31416" data-meta="mag 4.54" data-vid="31416"/>
+<circle class="star" cx="410.4" cy="392.3" r="4.2" fill="#ffffff" data-name="HIP 33302" data-meta="mag 4.66" data-vid="33302"/>
+<circle class="star" cx="596.7" cy="707.0" r="4.2" fill="#ffb366" data-name="HIP 35205" data-meta="mag 4.66" data-vid="35205"/>
+<circle class="star" cx="265.1" cy="148.9" r="4.1" fill="#ffd699" data-name="HIP 31827" data-meta="mag 4.82" data-vid="31827"/>
+<circle class="star" cx="391.9" cy="395.9" r="4.1" fill="#cfe0ff" data-name="HIP 33092" data-meta="mag 4.82" data-vid="33092"/>
+<circle class="star" cx="596.9" cy="521.5" r="4.1" fill="#ffb366" data-name="HIP 35210" data-meta="mag 4.83" data-vid="35210"/>
+<circle class="star" cx="615.2" cy="572.0" r="4.1" fill="#cfe0ff" data-name="HIP 35412" data-meta="mag 4.88" data-vid="35412"/>
+<circle class="star" cx="646.8" cy="346.8" r="4.0" fill="#cfe0ff" data-name="HIP 35727" data-meta="mag 4.94" data-vid="35727"/>
+<circle class="star" cx="414.7" cy="144.7" r="4.0" fill="#ffd699" data-name="HIP 33345" data-meta="mag 5.0" data-vid="33345"/>
+<circle class="star" cx="333.8" cy="416.6" r="9" fill="#d6ff8c" fill-opacity="0.15" data-name="M41" data-meta="oc"/>
+<circle cx="333.8" cy="416.6" r="3.5" fill="#d6ff8c" fill-opacity="0.5"/>
 </svg>

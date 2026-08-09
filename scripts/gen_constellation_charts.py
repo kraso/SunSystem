@@ -58,8 +58,8 @@ def dec_to_y(dec, dec_min, dec_max, scale, h, pad):
 
 def star_radius(mag):
     # estrellas más brillantes (mag menor) -> radio mayor
-    r = 5.4 - mag * 0.5
-    return max(1.6, min(8.5, r))
+    r = 7.0 - mag * 0.6
+    return max(2.2, min(11.0, r))
 
 
 def type_color(t: str) -> str:
@@ -177,22 +177,23 @@ for c in conss:
     if not bb:
         continue
     ra_min, ra_max, dec_min, dec_max = bb
-    # margen del 10%
+    # margen pequeño: la figura ocupa casi todo el lienzo (carta expansiva)
     ra_span = max(ra_max - ra_min, 1e-3)
     dec_span = max(dec_max - dec_min, 1e-3)
-    ra_min -= ra_span * 0.10
-    ra_max += ra_span * 0.10
-    dec_min -= dec_span * 0.10
-    dec_max += dec_span * 0.10
+    ra_min -= ra_span * 0.04
+    ra_max += ra_span * 0.04
+    dec_min -= dec_span * 0.04
+    dec_max += dec_span * 0.04
     ra_span = ra_max - ra_min
     dec_span = dec_max - dec_min
 
     # Lienzo con el ASPECTO REAL de la constelacion: ancho/alto = RA/Dec.
     # Misma escala (scale) en ambos ejes -> no se deforma ni se aplasta.
+    # Base más ancha para más resolución y marcadores grandes.
     scale = max(ra_span, dec_span)
-    W = 520
-    H = max(200, int(round(W * dec_span / ra_span)))
-    pad = min(26, int(H * 0.12))
+    W = 760
+    H = max(280, int(round(W * dec_span / ra_span)))
+    pad = min(34, int(H * 0.12))
 
     # Objetos Messier que realmente pertenecen a esta constelación.
     cobjs = [o for o in deep
@@ -206,15 +207,7 @@ for c in conss:
         f'font-family="Audiowide, Segoe UI, sans-serif">'
     )
     parts.append(f'<rect width="{W}" height="{H}" fill="#05060c"/>')
-    # líneas de la figura (asterismo seleccionado)
-    for ln in draw_lines:
-        pts = []
-        for ra, dec in ln:
-            x = ra_to_x(ra, ra_min, ra_max, scale, W, pad)
-            y = dec_to_y(dec, dec_min, dec_max, scale, H, pad)
-            pts.append(f"{x:.1f},{y:.1f}")
-        parts.append(f'<polyline points="{" ".join(pts)}" fill="none" '
-                     f'stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>')
+
     # estrellas del asterismo (vértices de las líneas dibujadas) siempre visibles,
     # resueltas a estrellas reales de stars.json por cercanía. Así el asterismo
     # principal se dibuja completo aunque el catálogo asigne esas estrellas a
@@ -230,6 +223,21 @@ for c in conss:
                 best_d = d
                 best = s
         return best
+
+    # líneas de la figura (asterismo seleccionado)
+    for ln in draw_lines:
+        seq = []
+        pts = []
+        for ra, dec in ln:
+            x = ra_to_x(ra, ra_min, ra_max, scale, W, pad)
+            y = dec_to_y(dec, dec_min, dec_max, scale, H, pad)
+            s = nearest_star(ra, dec)
+            vid = s["hip"] if s and s.get("hip") is not None else f"v{len(seq)}"
+            seq.append(str(vid))
+            pts.append(f"{x:.1f},{y:.1f}")
+        parts.append(f'<polyline class="fig-line" points="{" ".join(pts)}" fill="none" '
+                     f'stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" '
+                     f'stroke-linejoin="round" data-seq="{",".join(seq)}"/>')
 
     asterism = []
     seen_hip = set()
@@ -260,12 +268,14 @@ for c in conss:
             col = "#ffd699"
         else:
             col = "#ffb366"
+        vid = s.get("hip")
         parts.append(f'<circle class="star" cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" '
                      f'fill="{col}" data-name="{s.get("name") or "HIP " + str(s["hip"])}" '
-                     f'data-meta="mag {s["mag"]}"/>')
+                     f'data-meta="mag {s["mag"]}" data-vid="{vid}"/>')
         if s.get("name"):
-            parts.append(f'<text x="{x + r + 4:.1f}" y="{y + 4:.1f}" '
-                         f'fill="#cfe0ff" font-size="12" font-weight="bold">{s["name"]}</text>')
+            parts.append(f'<text class="star-label" x="{x + r + 4:.1f}" y="{y + 4:.1f}" '
+                         f'fill="#cfe0ff" font-size="13" font-weight="bold" '
+                         f'data-vid="{vid}">{s.get("name")}</text>')
 
     # objetos Messier (mancha difusa por tipo)
     for o in cobjs:

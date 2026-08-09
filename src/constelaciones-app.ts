@@ -152,111 +152,162 @@ document.querySelectorAll('.col-sort').forEach((btn) => {
   });
 });
 
-// ─── Manipulación de la carta (pan / zoom / rotación libre, por carta) ──
-interface ChartTransform { x: number; y: number; zoom: number; rot: number; }
-const TF_DEFAULT: ChartTransform = { x: 0, y: 0, zoom: 1, rot: 0 };
-const TF_LIMITS = { zoomMin: 0.4, zoomMax: 5, rotMax: 360 };
+// ─── Editor de la carta: arrastrar estrellas + expandir el espacio ──
+// El usuario puede mover cada estrella (nodo) a mano y "abrir" la figura
+// con un deslizador que separa las estrellas desde el centro. El ajuste se
+// guarda POR CARTA en localStorage (posiciones de cada estrella + factor de
+// expansión). Un botón restablece a los datos reales del catálogo.
+interface NodeState { x: number; y: number; }
+interface ChartEdit { expand: number; pos: Record<string, NodeState>; }
 
-function tfKey(name: string): string {
-  return 'sunconst:tf:' + name;
+function editKey(name: string): string {
+  return 'sunconst:edit:' + name;
 }
-function loadChartTf(name: string): ChartTransform {
+function loadEdit(name: string): ChartEdit {
   try {
-    const raw = localStorage.getItem(tfKey(name));
+    const raw = localStorage.getItem(editKey(name));
     if (raw) {
-      const t = JSON.parse(raw) as Partial<ChartTransform>;
+      const e = JSON.parse(raw) as Partial<ChartEdit>;
       return {
-        x: t.x ?? 0,
-        y: t.y ?? 0,
-        zoom: Math.max(TF_LIMITS.zoomMin, Math.min(TF_LIMITS.zoomMax, t.zoom ?? 1)),
-        rot: ((t.rot ?? 0) % 360 + 360) % 360,
+        expand: Math.max(0.6, Math.min(3, e.expand ?? 1)),
+        pos: e.pos && typeof e.pos === 'object' ? e.pos : {},
       };
     }
   } catch { /* ignore */ }
-  return { ...TF_DEFAULT };
+  return { expand: 1, pos: {} };
 }
-let tfSaveTimer: number | undefined;
-function saveChartTf(name: string, tf: ChartTransform): void {
-  if (tfSaveTimer) window.clearTimeout(tfSaveTimer);
-  tfSaveTimer = window.setTimeout(() => {
-    try { localStorage.setItem(tfKey(name), JSON.stringify(tf)); } catch { /* ignore */ }
+let editSaveTimer: number | undefined;
+function saveEdit(name: string, edit: ChartEdit): void {
+  if (editSaveTimer) window.clearTimeout(editSaveTimer);
+  editSaveTimer = window.setTimeout(() => {
+    try { localStorage.setItem(editKey(name), JSON.stringify(edit)); } catch { /* ignore */ }
   }, 250);
 }
-function applyChartTf(wrap: HTMLElement, tf: ChartTransform): void {
-  wrap.style.transform =
-    `translate(${tf.x}px, ${tf.y}px) rotate(${tf.rot}deg) scale(${tf.zoom})`;
+
+// Recalcula las posiciones de todas las estrellas y líneas a partir del
+// estado de edición (expansión + offsets por estrella) y del viewBox real.
+// Las posiciones BASE son las del catálogo (guardadas una vez al cargar),
+// para que expandir/arrastrar/restablecer siempre partan de los datos reales.
+function applyEdit(svg: SVGSVGElement, edit: ChartEdit, vbW: number, vbH: number): void {
+  const stars = Array.from(svg.querySelectorAll<SVGCircleElement>('circle.star[data-vid]'));
+  if (!stars.length) return;
+  // centro del lienzo (en coords del viewBox)
+  const cx = vbW / 2;
+  const cy = vbH / 2;
+  // capturar posiciones base del catálogo la primera vez
+  if (!svg.dataset.baseReady) {
+    for (const c of stars) {
+      c.dataset.baseX = c.getAttribute('cx')!;
+      c.dataset.baseY = c.getAttribute('cy')!;
+    }
+    svg.dataset.baseReady = '1';
+  }
+  const pts: Record<string, { x: number; y: number }> = {};
+  for (const c of stars) {
+    const vid = c.dataset.vid!;
+    const baseX = parseFloat(c.dataset.baseX!);
+    const baseY = parseFloat(c.dataset.baseY!);
+    const ov = edit.pos[vid];
+    const ox = ov ? ov.x : 0;
+    const oy = ov ? ov.y : 0;
+    // expansión: separa la estrella del centro por el factor
+    const ex = cx + (baseX - cx) * edit.expand + ox;
+    const ey = cy + (baseY - cy) * edit.expand + oy;
+    pts[vid] = { x: ex, y: ey };
+    c.setAttribute('cx', ex.toFixed(1));
+    c.setAttribute('cy', ey.toFixed(1));
+  }
+  // etiquetas siguen a su estrella
+  for (const t of Array.from(svg.querySelectorAll<SVGTextElement>('text.star-label[data-vid]'))) {
+    const p = pts[t.dataset.vid!];
+    if (!p) continue;
+    const r = parseFloat(svg.querySelector<SVGCircleElement>(`circle.star[data-vid="${t.dataset.vid}"]`)!.getAttribute('r')!);
+    t.setAttribute('x', (p.x + r + 4).toFixed(1));
+    t.setAttribute('y', (p.y + 4).toFixed(1));
+  }
+  // líneas siguen a sus vértices (según data-seq)
+  for (const line of Array.from(svg.querySelectorAll<SVGPolylineElement>('polyline.fig-line[data-seq]'))) {
+    const seq = line.dataset.seq!.split(',');
+    const coords = seq.map((vid) => {
+      const p = pts[vid];
+      return p ? `${p.x.toFixed(1)},${p.y.toFixed(1)}` : '';
+    }).filter(Boolean);
+    line.setAttribute('points', coords.join(' '));
+  }
 }
 
-// Une los gestos de la carta: arrastrar = pan, rueda = zoom,
-// Shift+arrastrar = rotación libre. El ajuste se guarda por constelación.
-function bindChartControls(stage: HTMLElement, wrap: HTMLElement, name: string): void {
-  let tf = loadChartTf(name);
-  applyChartTf(wrap, tf);
+// Une los gestos sobre el SVG: arrastrar una estrella la mueve (en coords del
+// viewBox). El deslizador de expansión se bindea aparte.
+function bindNodeEditor(svg: SVGSVGElement, stage: HTMLElement, name: string, vbW: number, vbH: number): void {
+  let edit = loadEdit(name);
 
-  let dragging = false;
-  let rotating = false;
-  let lastX = 0;
-  let lastY = 0;
-  let startRot = 0;
-  let startAngle = 0;
-
-  const centerAngle = (cx: number, cy: number): number => {
-    const r = stage.getBoundingClientRect();
-    return Math.atan2(cy - (r.top + r.height / 2), cx - (r.left + r.width / 2)) * 180 / Math.PI;
+  const clientToSvg = (clientX: number, clientY: number): { x: number; y: number } => {
+    const r = svg.getBoundingClientRect();
+    return {
+      x: (clientX - r.left) / r.width * vbW,
+      y: (clientY - r.top) / r.height * vbH,
+    };
   };
 
-  stage.addEventListener('pointerdown', (e) => {
-    if (e.button !== 0) return;
-    stage.setPointerCapture(e.pointerId);
-    if (e.shiftKey) {
-      rotating = true;
-      startRot = tf.rot;
-      startAngle = centerAngle(e.clientX, e.clientY);
-    } else {
-      dragging = true;
-    }
-    lastX = e.clientX;
-    lastY = e.clientY;
-    stage.classList.add('grabbing');
-  });
-  stage.addEventListener('pointermove', (e) => {
-    if (rotating) {
-      const a = centerAngle(e.clientX, e.clientY);
-      tf.rot = startRot + (a - startAngle);
-      applyChartTf(wrap, tf);
-    } else if (dragging) {
-      tf.x += e.clientX - lastX;
-      tf.y += e.clientY - lastY;
-      lastX = e.clientX;
-      lastY = e.clientY;
-      applyChartTf(wrap, tf);
-    }
-  });
-  const endDrag = (e: PointerEvent) => {
-    if (!dragging && !rotating) return;
-    dragging = false;
-    rotating = false;
-    stage.classList.remove('grabbing');
-    try { stage.releasePointerCapture(e.pointerId); } catch { /* ignore */ }
-    saveChartTf(name, tf);
-  };
-  stage.addEventListener('pointerup', endDrag);
-  stage.addEventListener('pointercancel', endDrag);
+  let draggingVid: string | null = null;
+  let offX = 0, offY = 0;
+  let grabX = 0, grabY = 0;
 
-  stage.addEventListener('wheel', (e) => {
+  svg.addEventListener('pointerdown', (e) => {
+    const target = e.target as Element;
+    const circle = target.closest<SVGCircleElement>('circle.star[data-vid]');
+    if (!circle) return;
     e.preventDefault();
-    const factor = e.deltaY < 0 ? 1.1 : 1 / 1.1;
-    tf.zoom = Math.max(TF_LIMITS.zoomMin, Math.min(TF_LIMITS.zoomMax, tf.zoom * factor));
-    applyChartTf(wrap, tf);
-    saveChartTf(name, tf);
-  }, { passive: false });
+    draggingVid = circle.dataset.vid!;
+    try { svg.setPointerCapture(e.pointerId); } catch { /* ignore */ }
+    const p = clientToSvg(e.clientX, e.clientY);
+    grabX = p.x;
+    grabY = p.y;
+    const cur = edit.pos[draggingVid] || { x: 0, y: 0 };
+    offX = cur.x;
+    offY = cur.y;
+    svg.classList.add('editing');
+  });
 
-  const resetBtn = stage.parentElement?.querySelector('.chart-reset') as HTMLButtonElement | null;
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => {
-      tf = { ...TF_DEFAULT };
-      applyChartTf(wrap, tf);
-      saveChartTf(name, tf);
+  svg.addEventListener('pointermove', (e) => {
+    if (!draggingVid) return;
+    const p = clientToSvg(e.clientX, e.clientY);
+    const nx = offX + (p.x - grabX);
+    const ny = offY + (p.y - grabY);
+    if (!edit.pos[draggingVid]) edit.pos[draggingVid] = { x: 0, y: 0 };
+    edit.pos[draggingVid].x = nx;
+    edit.pos[draggingVid].y = ny;
+    applyEdit(svg, edit, vbW, vbH);
+  });
+
+  const end = (e: PointerEvent) => {
+    if (!draggingVid) return;
+    draggingVid = null;
+    svg.classList.remove('editing');
+    try { svg.releasePointerCapture(e.pointerId); } catch { /* ignore */ }
+    saveEdit(name, edit);
+  };
+  svg.addEventListener('pointerup', end);
+  svg.addEventListener('pointercancel', end);
+
+  // deslizador de expansión
+  const expand = stage.parentElement?.querySelector<HTMLInputElement>('.chart-expand');
+  if (expand) {
+    expand.value = String(edit.expand);
+    expand.addEventListener('input', () => {
+      edit.expand = Math.max(0.6, Math.min(3, parseFloat(expand.value) || 1));
+      applyEdit(svg, edit, vbW, vbH);
+      saveEdit(name, edit);
+    });
+  }
+  // restablecer a datos reales
+  const reset = stage.parentElement?.querySelector<HTMLButtonElement>('.chart-reset');
+  if (reset) {
+    reset.addEventListener('click', () => {
+      edit = { expand: 1, pos: {} };
+      applyEdit(svg, edit, vbW, vbH);
+      if (expand) expand.value = '1';
+      saveEdit(name, edit);
     });
   }
 }
@@ -292,36 +343,51 @@ function showConstellation(name: string): void {
   const chartEl = document.getElementById('const-chart') as HTMLDivElement;
   chartEl.innerHTML = '';
 
-  // Escenario de manipulación: stage (recorta) + wrap (lleva el transform).
+  // Escenario de edición: el SVG vive en un stage sin recorte (para poder
+  // arrastrar estrellas fuera de los márgenes) y se editan los nodos a mano.
   const stage = document.createElement('div');
   stage.className = 'chart-stage';
   const controls = document.createElement('div');
   controls.className = 'chart-controls';
   controls.innerHTML =
-    `<span class="chart-hint">Arrastra: mover · Rueda: zoom · Mayús+arrastra: rotar</span>` +
+    `<span class="chart-hint">Arrastra una estrella para moverla · el deslizador abre la figura</span>` +
+    `<label class="chart-expand-wrap">Expansión ` +
+    `<input type="range" class="chart-expand" min="0.6" max="3" step="0.05" value="1"></label>` +
     `<button type="button" class="chart-reset">Restablecer</button>`;
   chartEl.appendChild(controls);
   chartEl.appendChild(stage);
 
   const wrap = document.createElement('div');
   wrap.className = 'const-svg-inline';
-  wrap.innerHTML = '<p class=\"hint\">Cargando carta…</p>';
+  wrap.innerHTML = '<p class="hint">Cargando carta…</p>';
   stage.appendChild(wrap);
-
-  bindChartControls(stage, wrap, name);
 
   fetch(`/assets/constellation-charts/${data.slug}.svg`)
     .then((r) => r.text())
-    .then((svg) => {
-      wrap.innerHTML = svg;
-      const vb = wrap.querySelector('svg')?.getAttribute('viewBox');
+    .then((svgText) => {
+      wrap.innerHTML = svgText;
+      const svgEl = wrap.querySelector('svg') as SVGSVGElement | null;
+      if (!svgEl) return;
+      const vb = svgEl.getAttribute('viewBox');
+      let vbW = 760, vbH = 280;
       if (vb) {
         const m = vb.match(/[\d.]+/g);
-        if (m && m.length >= 4) stage.style.aspectRatio = `${m[2]} / ${m[3]}`;
+        if (m && m.length >= 4) { vbW = parseFloat(m[2]); vbH = parseFloat(m[3]); }
       }
-      applyChartTf(wrap, loadChartTf(name));
+      // el SVG ocupa el ancho disponible; sin recorte para poder mover nodos
+      svgEl.style.width = '100%';
+      svgEl.style.height = 'auto';
+      svgEl.style.display = 'block';
+      svgEl.style.touchAction = 'none';
+      svgEl.classList.add('editable');
+      bindNodeEditor(svgEl, stage, name, vbW, vbH);
+      // aplicar edición guardada (expand + posiciones)
+      const edit = loadEdit(name);
+      applyEdit(svgEl, edit, vbW, vbH);
+      const expand = stage.parentElement?.querySelector<HTMLInputElement>('.chart-expand');
+      if (expand) expand.value = String(edit.expand);
     })
-    .catch(() => { wrap.innerHTML = '<p class=\"hint\">Carta no disponible.</p>'; });
+    .catch(() => { wrap.innerHTML = '<p class="hint">Carta no disponible.</p>'; });
 }
 
 // ─── Card de objeto astronómico (Messier, etc.) ─────────────────────

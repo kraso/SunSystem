@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 888" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="888" fill="#05060c"/>
-<polyline points="208.9,638.8 145.8,323.1 270.7,95.7 359.2,280.4 366.4,736.2 374.2,792.3" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="145.8,323.1 359.2,280.4" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="208.9" cy="638.8" r="3.8" fill="#ffb366" data-name="HIP 73714" data-meta="mag 3.25"/>
-<circle class="star" cx="145.8" cy="323.1" r="4.0" fill="#ffffff" data-name="HIP 72622" data-meta="mag 2.75"/>
-<circle class="star" cx="270.7" cy="95.7" r="4.1" fill="#cfe0ff" data-name="HIP 74785" data-meta="mag 2.61"/>
-<circle class="star" cx="359.2" cy="280.3" r="3.4" fill="#ffd699" data-name="HIP 76333" data-meta="mag 3.91"/>
-<circle class="star" cx="366.4" cy="736.2" r="3.6" fill="#ffd699" data-name="HIP 76470" data-meta="mag 3.6"/>
-<circle class="star" cx="374.2" cy="792.3" r="3.6" fill="#cfe0ff" data-name="HIP 76600" data-meta="mag 3.66"/>
-<circle class="star" cx="-542.3" cy="-1190.5" r="3.2" fill="#ffd699" data-name="Zubenelgenubi" data-meta="mag 4.35"/>
-<text x="-535.1" y="-1186.5" fill="#cfe0ff" font-size="12" font-weight="bold">Zubenelgenubi</text>
-<circle class="star" cx="247.8" cy="451.2" r="3.1" fill="#cfe0ff" data-name="HIP 74392" data-meta="mag 4.54"/>
-<circle class="star" cx="352.8" cy="118.9" r="3.1" fill="#ffd699" data-name="HIP 76219" data-meta="mag 4.61"/>
-<circle class="star" cx="305.1" cy="127.8" r="2.9" fill="#ffffff" data-name="HIP 75379" data-meta="mag 4.92"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1298" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="1298" fill="#05060c"/>
+<polyline class="fig-line" points="296.0,967.4 192.4,451.4 397.6,79.6 543.1,381.5 554.8,1126.7 567.6,1218.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="73714,72622,74785,76333,76470,76600"/>
+<polyline class="fig-line" points="192.4,451.4 543.1,381.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="72622,76333"/>
+<circle class="star" cx="296.0" cy="967.4" r="5.0" fill="#ffb366" data-name="HIP 73714" data-meta="mag 3.25" data-vid="73714"/>
+<circle class="star" cx="192.4" cy="451.4" r="5.3" fill="#ffffff" data-name="HIP 72622" data-meta="mag 2.75" data-vid="72622"/>
+<circle class="star" cx="397.6" cy="79.5" r="5.4" fill="#cfe0ff" data-name="HIP 74785" data-meta="mag 2.61" data-vid="74785"/>
+<circle class="star" cx="543.0" cy="381.5" r="4.7" fill="#ffd699" data-name="HIP 76333" data-meta="mag 3.91" data-vid="76333"/>
+<circle class="star" cx="554.8" cy="1126.7" r="4.8" fill="#ffd699" data-name="HIP 76470" data-meta="mag 3.6" data-vid="76470"/>
+<circle class="star" cx="567.6" cy="1218.4" r="4.8" fill="#cfe0ff" data-name="HIP 76600" data-meta="mag 3.66" data-vid="76600"/>
+<circle class="star" cx="-938.2" cy="-2023.0" r="4.4" fill="#ffd699" data-name="Zubenelgenubi" data-meta="mag 4.35" data-vid="60742"/>
+<text class="star-label" x="-929.8" y="-2019.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60742">Zubenelgenubi</text>
+<circle class="star" cx="360.0" cy="660.8" r="4.3" fill="#cfe0ff" data-name="HIP 74392" data-meta="mag 4.54" data-vid="74392"/>
+<circle class="star" cx="532.5" cy="117.6" r="4.2" fill="#ffd699" data-name="HIP 76219" data-meta="mag 4.61" data-vid="76219"/>
+<circle class="star" cx="454.1" cy="132.0" r="4.0" fill="#ffffff" data-name="HIP 75379" data-meta="mag 4.92" data-vid="75379"/>
 </svg>

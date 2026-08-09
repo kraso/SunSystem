@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 329" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="329" fill="#05060c"/>
-<polyline points="145.4,91.5 335.1,141.3 441.2,102.9 455.0,167.9 346.0,237.5 335.1,141.3 65.0,130.3 145.4,91.5" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="145.4" cy="91.5" r="4.2" fill="#ffd699" data-name="Mirach" data-meta="mag 2.4"/>
-<text x="153.6" y="95.5" fill="#cfe0ff" font-size="12" font-weight="bold">Mirach</text>
-<circle class="star" cx="335.1" cy="141.3" r="3.7" fill="#fff2cc" data-name="HIP 5165" data-meta="mag 3.32"/>
-<circle class="star" cx="441.2" cy="102.9" r="3.7" fill="#ffb366" data-name="HIP 6867" data-meta="mag 3.41"/>
-<circle class="star" cx="455.0" cy="167.8" r="3.4" fill="#fff2cc" data-name="HIP 7083" data-meta="mag 3.93"/>
-<circle class="star" cx="346.0" cy="237.5" r="3.4" fill="#cfe0ff" data-name="HIP 5348" data-meta="mag 3.94"/>
-<circle class="star" cx="65.0" cy="130.3" r="3.5" fill="#ffd699" data-name="HIP 765" data-meta="mag 3.88"/>
-<circle class="star" cx="145.0" cy="107.0" r="3.4" fill="#ffffff" data-name="HIP 2072" data-meta="mag 3.93"/>
-<circle class="star" cx="217.1" cy="134.1" r="3.1" fill="#fff2cc" data-name="HIP 3245" data-meta="mag 4.59"/>
-<circle class="star" cx="169.9" cy="164.8" r="3.0" fill="#ffffff" data-name="HIP 2472" data-meta="mag 4.76"/>
-<circle class="star" cx="378.4" cy="127.9" r="2.9" fill="#fff2cc" data-name="HIP 5862" data-meta="mag 4.97"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 481" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="481" fill="#05060c"/>
+<polyline class="fig-line" points="191.7,119.6 503.3,202.0 677.8,138.5 700.4,246.1 521.3,361.4 503.3,202.0 59.6,183.9 191.7,119.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="2081,5165,6867,7083,5348,5165,765,2081"/>
+<circle class="star" cx="191.7" cy="119.6" r="5.6" fill="#ffd699" data-name="Mirach" data-meta="mag 2.4" data-vid="2081"/>
+<text class="star-label" x="201.3" y="123.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="2081">Mirach</text>
+<circle class="star" cx="503.3" cy="202.0" r="5.0" fill="#fff2cc" data-name="HIP 5165" data-meta="mag 3.32" data-vid="5165"/>
+<circle class="star" cx="677.8" cy="138.5" r="5.0" fill="#ffb366" data-name="HIP 6867" data-meta="mag 3.41" data-vid="6867"/>
+<circle class="star" cx="700.4" cy="246.0" r="4.6" fill="#fff2cc" data-name="HIP 7083" data-meta="mag 3.93" data-vid="7083"/>
+<circle class="star" cx="521.3" cy="361.4" r="4.6" fill="#cfe0ff" data-name="HIP 5348" data-meta="mag 3.94" data-vid="5348"/>
+<circle class="star" cx="59.6" cy="183.9" r="4.7" fill="#ffd699" data-name="HIP 765" data-meta="mag 3.88" data-vid="765"/>
+<circle class="star" cx="191.1" cy="145.2" r="4.6" fill="#ffffff" data-name="HIP 2072" data-meta="mag 3.93" data-vid="2072"/>
+<circle class="star" cx="309.5" cy="190.2" r="4.2" fill="#fff2cc" data-name="HIP 3245" data-meta="mag 4.59" data-vid="3245"/>
+<circle class="star" cx="231.9" cy="241.0" r="4.1" fill="#ffffff" data-name="HIP 2472" data-meta="mag 4.76" data-vid="2472"/>
+<circle class="star" cx="574.6" cy="179.9" r="4.0" fill="#fff2cc" data-name="HIP 5862" data-meta="mag 4.97" data-vid="5862"/>
 </svg>

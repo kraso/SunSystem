@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 478" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="478" fill="#05060c"/>
-<polyline points="455.0,402.2 383.2,371.7 348.9,277.7 273.7,211.2 148.3,279.3 348.9,277.7" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<polyline points="270.9,205.8 191.3,160.3 136.0,122.0 65.0,75.8" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="455.0" cy="402.2" r="3.3" fill="#fff2cc" data-name="HIP 113638" data-meta="mag 4.11"/>
-<circle class="star" cx="383.2" cy="371.7" r="3.7" fill="#ffffff" data-name="HIP 112623" data-meta="mag 3.49"/>
-<circle class="star" cx="348.9" cy="277.7" r="4.4" fill="#ffb366" data-name="HIP 112122" data-meta="mag 2.07"/>
-<circle class="star" cx="273.7" cy="211.2" r="3.3" fill="#ffb366" data-name="HIP 111043" data-meta="mag 4.12"/>
-<circle class="star" cx="148.3" cy="279.3" r="4.5" fill="#cfe0ff" data-name="HIP 109268" data-meta="mag 1.73"/>
-<circle class="star" cx="270.9" cy="205.8" r="3.4" fill="#ffd699" data-name="HIP 110997" data-meta="mag 3.97"/>
-<circle class="star" cx="191.3" cy="160.3" r="3.0" fill="#fff2cc" data-name="HIP 109908" data-meta="mag 4.79"/>
-<circle class="star" cx="136.0" cy="122.0" r="3.2" fill="#ffd699" data-name="HIP 109111" data-meta="mag 4.47"/>
-<circle class="star" cx="65.0" cy="75.8" r="3.9" fill="#cfe0ff" data-name="HIP 108085" data-meta="mag 3.0"/>
-<circle class="star" cx="-769.2" cy="-1309.7" r="3.9" fill="#ffd699" data-name="Alnair" data-meta="mag 3.05"/>
-<text x="-761.3" y="-1305.7" fill="#cfe0ff" font-size="12" font-weight="bold">Alnair</text>
-<circle class="star" cx="353.8" cy="161.7" r="3.0" fill="#ffd699" data-name="HIP 112203" data-meta="mag 4.84"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 699" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="699" fill="#05060c"/>
+<polyline class="fig-line" points="700.4,618.1 582.4,567.9 526.1,413.2 402.5,303.8 196.5,415.9 526.1,413.2" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="113638,112623,112122,111043,109268,112122"/>
+<polyline class="fig-line" points="397.8,294.9 267.2,219.9 176.3,156.9 59.6,80.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="110997,109908,109111,108085"/>
+<circle class="star" cx="700.4" cy="618.1" r="4.5" fill="#fff2cc" data-name="HIP 113638" data-meta="mag 4.11" data-vid="113638"/>
+<circle class="star" cx="582.4" cy="567.9" r="4.9" fill="#ffffff" data-name="HIP 112623" data-meta="mag 3.49" data-vid="112623"/>
+<circle class="star" cx="526.1" cy="413.2" r="5.8" fill="#ffb366" data-name="HIP 112122" data-meta="mag 2.07" data-vid="112122"/>
+<circle class="star" cx="402.5" cy="303.8" r="4.5" fill="#ffb366" data-name="HIP 111043" data-meta="mag 4.12" data-vid="111043"/>
+<circle class="star" cx="196.5" cy="415.9" r="6.0" fill="#cfe0ff" data-name="HIP 109268" data-meta="mag 1.73" data-vid="109268"/>
+<circle class="star" cx="397.9" cy="294.9" r="4.6" fill="#ffd699" data-name="HIP 110997" data-meta="mag 3.97" data-vid="110997"/>
+<circle class="star" cx="267.2" cy="219.9" r="4.1" fill="#fff2cc" data-name="HIP 109908" data-meta="mag 4.79" data-vid="109908"/>
+<circle class="star" cx="176.3" cy="157.0" r="4.3" fill="#ffd699" data-name="HIP 109111" data-meta="mag 4.47" data-vid="109111"/>
+<circle class="star" cx="59.6" cy="80.9" r="5.2" fill="#cfe0ff" data-name="HIP 108085" data-meta="mag 3.0" data-vid="108085"/>
+<circle class="star" cx="-1310.9" cy="-2199.3" r="5.2" fill="#ffd699" data-name="Alnair" data-meta="mag 3.05" data-vid="95947"/>
+<text class="star-label" x="-1301.7" y="-2195.3" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="95947">Alnair</text>
+<circle class="star" cx="534.0" cy="222.3" r="4.1" fill="#ffd699" data-name="HIP 112203" data-meta="mag 4.84" data-vid="112203"/>
 </svg>

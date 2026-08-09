@@ -1442,10 +1442,10 @@ html, body {
 .chart-stage {
   position: relative;
   width: 100%;
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto 6px;
-  aspect-ratio: 520 / 200;
-  overflow: hidden;
+  aspect-ratio: 760 / 280;
+  overflow: visible;
   border-radius: 10px;
   border: 1px solid rgba(120, 150, 220, 0.2);
   background: #05060c;
@@ -1453,17 +1453,49 @@ html, body {
   align-items: center;
   justify-content: center;
 }
+.const-svg-inline svg.editable {
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Halo invisible amplio para agarrar la estrella más fácil */
+.const-svg-inline svg.editable circle.star {
+  cursor: grab;
+  stroke: rgba(255,255,255,0.35);
+  stroke-width: 1.2;
+  transition: stroke 0.15s, filter 0.15s;
+}
+.const-svg-inline svg.editable circle.star:hover {
+  stroke: #88ffcc;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 6px rgba(136,255,204,0.8));
+}
+.const-svg-inline svg.editable.editing {
+  cursor: grabbing;
+}
+.const-svg-inline svg.editable.editing circle.star { cursor: grabbing; }
 .chart-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto 8px;
   font-size: 12px;
   color: #9fb0d8;
 }
 .chart-hint { opacity: 0.8; font-family: "Segoe UI", sans-serif; }
+.chart-expand-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Segoe UI", sans-serif;
+}
+.chart-expand-wrap input[type="range"] {
+  width: 120px;
+  accent-color: #88ffcc;
+  cursor: pointer;
+}
 .chart-reset {
   background: rgba(120, 150, 220, 0.15);
   color: #cfe0ff;

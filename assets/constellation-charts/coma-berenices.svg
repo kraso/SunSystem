@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 497" font-family="Audiowide, Segoe UI, sans-serif">
-<rect width="520" height="497" fill="#05060c"/>
-<polyline points="438.6,425.7 455.0,84.1 65.0,71.3" fill="none" stroke="#a6ccff" stroke-width="2.0" stroke-opacity="0.95" stroke-linejoin="round"/>
-<circle class="star" cx="438.6" cy="425.7" r="3.2" fill="#ffffff" data-name="HIP 64241" data-meta="mag 4.32"/>
-<circle class="star" cx="455.0" cy="84.1" r="3.3" fill="#fff2cc" data-name="HIP 64394" data-meta="mag 4.23"/>
-<circle class="star" cx="65.0" cy="71.2" r="3.2" fill="#ffd699" data-name="Zubenelgenubi" data-meta="mag 4.35"/>
-<text x="72.2" y="75.2" fill="#cfe0ff" font-size="12" font-weight="bold">Zubenelgenubi</text>
-<circle class="star" cx="133.7" cy="257.4" r="3.0" fill="#ffffff" data-name="HIP 61394" data-meta="mag 4.8"/>
-<circle class="star" cx="414.3" cy="92.5" r="3.0" fill="#ffd699" data-name="HIP 64022" data-meta="mag 4.8"/>
-<circle class="star" cx="293.8" cy="303.1" r="3.0" fill="#fff2cc" data-name="HIP 62886" data-meta="mag 4.89"/>
-<circle class="star" cx="279.9" cy="95.3" r="2.9" fill="#fff2cc" data-name="HIP 62763" data-meta="mag 4.93"/>
-<circle class="star" cx="65.5" cy="118.9" r="2.9" fill="#ffffff" data-name="HIP 60746" data-meta="mag 4.98"/>
-<circle class="star" cx="323.3" cy="288.6" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M64" data-meta="s"/>
-<circle cx="323.3" cy="288.6" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 727" font-family="Audiowide, Segoe UI, sans-serif">
+<rect width="760" height="727" fill="#05060c"/>
+<polyline class="fig-line" points="673.5,655.1 700.4,93.0 59.6,71.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="64241,64394,60742"/>
+<circle class="star" cx="673.5" cy="655.1" r="4.4" fill="#ffffff" data-name="HIP 64241" data-meta="mag 4.32" data-vid="64241"/>
+<circle class="star" cx="700.4" cy="93.0" r="4.5" fill="#fff2cc" data-name="HIP 64394" data-meta="mag 4.23" data-vid="64394"/>
+<circle class="star" cx="59.7" cy="71.8" r="4.4" fill="#ffd699" data-name="Zubenelgenubi" data-meta="mag 4.35" data-vid="60742"/>
+<text class="star-label" x="68.0" y="75.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60742">Zubenelgenubi</text>
+<circle class="star" cx="172.5" cy="378.1" r="4.1" fill="#ffffff" data-name="HIP 61394" data-meta="mag 4.8" data-vid="61394"/>
+<circle class="star" cx="633.5" cy="106.8" r="4.1" fill="#ffd699" data-name="HIP 64022" data-meta="mag 4.8" data-vid="64022"/>
+<circle class="star" cx="435.5" cy="453.3" r="4.1" fill="#fff2cc" data-name="HIP 62886" data-meta="mag 4.89" data-vid="62886"/>
+<circle class="star" cx="412.7" cy="111.4" r="4.0" fill="#fff2cc" data-name="HIP 62763" data-meta="mag 4.93" data-vid="62763"/>
+<circle class="star" cx="60.4" cy="150.2" r="4.0" fill="#ffffff" data-name="HIP 60746" data-meta="mag 4.98" data-vid="60746"/>
+<circle class="star" cx="484.0" cy="429.5" r="9" fill="#9fc4ff" fill-opacity="0.15" data-name="M64" data-meta="s"/>
+<circle cx="484.0" cy="429.5" r="3.5" fill="#9fc4ff" fill-opacity="0.5"/>
 </svg>
