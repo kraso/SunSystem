@@ -105,6 +105,16 @@ html, body {
   color: #fff;
 }
 
+/* Planetario: layout original de la barra (logo izq, volver centro,
+   provincia der) sin el empuje global del logo. */
+.top-bar-planetario {
+  justify-content: space-between;
+}
+
+.top-bar-planetario #logo {
+  margin-right: 0;
+}
+
 #logo {
   font-size: 1.2rem;
   font-weight: 600;
@@ -1825,6 +1835,17 @@ a.brand:hover,
   font-size: 0.72rem;
   color: #7c8db0;
 }
+
+/* Foto de misión: límite proporcional a la ventana para que no se vea enorme */
+.mission-photo {
+  display: block;
+  max-width: min(100%, 55vw);
+  height: auto;
+  border-radius: 10px;
+  margin: 12px 0 4px;
+  border: 1px solid rgba(120, 150, 220, 0.18);
+}
+
 /* ═══════════ Acerca De ═══════════ */
 #about-layout {
   position: fixed;
