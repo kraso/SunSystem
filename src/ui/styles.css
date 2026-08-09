@@ -414,34 +414,6 @@ html, body {
   color: #ffe0a0;
 }
 
-#stats-close {
-  background:
-    linear-gradient(135deg, rgba(40, 42, 54, 0.75) 0%, rgba(25, 27, 36, 0.85) 100%);
-  border: 1px solid rgba(100, 105, 130, 0.25);
-  color: rgba(220, 220, 240, 0.9);
-  padding: 8px 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Audiowide', 'Segoe UI', system-ui, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 500;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 2px 8px rgba(0,0,0,0.3);
-  transition: background 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.15s, color 0.25s;
-}
-
-#stats-close:hover {
-  color: rgba(245, 245, 255, 1);
-  background:
-    linear-gradient(135deg, rgba(55, 58, 72, 0.8) 0%, rgba(38, 41, 54, 0.9) 100%);
-  border-color: rgba(140, 145, 175, 0.4);
-  box-shadow:
-    0 1px 0 rgba(255,255,255,0.06) inset,
-    0 0 18px rgba(100, 120, 180, 0.15),
-    0 4px 12px rgba(0,0,0,0.35);
-  transform: translateY(-1px);
-}
-
 #stats-grid {
   display: flex;
   flex-direction: column;
