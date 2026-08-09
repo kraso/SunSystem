@@ -58,12 +58,12 @@ type RightItem =
   | { kind: 'star'; label: string; hip: number }
   | { kind: 'obj'; label: string; id: string };
 const rightItems: RightItem[] = [
-  ...starList.map((s): RightItem => ({
-    kind: 'star',
-    label: s.name ? s.name : `HIP ${s.hip}${s.con ? ' (' + s.con + ')' : ''}`,
-    hip: s.hip,
-  })),
-  ...objects.map((o): RightItem => ({ kind: 'obj', label: o.id, id: o.id })),
+...starList.filter((s) => s.hip !== 62434).map((s): RightItem => ({
+  kind: 'star',
+  label: s.name ? s.name : `HIP ${s.hip}${s.con ? ' (' + s.con + ')' : ''}`,
+  hip: s.hip,
+})),
+...objects.map((o): RightItem => ({ kind: 'obj', label: o.id, id: o.id })),
 ];
 const rightLabels = rightItems.map((r) => r.label).sort((a, b) => a.localeCompare(b));
 
@@ -445,7 +445,6 @@ function showStar(hip: number): void {
   content.innerHTML =
     `<h2 id="const-name">${title}</h2>` +
     `<div class="obj-badge">${s.name ? 'HIP ' + s.hip : 'Estrella'}</div>` +
-    (con ? `<button type="button" class="chart-reset" id="open-in-const">Ver en ${con}</button>` : '') +
     `<div id="const-chart">${buildContextChart(nearby, s.ra, s.dec, { name: title, mag: s.mag, bv })}</div>` +
     `<div id="const-info">` +
     `<div class="info-block"><h3>Datos de la estrella</h3><ul class="obj-list">` +
@@ -463,12 +462,6 @@ function showStar(hip: number): void {
       `<li><span class="obj-name">${x.name ?? 'HIP ' + x.hip}</span>` +
       `<span class="obj-meta">mag ${x.mag} · ${fmtRA(x.ra)} · ${fmtDec(x.dec)}</span></li>`).join('')}</ul></div>` +
     `</div>`;
-
-  // salto a la carta editable de su constelación (para poder mover la estrella)
-  const openBtn = document.getElementById('open-in-const');
-  if (openBtn && con) {
-    openBtn.addEventListener('click', () => showConstellation(con));
-  }
 }
 
 // ─── SVG dinámico de contexto ───────────────────────────────────────
