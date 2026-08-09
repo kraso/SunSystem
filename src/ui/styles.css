@@ -128,8 +128,12 @@ html, body {
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
 }
 
-/* Enlace "SunSystem" para volver a la página principal (azul, sin subrayado) */
-.brand {
+/* Enlace "SunSystem" para volver a la página principal (azul, sin subrayado).
+   Usamos selectores de alta especificidad (0,2,0) para que ni #stats-header
+   ni otras reglas por ID los sobrescriban, y el hover funcione siempre. */
+a.brand,
+#top-bar a.brand,
+#stats-header a.brand {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -137,21 +141,16 @@ html, body {
   font-weight: 600;
   font-family: inherit;
   letter-spacing: 0.02em;
-  color: #4ea1ff;
-  text-decoration: none;
+  color: #4ea1ff !important;
+  text-decoration: none !important;
   cursor: pointer;
   user-select: none;
 }
-.brand:hover {
-  color: #7dc0ff;
-  text-decoration: none;
-}
-
-/* El header de los paneles (Estadísticas/Luna) define color propio;
-   forzamos el azul del enlace brand con mayor especificidad. */
-#stats-header .brand {
-  color: #4ea1ff;
-  text-decoration: none;
+a.brand:hover,
+#top-bar a.brand:hover,
+#stats-header a.brand:hover {
+  color: #7dc0ff !important;
+  text-decoration: none !important;
 }
 
 .btn-hud:hover .ico {
