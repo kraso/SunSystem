@@ -127,6 +127,13 @@ html, body {
   margin-right: 0;
 }
 
+/* Retorno "SunSystem": centrado en la barra, como en Constelaciones. */
+.top-bar-planetario .brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Selector de provincia: debajo de la barra, a la derecha, a la altura
    de las leyendas de la derecha. */
 #pl-province-bar {
