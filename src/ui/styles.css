@@ -249,6 +249,14 @@ a.brand:hover,
   text-decoration: none !important;
 }
 
+/* Retorno "SunSystem" centrado en los paneles de Estadísticas y Luna,
+   manteniendo la línea estética del resto de secciones. */
+#stats-header a.brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .btn-hud:hover .ico {
   opacity: 1;
 }
