@@ -380,6 +380,10 @@ function showConstellation(name: string): void {
       svgEl.style.display = 'block';
       svgEl.style.touchAction = 'none';
       svgEl.classList.add('editable');
+      // El stage adopta el aspect-ratio real del viewBox de la carta, para
+      // que ninguna estrella quede fuera del área visible (antes el
+      // aspect-ratio fijo 760/280 recortaba las cartas altas como Cruz).
+      stage.style.aspectRatio = `${vbW} / ${vbH}`;
       bindNodeEditor(svgEl, stage, name, vbW, vbH);
       // aplicar edición guardada (expand + posiciones)
       const edit = loadEdit(name);
