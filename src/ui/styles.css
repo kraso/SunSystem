@@ -1641,3 +1641,133 @@ html, body {
   color: #88ffcc;
   font-size: 0.66rem;
 }
+
+/* ═══════════ Misiones ═══════════ */
+#missions-layout {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+}
+.missions-col {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: rgba(8, 12, 22, 0.6);
+  border-right: 1px solid rgba(120, 150, 220, 0.15);
+}
+.missions-search {
+  flex: 0 0 auto;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(120, 150, 220, 0.12);
+}
+#missions-search {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(120, 150, 220, 0.25);
+  background: #0a0c16;
+  color: #e8eefc;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+#missions-search:focus {
+  outline: none;
+  border-color: #5b8cff;
+  box-shadow: 0 0 0 2px rgba(91, 140, 255, 0.25);
+}
+.mission-item {
+  padding: 11px 14px;
+  border-bottom: 1px solid rgba(120, 150, 220, 0.08);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.mission-item:hover {
+  background: rgba(91, 140, 255, 0.1);
+}
+.mission-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.mission-date {
+  font-size: 0.72rem;
+  color: #9fb0d0;
+}
+.mission-name {
+  font-size: 0.92rem;
+  color: #eaf1ff;
+  margin: 3px 0 2px;
+}
+.mission-meta {
+  font-size: 0.7rem;
+  color: #7c8db0;
+}
+.mission-status {
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.st-success { background: rgba(80, 220, 140, 0.18); color: #6cf0a8; }
+.st-failure { background: rgba(255, 90, 90, 0.18); color: #ff8a8a; }
+.st-partial { background: rgba(255, 190, 90, 0.18); color: #ffcf7a; }
+
+#missions-col-center {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 22px 28px;
+}
+#mission-empty {
+  color: #8da0c4;
+  margin-top: 40px;
+  text-align: center;
+}
+#mission-empty p { margin: 6px 0; }
+#mission-detail h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.mission-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.mission-tag {
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(120, 150, 220, 0.12);
+  color: #b9c8e8;
+}
+.mission-field {
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.mf-label {
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6f82a8;
+}
+.mf-value {
+  font-size: 0.88rem;
+  color: #e6edfb;
+  line-height: 1.45;
+}
+.mission-ref {
+  font-size: 0.72rem;
+  color: #7c8db0;
+}
+

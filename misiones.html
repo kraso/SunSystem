@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SunSystem — Misiones</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" />
+  <link rel="stylesheet" href="/src/ui/styles.css" />
+</head>
+<body>
+  <!-- HUD -->
+  <div id="top-bar">
+    <span id="logo">🚀 Misiones</span>
+    <a id="back-link" class="btn-hud" href="/index.html" title="Volver a SunSystem">← SunSystem</a>
+  </div>
+
+  <div id="missions-layout">
+    <!-- Izquierda: lista de misiones + buscador -->
+    <aside id="missions-col-left" class="missions-col">
+      <div class="col-head">
+        <span>Misiones espaciales</span>
+      </div>
+      <div class="missions-search">
+        <input type="text" id="missions-search" placeholder="Buscar misión, agencia, astronauta…" autocomplete="off" />
+      </div>
+      <div id="missions-list" class="col-list"></div>
+    </aside>
+
+    <!-- Centro/derecha: detalle de la misión -->
+    <main id="missions-col-center">
+      <div id="mission-empty">
+        <p>Selecciona una misión de la lista para ver su ficha completa.</p>
+        <p class="hint">Usa el buscador para localizar una misión por nombre, agencia o tripulante.</p>
+      </div>
+      <div id="mission-detail" style="display:none;"></div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/misiones-app.ts"></script>
+</body>
+</html>
