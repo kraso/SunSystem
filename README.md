@@ -155,5 +155,5 @@ Sin texturas, los planetas se muestran con colores sólidos (funcionalidad compl
 MIT
 
 <div style="text-align: left">
-  <img src="assets/textures/sun.ico" width="350" height="350" >
+  <img src="assets/textures/sun.png" width="350" height="350" >
 </div>
