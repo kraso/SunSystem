@@ -2,6 +2,7 @@ import constInfo from './data/constellation-info.json';
 import constellationsData from './data/constellations.json';
 import starsData from './data/stars.json';
 import type { ConstellationData, StarData } from './core/types';
+import './ui/win-controls';
 
 const rawInfo = constInfo as unknown as Record<string, {
   slug?: string;

@@ -1,4 +1,5 @@
 import missionsData from './data/missions.json';
+import './ui/win-controls';
 
 interface Mission {
   id: string;

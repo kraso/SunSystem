@@ -13,6 +13,8 @@ import type {
   ProvinceData,
 } from './core/types';
 
+import './ui/win-controls';
+
 const app = document.getElementById('app')!;
 const renderer = createRenderer(app);
 

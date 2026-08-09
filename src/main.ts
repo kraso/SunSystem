@@ -13,6 +13,7 @@ import { MoonPanel } from './ui/moon-panel';
 import { ControlsLegend } from './ui/controls-legend';
 import celestialBodiesData from './data/celestial-bodies.json';
 import type { CelestialBodyData } from './core/types';
+import './ui/win-controls';
 
 // ─── Bootstrap ────────────────────────────────────────────────────────
 

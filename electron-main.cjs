@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
 // Evita múltiples instancias
@@ -9,13 +9,14 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 1280,
     height: 800,
-    minWidth: 800,
+    minWidth: 960,
     minHeight: 600,
     backgroundColor: '#05060c',
     title: 'SunSystem',
     icon: path.join(__dirname, 'assets', 'textures', 'sun.ico'),
+    titleBarStyle: 'hidden',
     webPreferences: {
-      preload: path.join(__dirname, 'electron-preload.js'),
+      preload: path.join(__dirname, 'electron-preload.cjs'),
       contextIsolation: true,
       nodeIntegration: false,
     },
@@ -26,6 +27,14 @@ function createWindow() {
 
   // Sin menú para que parezca app nativa
   win.setMenuBarVisibility(false);
+
+  // Controles de ventana propios (botones en la UI de la app)
+  ipcMain.on('window-minimize', () => win.minimize());
+  ipcMain.on('window-toggle-maximize', () => {
+    if (win.isMaximized()) win.unmaximize();
+    else win.maximize();
+  });
+  ipcMain.on('window-close', () => win.close());
 
   win.on('closed', () => {
     // noop
