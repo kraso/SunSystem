@@ -24,10 +24,12 @@ CONS_PATH = os.path.join(ROOT, "src", "data", "constellations.json")
 V1 = os.path.join(ROOT, "assets", "constellation-photos")
 V2 = os.path.join(ROOT, "assets", "constellation-photos-v2")
 
-# Las 10 que faltaban por mejorar
+# Las 10 que faltaban por mejorar + 2 que la astrofoto no sirvio (Apus subexpuesta,
+# Cisne trajo un mapa line-art). El survey DSS2 garantiza campo estelar real.
 TARGETS = [
     "Capricornio", "Delphinus", "Hydrus", "Indus", "Leo Minor",
     "Mensa", "Microscopium", "Octans", "Pictor", "Triángulo Austral",
+    "Apus", "Cisne",
 ]
 
 _UNACCENT = {
