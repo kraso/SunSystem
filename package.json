@@ -10,7 +10,10 @@
     "test": "node ./node_modules/vitest/vitest.mjs run",
     "test:watch": "node ./node_modules/vitest/vitest.mjs",
     "lint": "node ./node_modules/typescript/bin/tsc --noEmit",
-    "lint:fix": "node ./node_modules/typescript/bin/tsc --noEmit"
+    "lint:fix": "node ./node_modules/typescript/bin/tsc --noEmit",
+    "dist": "npm run build",
+    "pack": "electron-builder --dir",
+    "dist:win": "npm run build && electron-builder --win nsis"
   },
   "dependencies": {
     "lil-gui": "^0.19.2",
@@ -18,9 +21,42 @@
   },
   "devDependencies": {
     "@types/three": "^0.185.1",
+    "electron": "^43.3.0",
+    "electron-builder": "^26.15.3",
     "typescript": "^5.5.0",
     "vite": "^5.4.0",
     "vitest": "^2.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "build": {
+    "appId": "com.kraso.sunsystem",
+    "productName": "SunSystem",
+    "copyright": "Copyright © 2026",
+    "files": [
+      "dist/**/*",
+      "assets/constellation-charts/**/*",
+      "assets/constellation-photos/**/*",
+      "assets/mission-photos/**/*",
+      "assets/textures/**/*",
+      "assets/videos/**/*",
+      "electron-main.cjs",
+      "electron-preload.cjs",
+      "package.json"
+    ],
+    "extraMetadata": {
+      "main": "electron-main.cjs"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/textures/sun.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "SunSystem"
+    }
+  }
 }

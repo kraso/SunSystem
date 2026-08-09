@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  // Rutas relativas para que el build funcione tanto en el servidor de
+  // desarrollo como empaquetado en Electron (loadFile -> file://).
+  base: './',
   root: '.',
   publicDir: 'assets',
   build: {
