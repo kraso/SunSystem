@@ -115,8 +115,13 @@ html, body {
   margin-right: 0;
 }
 
-.top-bar-planetario #province-select {
-  margin-left: auto;
+/* Selector de provincia: debajo de la barra, a la derecha, a la altura
+   de las leyendas de la derecha. */
+#pl-province-bar {
+  position: fixed;
+  top: 56px;
+  right: 16px;
+  z-index: 20;
 }
 
 #logo {
