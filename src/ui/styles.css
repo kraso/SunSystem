@@ -1849,3 +1849,42 @@ a.brand:hover,
   color: #7dc0ff;
 }
 
+/* Página de licencia (reutiliza el layout de Acerca De) */
+.license-card {
+  max-width: 720px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  width: 100%;
+  background: rgba(10, 12, 22, 0.86);
+  border: 1px solid rgba(120, 150, 220, 0.28);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 32px 36px;
+  color: rgba(225, 230, 248, 0.94);
+  font-family: 'Audiowide', 'Segoe UI', system-ui, sans-serif;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+.license-card h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.license-text {
+  margin-top: 20px;
+  padding: 18px 20px;
+  background: rgba(4, 6, 12, 0.6);
+  border: 1px solid rgba(120, 150, 220, 0.18);
+  border-radius: 10px;
+  font-family: 'Segoe UI', Consolas, 'Courier New', monospace;
+  font-size: 0.8rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  color: rgba(220, 225, 245, 0.88);
+  text-align: left;
+}
+

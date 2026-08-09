@@ -15,6 +15,8 @@ export default defineConfig({
         planetario: 'planetario.html',
         constelaciones: 'constelaciones.html',
         misiones: 'misiones.html',
+        acercade: 'acercade.html',
+        licencia: 'licencia.html',
       },
     },
   },
