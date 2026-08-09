@@ -9,7 +9,7 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 1280,
     height: 800,
-    minWidth: 960,
+    minWidth: 1424,
     minHeight: 600,
     backgroundColor: '#05060c',
     title: 'SunSystem',
