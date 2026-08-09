@@ -51,10 +51,10 @@ html, body {
 }
 
 /* Grupo de navegación (Enfocar + botones de sección): fijado a la
-   derecha de la barra, con espacio para los controles de ventana. */
+   derecha de la barra, dejando espacio para los controles de ventana. */
 .top-bar-nav {
   position: absolute;
-  right: 100px;
+  right: 140px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
