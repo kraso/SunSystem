@@ -5,4 +5,15 @@
 <circle class="star" cx="252.9" cy="106.7" r="4.2" fill="#ffffff" data-name="HIP 117452" data-meta="mag 4.59" data-vid="117452"/>
 <circle class="star" cx="59.6" cy="143.8" r="4.4" fill="#ffd699" data-name="HIP 115102" data-meta="mag 4.41" data-vid="115102"/>
 <circle class="star" cx="150.5" cy="188.3" r="4.4" fill="#cfe0ff" data-name="HIP 116231" data-meta="mag 4.38" data-vid="116231"/>
+<circle class="star" cx="339.0" cy="120.1" r="4.0" fill="#cfe0ff" data-name="HIP 183" data-meta="mag 5.04" data-vid="183"/>
+<circle class="star" cx="384.1" cy="105.5" r="3.7" fill="#ffffff" data-name="HIP 761" data-meta="mag 5.42" data-vid="761"/>
+<circle class="star" cx="398.3" cy="103.9" r="3.8" fill="#ffd699" data-name="HIP 930" data-meta="mag 5.41" data-vid="930"/>
+<circle class="star" cx="399.4" cy="165.7" r="3.9" fill="#ffffff" data-name="HIP 950" data-meta="mag 5.24" data-vid="950"/>
+<circle class="star" cx="462.2" cy="113.9" r="3.9" fill="#ffd699" data-name="HIP 1708" data-meta="mag 5.18" data-vid="1708"/>
+<circle class="star" cx="503.4" cy="147.8" r="4.1" fill="#ffb366" data-name="HIP 2210" data-meta="mag 4.86" data-vid="2210"/>
+<circle class="star" cx="725.0" cy="135.5" r="3.7" fill="#ffffff" data-name="HIP 4852" data-meta="mag 5.5" data-vid="4852"/>
+<circle class="star" cx="920.8" cy="180.3" r="3.7" fill="#ffd699" data-name="HIP 7213" data-meta="mag 5.49" data-vid="7213"/>
+<circle class="star" cx="979.9" cy="142.0" r="3.9" fill="#ffd699" data-name="HIP 7955" data-meta="mag 5.25" data-vid="7955"/>
+<circle class="star" cx="1002.4" cy="80.8" r="3.8" fill="#ffffff" data-name="HIP 8209" data-meta="mag 5.29" data-vid="8209"/>
+<circle class="star" cx="199.7" cy="139.9" r="3.8" fill="#fff2cc" data-name="HIP 116820" data-meta="mag 5.3" data-vid="116820"/>
 </svg>

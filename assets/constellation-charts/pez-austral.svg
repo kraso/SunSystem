@@ -1,15 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="280" fill="#05060c"/>
-<polyline class="fig-line" points="551.1,107.4 701.3,135.5 686.2,167.3 656.0,171.0 470.2,165.2 265.8,172.2 58.7,172.6 83.3,149.4 265.8,172.2 551.1,107.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="111954,113368,113246,112948,111188,109285,107380,-900027,109285,111954"/>
+<polyline class="fig-line" points="551.1,107.4 701.3,135.5 686.2,167.3 656.0,171.0 470.2,165.2 265.8,172.2 58.7,172.6 83.3,149.4 265.8,172.2 551.1,107.4" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="111954,113368,113246,112948,111188,109285,107380,107608,109285,111954"/>
 <circle class="star" cx="551.1" cy="107.4" r="4.5" fill="#cfe0ff" data-name="HIP 111954" data-meta="mag 4.18" data-vid="111954"/>
-<circle class="star" cx="701.3" cy="135.5" r="6.3" fill="#ffffff" data-name="HIP 113368" data-meta="mag 1.17" data-vid="113368"/>
+<circle class="star" cx="701.3" cy="135.5" r="6.3" fill="#ffffff" data-name="Fomalhaut" data-meta="mag 1.17" data-vid="113368"/>
+<text class="star-label" x="711.6" y="139.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="113368">Fomalhaut</text>
 <circle class="star" cx="686.2" cy="167.3" r="4.5" fill="#fff2cc" data-name="HIP 113246" data-meta="mag 4.2" data-vid="113246"/>
 <circle class="star" cx="656.0" cy="171.0" r="4.3" fill="#cfe0ff" data-name="HIP 112948" data-meta="mag 4.46" data-vid="112948"/>
 <circle class="star" cx="470.2" cy="165.2" r="4.4" fill="#ffffff" data-name="HIP 111188" data-meta="mag 4.29" data-vid="111188"/>
 <circle class="star" cx="265.8" cy="172.2" r="4.3" fill="#ffffff" data-name="HIP 109285" data-meta="mag 4.5" data-vid="109285"/>
 <circle class="star" cx="58.7" cy="172.6" r="4.4" fill="#cfe0ff" data-name="HIP 107380" data-meta="mag 4.35" data-vid="107380"/>
-<circle class="star" cx="83.3" cy="149.4" r="4.3" fill="#fff2cc" data-name="HIP -900027" data-meta="mag 4.5" data-vid="-900027"/>
-<circle class="star" cx="701.2" cy="135.6" r="4.6" fill="#ffd699" data-name="Fomalhaut" data-meta="mag 4.02" data-vid="93429"/>
-<text class="star-label" x="709.8" y="139.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="93429">Fomalhaut</text>
+<circle class="star" cx="83.3" cy="149.4" r="4.0" fill="#ffffff" data-name="HIP 107608" data-meta="mag 5.02" data-vid="107608"/>
+<circle class="star" cx="199.1" cy="122.8" r="3.7" fill="#cfe0ff" data-name="HIP 108661" data-meta="mag 5.43" data-vid="108661"/>
+<circle class="star" cx="266.3" cy="183.7" r="4.0" fill="#ffd699" data-name="HIP 109289" data-meta="mag 4.99" data-vid="109289"/>
+<circle class="star" cx="279.5" cy="183.4" r="3.8" fill="#ffffff" data-name="HIP 109404" data-meta="mag 5.37" data-vid="109404"/>
 <circle class="star" cx="281.4" cy="167.4" r="4.0" fill="#ffffff" data-name="HIP 109422" data-meta="mag 4.94" data-vid="109422"/>
+<circle class="star" cx="318.2" cy="115.3" r="3.7" fill="#cfe0ff" data-name="HIP 109789" data-meta="mag 5.45" data-vid="109789"/>
+<circle class="star" cx="753.0" cy="191.4" r="3.9" fill="#ffffff" data-name="HIP 113860" data-meta="mag 5.12" data-vid="113860"/>
 </svg>

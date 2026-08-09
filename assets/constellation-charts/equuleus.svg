@@ -1,7 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 2707" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="2707" fill="#05060c"/>
 <polyline class="fig-line" points="469.9,2575.3 425.9,194.3 290.1,131.7" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="104987,104858,104521"/>
-<circle class="star" cx="469.9" cy="2575.4" r="4.6" fill="#fff2cc" data-name="HIP 104987" data-meta="mag 3.92" data-vid="104987"/>
+<circle class="star" cx="469.9" cy="2575.4" r="4.6" fill="#fff2cc" data-name="Kitalpha" data-meta="mag 3.92" data-vid="104987"/>
+<text class="star-label" x="478.6" y="2579.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="104987">Kitalpha</text>
 <circle class="star" cx="425.9" cy="194.3" r="4.3" fill="#fff2cc" data-name="HIP 104858" data-meta="mag 4.47" data-vid="104858"/>
 <circle class="star" cx="290.1" cy="131.9" r="4.2" fill="#ffffff" data-name="HIP 104521" data-meta="mag 4.7" data-vid="104521"/>
+<circle class="star" cx="-79.4" cy="3052.8" r="3.8" fill="#ffffff" data-name="HIP 103569" data-meta="mag 5.3" data-vid="103569"/>
+<circle class="star" cx="-79.1" cy="3052.3" r="3.9" fill="#ffffff" data-name="HIP 103571" data-meta="mag 5.24" data-vid="103571"/>
+<circle class="star" cx="701.8" cy="1793.2" r="3.9" fill="#ffffff" data-name="HIP 105570" data-meta="mag 5.16" data-vid="105570"/>
 </svg>

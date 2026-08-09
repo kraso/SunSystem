@@ -1,7 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="280" fill="#05060c"/>
 <polyline class="fig-line" points="701.3,120.0 482.8,160.0 58.7,123.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="14879,13147,9677"/>
-<circle class="star" cx="701.3" cy="120.0" r="4.7" fill="#fff2cc" data-name="HIP 14879" data-meta="mag 3.8" data-vid="14879"/>
+<circle class="star" cx="701.3" cy="120.0" r="4.7" fill="#fff2cc" data-name="Dalim" data-meta="mag 3.8" data-vid="14879"/>
+<text class="star-label" x="710.0" y="124.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="14879">Dalim</text>
 <circle class="star" cx="482.7" cy="160.0" r="4.3" fill="#fff2cc" data-name="HIP 13147" data-meta="mag 4.45" data-vid="13147"/>
 <circle class="star" cx="58.7" cy="123.6" r="4.2" fill="#cfe0ff" data-name="HIP 9677" data-meta="mag 4.68" data-vid="9677"/>
+<circle class="star" cx="27.8" cy="131.8" r="3.8" fill="#fff2cc" data-name="HIP 9440" data-meta="mag 5.34" data-vid="9440"/>
+<circle class="star" cx="138.7" cy="140.3" r="3.8" fill="#cfe0ff" data-name="HIP 10320" data-meta="mag 5.27" data-vid="10320"/>
+<circle class="star" cx="230.3" cy="59.3" r="3.9" fill="#fff2cc" data-name="HIP 11072" data-meta="mag 5.19" data-vid="11072"/>
+<circle class="star" cx="282.5" cy="176.5" r="3.9" fill="#ffffff" data-name="HIP 11477" data-meta="mag 5.13" data-vid="11477"/>
+<circle class="star" cx="337.8" cy="111.1" r="4.0" fill="#cfe0ff" data-name="HIP 11918" data-meta="mag 4.96" data-vid="11918"/>
+<circle class="star" cx="490.5" cy="107.7" r="3.8" fill="#ffffff" data-name="HIP 13202" data-meta="mag 5.39" data-vid="13202"/>
+<circle class="star" cx="497.8" cy="198.4" r="3.7" fill="#ffd699" data-name="HIP 13265" data-meta="mag 5.48" data-vid="13265"/>
+<circle class="star" cx="988.2" cy="154.6" r="4.0" fill="#cfe0ff" data-name="HIP 17304" data-meta="mag 4.99" data-vid="17304"/>
 </svg>

@@ -1,9 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 961" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="961" fill="#05060c"/>
 <polyline class="fig-line" points="126.7,893.9 160.1,681.6 270.9,170.5 545.1,67.1 633.3,759.8 160.1,681.6" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="59199,59316,59803,60965,61359,59316"/>
-<circle class="star" cx="126.7" cy="893.9" r="4.6" fill="#ffffff" data-name="HIP 59199" data-meta="mag 4.02" data-vid="59199"/>
+<circle class="star" cx="126.7" cy="893.9" r="4.6" fill="#ffffff" data-name="Alchiba" data-meta="mag 4.02" data-vid="59199"/>
+<text class="star-label" x="135.3" y="897.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="59199">Alchiba</text>
 <circle class="star" cx="160.1" cy="681.6" r="5.2" fill="#ffd699" data-name="HIP 59316" data-meta="mag 3.02" data-vid="59316"/>
-<circle class="star" cx="270.9" cy="170.4" r="5.5" fill="#cfe0ff" data-name="HIP 59803" data-meta="mag 2.58" data-vid="59803"/>
-<circle class="star" cx="545.1" cy="67.1" r="5.2" fill="#cfe0ff" data-name="HIP 60965" data-meta="mag 2.94" data-vid="60965"/>
-<circle class="star" cx="633.3" cy="759.8" r="5.4" fill="#fff2cc" data-name="HIP 61359" data-meta="mag 2.65" data-vid="61359"/>
+<circle class="star" cx="270.9" cy="170.4" r="5.5" fill="#cfe0ff" data-name="Gienah" data-meta="mag 2.58" data-vid="59803"/>
+<text class="star-label" x="280.4" y="174.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="59803">Gienah</text>
+<circle class="star" cx="545.1" cy="67.1" r="5.2" fill="#cfe0ff" data-name="Algorab" data-meta="mag 2.94" data-vid="60965"/>
+<text class="star-label" x="554.3" y="71.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="60965">Algorab</text>
+<circle class="star" cx="633.3" cy="759.8" r="5.4" fill="#fff2cc" data-name="Kraz" data-meta="mag 2.65" data-vid="61359"/>
+<text class="star-label" x="642.7" y="763.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="61359">Kraz</text>
+<circle class="star" cx="-20.7" cy="383.6" r="3.8" fill="#cfe0ff" data-name="HIP 58587" data-meta="mag 5.28" data-vid="58587"/>
+<circle class="star" cx="178.4" cy="780.5" r="3.7" fill="#ffffff" data-name="HIP 59394" data-meta="mag 5.45" data-vid="59394"/>
+<circle class="star" cx="363.6" cy="640.9" r="3.9" fill="#cfe0ff" data-name="HIP 60189" data-meta="mag 5.2" data-vid="60189"/>
+<circle class="star" cx="370.8" cy="-229.8" r="3.9" fill="#ffd699" data-name="HIP 60221" data-meta="mag 5.14" data-vid="60221"/>
+<circle class="star" cx="588.1" cy="35.0" r="4.4" fill="#ffffff" data-name="HIP 61174" data-meta="mag 4.3" data-vid="61174"/>
+<circle class="star" cx="767.4" cy="-285.4" r="3.9" fill="#ffffff" data-name="HIP 61910" data-meta="mag 5.17" data-vid="61910"/>
 </svg>

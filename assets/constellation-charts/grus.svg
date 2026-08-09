@@ -4,14 +4,26 @@
 <polyline class="fig-line" points="397.8,294.9 267.2,219.9 176.3,156.9 59.6,80.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="110997,109908,109111,108085"/>
 <circle class="star" cx="700.4" cy="618.1" r="4.5" fill="#fff2cc" data-name="HIP 113638" data-meta="mag 4.11" data-vid="113638"/>
 <circle class="star" cx="582.4" cy="567.9" r="4.9" fill="#ffffff" data-name="HIP 112623" data-meta="mag 3.49" data-vid="112623"/>
-<circle class="star" cx="526.1" cy="413.2" r="5.8" fill="#ffb366" data-name="HIP 112122" data-meta="mag 2.07" data-vid="112122"/>
+<circle class="star" cx="526.1" cy="413.2" r="5.8" fill="#ffb366" data-name="Tiaki" data-meta="mag 2.07" data-vid="112122"/>
+<text class="star-label" x="535.8" y="417.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="112122">Tiaki</text>
 <circle class="star" cx="402.5" cy="303.8" r="4.5" fill="#ffb366" data-name="HIP 111043" data-meta="mag 4.12" data-vid="111043"/>
-<circle class="star" cx="196.5" cy="415.9" r="6.0" fill="#cfe0ff" data-name="HIP 109268" data-meta="mag 1.73" data-vid="109268"/>
+<circle class="star" cx="196.5" cy="415.9" r="6.0" fill="#cfe0ff" data-name="Alnair" data-meta="mag 1.73" data-vid="109268"/>
+<text class="star-label" x="206.5" y="419.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="109268">Alnair</text>
 <circle class="star" cx="397.9" cy="294.9" r="4.6" fill="#ffd699" data-name="HIP 110997" data-meta="mag 3.97" data-vid="110997"/>
 <circle class="star" cx="267.2" cy="219.9" r="4.1" fill="#fff2cc" data-name="HIP 109908" data-meta="mag 4.79" data-vid="109908"/>
 <circle class="star" cx="176.3" cy="157.0" r="4.3" fill="#ffd699" data-name="HIP 109111" data-meta="mag 4.47" data-vid="109111"/>
-<circle class="star" cx="59.6" cy="80.9" r="5.2" fill="#cfe0ff" data-name="HIP 108085" data-meta="mag 3.0" data-vid="108085"/>
-<circle class="star" cx="196.6" cy="415.8" r="5.2" fill="#ffd699" data-name="Alnair" data-meta="mag 3.05" data-vid="95947"/>
-<text class="star-label" x="205.8" y="419.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="95947">Alnair</text>
+<circle class="star" cx="59.6" cy="80.9" r="5.2" fill="#cfe0ff" data-name="Aldhanab" data-meta="mag 3.0" data-vid="108085"/>
+<text class="star-label" x="68.8" y="84.9" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="108085">Aldhanab</text>
+<circle class="star" cx="-149.3" cy="214.1" r="3.8" fill="#ffd699" data-name="HIP 106327" data-meta="mag 5.29" data-vid="106327"/>
+<circle class="star" cx="83.1" cy="77.0" r="3.7" fill="#ffffff" data-name="HIP 108294" data-meta="mag 5.45" data-vid="108294"/>
+<circle class="star" cx="111.0" cy="116.9" r="3.7" fill="#fff2cc" data-name="HIP 108543" data-meta="mag 5.5" data-vid="108543"/>
+<circle class="star" cx="275.1" cy="229.7" r="3.9" fill="#fff2cc" data-name="HIP 109973" data-meta="mag 5.11" data-vid="109973"/>
+<circle class="star" cx="292.5" cy="648.6" r="3.8" fill="#fff2cc" data-name="HIP 110109" data-meta="mag 5.36" data-vid="110109"/>
+<circle class="star" cx="392.0" cy="142.6" r="3.7" fill="#fff2cc" data-name="HIP 110936" data-meta="mag 5.47" data-vid="110936"/>
 <circle class="star" cx="534.0" cy="222.3" r="4.1" fill="#ffd699" data-name="HIP 112203" data-meta="mag 4.84" data-vid="112203"/>
+<circle class="star" cx="554.4" cy="644.1" r="4.1" fill="#ffd699" data-name="HIP 112374" data-meta="mag 4.84" data-vid="112374"/>
+<circle class="star" cx="606.2" cy="143.5" r="3.7" fill="#ffd699" data-name="HIP 112832" data-meta="mag 5.43" data-vid="112832"/>
+<circle class="star" cx="736.5" cy="660.4" r="3.8" fill="#ffd699" data-name="HIP 113957" data-meta="mag 5.37" data-vid="113957"/>
+<circle class="star" cx="757.8" cy="295.8" r="4.4" fill="#ffffff" data-name="HIP 114131" data-meta="mag 4.28" data-vid="114131"/>
+<circle class="star" cx="791.1" cy="356.0" r="4.7" fill="#fff2cc" data-name="HIP 114421" data-meta="mag 3.88" data-vid="114421"/>
 </svg>

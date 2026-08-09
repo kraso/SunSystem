@@ -1,17 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="280" fill="#05060c"/>
-<polyline class="fig-line" points="58.7,148.5 107.6,144.4 138.3,146.7 96.0,144.9 58.7,148.5 164.4,139.6 206.7,134.5 701.3,131.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="75097,77055,79822,76008,75097,82080,85822,11767"/>
-<circle class="star" cx="58.7" cy="148.5" r="5.2" fill="#ffffff" data-name="Kochab" data-meta="mag 3.0" data-vid="75097"/>
-<text class="star-label" x="67.9" y="152.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="75097">Kochab</text>
-<circle class="star" cx="107.6" cy="144.4" r="4.4" fill="#ffffff" data-name="Pherkad" data-meta="mag 4.29" data-vid="77055"/>
-<text class="star-label" x="116.0" y="148.4" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="77055">Pherkad</text>
+<polyline class="fig-line" points="58.7,148.5 107.6,144.4 138.3,146.7 96.0,144.9 58.7,148.5 164.4,139.6 206.7,134.5 701.3,131.5" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="72607,77055,79822,76008,72607,82080,85822,11767"/>
+<circle class="star" cx="58.7" cy="148.5" r="5.8" fill="#ffd699" data-name="Kochab" data-meta="mag 2.07" data-vid="72607"/>
+<text class="star-label" x="68.5" y="152.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="72607">Kochab</text>
+<circle class="star" cx="107.6" cy="144.4" r="4.4" fill="#ffffff" data-name="HIP 77055" data-meta="mag 4.29" data-vid="77055"/>
 <circle class="star" cx="138.3" cy="146.7" r="4.0" fill="#ffffff" data-name="HIP 79822" data-meta="mag 4.95" data-vid="79822"/>
 <circle class="star" cx="96.0" cy="144.9" r="4.0" fill="#ffb366" data-name="HIP 76008" data-meta="mag 5.0" data-vid="76008"/>
 <circle class="star" cx="164.3" cy="139.6" r="4.5" fill="#fff2cc" data-name="HIP 82080" data-meta="mag 4.21" data-vid="82080"/>
-<circle class="star" cx="206.7" cy="134.5" r="4.4" fill="#ffffff" data-name="HIP 85822" data-meta="mag 4.35" data-vid="85822"/>
-<circle class="star" cx="701.3" cy="131.5" r="5.8" fill="#fff2cc" data-name="HIP 11767" data-meta="mag 1.97" data-vid="11767"/>
-<circle class="star" cx="543.2" cy="144.6" r="5.1" fill="#ffd699" data-name="HIP 116727" data-meta="mag 3.21" data-vid="116727"/>
-<circle class="star" cx="350.3" cy="144.5" r="4.4" fill="#cfe0ff" data-name="HIP 99255" data-meta="mag 4.38" data-vid="99255"/>
-<circle class="star" cx="502.0" cy="137.0" r="4.2" fill="#ffd699" data-name="HIP 113116" data-meta="mag 4.7" data-vid="113116"/>
-<circle class="star" cx="495.7" cy="138.4" r="4.1" fill="#ffd699" data-name="HIP 112519" data-meta="mag 4.77" data-vid="112519"/>
+<circle class="star" cx="206.7" cy="134.5" r="4.4" fill="#ffffff" data-name="Yildun" data-meta="mag 4.35" data-vid="85822"/>
+<text class="star-label" x="215.1" y="138.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="85822">Yildun</text>
+<circle class="star" cx="701.3" cy="131.5" r="5.8" fill="#fff2cc" data-name="Polaris" data-meta="mag 1.97" data-vid="11767"/>
+<text class="star-label" x="711.1" y="135.5" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="11767">Polaris</text>
+<circle class="star" cx="-8.7" cy="151.8" r="3.7" fill="#ffd699" data-name="HIP 66435" data-meta="mag 5.5" data-vid="66435"/>
+<circle class="star" cx="20.3" cy="144.7" r="4.1" fill="#ffd699" data-name="HIP 69112" data-meta="mag 4.8" data-vid="69112"/>
+<circle class="star" cx="23.3" cy="153.9" r="3.9" fill="#ffb366" data-name="HIP 69373" data-meta="mag 5.18" data-vid="69373"/>
+<circle class="star" cx="37.5" cy="146.8" r="4.5" fill="#ffd699" data-name="HIP 70692" data-meta="mag 4.25" data-vid="70692"/>
+<circle class="star" cx="65.0" cy="157.8" r="4.2" fill="#ffb366" data-name="HIP 73199" data-meta="mag 4.63" data-vid="73199"/>
+<circle class="star" cx="80.6" cy="156.2" r="3.9" fill="#fff2cc" data-name="HIP 74605" data-meta="mag 5.15" data-vid="74605"/>
+<circle class="star" cx="82.9" cy="151.2" r="4.0" fill="#ffd699" data-name="HIP 74793" data-meta="mag 5.02" data-vid="74793"/>
+<circle class="star" cx="86.2" cy="151.2" r="5.2" fill="#ffffff" data-name="Pherkad" data-meta="mag 3.0" data-vid="75097"/>
+<text class="star-label" x="95.4" y="155.2" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="75097">Pherkad</text>
+<circle class="star" cx="132.1" cy="146.6" r="3.7" fill="#cfe0ff" data-name="HIP 79280" data-meta="mag 5.48" data-vid="79280"/>
 </svg>

@@ -1,8 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 767" font-family="Audiowide, Segoe UI, sans-serif">
 <rect width="760" height="767" fill="#05060c"/>
-<polyline class="fig-line" points="697.7,707.1 62.3,59.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="-900002,36188"/>
-<circle class="star" cx="697.7" cy="707.1" r="4.3" fill="#fff2cc" data-name="HIP -900002" data-meta="mag 4.5" data-vid="-900002"/>
-<circle class="star" cx="62.3" cy="59.8" r="5.3" fill="#cfe0ff" data-name="HIP 36188" data-meta="mag 2.89" data-vid="36188"/>
-<circle class="star" cx="-97.5" cy="8000.6" r="5.5" fill="#cfe0ff" data-name="Procyon" data-meta="mag 2.45" data-vid="35904"/>
-<text class="star-label" x="-87.9" y="8004.6" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="35904">Procyon</text>
+<polyline class="fig-line" points="697.7,707.1 62.3,59.9" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="37279,36188"/>
+<circle class="star" cx="697.5" cy="707.1" r="6.8" fill="#ffffff" data-name="Procyon" data-meta="mag 0.4" data-vid="37279"/>
+<text class="star-label" x="708.3" y="711.1" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="37279">Procyon</text>
+<circle class="star" cx="62.3" cy="59.8" r="5.3" fill="#cfe0ff" data-name="Gomeisa" data-meta="mag 2.89" data-vid="36188"/>
+<text class="star-label" x="71.6" y="63.8" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="36188">Gomeisa</text>
+<circle class="star" cx="-607.8" cy="1153.6" r="3.8" fill="#ffd699" data-name="HIP 34987" data-meta="mag 5.36" data-vid="34987"/>
+<circle class="star" cx="-51.7" cy="-654.2" r="3.8" fill="#ffffff" data-name="HIP 35987" data-meta="mag 5.37" data-vid="35987"/>
+<circle class="star" cx="-16.3" cy="-148.6" r="4.0" fill="#fff2cc" data-name="HIP 36041" data-meta="mag 4.99" data-vid="36041"/>
+<circle class="star" cx="108.5" cy="344.4" r="3.9" fill="#ffffff" data-name="HIP 36265" data-meta="mag 5.22" data-vid="36265"/>
+<circle class="star" cx="115.2" cy="-74.6" r="4.4" fill="#ffd699" data-name="HIP 36284" data-meta="mag 4.33" data-vid="36284"/>
+<circle class="star" cx="200.6" cy="-725.4" r="4.3" fill="#ffd699" data-name="HIP 36425" data-meta="mag 4.55" data-vid="36425"/>
+<circle class="star" cx="321.0" cy="1406.4" r="3.9" fill="#ffffff" data-name="HIP 36641" data-meta="mag 5.24" data-vid="36641"/>
+<circle class="star" cx="1061.8" cy="-463.8" r="3.9" fill="#ffffff" data-name="HIP 37921" data-meta="mag 5.25" data-vid="37921"/>
+<circle class="star" cx="1345.7" cy="1437.6" r="3.9" fill="#cfe0ff" data-name="HIP 38373" data-meta="mag 5.12" data-vid="38373"/>
+<circle class="star" cx="1693.1" cy="1340.9" r="3.8" fill="#fff2cc" data-name="HIP 38962" data-meta="mag 5.3" data-vid="38962"/>
+<circle class="star" cx="1898.1" cy="1317.7" r="4.4" fill="#ffd699" data-name="HIP 39311" data-meta="mag 4.39" data-vid="39311"/>
 </svg>

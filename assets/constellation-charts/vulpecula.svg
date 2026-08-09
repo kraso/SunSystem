@@ -2,12 +2,31 @@
 <rect width="760" height="328" fill="#05060c"/>
 <polyline class="fig-line" points="59.6,215.9 194.0,163.0 460.4,172.4 542.6,113.0 700.4,112.1" fill="none" stroke="#a6ccff" stroke-width="2.4" stroke-opacity="0.95" stroke-linejoin="round" data-seq="94703,95771,97886,98543,99874"/>
 <circle class="star" cx="59.6" cy="215.9" r="4.1" fill="#cfe0ff" data-name="HIP 94703" data-meta="mag 4.76" data-vid="94703"/>
-<circle class="star" cx="194.0" cy="163.0" r="4.3" fill="#ffb366" data-name="HIP 95771" data-meta="mag 4.44" data-vid="95771"/>
+<circle class="star" cx="194.0" cy="163.0" r="4.3" fill="#ffb366" data-name="Anser" data-meta="mag 4.44" data-vid="95771"/>
+<text class="star-label" x="202.3" y="167.0" fill="#cfe0ff" font-size="13" font-weight="bold" data-vid="95771">Anser</text>
 <circle class="star" cx="460.4" cy="172.4" r="4.3" fill="#cfe0ff" data-name="HIP 97886" data-meta="mag 4.57" data-vid="97886"/>
 <circle class="star" cx="542.6" cy="113.0" r="4.2" fill="#ffffff" data-name="HIP 98543" data-meta="mag 4.66" data-vid="98543"/>
 <circle class="star" cx="700.4" cy="112.1" r="4.3" fill="#ffd699" data-name="HIP 99874" data-meta="mag 4.5" data-vid="99874"/>
-<circle class="star" cx="695.0" cy="148.0" r="4.1" fill="#cfe0ff" data-name="HIP 99824" data-meta="mag 4.79" data-vid="99824"/>
+<circle class="star" cx="75.9" cy="189.5" r="3.7" fill="#ffffff" data-name="HIP 94827" data-meta="mag 5.46" data-vid="94827"/>
+<circle class="star" cx="131.0" cy="137.2" r="3.9" fill="#cfe0ff" data-name="HIP 95260" data-meta="mag 5.22" data-vid="95260"/>
+<circle class="star" cx="159.3" cy="241.7" r="3.9" fill="#fff2cc" data-name="HIP 95498" data-meta="mag 5.14" data-vid="95498"/>
+<circle class="star" cx="257.2" cy="242.1" r="4.0" fill="#cfe0ff" data-name="HIP 96275" data-meta="mag 5.0" data-vid="96275"/>
+<circle class="star" cx="355.5" cy="145.1" r="3.7" fill="#fff2cc" data-name="HIP 97077" data-meta="mag 5.5" data-vid="97077"/>
 <circle class="star" cx="434.6" cy="196.2" r="4.1" fill="#cfe0ff" data-name="HIP 97679" data-meta="mag 4.9" data-vid="97679"/>
+<circle class="star" cx="552.5" cy="158.6" r="3.9" fill="#ffffff" data-name="HIP 98636" data-meta="mag 5.23" data-vid="98636"/>
+<circle class="star" cx="604.8" cy="180.0" r="4.0" fill="#cfe0ff" data-name="HIP 99080" data-meta="mag 5.08" data-vid="99080"/>
+<circle class="star" cx="684.0" cy="97.8" r="3.9" fill="#ffffff" data-name="HIP 99738" data-meta="mag 5.19" data-vid="99738"/>
+<circle class="star" cx="695.0" cy="148.0" r="4.1" fill="#cfe0ff" data-name="HIP 99824" data-meta="mag 4.79" data-vid="99824"/>
+<circle class="star" cx="697.5" cy="181.7" r="3.9" fill="#ffd699" data-name="HIP 99853" data-meta="mag 5.18" data-vid="99853"/>
+<circle class="star" cx="711.3" cy="162.9" r="3.8" fill="#fff2cc" data-name="HIP 99951" data-meta="mag 5.3" data-vid="99951"/>
+<circle class="star" cx="768.0" cy="166.5" r="3.7" fill="#cfe0ff" data-name="HIP 100435" data-meta="mag 5.5" data-vid="100435"/>
+<circle class="star" cx="945.2" cy="219.0" r="4.1" fill="#cfe0ff" data-name="HIP 101867" data-meta="mag 4.81" data-vid="101867"/>
+<circle class="star" cx="945.3" cy="171.9" r="4.0" fill="#cfe0ff" data-name="HIP 101868" data-meta="mag 5.06" data-vid="101868"/>
+<circle class="star" cx="1013.5" cy="153.2" r="4.0" fill="#ffd699" data-name="HIP 102388" data-meta="mag 4.92" data-vid="102388"/>
+<circle class="star" cx="1091.6" cy="123.7" r="4.3" fill="#fff2cc" data-name="HIP 103004" data-meta="mag 4.56" data-vid="103004"/>
+<circle class="star" cx="1117.8" cy="108.1" r="4.0" fill="#ffd699" data-name="HIP 103200" data-meta="mag 5.03" data-vid="103200"/>
+<circle class="star" cx="1157.7" cy="200.8" r="3.8" fill="#ffd699" data-name="HIP 103511" data-meta="mag 5.3" data-vid="103511"/>
+<circle class="star" cx="1474.0" cy="115.4" r="3.8" fill="#ffffff" data-name="HIP 105966" data-meta="mag 5.39" data-vid="105966"/>
 <circle class="star" cx="526.4" cy="194.5" r="9" fill="#ff8ce0" fill-opacity="0.15" data-name="M27" data-meta="pn"/>
 <circle cx="526.4" cy="194.5" r="3.5" fill="#ff8ce0" fill-opacity="0.5"/>
 </svg>

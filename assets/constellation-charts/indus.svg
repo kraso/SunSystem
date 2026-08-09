@@ -6,4 +6,9 @@
 <circle class="star" cx="197.1" cy="302.1" r="4.8" fill="#ffd699" data-name="HIP 103227" data-meta="mag 3.67" data-vid="103227"/>
 <circle class="star" cx="700.4" cy="245.6" r="4.4" fill="#ffffff" data-name="HIP 108431" data-meta="mag 4.4" data-vid="108431"/>
 <circle class="star" cx="396.9" cy="220.4" r="4.4" fill="#ffffff" data-name="HIP 105319" data-meta="mag 4.39" data-vid="105319"/>
+<circle class="star" cx="154.6" cy="102.6" r="4.1" fill="#ffd699" data-name="HIP 102790" data-meta="mag 4.9" data-vid="102790"/>
+<circle class="star" cx="170.7" cy="190.4" r="4.0" fill="#ffd699" data-name="HIP 102950" data-meta="mag 5.06" data-vid="102950"/>
+<circle class="star" cx="280.3" cy="241.3" r="3.9" fill="#ffd699" data-name="HIP 104085" data-meta="mag 5.17" data-vid="104085"/>
+<circle class="star" cx="743.5" cy="274.9" r="4.2" fill="#ffd699" data-name="HIP 108870" data-meta="mag 4.69" data-vid="108870"/>
+<circle class="star" cx="913.0" cy="527.3" r="3.8" fill="#fff2cc" data-name="HIP 110618" data-meta="mag 5.28" data-vid="110618"/>
 </svg>
