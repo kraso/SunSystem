@@ -429,13 +429,31 @@ function showObject(id: string): void {
 }
 
 // ─── Card de estrella ───────────────────────────────────────────────
-function showStar(hip: number): void {
+// Si la estrella pertenece a una constelación, se abre directamente la
+// carta editable de esa constelación (con la estrella resaltada) en lugar
+// de una ficha de contexto de solo lectura, para que sea arrastrable como
+// el resto de cartas. Solo se usa la ficha de contexto si no tiene
+// constelación asociada.
+function showStar(hip: number, highlight = true): void {
   const s = stars.find((x) => x.hip === hip);
   if (!s) return;
+  const con = (s as unknown as { con?: string }).con ?? null;
+  if (con && rawInfo[con]) {
+    showConstellation(con);
+    if (highlight) {
+      const svg = document.querySelector<SVGSVGElement>('.chart-stage svg.editable');
+      const c = svg?.querySelector<SVGCircleElement>(`circle.star[data-vid="${hip}"]`);
+      if (c) {
+        c.classList.add('star-focus');
+        c.addEventListener('mouseleave', () => c.classList.remove('star-focus'), { once: true });
+      }
+    }
+    return;
+  }
+  // estrella sin constelación: ficha de contexto (solo lectura)
   empty.style.display = 'none';
   content.style.display = 'block';
 
-  const con = (s as unknown as { con?: string }).con ?? null;
   const bv = s.bv ? parseFloat(s.bv) : null;
   const nearby = stars.filter((x) =>
     Math.abs(x.ra - s.ra) < 6 && Math.abs(x.dec - s.dec) < 6 && x.hip !== hip).slice(0, 400);

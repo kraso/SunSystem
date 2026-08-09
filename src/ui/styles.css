@@ -1459,6 +1459,12 @@ html, body {
   -webkit-user-select: none;
 }
 /* Halo invisible amplio para agarrar la estrella más fácil */
+.const-svg-inline svg.editable circle.star.star-focus {
+  stroke: #ffd54a;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 8px rgba(255, 213, 74, 0.9));
+}
+
 .const-svg-inline svg.editable circle.star {
   cursor: grab;
   stroke: rgba(255,255,255,0.35);
