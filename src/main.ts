@@ -56,8 +56,8 @@ canvas.addEventListener('click', (e: MouseEvent) => {
   }
 });
 
-document.getElementById('toggle-info-panel')?.addEventListener('click', () => {
-  infoPanel.toggle();
+document.getElementById('info-close')?.addEventListener('click', () => {
+  infoPanel.hide();
 });
 
 document.getElementById('btn-stats')?.addEventListener('click', () => {

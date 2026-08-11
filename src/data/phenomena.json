@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "supernova",
+    "section": "catastrofes",
+    "title": "Supernova",
+    "icon": "💥",
+    "summary": "La explosión catastrófica con la que muere una estrella masiva (o una enana blanca que rebasa su límite). En semanas libera más energía que el Sol en toda su vida.",
+    "image": "supernova-crab.jpg",
+    "tags": ["muerte estelar", "colapso", "ondas de choque"],
+    "facts": [
+      { "label": "Magnitud pico", "value": "hasta −19 (más brillante que una galaxia entera)" },
+      { "label": "Energía liberada", "value": "≈ 10⁴⁴ J en la explosión" },
+      { "label": "Restos típicos", "value": "estrella de neutrones o agujero negro" }
+    ],
+    "content": [
+      {
+        "heading": "Qué es",
+        "body": "Una supernova es la deflagración terminal de una estrella. No es un astro, sino un acontecimiento: durante semanas el núcleo colapsa y la capa externa se expulsa a decenas de miles de km/s. Por unos días puede superar en brillo a toda la galaxia que la contiene y luego se apaga dejando una nebulosa de restos."
+      },
+      {
+        "heading": "Cómo se forma",
+        "body": "Hay dos vías principales. En el tipo II, una estrella con más de ~8 masas solares agota su combustible; al colapsar el núcleo de hierro, las capas externas caen y rebotan en una onda de choque que las lanza al espacio. En el tipo Ia, una enana blanca en un sistema binario va robando materia hasta sobrepasar el límite de Chandrasekhar (1,44 M☉) y se incendia por fusión de carbono de golpe. La vía Ia es tan uniforme que sirve de candela estándar para medir distancias cósmicas."
+      },
+      {
+        "heading": "Cada cuánto sucede",
+        "body": "En una galaxia como la Vía Láctea se espera una supernova cada 50–100 años; la última vista a simple vista fue SN 1987A, en la Gran Nube de Magallanes, en 1987. En el universo observable ocurren varias cada segundo. La mayoría quedan ocultas tras el polvo de su propia galaxia."
+      },
+      {
+        "heading": "Posibles predicciones",
+        "body": "Se vigilan candidatas cercanas como Betelgeuse ( Orión), una supergigante roja que podría estallar en cualquier momento entre hoy y 100.000 años. Una supernova a menos de ~50 años luz bañaría la Tierra de radiación intensa; ninguna estrella masiva cercana presenta ese riesgo inmediato. El rastro de una supernova enriquece el medio interestelar con hierro, oro y elementos pesados: gran parte de los átomos de tu cuerpo se forjaron en una."
+      }
+    ]
+  },
+  {
+    "slug": "agujero-negro",
+    "section": "catastrofes",
+    "title": "Agujero negro",
+    "icon": "🕳️",
+    "summary": "Una región del espacio donde la gravedad es tan intensa que nada —ni la luz— escapa. No es un agujero en el suelo, sino una curvatura extrema del espacio-tiempo.",
+    "image": "blackhole-m87.jpg",
+    "tags": ["singularidad", "horizonte de sucesos", "gravedad extrema"],
+    "facts": [
+      { "label": "Radio de Schwarzschild (3 M☉)", "value": "≈ 9 km" },
+      { "label": "Masa mínima estelar", "value": "≈ 2–3 M☉ (límite TOV)" },
+      { "label": "Primera imagen", "value": "M87*, 2019 (colaboración EHT)" }
+    ],
+    "content": [
+      {
+        "heading": "Qué es",
+        "body": "Un agujero negro se forma cuando tanta masa se concentra en tan poco volumen que la velocidad de escape supera la de la luz. El borde a partir del cual nada retorna se llama horizonte de sucesos. Por dentro, la teoría predice una singularidad, un punto de densidad infinita donde la física conocida se rompe."
+      },
+      {
+        "heading": "Cómo se forma",
+        "body": "Cuando una estrella masiva agota su combustible, la presión de degeneración de neutrones es la última barrera. Si la masa supera el límite de Tolman-Oppenheimer-Volkoff (entre 2 y 3 masas solares), ni eso basta: el núcleo se colapsa sin freno. También pueden fusionarse dos agujeros negros (como el primer evento de ondas gravitatorias, GW150914) o acrecer materia hasta crecer. Los agujeros supermasivos de los centros galácticos, de millones de masas solares, tienen un origen aún debatido."
+      },
+      {
+        "heading": "Cada cuánto sucede",
+        "body": "La formación de agujeros negros estelares acompaña a las supernovas de tipo II masivas, así que a escala cósmica son frecuentes. En la Vía Láctea hay decenas de millones; el central, Sagitario A*, tiene ≈ 4,3 millones de masas solares. Las fusiones detectables por ondas gravitatorias ocurren varias veces al año en el universo observable y LIGO/Virgo ya han registrado decenas."
+      },
+      {
+        "heading": "Posibles predicciones",
+        "body": "No se puede predecir cuándo colapsará una estrella concreta salvo monitorizando su masa y evolución. Si el Sol (demasiado ligero) se volviera agujero negro, la Tierra orbitaría igual pero a oscuras y congelada. Lo que sí podemos predecir es la señal de ondas gravitatorias de una fusión inminente observando la espiral de la pareja segundos antes."
+      }
+    ]
+  },
+  {
+    "slug": "estrella-neutrones",
+    "section": "catastrofes",
+    "title": "Estrella de neutrones",
+    "icon": "⚛️",
+    "summary": "El cadáver ultradenso de una estrella masiva: una bola de neutrones del tamaño de una ciudad con un campo magnético billones de veces más intenso que el terrestre.",
+    "image": "neutron-star-crab.jpg",
+    "tags": ["púlsar", "magnetar", "degeneración"],
+    "facts": [
+      { "label": "Radio", "value": "≈ 10–12 km" },
+      { "label": "Densidad", "value": "≈ 10¹⁷ kg/m³ (una cucharada pesa montañas)" },
+      { "label": "Velocidad de giro", "value": "hasta 716 Hz (716 vueltas/s)" }
+    ],
+    "content": [
+      {
+        "heading": "Qué es",
+        "body": "Cuando el núcleo de una supernova no llega a colapsar en agujero negro, los electrones y protones se combinan en neutrones. Queda una esfera de ~12 km de radio sostenida por la presión de degeneración de neutrones. Si tiene un fuerte campo magnético y gira rápido, emite haces de radiación como un faro: es un púlsar. Los más extremos, los magnetars, tienen campos magnéticos que desgarran átomos."
+      },
+      {
+        "heading": "Cómo se forma",
+        "body": "Es el resto de una supernova de tipo II cuya masa final cae entre ~1,1 y 2–3 masas solares. Por debajo de 1,1 M☉ no hay enough presión para neutronizar; por encima del límite TOV colapsa en agujero negro. Una estrella de neutrones gira conservando el momento angular de su estrella progenitora, por eso al contraerse a 12 km gira tan deprisa."
+      },
+      {
+        "heading": "Cada cuánto sucede",
+        "body": "Toda supernova de tipo II que no deje agujero negro deja una estrella de neutrones, así que son tan comunes como esas supernovas. La Vía Láctea alberga quizá mil millones. El púlsar más famoso, el del Cangrejo (SN 1054), gira 30 veces por segundo y da nombre a la nebulosa que lo rodea."
+      },
+      {
+        "heading": "Posibles predicciones",
+        "body": "Una estrella de neutrones que recibe materia de una compañera puede rebasar el límite TOV y colapsar en agujero negro (una 'supernova fallida'). Los magnetars producen ráfagas de rayos gamma blandos que, ocasionalmente, llegan a la Tierra; el riesgo para la biosfera de una a corta distancia es real pero muy raro."
+      }
+    ]
+  },
+  {
+    "slug": "enana-blanca",
+    "section": "cuerpos-menores",
+    "title": "Enana blanca",
+    "icon": "⚪",
+    "summary": "El remanente tranquilo del Sol y la mayoría de las estrellas: un núcleo de carbono y oxígeno del tamaño de la Tierra que se enfría lentamente durante billones de años.",
+    "image": "white-dwarf-sirius.jpg",
+    "tags": ["remanente estelar", "enana", "degeneración electrónica"],
+    "facts": [
+      { "label": "Masa típica", "value": "≈ 0,6 M☉ en un volumen terrestre" },
+      { "label": "Límite de Chandrasekhar", "value": "1,44 M☉" },
+      { "label": "Temperatura inicial", "value": "≈ 100.000 K" }
+    ],
+    "content": [
+      {
+        "heading": "Qué es",
+        "body": "Una enana blanca es el núcleo desnudo que queda cuando una estrella como el Sol agota su combustible y expulsa sus capas como nebulosa planetaria. Ya no fusiona nada: se sostiene por la presión de degeneración de sus electrones y se enfría y apaga poco a poco. El Sol terminará así dentro de unos 7.000 millones de años."
+      },
+      {
+        "heading": "Cómo se forma",
+        "body": "Toda estrella de menos de ~8 masas solares (el 97 % de las estrellas, incluido el Sol) termina como enana blanca. Al agotar el hidrógeno, se expanden a gigantes rojas, pierden masa y dejan el núcleo expuesto. Si una enana blanca en un sistema binario roba suficiente materia para superar 1,44 M☉, estalla como supernova de tipo Ia."
+      },
+      {
+        "heading": "Cada cuánto sucede",
+        "body": "Es el destino final más común: la inmensa mayoría de las estrellas del universo ya son o serán enanas blancas. La Vía Láctea contiene miles de millones. Sirio B, la compañera de la estrella más brillante del cielo, es una enana blanca caliente y pequeña junto a su gigante azul."
+      },
+      {
+        "heading": "Posibles predicciones",
+        "body": "Una enana blanca enfría de forma tan predecible que sus colores revelan la edad de cúmulos estelares enteros. Si forma parte de un sistema binario, puede reaparecer como nova (expulsión de hidrógeno acumulado) o, al cruzar el límite de Chandrasekhar, como supernova de tipo Ia — usada para descubrir que el universo se acelera."
+      }
+    ]
+  },
+  {
+    "slug": "cometa",
+    "section": "cuerpos-menores",
+    "title": "Cometa",
+    "icon": "☄️",
+    "summary": "Una bola de hielo y polvo de los confines del Sistema Solar que, al acercarse al Sol, despierta una cola brillante de gas y polvo.",
+    "image": "comet-halebopp.jpg",
+    "tags": ["hielo", "cola", "nube de Oort"],
+    "facts": [
+      { "label": "Núcleo típico", "value": "de 1 a 20 km" },
+      { "label": "Origen", "value": "cinturón de Kuiper y nube de Oort" },
+      { "label": "Cola", "value": "puede medir > 100 millones de km" }
+    ],
+    "content": [
+      {
+        "heading": "Qué es",
+        "body": "Un cometa es un cuerpo helado primitivo, una reliquia de la formación del Sistema Solar hace 4.600 millones de años. Está hecho de hielos (agua, dióxido de carbono, metano) mezclados con polvo y roca. Lejos del Sol viaja invisible; al acercarse, el calor sublima los hielos y forma la cabellera y las colas que lo hicieron famoso."
+      },
+      {
+        "heading": "Cómo se forma",
+        "body": "Se condensaron en las frías afueras del disco solar primitivo. Los de periodo corto vienen del cinturón de Kuiper (más allá de Neptuno); los de periodo largo, de la nube de Oort, una reserva esférica a un año luz del Sol. Una perturbación gravitatoria (otra estrella, un planeta gigante) los desvía hacia el interior y entonces se vuelven activos y visibles."
+      },
+      {
+        "heading": "Cada cuánto sucede",
+        "body": "Hay miles de millones en la nube de Oort. Vemos varios cometas desconocidos cada año a simple vista o con binoculares (ej. NEOWISE en 2020, Tsuchinshan-ATLAS en 2024). Los periódicos, como Halley (76 años) o Encke (3,3 años), regresan puntuales. Una colisión con la Tierra, como la del evento Tunguska (1908), es posible pero rara."
+      },
+      {
+        "heading": "Posibles predicciones",
+        "body": "Los cometas periódicos se predicen con precisión orbital siglos adelante. Cuando un cometa se parte (como el Shoemaker-Levy 9 contra Júpiter en 1994) o se acerca al Sol, las sondas y telescopios ya pueden avisar con semanas de antelación. Estudiarlos es leer la química original del Sistema Solar y, quizá, de dónde vino el agua de la Tierra."
+      }
+    ]
+  },
+  {
+    "slug": "asteroide",
+    "section": "cuerpos-menores",
+    "title": "Asteroide",
+    "icon": "🪨",
+    "summary": "Restos rocosos y metálicos de la construcción del Sistema Solar, concentrados sobre todo entre Marte y Júpiter.",
+    "image": "asteroid-ceres.jpg",
+    "tags": ["cinturón", "rocoso", "NEO"],
+    "facts": [
+      { "label": "Cinturón principal", "value": "entre Marte y Júpiter (2,1–3,3 UA)" },
+      { "label": "Mayor", "value": "Ceres, 940 km (planeta enano)" },
+      { "label": "NEO conocidos", "value": "> 30.000 cercanos a la Tierra" }
+    ],
+    "content": [
+      {
+        "heading": "Qué es",
+        "body": "Los asteroides son fragmentos de roca y metal que nunca se juntaron en un planeta. La mayoría orbita en el cinturón principal; otros, los objetos cercanos a la Tierra (NEO), cruzan nuestra zona. Algunos son casi puramente metálicos (hierro-níquel), vestigios de núcleos de planetas destrozados."
+      },
+      {
+        "heading": "Cómo se forma",
+        "body": "Son escombros del disco protoplanetario. Júpiter, con su gravedad, impidió que se ensamblaran en un planeta y los dispersó en colisiones. Ceres es el único que alcanzó equilibrio hidrostático y es planeta enano. Hay familias de asteroides que son los restos de un cuerpo mayor hecho añicos."
+      },
+      {
+        "heading": "Cada cuánto sucede",
+        "body": "Caen meteoritos sobre la Tierra a diario (la mayoría polvo). Impactos grandes son raros: el cráter de Chicxulub, hace 66 Ma, acabó con los dinosaurios. Hoy se vigilan los NEO potencialmente peligrosos; ninguno conocido amenaza a corto plazo, y misiones como DART (2022) ya han demostrado que podemos desviarlos."
+      },
+      {
+        "heading": "Posibles predicciones",
+        "body": "Las órbitas de los NEO se calculan con años de antelación; se catalogan por tamaño y riesgo. Si uno grande encaminara hacia nosotros, el aviso sería de décadas, tiempo suficiente para una misión de desvío cinético o gravitational. Varios asteroides ya han sido visitados y muestreados por sondas (Itokawa, Ryugu, Bennu)."
+      }
+    ]
+  }
+]

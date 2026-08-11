@@ -17,6 +17,8 @@ export default defineConfig({
         misiones: 'misiones.html',
         acercade: 'acercade.html',
         licencia: 'licencia.html',
+        catastrofes: 'catastrofes.html',
+        cuerposmenores: 'cuerpos-menores.html',
       },
     },
   },

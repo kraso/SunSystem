@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SunSystem — Catástrofes estelares</title>
+  <link rel="icon" href="textures/sun.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" />
+  <link rel="stylesheet" href="/src/ui/styles.css" />
+</head>
+<body>
+  <!-- HUD -->
+  <div id="top-bar">
+    <span id="logo">💥 Catástrofes</span>
+    <a class="brand" href="./index.html" title="Volver a SunSystem"><img src="textures/sun.ico" class="app-ico" alt="SunSystem" /> SunSystem</a>
+  </div>
+
+  <div id="phenomena-layout">
+    <aside id="phen-col-left" class="phen-col">
+      <div class="col-head">
+        <span>Catástrofes cósmicas</span>
+      </div>
+      <div class="phen-search">
+        <input type="text" id="phen-search" placeholder="Buscar fenómeno…" autocomplete="off" />
+      </div>
+      <div id="phen-list" class="col-list"></div>
+    </aside>
+
+    <main id="phen-col-center">
+      <div id="phen-empty">
+        <p>Selecciona un fenómeno de la lista para ver su ficha completa.</p>
+        <p class="hint">Supernovas, agujeros negros y estrellas de neutrones: el final violento de las estrellas masivas.</p>
+      </div>
+      <div id="phen-detail" style="display:none;"></div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/catastrofes-app.ts"></script>
+</body>
+</html>
