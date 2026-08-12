@@ -7,14 +7,19 @@ misiones espaciales.
 ## Secciones de la aplicación
 
 SunSystem se compone de varias páginas (multi-página Vite) accesibles desde la
-barra superior:
+barra lateral **colapsable** (solo iconos; se expande al pasar el ratón) o desde
+la barra superior, donde el título **SunSystem** queda centrado. Cada sección usa
+iconos Lucide coherentes entre la barra lateral y su página.
 
 - **Sistema Solar 3D** (`index.html`) — simulación principal con Three.js: Sol,
   8 planetas, Luna, 4 lunas galileanas de Júpiter y Titán, cinturón de
   asteroides y anillos de Saturno. Incluye:
   - *Panel de datos* (botón **Datos**): propiedades de cualquier cuerpo al hacer click.
-  - *Luna* (botón **Luna**): panel con las fases de la Luna.
-  - *Estadísticas* (botón **Estadísticas**): panel con datos estadísticos de los cuerpos.
+  - *Luna* (botón **Luna**): fases de la Luna con visor (vídeo real de la NASA) y
+    galería de fotos reales. Es una página aparte; el botón **SunSystem** (arriba,
+    centrado) vuelve a la pantalla principal.
+  - *Estadísticas* (botón **Estadísticas**): datos estadísticos de los cuerpos, con
+    leyenda fija. También es página aparte.
   - Controles de tiempo (pausa, velocidad exponencial, líneas orbitales, etiquetas).
 - **Planetario** (`planetario.html`) — cúpula celeste en vista de observador:
   estrellas, constelaciones y objetos de cielo profundo proyectados en la esfera.
@@ -26,6 +31,11 @@ barra superior:
   (tripuladas, no tripuladas y estaciones), ordenadas cronológicamente, con
   tripulación, objetivos, resultado, detalles y una foto propia de cada misión.
   Incluye la ISS y misiones fallidas. Buscador rápido por nombre, agencia o astronauta.
+- **Catástrofes** (`catastrofes.html`) — fenómenos estelares violentos: supernovas,
+  agujeros negros y estrellas de neutrones, con fichas detalladas.
+- **Cuerpos menores** (`cuerpos-menores.html`) — enanas blancas, cometas y asteroides:
+  los restos y escombros del Sistema Solar, con fichas detalladas.
+- **Acerca De** (`acercade.html`) — información del proyecto y enlace a la licencia.
 
 ## Características
 
@@ -38,6 +48,10 @@ barra superior:
 - **Planetario interactivo** con selección de localización (provincias de España).
 - **Cartas de constelaciones editables** con referencia fotográfica real.
 - **Histórico de misiones** con fotos y buscador.
+- **Catástrofes estelares** (supernovas, agujeros negros, estrellas de neutrones) con fichas.
+- **Cuerpos menores** (enanas blancas, cometas, asteroides) con fichas.
+- **Sección Acerca De** con información del proyecto y enlace a la licencia.
+- **Barra lateral colapsable** (solo iconos; se expande al pasar el ratón) con iconos Lucide coherentes entre secciones.
 - **Control de tiempo:** slider exponencial, pausa, atajos de teclado.
 
 ## Stack
@@ -51,6 +65,10 @@ barra superior:
 | Texturas | Solar System Scope (CC BY 4.0) / NASA Visible Earth |
 
 ## Instalación
+
+- **Para usuarios de Windows (64 Bits) tenéis el instalador actulizado ejecutable disponible en la sección Release o pulsando directamente:** [aquí](https://github.com/kraso/SunSystem/releases/download/v0.1.0/SunSystem.Setup.0.1.0.exe)
+
+- **Para acceder al código fuente:**
 
 ```bash
 cd SunSystem
@@ -85,14 +103,25 @@ npm run lint       # TypeCheck
 ```
 SunSystem/
 ├── index.html              # Sistema Solar 3D (principal)
+├── luna.html               # Luna (fases + visor NASA + galería)
+├── estadisticas.html       # Estadísticas de los cuerpos
 ├── planetario.html         # Planetario (cúpula celeste)
 ├── constelaciones.html     # Cartas de constelaciones
 ├── misiones.html           # Histórico de misiones
+├── catastrofes.html        # Catástrofes estelares
+├── cuerpos-menores.html    # Cuerpos menores
+├── acercade.html           # Acerca De
+├── licencia.html           # Licencia MIT
 ├── src/
 │   ├── main.ts             # Bootstrap de la simulación 3D
+│   ├── luna-app.ts         # Lógica de la sección Luna
+│   ├── estadisticas-app.ts # Lógica de la sección Estadísticas
 │   ├── planetario-app.ts   # Lógica del Planetario
 │   ├── constelaciones-app.ts
 │   ├── misiones-app.ts
+│   ├── catastrofes-app.ts
+│   ├── cuerpos-menores-app.ts
+│   ├── acercade-app.ts
 │   ├── core/               # Motor de simulación (Kepler, órbitas, tiempo)
 │   ├── rendering/          # Renderer WebGL + materiales PBR
 │   ├── scene/              # Objetos de escena (cuerpos, anillos, estrellas)
@@ -106,7 +135,7 @@ SunSystem/
 │   ├── constellation-photos-v2/  # Banco reserva (NO se sube al repo, ver .gitignore)
 │   ├── mission-photos/           # Fotos de las misiones (en repo)
 │   ├── constellation-charts/     # Cartas SVG generadas
-│   ├── photos/  textures/  videos/
+│   ├── photos/  textures/  videos/   # photos/ incluye luna-1..3.jpg (fotos de respaldo de la Luna)
 ├── scripts/                # Scripts de automatización (Python)
 ├── docs/                   # Documentación + plan de desarrollo
 └── tests/                  # Tests unitarios
