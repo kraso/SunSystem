@@ -39,7 +39,7 @@ html, body {
   right: 0;
   z-index: 10;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   padding: 10px 16px;
   background: rgba(0, 0, 0, 0.55);
@@ -48,6 +48,21 @@ html, body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   pointer-events: none;
   -webkit-app-region: drag;
+}
+
+/* Título "SunSystem" centrado en la barra superior (pantalla principal). */
+#top-bar .app-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Audiowide', 'Segoe UI', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffe0a0;
+  letter-spacing: 1.5px;
+  pointer-events: none;
+  -webkit-app-region: no-drag;
 }
 
 /* Grupo de navegación (Enfocar + botones de sección): fijado a la
@@ -377,7 +392,7 @@ a.brand:hover,
 #bottom-bar {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 62px;
   right: 0;
   z-index: 10;
   display: flex;
@@ -539,6 +554,7 @@ a.brand:hover,
   position: sticky;
   top: 0;
   z-index: 2;
+  pointer-events: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -654,14 +670,14 @@ a.brand:hover,
 /* Recuadro de leyenda (color de borde = tipo de cuerpo) */
 #stats-legend {
   position: sticky;
-  top: 57px;
-  z-index: 2;
+  top: 0;
+  z-index: 5;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 14px;
   padding: 10px 24px;
-  background: rgba(5, 5, 15, 0.92);
+  background: rgba(8, 8, 18, 0.98);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -1058,8 +1074,9 @@ a.brand:hover,
 /* ─── Leyenda de controles (esquina inferior izquierda) ─── */
 .controls-legend {
   position: fixed;
-  bottom: 16px;
-  left: 16px;
+  bottom: 64px;
+  right: 16px;
+  left: auto;
   z-index: 6;
   padding: 10px 14px;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -2066,6 +2083,133 @@ a.brand:hover,
   line-height: 1.55;
   color: rgba(210, 215, 235, 0.88);
   margin: 0;
+}
+
+/* ═══════════ Sidebar de navegación (index.html) ═══════════ */
+#sidebar {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  bottom: 0;
+  width: 62px;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  background: rgba(10, 12, 22, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-right: 1px solid rgba(120, 150, 220, 0.15);
+  overflow: hidden;
+  transition: width 0.18s ease;
+}
+#sidebar:hover {
+  width: 212px;
+}
+.sidebar-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px 12px;
+  border-bottom: 1px solid rgba(120, 150, 220, 0.12);
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+.sidebar-title {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1rem;
+  color: #e8ecf6;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+#sidebar:hover .sidebar-title {
+  opacity: 1;
+}
+/* Ocultar la barra de scroll de la lista de botones (sin quitar el scroll) */
+.sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+/* "Acerca De" se separa del resto y queda abajo del todo. */
+#btn-acercade {
+  margin-top: auto;
+}
+.sidebar-nav::-webkit-scrollbar {
+  display: none;
+}
+.side-btn,
+.side-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  color: rgba(220, 220, 240, 0.9);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.side-btn:hover,
+.side-select-wrap:hover {
+  background: rgba(70, 90, 150, 0.2);
+  border-color: rgba(120, 150, 220, 0.25);
+}
+.side-ico {
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-ico svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  stroke: currentColor;
+}
+.side-text {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+#sidebar:hover .side-text {
+  opacity: 1;
+}
+/* Select "Enfocar": transparente, solo se muestra al expandir la sidebar */
+.side-select-native {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  max-width: 150px;
+  padding: 0;
+}
+.side-select-native option {
+  color: #111;
+}
+#sidebar:not(:hover) .side-select-native {
+  display: none;
+}
+
+/* ═══════════ Contenido de secciones Luna / Estadísticas (páginas aparte) ═══════════ */
+#moon-content,
+#stats-content {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
 /* ═══════════ Acerca De ═══════════ */

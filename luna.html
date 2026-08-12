@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SunSystem — Luna</title>
+  <link rel="icon" type="image/x-icon" href="textures/sun.ico" />
+  <link rel="stylesheet" href="/src/ui/styles.css" />
+</head>
+<body>
+  <!-- HUD: barra superior (retorno + controles de ventana) -->
+  <div id="top-bar" class="top-bar-planetario">
+    <span id="logo"><i data-lucide="moon"></i> Luna</span>
+    <a class="brand" href="./index.html" title="Volver a SunSystem"><img src="textures/sun.ico" class="app-ico" alt="SunSystem" /> SunSystem</a>
+  </div>
+
+  <!-- Contenedor de la sección Luna -->
+  <div id="moon-content"></div>
+
+  <script type="module" src="./src/luna-app.ts"></script>
+</body>
+</html>

@@ -19,6 +19,8 @@ export default defineConfig({
         licencia: 'licencia.html',
         catastrofes: 'catastrofes.html',
         cuerposmenores: 'cuerpos-menores.html',
+        luna: 'luna.html',
+        estadisticas: 'estadisticas.html',
       },
     },
   },

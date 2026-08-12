@@ -8,12 +8,11 @@ import { bindKeyboard } from './input/keyboard';
 import { InfoPanel } from './ui/info-panel';
 import { TimeControls } from './ui/time-controls';
 import { Labels } from './ui/labels';
-import { StatsPanel } from './ui/stats-panel';
-import { MoonPanel } from './ui/moon-panel';
 import { ControlsLegend } from './ui/controls-legend';
 import celestialBodiesData from './data/celestial-bodies.json';
 import type { CelestialBodyData } from './core/types';
 import './ui/win-controls';
+import { createIcons, Moon, BarChart3, Orbit, Stars, Rocket, Bomb, Asterisk, Info, Crosshair } from 'lucide';
 
 // ─── Bootstrap ────────────────────────────────────────────────────────
 
@@ -26,8 +25,6 @@ const raycaster = new CelestialRaycaster(camera.camera);
 const infoPanel = new InfoPanel();
 const timeControls = new TimeControls(timeManager);
 const labels = new Labels(camera.camera);
-const statsPanel = new StatsPanel(celestialBodiesData as CelestialBodyData[]);
-const moonPanel = new MoonPanel();
 new ControlsLegend();
 
 const simScene = solarSystem.scene;
@@ -58,14 +55,6 @@ canvas.addEventListener('click', (e: MouseEvent) => {
 
 document.getElementById('info-close')?.addEventListener('click', () => {
   infoPanel.hide();
-});
-
-document.getElementById('btn-stats')?.addEventListener('click', () => {
-  statsPanel.toggle();
-});
-
-document.getElementById('btn-luna')?.addEventListener('click', () => {
-  moonPanel.toggle();
 });
 
 // ─── Toggle de líneas orbitales ────────────────────────────────────
@@ -152,3 +141,6 @@ console.log('SunSystem inicializado');
 console.log(`   ${solarSystem.getAllBodies().length} cuerpos celestes cargados`);
 console.log('   🖱 Click en un planeta para ver información');
 console.log('   ⌨ Espacio = pausa | +/- = velocidad | 0 = reset');
+
+// Pintar iconos de la UI (Lucide) en los elementos [data-lucide]
+createIcons({ icons: { Moon, BarChart3, Orbit, Stars, Rocket, Bomb, Asterisk, Info, Crosshair } });

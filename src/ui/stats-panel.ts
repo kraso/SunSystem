@@ -2,24 +2,21 @@ import type { CelestialBodyData } from '../core/types';
 
 /**
  * Panel de estadísticas con imágenes reales de la NASA.
- * Se abre como overlay a pantalla completa.
+ *
+ * Se renderiza DENTRO de una página propia (estadisticas.html), no como overlay
+ * flotante sobre el simulador. El retorno a la pantalla principal lo gestiona
+ * el .brand del #top-bar de la página (igual que las demás secciones).
  */
 export class StatsPanel {
   private overlay: HTMLElement;
   private grid: HTMLElement;
-  private visible: boolean = false;
+  private bodies: CelestialBodyData[];
   private cache: Map<string, string[]> = new Map();
 
-  constructor(private bodies: CelestialBodyData[]) {
-    // Overlay
-    this.overlay = document.createElement('div');
-    this.overlay.id = 'stats-overlay';
-    this.overlay.className = 'stats-hidden';
+  constructor(bodies: CelestialBodyData[], container: HTMLElement) {
+    this.bodies = bodies;
+    this.overlay = container;
     this.overlay.innerHTML = `
-      <div id="stats-header">
-        <h1>📊 Estadísticas del Sistema Solar</h1>
-        <a id="stats-close" class="brand" href="./index.html" title="Volver a SunSystem"><img src="textures/sun.ico" class="app-ico" alt="SunSystem" /> SunSystem</a>
-      </div>
       <div id="stats-legend">
         <span class="legend-title">Leyenda (color del borde = tipo):</span>
         <span class="legend-item"><i class="swatch sw-terrestrial"></i>Rocoso</span>
@@ -30,32 +27,9 @@ export class StatsPanel {
       </div>
       <div id="stats-grid"></div>
     `;
-    document.body.appendChild(this.overlay);
 
     this.grid = this.overlay.querySelector('#stats-grid')!;
-
-    // Volver a la página principal (el enlace navega a index.html)
-
-
-    // ESC para cerrar
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && this.visible) this.hide();
-    });
-  }
-
-  show(): void {
-    this.visible = true;
-    this.overlay.className = 'stats-visible';
     this.buildList();
-  }
-
-  hide(): void {
-    this.visible = false;
-    this.overlay.className = 'stats-hidden';
-  }
-
-  toggle(): void {
-    this.visible ? this.hide() : this.show();
   }
 
   private buildList(): void {

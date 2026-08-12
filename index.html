@@ -13,25 +13,30 @@
 <body>
   <div id="app"></div>
 
-  <!-- HUD: barra superior -->
+  <!-- HUD: barra superior (título centrado + controles de ventana) -->
   <div id="top-bar">
-    <span id="logo"><img src="textures/sun.ico" class="app-ico" alt="SunSystem" /> SunSystem</span>
-    <div class="top-bar-nav">
-      <select id="focus-planet" class="btn-hud" title="Saltar a un planeta">
-        <option value="">→ Enfocar</option>
-      </select>
-      <div style="display:flex;gap:8px;">
-        <button id="btn-luna" class="btn-hud" title="Fases de la Luna"><span class="ico">🌙</span> Luna</button>
-        <button id="btn-stats" class="btn-hud" title="Estadísticas"><span class="ico">◫</span> Estadísticas</button>
-        <a id="btn-planetario" class="btn-hud" href="./planetario.html" title="Planetario (cúpula celeste)"><span class="ico">🪐</span> Planetario</a>
-        <a id="btn-constelaciones" class="btn-hud" href="./constelaciones.html" title="Cartas de constelaciones"><span class="ico">✦</span> Constelaciones</a>
-        <a id="btn-misiones" class="btn-hud" href="./misiones.html" title="Histórico de misiones espaciales"><span class="ico">🚀</span> Misiones</a>
-        <a id="btn-catastrofes" class="btn-hud" href="./catastrofes.html" title="Catástrofes estelares (supernovas, agujeros negros, estrellas de neutrones)"><span class="ico">💥</span> Catástrofes</a>
-        <a id="btn-cuerpos-menores" class="btn-hud" href="./cuerpos-menores.html" title="Cuerpos menores (enanas blancas, cometas, asteroides)"><span class="ico">☄️</span> Cuerpos menores</a>
-        <a id="btn-acercade" class="btn-hud" href="./acercade.html" title="Acerca De"><span class="ico">ℹ️</span> Acerca De</a>
-      </div>
-    </div>
+    <span class="app-title">SunSystem</span>
   </div>
+
+  <!-- Sidebar de navegación: colapsable (solo iconos; se expande al hover) -->
+  <aside id="sidebar">
+    <nav class="sidebar-nav">
+      <div class="side-btn side-select-wrap">
+        <span class="side-ico"><i data-lucide="crosshair"></i></span>
+        <select id="focus-planet" class="side-select-native" title="Saltar a un planeta">
+          <option value="">→ Enfocar</option>
+        </select>
+      </div>
+      <a id="btn-luna" class="side-btn" href="./luna.html" title="Fases de la Luna"><span class="side-ico"><i data-lucide="moon"></i></span><span class="side-text">Luna</span></a>
+      <a id="btn-stats" class="side-btn" href="./estadisticas.html" title="Estadísticas"><span class="side-ico"><i data-lucide="bar-chart-3"></i></span><span class="side-text">Estadísticas</span></a>
+      <a id="btn-planetario" class="side-btn" href="./planetario.html" title="Planetario (cúpula celeste)"><span class="side-ico"><i data-lucide="orbit"></i></span><span class="side-text">Planetario</span></a>
+      <a id="btn-constelaciones" class="side-btn" href="./constelaciones.html" title="Cartas de constelaciones"><span class="side-ico"><i data-lucide="stars"></i></span><span class="side-text">Constelaciones</span></a>
+      <a id="btn-misiones" class="side-btn" href="./misiones.html" title="Histórico de misiones espaciales"><span class="side-ico"><i data-lucide="rocket"></i></span><span class="side-text">Misiones</span></a>
+      <a id="btn-catastrofes" class="side-btn" href="./catastrofes.html" title="Catástrofes estelares"><span class="side-ico"><i data-lucide="bomb"></i></span><span class="side-text">Catástrofes</span></a>
+      <a id="btn-cuerpos-menores" class="side-btn" href="./cuerpos-menores.html" title="Cuerpos menores"><span class="side-ico"><i data-lucide="asterisk"></i></span><span class="side-text">Cuerpos menores</span></a>
+      <a id="btn-acercade" class="side-btn" href="./acercade.html" title="Acerca De"><span class="side-ico"><i data-lucide="info"></i></span><span class="side-text">Acerca De</span></a>
+    </nav>
+  </aside>
 
   <!-- Panel de información (oculto por defecto; se abre al hacer clic en un astro) -->
   <div id="info-panel" class="hidden">

@@ -1,6 +1,8 @@
 // Inyecta los controles de ventana (minimizar / maximizar / cerrar) en la
 // barra superior (#top-bar) y los conecta al proceso principal vía IPC.
 // Solo se activa dentro del ejecutable de Electron (window.electronAPI).
+import { createIcons, Moon, BarChart3, Orbit, Stars, Rocket, Bomb, Asterisk, Info, Scale, Crosshair } from 'lucide';
+
 type ElectronAPI = {
   minimize: () => void;
   toggleMaximize: () => void;
@@ -32,10 +34,21 @@ function injectWindowControls(): void {
   close.addEventListener('click', () => api.close());
 }
 
+// Procesa los iconos Lucide de la página (sidebar y secciones).
+function renderIcons(): void {
+  createIcons({
+    icons: { Moon, BarChart3, Orbit, Stars, Rocket, Bomb, Asterisk, Info, Scale, Crosshair },
+  });
+}
+
 // Ejecuta cuando el DOM esté listo (los módulos TS pueden correr antes de
 // que #top-bar exista en algunas páginas).
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', injectWindowControls);
+  document.addEventListener('DOMContentLoaded', () => {
+    injectWindowControls();
+    renderIcons();
+  });
 } else {
   injectWindowControls();
+  renderIcons();
 }

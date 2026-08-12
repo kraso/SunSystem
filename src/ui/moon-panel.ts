@@ -2,7 +2,9 @@
  * Panel "Luna": calendario mensual de fases + visor 3D de la fase
  * + información detallada + galería de fotos reales de la NASA.
  *
- * Se abre como overlay a pantalla completa (mismo patrón que StatsPanel).
+ * Se renderiza DENTRO de una página propia (luna.html), no como overlay
+ * flotante sobre el simulador. El retorno a la pantalla principal lo gestiona
+ * el .brand del #top-bar de la página (igual que las demás secciones).
  */
 
 import { getMoonPhase, getPhaseDescription, PHASE_NAMES_ES, PHASE_NAMES_EN, isSupermoon, getMoonDistanceKm, type PhaseName } from '../core/lunar-phase';
@@ -22,40 +24,29 @@ const PHASE_ICON = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '�
 export class MoonPanel {
   private overlay: HTMLElement;
   private viewer: MoonViewer;
-  private visible = false;
   private viewYear: number;
   private viewMonth: number; // 0-11
   private selectedDate: Date;
   private nasaCache = new Map<string, string>();
-  private infoWasHidden = true;
-  private statsWasHidden = true;
 
-  constructor() {
+  constructor(container: HTMLElement) {
     const now = new Date();
     this.viewYear = now.getFullYear();
     this.viewMonth = now.getMonth();
     this.selectedDate = now;
 
-    this.overlay = document.createElement('div');
-    this.overlay.id = 'moon-overlay';
-    this.overlay.className = 'stats-hidden';
+    this.overlay = container;
     this.overlay.innerHTML = this.template();
-    document.body.appendChild(this.overlay);
-
     this.viewer = new MoonViewer(this.overlay.querySelector('#moon-viewer') as HTMLElement);
 
     this.bindEvents();
     this.renderCalendar();
-    // El visor 3D se construye en show(), cuando el overlay ya es visible
-    // y el contenedor tiene tamaño real (evita un canvas 0x0 en blanco).
+    // Inicializa el visor 3D (vídeo NASA) y la galería con el día seleccionado.
+    this.renderDetail();
   }
 
   private template(): string {
     return `
-      <div id="stats-header">
-        <h1>🌙 Fases de la Luna</h1>
-        <a id="moon-close" class="brand" href="./index.html" title="Volver a SunSystem"><img src="textures/sun.ico" class="app-ico" alt="SunSystem" /> SunSystem</a>
-      </div>
       <div id="moon-body">
         <div id="moon-left">
           <div id="moon-nav">
@@ -78,43 +69,10 @@ export class MoonPanel {
     `;
   }
 
-  show(): void {
-    this.visible = true;
-    this.overlay.className = 'stats-visible';
-    // Oculta los paneles flotantes del simulador para no dejar recuadros sueltos.
-    const info = document.getElementById('info-panel');
-    const stats = document.getElementById('stats-overlay');
-    this.infoWasHidden = info ? info.classList.contains('hidden') : true;
-    this.statsWasHidden = stats ? stats.classList.contains('stats-hidden') : true;
-    info?.classList.add('hidden');
-    stats?.classList.add('stats-hidden');
-    this.renderDetail();
-  }
-
-  hide(): void {
-    this.visible = false;
-    this.overlay.className = 'stats-hidden';
-    this.viewer.dispose();
-    // Restaura el estado previo de los paneles flotantes.
-    const info = document.getElementById('info-panel');
-    const stats = document.getElementById('stats-overlay');
-    if (info && !this.infoWasHidden) info.classList.remove('hidden');
-    if (stats && !this.statsWasHidden) stats.classList.remove('stats-hidden');
-  }
-
-  toggle(): void {
-    this.visible ? this.hide() : this.show();
-  }
-
   private bindEvents(): void {
-    // Volver a la página principal (el enlace navega a index.html)
-
     this.overlay.querySelector('#moon-prev')!.addEventListener('click', () => this.changeMonth(-1));
     this.overlay.querySelector('#moon-next')!.addEventListener('click', () => this.changeMonth(1));
     this.overlay.querySelector('#moon-today')!.addEventListener('click', () => this.goToday());
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && this.visible) this.hide();
-    });
   }
 
   private changeMonth(delta: number): void {
@@ -277,18 +235,19 @@ export class MoonPanel {
   private async loadNasaGallery(phaseName: PhaseName): Promise<void> {
     const gallery = this.overlay.querySelector('#moon-gallery') as HTMLElement;
     const cacheKey = phaseName;
+    const local = ['photos/luna-1.jpg', 'photos/luna-2.jpg', 'photos/luna-3.jpg'];
+
+    // Mostrar fotos reales locales de inmediato (siempre visibles, sin depender de red).
+    gallery.innerHTML = local.map((src) => this.imgTag(src)).join('');
 
     if (this.nasaCache.has(cacheKey)) {
       const cached = this.nasaCache.get(cacheKey)!;
-      gallery.innerHTML = cached
-        ? cached.split('|').map((src) => this.imgTag(src)).join('')
-        : '<p class="moon-loading">Sin imágenes de la NASA para esta fase.</p>';
+      if (cached) gallery.innerHTML = cached.split('|').map((src) => this.imgTag(src)).join('');
       return;
     }
-    gallery.innerHTML = '<p class="moon-loading">Cargando fotos de la NASA…</p>';
 
+    // En segundo plano, intentar la API de la NASA; si responde, reemplazamos.
     try {
-      // La API de NASA indexa en inglés; traducimos la fase al término EN.
       const enPhase = PHASE_NAMES_EN[phaseName] ?? 'moon';
       const q = encodeURIComponent(`${enPhase} moon`);
       const resp = await fetch(`https://images-api.nasa.gov/search?q=${q}&media_type=image`);
@@ -298,15 +257,15 @@ export class MoonPanel {
         .map((it: { links?: { href: string }[] }) => it?.links?.[0]?.href)
         .filter(Boolean)
         .slice(0, 6);
-
-      if (thumbs.length === 0) {
-        gallery.innerHTML = '<p class="moon-loading">Sin imágenes de la NASA para esta fase.</p>';
-        return;
+      if (thumbs.length > 0) {
+        this.nasaCache.set(cacheKey, thumbs.join('|'));
+        gallery.innerHTML = thumbs.map((src: string) => this.imgTag(src)).join('');
+      } else {
+        this.nasaCache.set(cacheKey, local.join('|'));
       }
-      this.nasaCache.set(cacheKey, thumbs.join('|'));
-      gallery.innerHTML = thumbs.map((src: string) => this.imgTag(src)).join('');
     } catch {
-      gallery.innerHTML = '<p class="moon-loading">No se pudo cargar la galería (sin red).</p>';
+      // Sin red o API caída: las fotos locales ya están visibles.
+      this.nasaCache.set(cacheKey, local.join('|'));
     }
   }
 
@@ -360,7 +319,6 @@ export class MoonPanel {
     const selDist = selPt ? selPt.dist : 0;
     const selY = selPt ? y(selDist) : padT;
     const distLabel = `${Math.round(selDist).toLocaleString('es-ES')} km`;
-    // Coloca la etiqueta a la izquierda del punto si está muy a la derecha.
     const labelX = selX > W - 48 ? selX - 4 : selX + 4;
     const labelAnchor = selX > W - 48 ? 'end' : 'start';
     const labelY = Math.max(padT + 6, Math.min(H - padB - 2, selY - 4));
@@ -379,13 +337,13 @@ export class MoonPanel {
       <div class="chart-title">Distancia Tierra–Luna (modelo Meeus)</div>
       <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" class="moon-chart-svg">
         <line x1="${padL}" y1="${thresholdY.toFixed(1)}" x2="${W - padR}" y2="${thresholdY.toFixed(1)}"
-              stroke="#ff5d5d" stroke-width="0.6" stroke-dasharray="3 2" opacity="0.7" />
+            stroke="#ff5d5d" stroke-width="0.6" stroke-dasharray="3 2" opacity="0.7" />
         <path d="${linePath}" fill="none" stroke="#6cc6ff" stroke-width="1.4" />
         ${dots}
         <line x1="${selX.toFixed(1)}" y1="${padT}" x2="${selX.toFixed(1)}" y2="${H - padB}"
-              stroke="#ffd166" stroke-width="0.6" opacity="0.6" />
+            stroke="#ffd166" stroke-width="0.6" opacity="0.6" />
         <text x="${labelX.toFixed(1)}" y="${labelY.toFixed(1)}" class="chart-label"
-              text-anchor="${labelAnchor}" fill="#ffd166">${distLabel}</text>
+            text-anchor="${labelAnchor}" fill="#ffd166">${distLabel}</text>
       </svg>
       <div class="chart-scale">
         <span>${(hi / 1000).toFixed(0)}k km</span>
