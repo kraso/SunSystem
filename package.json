@@ -14,7 +14,7 @@
     "dist": "npm run build",
     "pack": "electron-builder --dir",
     "dist:win": "npm run build && electron-builder --win nsis",
-    "dist:linux": "npm run build && electron-builder --linux deb rpm AppImage"
+    "dist:linux": "npm run build && electron-builder --linux deb rpm AppImage --publish never"
   },
   "dependencies": {
     "lil-gui": "^0.19.2",
@@ -29,10 +29,12 @@
     "vite": "^5.4.0",
     "vitest": "^2.0.0"
   },
+  "author": "SunSystem Team <marcoscalabresibaniez@gmail.com>",
   "license": "MIT",
   "build": {
     "appId": "com.kraso.sunsystem",
     "productName": "SunSystem",
+    "desktopName": "SunSystem",
     "copyright": "Copyright © 2026",
     "files": [
       "dist/**/*",
@@ -70,7 +72,8 @@
       "category": "Education",
       "synopsis": "Simulación 3D del Sistema Solar con física orbital",
       "maintainer": "SunSystem Team <marcoscalabresibaniez@gmail.com>",
-      "artifactName": "${productName}-${version}.${ext}"
+      "artifactName": "${productName}-${version}.${ext}",
+      "syncDesktopName": true
     }
   }
 }
