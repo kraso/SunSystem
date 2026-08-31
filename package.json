@@ -68,7 +68,7 @@
         "rpm",
         "AppImage"
       ],
-      "icon": "assets/textures/sun.png",
+      "icon": "assets/icons",
       "category": "Education",
       "synopsis": "Simulación 3D del Sistema Solar con física orbital",
       "maintainer": "SunSystem Team <marcoscalabresibaniez@gmail.com>",
