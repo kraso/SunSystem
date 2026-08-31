@@ -1,6 +1,13 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
+// En Linux, permite el fallback WebGL por software (SwiftShader) cuando el
+// driver/GPU falla o está bloqueado (p. ej. Fedora/Wayland), para que la
+// escena 3D no se quede en negro. Sin efecto en GPUs que funcionan bien.
+if (process.platform === 'linux') {
+  app.commandLine.appendSwitch('enable-unsafe-swiftshader');
+}
+
 // Evita múltiples instancias
 const gotLock = app.requestSingleInstanceLock();
 if (!gotLock) app.quit();
