@@ -66,21 +66,12 @@ iconos Lucide coherentes entre la barra lateral y su página.
 
 ## Instalación
 
-- **Para usuarios de Windows (64 Bits) tenéis el instalador actulizado ejecutable disponible en la sección Release o pulsando directamente:** [aquí](https://github.com/kraso/SunSystem/releases/download/v0.1.0/SunSystem.Setup.0.1.0.exe)
+- **Para usuarios de Windows (64 Bits) tenéis el instalador actualizado ejecutable disponible en la sección Release o pulsando directamente:** [SunSystem.Setup.0.1.0.exe](https://github.com/kraso/SunSystem/releases/download/v0.1.0/SunSystem.Setup.0.1.0.exe)
 
 - **Para usuarios de Linux** hay tres formatos (generados automáticamente por CI y disponibles en la sección Release):
-  - **`.deb` (Debian, Ubuntu y derivados):**
-    ```bash
-    sudo apt install ./SunSystem-0.1.0.deb
-    ```
-  - **`.rpm` (Fedora, RHEL, openSUSE):**
-    ```bash
-    sudo dnf install ./SunSystem-0.1.0.rpm
-    ```
-  - **`.AppImage` (cualquier distribución, sin instalar):**
-    ```bash
-    chmod +x SunSystem-0.1.0.AppImage && ./SunSystem-0.1.0.AppImage
-    ```
+  - **`.deb` (Debian, Ubuntu y derivados):** [SunSystem-0.1.0.deb](https://github.com/kraso/SunSystem/releases/download/v0.1.0/SunSystem-0.1.0.deb) → `sudo apt install ./SunSystem-0.1.0.deb`
+  - **`.rpm` (Fedora, RHEL, openSUSE):** [SunSystem-0.1.0.rpm](https://github.com/kraso/SunSystem/releases/download/v0.1.0/SunSystem-0.1.0.rpm) → `sudo dnf install ./SunSystem-0.1.0.rpm`
+  - **`.AppImage` (cualquier distribución, sin instalar):** [SunSystem-0.1.0.AppImage](https://github.com/kraso/SunSystem/releases/download/v0.1.0/SunSystem-0.1.0.AppImage) → `chmod +x SunSystem-0.1.0.AppImage && ./SunSystem-0.1.0.AppImage`
 
   > Nota: en Debian/Ubuntu recientes, el AppImage puede requerir `libfuse2`
   > (`sudo apt install libfuse2`). La aplicación necesita WebGL (drivers GPU funcionales).
