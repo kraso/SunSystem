@@ -68,6 +68,31 @@ iconos Lucide coherentes entre la barra lateral y su página.
 
 - **Para usuarios de Windows (64 Bits) tenéis el instalador actulizado ejecutable disponible en la sección Release o pulsando directamente:** [aquí](https://github.com/kraso/SunSystem/releases/download/v0.1.0/SunSystem.Setup.0.1.0.exe)
 
+- **Para usuarios de Linux** hay tres formatos (generados automáticamente por CI y disponibles en la sección Release):
+  - **`.deb` (Debian, Ubuntu y derivados):**
+    ```bash
+    sudo apt install ./SunSystem-0.1.0.deb
+    ```
+  - **`.rpm` (Fedora, RHEL, openSUSE):**
+    ```bash
+    sudo dnf install ./SunSystem-0.1.0.rpm
+    ```
+  - **`.AppImage` (cualquier distribución, sin instalar):**
+    ```bash
+    chmod +x SunSystem-0.1.0.AppImage && ./SunSystem-0.1.0.AppImage
+    ```
+
+  > Nota: en Debian/Ubuntu recientes, el AppImage puede requerir `libfuse2`
+  > (`sudo apt install libfuse2`). La aplicación necesita WebGL (drivers GPU funcionales).
+
+- **Para compilar los paquetes Linux desde el código fuente** (el `.rpm` solo se puede generar en Linux, no en Windows):
+
+```bash
+cd SunSystem
+npm ci
+npm run dist:linux   # genera dist/SunSystem-0.1.0.deb, SunSystem-0.1.0.rpm y SunSystem-0.1.0.AppImage
+```
+
 - **Para acceder al código fuente:**
 
 ```bash

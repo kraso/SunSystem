@@ -13,7 +13,8 @@
     "lint:fix": "node ./node_modules/typescript/bin/tsc --noEmit",
     "dist": "npm run build",
     "pack": "electron-builder --dir",
-    "dist:win": "npm run build && electron-builder --win nsis"
+    "dist:win": "npm run build && electron-builder --win nsis",
+    "dist:linux": "npm run build && electron-builder --linux deb rpm AppImage"
   },
   "dependencies": {
     "lil-gui": "^0.19.2",
@@ -58,6 +59,18 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "SunSystem"
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage"
+      ],
+      "icon": "assets/textures/sun.png",
+      "category": "Education",
+      "synopsis": "Simulación 3D del Sistema Solar con física orbital",
+      "maintainer": "SunSystem Team <sunsystem-team@example.com>",
+      "artifactName": "${productName}-${version}.${ext}"
     }
   }
 }

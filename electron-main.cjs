@@ -13,7 +13,8 @@ function createWindow() {
     minHeight: 600,
     backgroundColor: '#05060c',
     title: 'SunSystem',
-    icon: path.join(__dirname, 'assets', 'textures', 'sun.ico'),
+    // Icono de ventana: ICO en Windows, PNG en Linux/macOS (GTK no renderiza .ico)
+    icon: path.join(__dirname, 'assets', 'textures', process.platform === 'win32' ? 'sun.ico' : 'sun.png'),
     titleBarStyle: 'hidden',
     webPreferences: {
       preload: path.join(__dirname, 'electron-preload.cjs'),
