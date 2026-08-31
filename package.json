@@ -69,7 +69,7 @@
       "icon": "assets/textures/sun.png",
       "category": "Education",
       "synopsis": "Simulación 3D del Sistema Solar con física orbital",
-      "maintainer": "SunSystem Team <sunsystem-team@example.com>",
+      "maintainer": "SunSystem Team <marcoscalabresibaniez@gmail.com>",
       "artifactName": "${productName}-${version}.${ext}"
     }
   }
