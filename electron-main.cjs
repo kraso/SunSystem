@@ -8,6 +8,17 @@ if (process.platform === 'linux') {
   app.commandLine.appendSwitch('enable-unsafe-swiftshader');
 }
 
+// Si el renderer informa que no hay WebGL (VMs, drivers rotos), reinicia la
+// app en modo render por software. El flag propio evita bucles de reinicio.
+const SOFTWARE_MODE_FLAG = '--sunsystem-software-mode';
+ipcMain.on('webgl-unavailable', () => {
+  if (process.argv.includes(SOFTWARE_MODE_FLAG)) return;
+  app.relaunch({
+    args: [...app.argv, SOFTWARE_MODE_FLAG, '--disable-gpu', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'],
+  });
+  app.exit(0);
+});
+
 // Evita múltiples instancias
 const gotLock = app.requestSingleInstanceLock();
 if (!gotLock) app.quit();
