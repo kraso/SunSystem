@@ -1,5 +1,6 @@
 {
   "name": "sun-system",
+  "desktopName": "sun-system",
   "version": "0.1.0",
   "description": "Simulación 3D interactiva del Sistema Solar con física orbital realista",
   "type": "module",
@@ -34,7 +35,6 @@
   "build": {
     "appId": "com.kraso.sunsystem",
     "productName": "SunSystem",
-    "desktopName": "SunSystem",
     "copyright": "Copyright © 2026",
     "files": [
       "dist/**/*",
